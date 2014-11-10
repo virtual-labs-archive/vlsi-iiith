@@ -1,0 +1,71 @@
+$date
+	Sat Jun 25 18:04:23 2011
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module mux2_tb3 $end
+$var wire 1 ! Out $end
+$var reg 1 " In1 $end
+$var reg 1 # In2 $end
+$var reg 1 $ clk $end
+$scope module mux2 $end
+$var wire 1 " In1 $end
+$var wire 1 # In2 $end
+$var wire 1 $ clk $end
+$var reg 1 ! Out $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+x$
+x#
+x"
+x!
+$end
+#3
+0!
+0$
+0"
+0#
+#8
+1!
+1"
+1#
+#11
+0!
+1$
+0#
+#16
+0$
+0"
+1#
+#19
+0#
+#24
+1!
+1$
+1"
+1#
+#32
+0!
+0"
+0#
+#35
+0$
+#40
+1!
+1"
+1#
+#43
+0!
+1$
+0#
+#48
+0$
+0"
+1#

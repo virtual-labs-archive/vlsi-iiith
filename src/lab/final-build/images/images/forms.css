@@ -1,0 +1,74 @@
+.amo-form > div {
+    margin: 1em 0;
+}
+
+.amo-submit {
+}
+
+.amo-submit:hover {
+}
+
+.amo-cancel {
+}
+
+.amo-label-large, .amo-label-medium, .amo-label-small {
+    border-bottom: 1px dashed #eee;
+    float: left;
+	clear:left;
+}
+
+.amo-label-large {
+    width: 14em;
+}
+
+.amo-label-medium {
+    width: 10em;
+}
+
+.amo-label-small {
+    width: 8em;
+}
+
+.amo-label-xsmall {
+    width: 6em;
+}
+
+.amo-form-error {
+    background-color: #eee;
+    border: 1px dashed #c66;
+    color: #c00;
+    margin: 5px 0;
+    padding: .5em;
+}
+
+.amo-form div.error_message {
+    color: #c00;
+    display: block;
+    margin: 0;
+    padding-bottom: 1em;
+}
+
+ 
+.amo-form div.amo-form-indent {
+    margin-left: 14em;
+}
+
+.html-rtl .amo-form div.amo-form-indent {
+    margin-left: auto;
+    margin-right: 14em;
+}
+
+.amo-remember {
+    margin-left: 12.2em;
+}
+
+.html-rtl .amo-remember {
+    margin-left: auto;
+    margin-right: 12.2em;
+}
+
+.html-rtl .amo-label-large, .html-rtl .amo-label-medium, .html-rtl .amo-label-small {
+    float: right;
+}
+
+ 

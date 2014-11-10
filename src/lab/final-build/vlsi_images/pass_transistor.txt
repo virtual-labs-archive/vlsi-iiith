@@ -1,0 +1,24 @@
+A multiplexer selects one of many analog or digital input .A multiplexer with 2^n input lines 
+have n select lines.The select lines can either be 0 or 1.Depending on the binary number(formed by combination 
+of 1's and 0's) at the select lines.One of the input is selected and it is passed on to the
+output.
+The block diagram and truth table of the 2 input multiplexer is given below:
+The logical expression for output can be AS0'+BS0 if we implement this logic using nands and nors 
+then no. of transistor required would be 5.We can use the knowledge of pass transistors,control variables an
+pass variables.
+
+* Choice of control variable and pass variable??
+  Select input should be the control variable and data inputs can act as pass variables
+  
+* wether to use nmos/pmos pass transistor ??
+  
+   Since nmos is preferable in passing logic 0 and pmos is preffered in passing logic 1.We use 
+   a combination of both with complementing control variables.This ensures that both are on simultaneously
+   and any value applied at the input appears at the output
+
+diagram when so is 1
+diagram when so is 0
+
+The block diagram and truth table for 4 input multiplexer is given below:
+ 
+ http://javascript.internet.com/image-effects/blinker.html  

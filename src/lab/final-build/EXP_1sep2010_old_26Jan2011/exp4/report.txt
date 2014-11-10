@@ -1,0 +1,37 @@
+
+Circuit: *include '45nm_HP.pm
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+No. of Data Columns : 4  
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+out                                        1.1
+b                                            0
+vdd                                        1.1
+a                                            0
+n                                    0.0666539
+vb#branch                           2.8457e-10
+va#branch                          2.62905e-10
+vdd#branch                        -5.86669e-10
+
+
+No. of Data Rows : 290
+
+CPU time since last call: 0.100 seconds.
+
+Total CPU time: 0.100 seconds.
+
+Total DRAM available = 2990.019531 MB.
+DRAM currently available = 1787.687500 MB.
+Total ngspice program size = 5.434570 MB.
+Resident set size = 679.000 kB.
+Shared ngspice pages = 545.000 kB.
+Text (code) pages = 1.372070 MB.
+Stack = 0 bytes.
+Library pages = 3.031250 MB.
+

@@ -1,0 +1,53 @@
+$date
+	Sat Jun 25 16:58:57 2011
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module dffn_tb $end
+$var wire 1 ! q $end
+$var reg 1 " clk $end
+$var reg 1 # d $end
+$scope module dffn $end
+$var wire 1 " clk $end
+$var wire 1 # d $end
+$var reg 1 ! q $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+1#
+1"
+x!
+$end
+#5
+0!
+0"
+0#
+#10
+1"
+#15
+0"
+#20
+1"
+1#
+#25
+1!
+0"
+#30
+0#
+#35
+1"
+#40
+0!
+0"
+#45
+1"
+1#
+#50
+1!
+0"
