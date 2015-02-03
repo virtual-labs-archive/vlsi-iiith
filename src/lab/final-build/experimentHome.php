@@ -131,6 +131,7 @@ margin-top: 0px;
          <ul id="menuTop">
 
 <?php
+error_reporting(0);
 include_once("config.inc.php");
  global $db, $db_host, $db_user, $db_password;
 
