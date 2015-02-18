@@ -12,4 +12,4 @@ cd ../src/database
 # Replace "emt" with your database name
 # Replace "emt.sql" file with your file
 # Note: If you have more than one .sql file repeat below command w.r.t to database and file name
-mysql -u root cse14<mysql.sql
+mysql -u root cse14 < dump.sql

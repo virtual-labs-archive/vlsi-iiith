@@ -4,7 +4,7 @@
             "platform": {
                 "arch": "i386", 
                 "build_steps": {
-                    "build": ["make clean all -C ../src"], 
+                    "build": ["make -C ../src"], 
                     "configure": [], 
                     "post_build": ["service apache2 restart"], 
                     "pre_build": ["sudo apt-get update",
@@ -64,11 +64,11 @@
             "platform": {
                 "arch": "i386", 
                 "hosting": "dedicated", 
-                "installer": ["mv /var/www/index.php index.php.default","cp -r ../build/* /var/www/","sh db_config.sh"], 
+                "installer": [], 
                 "lab_actions": {
                     "backup": [], 
                     "clean": [], 
-                    "init": [], 
+                    "init": ["cp -r ../build/* /var/www/","sh db_config.sh"], 
                     "pause": [], 
                     "publish": [], 
                     "restore": [], 
