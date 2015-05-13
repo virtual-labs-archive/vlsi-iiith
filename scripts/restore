@@ -9,6 +9,3 @@
 
 # To use restore script, run the command
 # ./scripts/restore
- 
-
-echo -e "There is no data used by this lab.\nHence, nothing needs to be restored."
