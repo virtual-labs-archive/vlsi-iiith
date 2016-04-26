@@ -1,0 +1,28 @@
+* Author: Suman
+* Date Created: 15 Apr 2016
+* Environment
+  - OS: Windows 7, Linux
+  - Browsers: Firefox,Chrome
+  - Bandwidth : 100Mbps
+  - Hardware Configuration:8GBRAM , 
+  - Processor:i5
+
+* Objective
+  - To view the Introduction of the Schematic Design Of Pass Transistor Logic & Multiplexer experiment
+
+* Pre conditions
+  - Refer to first test case [[https://github.com/Virtual-Labs/vlsi-iiith/blob/master/test-cases/integration_test-cases/Schematic Design Of Pass Transi/Schematic Design Of Pass Transi_01_Usability_smk.org][Schematic Design Of Pass Transi_01_Usability_smk.org]]
+
+* Post conditions
+  - Nil
+* Test Steps
+  1. Click on the Introduction link 
+  2. Check if there are any distortions and junk characters in the Introduction page
+
+* Expected result
+  1. Introduction page should be opened
+  2. Content should be present with no distortions and Junk characters
+
+* Review/comments
+
+
