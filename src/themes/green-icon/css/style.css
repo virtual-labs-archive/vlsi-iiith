@@ -6,10 +6,10 @@ Author URI: http://www.vlabs.ac.in
 Description: The theme to accompany the profile site for vlabs.ac.in
 Version: 1.0
 */
-
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,300,700,500,600);
 body {
-    
-    font-family:Calibri !important;
+    overflow-x: hidden;
+    font-family:'Raleway' !important;
 }
 
 p {
@@ -28,60 +28,60 @@ background: #fff;
 font-family:"Lucida Grande", Tahoma, Arial, Verdana, sans-serif;
 }
 
-.container-fluid .calender  .button { 
-text-align: center;    
-padding: 2px;          
+.container-fluid .calender  .button {
+text-align: center;
+padding: 2px;
 }
 
 .container-fluid .calender  .nav {
 background:#f5f5f5;
 }
 
-.container-fluid .calender  thead .title { 
-font-weight: bold;      
+.container-fluid .calender  thead .title {
+font-weight: bold;
 text-align: center;
 background: #dedede;
 color: #000;
 padding: 2px 0 3px 0;
 }
 
-.container-fluid .calender  thead .headrow { 
+.container-fluid .calender  thead .headrow {
 background: #f5f5f5;
 color: #444;
 font-weight:bold;
 }
 
-.container-fluid .calender  thead .daynames { 
+.container-fluid .calender  thead .daynames {
 background: #fff;
 color:#333;
 font-weight:bold;
 }
 
-.container-fluid .calender  thead .name { 
+.container-fluid .calender  thead .name {
 border-bottom: 1px dotted #ccc;
 padding: 2px;
 text-align: center;
 color: #000;
 }
 
-.container-fluid .calender  thead .weekend { 
+.container-fluid .calender  thead .weekend {
 color: #666;
 }
 
-.container-fluid .calender  thead .hilite { 
+.container-fluid .calender  thead .hilite {
 background-color: #444;
 color: #fff;
 padding: 1px;
 }
 
-.container-fluid .calender  thead .active { 
+.container-fluid .calender  thead .active {
 background-color: #d12f19;
 color:#fff;
 padding: 2px 0px 0px 2px;
 }
 
 
-.container-fluid .calender  tbody .day { 
+.container-fluid .calender  tbody .day {
 width:1.8em;
 color: #222;
 text-align: right;
@@ -109,19 +109,19 @@ background: #FFF1AF;
 background: #FFF1AF;
 }
 
-.container-fluid .calender  tbody td.hilite { 
+.container-fluid .calender  tbody td.hilite {
 padding: 1px 1px 1px 1px;
 background:#444 !important;
 color:#fff !important;
 }
 
-.container-fluid .calender  tbody td.active { 
+.container-fluid .calender  tbody td.active {
 color:#fff;
 background: #529214 !important;
 padding: 2px 2px 0px 2px;
 }
 
-.container-fluid .calender  tbody td.selected { 
+.container-fluid .calender  tbody td.selected {
 font-weight: bold;
 border: 1px solid #888;
 padding: 1px 1px 1px 1px;
@@ -129,11 +129,11 @@ background: #f5f5f5 !important;
 color: #222 !important;
 }
 
-.container-fluid .calender  tbody td.weekend { 
+.container-fluid .calender  tbody td.weekend {
 color: #666;
 }
 
-.container-fluid .calender  tbody td.today { 
+.container-fluid .calender  tbody td.today {
 font-weight: bold;
 color: #529214;
 background:#D9EFC2;
@@ -141,21 +141,21 @@ background:#D9EFC2;
 
 .container-fluid .calender  tbody .disabled { color: #999; }
 
-.container-fluid .calender  tbody .emptycell { 
+.container-fluid .calender  tbody .emptycell {
 visibility: hidden;
 }
 
-.container-fluid .calender  tbody .emptyrow { 
+.container-fluid .calender  tbody .emptyrow {
 display: none;
 }
 
-.container-fluid .calender  tfoot .footrow { 
+.container-fluid .calender  tfoot .footrow {
 text-align: center;
 background: #556;
 color: #fff;
 }
 
-.container-fluid .calender  tfoot .ttip { 
+.container-fluid .calender  tfoot .ttip {
 background: #222;
 color: #fff;
 font-size:10px;
@@ -163,14 +163,14 @@ border-top: 1px solid #dedede;
 padding: 3px;
 }
 
-.container-fluid .calender  tfoot .hilite { 
+.container-fluid .calender  tfoot .hilite {
 background: #aaf;
 border: 1px solid #04f;
 color: #000;
 padding: 1px;
 }
 
-.container-fluid .calender  tfoot .active { 
+.container-fluid .calender  tfoot .active {
 background: #77c;
 padding: 2px 0px 0px 2px;
 }
@@ -278,7 +278,7 @@ a:focus,
 a:active,
 a.active {
     outline: 0;
-} 
+}
 @media(min-width:768px) {
     .navbar-fixed-top {
         padding: 25px 0;
@@ -330,7 +330,7 @@ margin-top:120px;
   border: 0 none;
   color: #666666;
   float: left;
-  font-family: Calibri;
+  font-family: 'Raleway';
   font-size: 15px;
   height: 36px;
   margin: 0;
@@ -348,7 +348,7 @@ margin-top:120px;
   text-indent: -99999em;
   width: 36px;
   border: 0px;
-  
+
 }
 .main-logo-a
 {
@@ -361,14 +361,14 @@ margin-top:120px;
 
 .menu-a
 {
-	font-size: 18px !important;
-	font-family: Calibri !important;
+	font-size: 14px !important;
+	font-family: 'Raleway' !important;
   color: #2C99CD !important;
   padding-left: 10px !important;
   padding-bottom: 5px !important;
   padding-top: 5px !important;
   padding-right: 10px !important;
-  
+
 }
 
 .menu-a-active
@@ -381,7 +381,7 @@ margin-top:120px;
 	/* float: right; */
 	border-radius: 10px;
  	margin-left: 20px;
-	margin-right: 20px; 
+	margin-right: 20px;
 }
 
 .menu-li:HOVER
@@ -391,7 +391,7 @@ margin-top:120px;
 
 .menu-a:HOVER
 {
-	color: white !important;	
+	color: white !important;
 }
 .menu-li-active
 {
@@ -401,7 +401,7 @@ margin-top:120px;
 .menu-div
 {
 	/* margin-top: 30px; */
-	
+
 }
 
 .menu-ul
@@ -432,30 +432,30 @@ margin-top:120px;
 }
 
 @media only screen and (max-width: 400px) {
-	
+
 	.main-logo-a
 	{
 		width: 60%;
 	}
-	
+
 	.custom-toggle
 	{
 		margin-bottom: 0px !important;
 		margin-top: 12% !important;
 	}
-	
-	
+
+
 /* 	.menu-div
 	{
 		margin-top: 30px !important;
 	} */
-	
+
 }
 
 
 
-@media only screen and (min-width: 401px) and (max-width: 523px) { 
-   
+@media only screen and (min-width: 401px) and (max-width: 523px) {
+
 /*    .menu-div
 	{
 		margin-top: 30px !important;
@@ -463,14 +463,14 @@ margin-top:120px;
 }
 
 @media only screen and (max-width: 496px) {
-	
+
 	.featured-labs-div
 	{
 		background: none !important;
 	}
 }
 
-@media only screen and (max-width: 540px) { 
+@media only screen and (max-width: 540px) {
 	.broad-labs-empty-div
 	{
 		display: none;
@@ -482,7 +482,7 @@ margin-top:120px;
 }
 
 @media only screen and (min-width: 401px) and (max-width: 767px) {
- 
+
  .main-logo
    {
    		width: 70%;
@@ -490,42 +490,42 @@ margin-top:120px;
 }
 
 @media only screen and (max-width: 767px) {
-   
+
    .menu-ul
 	{
 		margin-top: 0px !important;
 	}
-	
+
 	.menu-li-active
 	{
 		  background-color: white !important;
 	}
-	
+
 	.menu-a-active
 	{
 		color: #2C99CE !important;
 	}
-	
+
 	.search-ul
 	{
 		display: none !important;
 	}
-	
 
-   
+
+
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) { 
+@media only screen and (min-width: 768px) and (max-width: 991px) {
     .menu-a
 	{
 		font-size: 1.4em !important;
 	}
-	
+
 	.main-logo
 	{
 		width: 70%;
 	}
-	
+
 	.banner-text-small
 	 {
 		font-size: 1.2em !important;
@@ -535,26 +535,26 @@ margin-top:120px;
 	{
 		font-size: 1.7em !important;
 	}
-	
+
 	.banner-text-big
 	{
 		font-size: 2.0em !important;
 	}
-	
+
 }
 
-@media only screen and (max-width: 991px) { 
+@media only screen and (max-width: 991px) {
 	.menu-ul
 	{
 		margin-top: 30px;
 	}
-	
+
 	.search-textbox
 	{
 		width: 150px;
 		font-size: 0.9em;
 	}
-	
+
 	.menu-li
 	{
 		margin-left: 10px;
@@ -567,29 +567,28 @@ margin-top:120px;
 	.footer-div
 	{
 	background-size: cover !important;
-	position:absolute; bottom:0;
 	 }
-	 
+
 	 .lab-list-col-10
 	 {
 	 	/* background: none !important; */
 	 	overflow:hidden;
 	 }
-	 
+
 	.featured-labs-main-div
 	{
-		margin-top: -35px !important;	
+		margin-top: -35px !important;
 	}
 }
 
 
-@media only screen and (min-width: 992px) and (max-width: 1199px) { 
- 
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
 }
 
 
 /*====================new grid================================*/
-@media only screen and (min-width: 992px) { 
+@media only screen and (min-width: 992px) {
 	.col-md-2-5
 	{
 		width: 20%;
@@ -597,7 +596,7 @@ margin-top:120px;
 	}
 }
 
-@media only screen and (max-width: 991px) { 
+@media only screen and (max-width: 991px) {
 	.col-md-2-5
 	{
 		width: 33.33%;
@@ -610,7 +609,7 @@ margin-top:120px;
 	}
 }
 
-@media only screen and (max-width: 767px) { 
+@media only screen and (max-width: 767px) {
 	.col-md-2-5
 	{
 		width: 50%;
@@ -618,7 +617,7 @@ margin-top:120px;
 	}
 }
 
-@media only screen and (max-width: 540px) { 
+@media only screen and (max-width: 540px) {
 	.col-md-2-5
 	{
 		width: 100%;
@@ -681,7 +680,7 @@ margin-top:120px;
 }
 .col-md-2-5-1-l:HOVER, .col-md-2-5-1-withbg:HOVER
 {
-		background-color: #e4e4e4 !important;	
+		background-color: #e4e4e4 !important;
 }
 
 .border-right-green-dotted
@@ -691,7 +690,11 @@ margin-top:120px;
 	 border-right-color: #678f48;
 	 min-height: 115px;
 }
-
+.border-right-green-dotted a{
+	padding-left: 10px;
+	display: block;
+	margin-bottom: 10px;
+}
 a:focus
 {
 	color: #72AB44 !important;
@@ -699,14 +702,14 @@ a:focus
 
 .featured-labs
 {
-	min-height: 208px !important;
+	min-height: 190px !important;
 }
 /*========================font classes=======================*/
 .text-h2-lightblue
 {
 	color: #2C99CE;
 	font-size: 1.8em;
-	
+
 }
 
 .text-a-lightgreen
@@ -745,7 +748,7 @@ a:focus
 .text-h3-darkblue
 {
 	color: #3e6389;
-	font-size: 1.4em; 	
+	font-size: 1.4em;
 }
 
 .text-normal-gray-small
@@ -778,7 +781,7 @@ font-size: 30px;
 
 .featured-labs-main-div
 {
-	margin-top: -50px;	
+	margin-top: -50px;
 }
 
 .nounderline
@@ -818,32 +821,32 @@ font-size: 30px;
 .owl-theme .owl-controls .owl-buttons div {
   padding: 5px 9px;
 }
- 
+
 .owl-theme .owl-buttons i{
   margin-top: 2px;
 }
- 
+
 //To move navigation buttons outside use these settings:
- 
+
 #owl-demo .owl-controls .owl-buttons div, #owl-partner-institutions .owl-controls .owl-buttons div{
   position: absolute;
 }
- 
+
 #owl-demo .owl-controls .owl-buttons .owl-prev{
   left: -45px;
-  top: 55px; 
+  top: 55px;
   position: absolute;
    background: none !important;
 }
- 
+
   #owl-partner-institutions .owl-controls .owl-buttons .owl-prev
   {
   	left: -45px;
-  top: 20px; 
+  top: 20px;
   position: absolute;
    background: none !important;
   }
-  
+
 #owl-demo .owl-controls .owl-buttons .owl-next{
   right: -45px;
   top: 55px;
@@ -892,7 +895,7 @@ font-size: 30px;
 /*Labs page*/
 .sidebar-col-2
 {
-	
+
 }
 
 .lab-list-col-10
@@ -923,7 +926,7 @@ font-size: 30px;
 }
 
 /**********************************************************************************/
- 
+
 .banner-text
 {
 	position: relative;
@@ -948,23 +951,23 @@ font-size: 30px;
 
 .baneer-text-sub-div
 {
-	position: relative; 
-	float: left	
-} 
+	position: relative;
+	float: left
+}
 
 .banner-text-1
 {
-	left: 3.7%; 	
+	left: 3.7%;
 }
 
 .banner-text-2
 {
-	left: 9.6%; 	
+	left: 9.6%;
 }
 
 .banner-text-3
 {
-	left: 15%; 	
+	left: 15%;
 }
 
 .banner-text-4
@@ -976,13 +979,12 @@ font-size: 30px;
 {
   position: absolute;
   top: 140px;
-  left: 42%;	
-  width: 150%;
+  left: 42%;
 }
 
 .banner-caption-text
 {
-	font-size: 2.0em;	
+	font-size: 2.0em;
 	line-height: normal;
 	color: black;
 }
@@ -990,7 +992,7 @@ font-size: 30px;
 
 /*==========================RESPONSIVE+++++++++++++++++++++++++++++++*/
 
-@media only screen and (max-width: 399px) { 
+@media only screen and (max-width: 399px) {
 
 	.banner-text-small
 	 {
@@ -1001,38 +1003,38 @@ font-size: 30px;
 	{
 		font-size: 0.9em !important;
 	}
-	
+
 	.banner-text-big
 	{
-		font-size: 1.1em !important; 
+		font-size: 1.1em !important;
 	}
-	
+
 	.banner-text
 	{
 		top: -21px;
 		letter-spacing: -1.5px;
 	}
-	
+
 	.banner-text-1
 	{
-		left: 1.5%; 	
+		left: 1.5%;
 	}
-	
+
 	.banner-text-2
 	{
-		left: 3.0%; 	
+		left: 3.0%;
 	}
-	
+
 	.banner-text-3
 	{
-		left: 5%; 	
-	}	
-	
+		left: 5%;
+	}
+
 	.banner-text-4
 	{
-		left: 8%; 	
+		left: 8%;
 	}
-	
+
 }
 
 @media only screen and (min-width: 400px) and (max-width: 500px) {
@@ -1045,31 +1047,31 @@ font-size: 30px;
 	{
 		font-size: 1.1em !important;
 	}
-	
+
 	.banner-text-big
 	{
 		font-size: 1.2em !important;
 	}
-	
+
 	.banner-text
 	{
 		top: -24px;
 		letter-spacing: -1px;
 	}
-	
+
 	.banner-text-2
 	{
-		left: 7.0%; 	
-	}	
-	
+		left: 7.0%;
+	}
+
 	.banner-text-3
 	{
-		left: 12%; 	
-	}	
-	
+		left: 12%;
+	}
+
 	.banner-text-4
 	{
-		left: 17%; 	
+		left: 17%;
 	}
 }
 
@@ -1083,7 +1085,7 @@ font-size: 30px;
 	{
 		font-size: 1.2em !important;
 	}
-	
+
 	.banner-text-big
 	{
 		font-size: 1.4em !important;
@@ -1092,144 +1094,144 @@ font-size: 30px;
 	{
 		top: -30px;
 	}
-	
+
 	.banner-text-2
 	{
-		left: 7.0%; 	
-	}	
-	
+		left: 7.0%;
+	}
+
 	.banner-text-3
 	{
-		left: 12%; 	
+		left: 12%;
 	}
-	
+
 	.banner-text-4
 	{
-		left: 17%; 	
-	}	
+		left: 17%;
+	}
 }
 
 
 @media only screen and (max-width: 349px) {
-	
+
 	.banner-caption-text
 	{
-		font-size: 0.5em;	
+		font-size: 0.5em;
 	}
 
 }
 
 @media only screen and (min-width: 350px) and (max-width: 400px) {
-	
+
 	.banner-caption-text
 	{
-		font-size: 0.6em;	
+		font-size: 0.6em;
 	}
 
 }
 
 
 @media only screen and (min-width: 401px) and (max-width: 444px) {
-	
+
 	.banner-caption-text
 	{
-		font-size: 0.7em;	
+		font-size: 0.7em;
 	}
 
 }
 
 
 @media only screen and (min-width: 445px) and (max-width: 609px) {
-	
+
 	.banner-caption-text
 	{
-		font-size: 0.9em;	
+		font-size: 0.9em;
 	}
 
 }
 
 @media only screen and (min-width: 610px) and (max-width: 767px) {
-	
+
 	.banner-caption-text
 	{
-		font-size: 1.1em;	
+		font-size: 1.1em;
 	}
 
 }
 
-@media only screen and (max-width: 767px) { 
+@media only screen and (max-width: 767px) {
 	.banner-caption-div
 	{
 	  position: relative !important;
-	}		
+	}
 }
 
-@media only screen and (max-width: 346px) { 
+@media only screen and (max-width: 346px) {
 	.banner-caption-div
 	{
 	  top: -39px;
 	  left: -32%;
-	}		
+	}
 }
 
-@media only screen and (min-width: 347px) and (max-width: 399px) { 
+@media only screen and (min-width: 347px) and (max-width: 399px) {
 	.banner-caption-div
 	{
 	  top: -43px;
 	  left: -22%;
-	}		
+	}
 }
 
-@media only screen and (min-width: 400px) and (max-width: 444px) { 
+@media only screen and (min-width: 400px) and (max-width: 444px) {
 	.banner-caption-div
 	{
 	  top: -50px;
 	  left: -31%;
-	}		
+	}
 }
 
-@media only screen and (min-width: 445px) and (max-width: 500px) { 
+@media only screen and (min-width: 445px) and (max-width: 500px) {
 	.banner-caption-div
 	{
 	  top: -57px;
 	  left: -23%;
-	}		
+	}
 }
 
-@media only screen and (min-width: 501px) and (max-width: 569px) { 
+@media only screen and (min-width: 501px) and (max-width: 569px) {
 	.banner-caption-div
 	{
 	  top: -65px;
 	  left: -30%;
-	}		
+	}
 }
 
-@media only screen and (min-width: 570px) and (max-width: 639px) { 
+@media only screen and (min-width: 570px) and (max-width: 639px) {
 	.banner-caption-div
 	{
 	  top: -74px;
 	  left: -22%;
-	}		
+	}
 }
 
-@media only screen and (min-width: 640px) and (max-width: 709px) { 
+@media only screen and (min-width: 640px) and (max-width: 709px) {
 	.banner-caption-div
 	{
 	  top: -83px;
 	  left: -16%;
-	}		
+	}
 }
 
-@media only screen and (min-width: 710px) and (max-width: 767px) { 
+@media only screen and (min-width: 710px) and (max-width: 767px) {
 	.banner-caption-div
 	{
 	  top: -92px;
 	  left: -11%;
-	}		
+	}
 }
 
 
-@media only screen and (min-width: 768px) and (max-width: 991px) { 
+@media only screen and (min-width: 768px) and (max-width: 991px) {
 
 	.banner-text-small
 	 {
@@ -1240,96 +1242,95 @@ font-size: 30px;
 	{
 		font-size: 1.7em !important;
 	}
-	
+
 	.banner-text-big
 	{
 		font-size: 2.0em !important;
 	}
-	
+
 	.banner-text
 	{
 		top: -40px;
 	}
-	
+
 	.banner-text-2
 	{
-		left: 7.0%; 	
-	}	
-	
+		left: 7.0%;
+	}
+
 	.banner-text-3
 	{
-		left: 12%; 	
-	}	
-	
+		left: 12%;
+	}
+
 	.banner-text-4
 	{
-		left: 17%; 	
-	}	
-	
+		left: 17%;
+	}
+
 	.banner-caption-text
 	{
-		font-size: 1.5em;	
+		font-size: 1.5em;
 	}
 	.banner-caption-div
 	{
 	  top: 99px;
-	}	
+	}
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1100px) { 
+@media only screen and (min-width: 992px) and (max-width: 1100px) {
 
 	.banner-text
 	{
 		top: -52px;
-	}		
+	}
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1150px) { 
+@media only screen and (min-width: 992px) and (max-width: 1150px) {
 
 	.banner-text-2
 	{
-		left: 7.0%; 	
-	}	
-	
+		left: 7.0%;
+	}
+
 	.banner-text-3
 	{
-		left: 9%; 	
-	}	
-	
+		left: 9%;
+	}
+
 	.banner-text-4
 	{
-		left: 12%; 	
+		left: 12%;
 	}
-	
+
 	.banner-caption-text
 	{
-		font-size: 1.6em;	
+		font-size: 1.6em;
 	}
 	.banner-caption-div
 	{
 	  top: 133px;
-	}	
+	}
 }
 
-@media only screen and (min-width: 1150px) and (max-width: 1275px) { 
+@media only screen and (min-width: 1150px) and (max-width: 1275px) {
 
 	.banner-text-2
 	{
-		left: 8.3%; 	
-	}	
+		left: 8.3%;
+	}
 	.banner-text-3
 	{
-		left: 12%; 	
+		left: 12%;
 	}
-	
+
 	.banner-text-4
 	{
-		left: 17%; 	
-	}	
-	
+		left: 17%;
+	}
+
 	.banner-caption-text
 	{
-		font-size: 1.8em;	
+		font-size: 1.8em;
 	}
 }
-
