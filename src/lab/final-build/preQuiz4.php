@@ -239,6 +239,7 @@ div.panel3
 </ol>
 <br />
 <input type="button" onClick="checkQuiz()" value="Check Quiz"><br><br>
+<input type="button" value="Reset" onClick="document.quiz.reset()">
 <hr>
 <textarea cols="80" rows="10" name="output"></textarea><br>
 </form>
