@@ -93,16 +93,58 @@
 					<div class="row">
 						<div class="col-md-2 sidebar-col-2">
 						<!--edit1-->
-<a href="Introduction.html?domain=Computer Science & Engineering&lab=VLSI LAB" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;">Introduction</h3></a><a href="Objective.html?domain=Computer Science & Engineering&lab=VLSI LAB" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;">Objective</h3></a><a href="Theory.html?domain=Computer Science & Engineering&lab=VLSI LAB" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;">Theory</h3></a><a href="Procedure.html?domain=Computer Science & Engineering&lab=VLSI LAB" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;">Procedure</h3></a><a href="Manual.html?domain=Computer Science & Engineering&lab=VLSI LAB" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;">Manual</h3></a><a href="Simulator.html?domain=Computer Science & Engineering&lab=VLSI LAB" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;">Simulator</h3></a><a href="Quiz.html?domain=Computer Science & Engineering&lab=VLSI LAB" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;">Quiz</h3></a><a href="References.html?domain=Computer Science & Engineering&lab=VLSI LAB" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;">References</h3></a><a href="Feedback.html?domain=Computer Science & Engineering&lab=VLSI LAB" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;">Feedback</h3></a>					</div>
+<a href="Introduction.html?domain=Computer Science & Engineering&lab=VLSI LAB" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;">Introduction</h3></a><a href="Objective.html?domain=Computer Science & Engineering&lab=VLSI LAB" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;">Objective</h3></a><a href="Theory.html?domain=Computer Science & Engineering&lab=VLSI LAB" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;">Theory</h3></a><a href="Procedure.html?domain=Computer Science & Engineering&lab=VLSI LAB" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;">Procedure</h3></a><a href="Simulator.html?domain=Computer Science & Engineering&lab=VLSI LAB" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;">Simulator</h3></a><a href="Quiz.html?domain=Computer Science & Engineering&lab=VLSI LAB" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;">Quiz</h3></a><a href="References.html?domain=Computer Science & Engineering&lab=VLSI LAB" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;">References</h3></a><a href="Feedback.html?domain=Computer Science & Engineering&lab=VLSI LAB" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;">Feedback</h3></a>						</div>
 						
 						<div class="col-md-10 lab-list-col-10">
 							
 							<!--edit -->
-<h1 class="text-h2-lightblue">Schematic Design Of Transistor Level XOR & XNOR Gate. </h1><div class="content" id="lab-article-section-4-content">
-<h2>XOR</h2>
-<img src="../../xor_procedure.jpg"><br>
-<h2>XNOR</h2>
-<img src="../../xnor_procedure.jpg">
+<h1 class="text-h2-lightblue">Schematic Design Of Pass Transistor Logic & Multiplexer.</h1><div class="content" id="lab-article-section-5-content">
+<form name="quiz">
+<!-- <font size="3"> -->
+<ol>
+<li><b>Multiplex is a ?</b><br>
+   <span id="correct1"><input type="radio" name="q1" value="correct">Combinational Circuit .</span><br>
+   <input type="radio" name="q1" value="wrong">Flip Flop .<br>
+   <input type="radio" name="q1" value="wrong">Sequential Circuit .<br>
+   <input type="radio" name="q1" value="wrong">None of the above .<br>
+
+</li><br />
+
+<li><b> Transmission gate is a ?</b><br>
+   <input type="radio" name="q2" value="wrong">Parallel combination of two NMOS .<br>
+   <input type="radio" name="q2" value="wrong">Series combination of NMOS and PMOS .<br>
+   <span id="correct2"><input type="radio" name="q2" value="correct">Parallel combination of NMOS and PMOS .</span><br>
+   <input type="radio" name="q2" value="wrong">None of the above .<br>
+
+</li><br />
+
+<li><b> Transmission gate is preferred over Complementary CMOS logic  because ____</b><br>
+   <input type="radio" name="q3" value="wrong">Transistor count required to implement a logic function in transmission gate is low .<br>
+   <input type="radio" name="q3" value="wrong">Low Delay .<br>
+   <span id="correct3"><input type="radio" name="q3" value="correct"> Both of them .</span><br>
+   <input type="radio" name="q3" value="wrong">None of the above .<br>
+
+</li><br />
+<li><b> How many 2x1 multiplexer will be require to design 8x1 multiplexer ?</b><br>
+   <input type="radio" name="q4" value="wrong">Three .<br>
+   <span id="correct4"><input type="radio" name="q4" value="correct"></span>Seven .<br>
+   <input type="radio" name="q4" value="wrong">Four .<br>
+   <input type="radio" name="q4" value="wrong">Eight .<br>
+
+</li><br />
+
+<li><b> Multiplexer is also known as:</b><br>
+   <input type="radio" name="q5" value="wrong">Counter .<br>
+   <span id="correct5"><input type="radio" name="q5" value="correct"></span>Data Select .<br>
+   <input type="radio" name="q5" value="wrong">Single Input Many Output .<br>
+   <input type="radio" name="q5" value="wrong">None .<br>
+</ol>
+<br />
+<input type="button" onClick="checkQuiz()" value="Check Quiz"><br><br>
+<input type="button" value="Reset" onClick="window.location.reload();document.quiz.reset();">
+<hr>
+<textarea cols="80" rows="10" name="output"></textarea><br>
+</form>
 
 </div>						</div>
 					</div>
