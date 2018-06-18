@@ -128,7 +128,7 @@
 </li><br />
 <li><b> How many 2x1 multiplexer will be require to design 8x1 multiplexer ?</b><br>
    <input type="radio" name="q4" value="wrong">Three .<br>
-   <span id="correct4"><input type="radio" name="q4" value="correct"></span>Seven .<br>
+   <span id="correct4"><input type="radio" name="q4" value="correct">Seven .</span><br>
    <input type="radio" name="q4" value="wrong">Four .<br>
    <input type="radio" name="q4" value="wrong">Eight .<br>
 
@@ -136,7 +136,7 @@
 
 <li><b> Multiplexer is also known as:</b><br>
    <input type="radio" name="q5" value="wrong">Counter .<br>
-   <span id="correct5"><input type="radio" name="q5" value="correct"></span>Data Select .<br>
+   <span id="correct5"><input type="radio" name="q5" value="correct">Data Select .</span><br>
    <input type="radio" name="q5" value="wrong">Single Input Many Output .<br>
    <input type="radio" name="q5" value="wrong">None .<br>
 </ol>
