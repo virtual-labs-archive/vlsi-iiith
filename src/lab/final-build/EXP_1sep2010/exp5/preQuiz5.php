@@ -130,14 +130,14 @@
 <li><b>A D flip-flop can be made from a _________</b><br>
    <input type="radio" name="q4" value="wrong">JK flip-flop and an inverter .<br>
    <input type="radio" name="q4" value="wrong">RS flip-flop .<br>
-   <span id="correct4"><input type="radio" name="q4" value="correct"></span>RS flip-flop and an inverter .<br>
+   <span id="correct4"><input type="radio" name="q4" value="correct">RS flip-flop and an inverter .</span><br>
    <input type="radio" name="q4" value="wrong">both (a) and (b)..<br>
 
 </li><br />
 
 <li><b> Which of the following flip-flops does not have race around condition ?</b><br>
    <input type="radio" name="q5" value="wrong">JK flip-flops .<br>
-   <span id="correct5"><input type="radio" name="q5" value="correct"></span>D flip-flops .<br>
+    <span id="correct5"><input type="radio" name="q5" value="correct"> flip-flops .</span><br>
    <input type="radio" name="q5" value="wrong">S-R flip-flop converted to J-K flip-flop .<br>
    <input type="radio" name="q5" value="wrong">Master slave JK flip flop.<br>
 </ol>
