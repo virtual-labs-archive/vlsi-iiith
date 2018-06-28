@@ -143,7 +143,7 @@
 </ol>
 <br />
 <input type="button" onClick="checkQuiz()" value="Check Quiz"><br><br>
-<input type="button" value="Reset" onClick="document.quiz.reset()">
+<input type="button" value="Reset" onClick="window.location.reload();document.quiz.reset()">
 <hr>
 <textarea cols="80" rows="10" name="output"></textarea><br>
 </form>
