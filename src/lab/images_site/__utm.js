@@ -63,7 +63,7 @@ var _uRno=new Array();
 //-- **** Don't modify below this point ***
 var _uff,_udh,_udt,_udo="",_uu,_ufns=0,_uns=0,_ur="-",_ufno=0,_ust=0,_ujv="-",_ubd=document,_udl=_ubd.location,_uwv="6.1";
 var _ugifpath2="http://service.urchin.com/__utm.gif";
-if (_udl.protocol=="https:") _ugifpath2="https://service.urchin.com/__utm.gif";
+if (_udl.protocol==="https:") _ugifpath2="https://service.urchin.com/__utm.gif";
 function urchinTracker(page) {
  if (_udl.protocol==="file:") return;
  if (_uff && (!page || page==="")) return;
@@ -136,7 +136,7 @@ function _uInfo(page) {
  if (_uctm && (!page || page==="")) s+=_uCInfo();
  if (_utitle && _ubd.title && _ubd.title!=="") s+="&utmdt="+escape(_ubd.title);
  if (_udl.hostname && _udl.hostname!=="") s+="&utmhn="+escape(_udl.hostname);
- if (!page || page=="") s+="&utmr="+_ur;
+ if (!page || page==="") s+="&utmr="+_ur;
  s+="&utmp="+pg;
  if (_userv===0 || _userv===2) {
   var i=new Image(1,1);
