@@ -65,8 +65,8 @@ var _uff,_udh,_udt,_udo="",_uu,_ufns=0,_uns=0,_ur="-",_ufno=0,_ust=0,_ujv="-",_u
 var _ugifpath2="http://service.urchin.com/__utm.gif";
 if (_udl.protocol=="https:") _ugifpath2="https://service.urchin.com/__utm.gif";
 function urchinTracker(page) {
- if (_udl.protocol=="file:") return;
- if (_uff && (!page || page=="")) return;
+ if (_udl.protocol==="file:") return;
+ if (_uff && (!page || page==="")) return;
  var a,b,c,v,x="",s="",f=0;
  var nx=" expires=Sun, 18 Jan 2038 00:00:00 GMT;";
  var dc=_ubd.cookie;
@@ -77,24 +77,24 @@ function urchinTracker(page) {
  a=dc.indexOf("__utma="+_udh);
  b=dc.indexOf("__utmb="+_udh);
  c=dc.indexOf("__utmc="+_udh);
- if (_udn && _udn!="") { _udo=" domain="+_udn+";"; }
- if (_utimeout && _utimeout!="") {
+ if (_udn && _udn!=="") { _udo=" domain="+_udn+";"; }
+ if (_utimeout && _utimeout!=="") {
   x=new Date(_udt.getTime()+(_utimeout*1000));
   x=" expires="+x.toGMTString()+";";
  }
  s=_udl.search;
- if(s && s!="" && s.indexOf("__utma=")>=0) {
+ if(s && s!=="" && s.indexOf("__utma=")>=0) {
   a=_uGC(s,"__utma=","&");
   b=_uGC(s,"__utmb=","&");
   c=_uGC(s,"__utmc=","&");
-  if (a!="-" && b!="-" && c!="-") f=1;
-  else if(a!="-") f=2;
+  if (a!=="-" && b!="-" && c!="-") f=1;
+  else if(a!=="-") f=2;
  }
- if(f==1) {
+ if(f===1) {
   _ubd.cookie="__utma="+a+"; path=/;"+nx;
   _ubd.cookie="__utmb="+b+"; path=/;"+x;
   _ubd.cookie="__utmc="+c+"; path=/;";
- } else if (f==2) {
+ } else if (f===2) {
   a=_uFixA(s,"&",_ust);
   _ubd.cookie="__utma="+a+"; path=/;"+nx;
   _ubd.cookie="__utmb="+_udh+"; path=/;"+x;
@@ -110,8 +110,8 @@ function urchinTracker(page) {
   _ubd.cookie="__utmc="+_udh+"; path=/;"+_udo;
   _ufns=1;
  }
- if (s && s!="" && s.indexOf("__utmv=")>=0) {
-  if ((v=_uGC(s,"__utmv=","&"))!="-") {
+ if (s && s!=="" && s.indexOf("__utmv=")>=0) {
+  if ((v=_uGC(s,"__utmv=","&"))!=="-") {
    _ubd.cookie="__utmv="+unescape(v)+"; path=/;"+nx+_udo;
   }
  }
@@ -123,27 +123,27 @@ function urchinTracker(page) {
 urchinTracker();
 function _uInfo(page) {
  var p,s="",pg=_udl.pathname+_udl.search;
- if (page && page!="") pg=escape(page);
+ if (page && page!=="") pg=escape(page);
  _ur=_ubd.referrer;
- if (!_ur || _ur=="") { _ur="-"; }
+ if (!_ur || _ur==="") { _ur="-"; }
  else {
   p=_ur.indexOf(_ubd.domain);
   if ((p>=0) && (p<=8)) { _ur="0"; }
-  if (_ur.indexOf("[")==0 && _ur.lastIndexOf("]")==(_ur.length-1)) { _ur="-"; }
+  if (_ur.indexOf("[")===0 && _ur.lastIndexOf("]")===(_ur.length-1)) { _ur="-"; }
  }
  s+="&utmn="+_uu;
  if (_ufsc) s+=_uBInfo(page);
- if (_uctm && (!page || page=="")) s+=_uCInfo();
- if (_utitle && _ubd.title && _ubd.title!="") s+="&utmdt="+escape(_ubd.title);
- if (_udl.hostname && _udl.hostname!="") s+="&utmhn="+escape(_udl.hostname);
+ if (_uctm && (!page || page==="")) s+=_uCInfo();
+ if (_utitle && _ubd.title && _ubd.title!=="") s+="&utmdt="+escape(_ubd.title);
+ if (_udl.hostname && _udl.hostname!=="") s+="&utmhn="+escape(_udl.hostname);
  if (!page || page=="") s+="&utmr="+_ur;
  s+="&utmp="+pg;
- if (_userv==0 || _userv==2) {
+ if (_userv===0 || _userv===2) {
   var i=new Image(1,1);
   i.src=_ugifpath+"?"+"utmwv="+_uwv+s;
   i.onload=function() {_uVoid();}
  }
- if (_userv==1 || _userv==2) {
+ if (_userv===1 || _userv===2) {
   var i2=new Image(1,1);
   i2.src=_ugifpath2+"?"+"utmwv="+_uwv+s+"&utmac="+_uacct+"&utmcc="+_uGCS();
   i2.onload=function() { _uVoid(); }
