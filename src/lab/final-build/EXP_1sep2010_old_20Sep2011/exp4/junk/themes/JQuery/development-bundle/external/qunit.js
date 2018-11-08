@@ -455,13 +455,15 @@ extend(QUnit, {
 						} else {
 								return "number";
 						}
-				case 'String':
-				case 'Boolean':
-				case 'Array':
-				case 'Date':
-				case 'RegExp':
+						break;
+				case 'String': break;
+				case 'Boolean': break;
+				case 'Array':	break;
+				case 'Date': 	break;
+				case 'RegExp':	break;
 				case 'Function':
 						return type.toLowerCase();
+						break;
 		}
 		if (typeof obj === "object") {
 				return "object";
@@ -639,11 +641,17 @@ function escapeHtml(s) {
 	return s.replace(/[\&"<>\\]/g, function(s) {
 		switch(s) {
 			case "&": return "&amp;";
+					break;
 			case "\\": return "\\\\";
+					break;
 			case '"': return '\"';
+					break;
 			case "<": return "&lt;";
+					break;
 			case ">": return "&gt;";
+					break;
 			default: return s;
+					break;
 		}
 	});
 }
