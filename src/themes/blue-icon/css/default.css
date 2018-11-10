@@ -225,7 +225,7 @@ clear: both; visibility: hidden; }
   * { background: transparent !important; 
 color: #444 ; text-shadow: none; }
 
-  a, a:visited { color: #444 !important; 
+  a, a:visited { color: #444 ; 
           text-decoration: underline; }
 
   a:after { content: " (" attr(href) ")"; } 
