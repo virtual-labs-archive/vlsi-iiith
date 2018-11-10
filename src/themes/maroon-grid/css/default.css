@@ -222,7 +222,7 @@ clear: both; visibility: hidden; }
  www.phpied.com/delay-loading-your-print-css/ 
 */
 @media print {
-  * { background: transparent !important; 
+  * { background: transparent; 
 color: #444 ; text-shadow: none; }
 
   a, a:visited { color: #444 ; 
