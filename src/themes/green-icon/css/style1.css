@@ -106,7 +106,7 @@ a.active {
 	overflow: visible;
 	margin-left: 0px !important;
 	padding-bottom: 10px ;
-	padding-top: 10px !important;
+	padding-top: 10px ;
 }
 
 .menu-a
@@ -136,12 +136,12 @@ a.active {
 
 .menu-li:HOVER
 {
-	background-color: #77BB41 !important;
+	background-color: #77BB41 ;
 }
 
 .menu-a:HOVER
 {
-	color: white !important;	
+	color: white ;	
 }
 .menu-li-active
 {
@@ -177,7 +177,7 @@ a.active {
 	.custom-toggle
 	{
 		margin-bottom: 0px !important;
-		margin-top: 27px !important;
+		margin-top: 27px ;
 	}
 }
 
@@ -190,7 +190,7 @@ a.active {
 	
 	.custom-toggle
 	{
-		margin-bottom: 0px !important;
+		margin-bottom: 0px ;
 		margin-top: 12% ;
 	}
 	
@@ -248,17 +248,17 @@ a.active {
 	
 	.menu-li-active
 	{
-		  background-color: white !important;
+		  background-color: white ;
 	}
 	
 	.menu-a-active
 	{
-		color: #2C99CE !important;
+		color: #2C99CE ;
 	}
 	
 	.search-ul
 	{
-		display: none !important;
+		display: none ;
 	}
 	
 
@@ -411,7 +411,7 @@ a.active {
 {
 	margin-left: 0px ;
 	margin-right: 0px ;
-	padding-left: 15px !important;
+	padding-left: 15px ;
 }
 .border-bottom-img
 {
@@ -540,7 +540,7 @@ a:focus
 
 .nounderline:HOVER
 {
-	text-decoration: none !important;
+	text-decoration: none ;
 }
 .text-normal-gray-medium
 {
@@ -839,12 +839,12 @@ a:focus
 
 	.banner-text-medium
 	{
-		font-size: 1.2em !important;
+		font-size: 1.2em ;
 	}
 	
 	.banner-text-big
 	{
-		font-size: 1.4em !important;
+		font-size: 1.4em ;
 	}
 	.banner-text
 	{
