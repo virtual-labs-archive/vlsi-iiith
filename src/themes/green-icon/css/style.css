@@ -364,10 +364,10 @@ margin-top:120px;
 	font-size: 14px !important;
 	font-family: 'Raleway' ;
   color: #2C99CD !important;
-  padding-left: 10px !important;
+  padding-left: 10px ;
   padding-bottom: 5px !important;
   padding-top: 5px !important;
-  padding-right: 10px !important;
+  padding-right: 10px ;
 
 }
 
@@ -426,7 +426,7 @@ margin-top:120px;
 
 	.custom-toggle
 	{
-		margin-bottom: 0px !important;
+		margin-bottom: 0px ;
 		margin-top: 27px !important;
 	}
 }
@@ -441,7 +441,7 @@ margin-top:120px;
 	.custom-toggle
 	{
 		margin-bottom: 0px !important;
-		margin-top: 12% !important;
+		margin-top: 12% ;
 	}
 
 
@@ -466,7 +466,7 @@ margin-top:120px;
 
 	.featured-labs-div
 	{
-		background: none !important;
+		background: none ;
 	}
 }
 
@@ -493,7 +493,7 @@ margin-top:120px;
 
    .menu-ul
 	{
-		margin-top: 0px !important;
+		margin-top: 0px ;
 	}
 
 	.menu-li-active
@@ -577,7 +577,7 @@ margin-top:120px;
 
 	.featured-labs-main-div
 	{
-		margin-top: -35px !important;
+		margin-top: -35px ;
 	}
 }
 
@@ -996,7 +996,7 @@ font-size: 30px;
 
 	.banner-text-small
 	 {
-		font-size: 0.8em !important;
+		font-size: 0.8em ;
   	 }
 
 	.banner-text-medium
@@ -1245,7 +1245,7 @@ font-size: 30px;
 
 	.banner-text-big
 	{
-		font-size: 2.0em !important;
+		font-size: 2.0em;
 	}
 
 	.banner-text
