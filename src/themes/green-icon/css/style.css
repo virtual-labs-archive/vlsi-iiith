@@ -112,7 +112,7 @@ background: #FFF1AF;
 .container-fluid .calender  tbody td.hilite {
 padding: 1px 1px 1px 1px;
 background:#444 ;
-color:#fff !important;
+color:#fff ;
 }
 
 .container-fluid .calender  tbody td.active {
@@ -355,14 +355,14 @@ margin-top:120px;
 	height: auto;
 	overflow: visible;
 	margin-left: 0px !important;
-	padding-bottom: 10px !important;
+	padding-bottom: 10px ;
 	padding-top: 10px ;
 }
 
 .menu-a
 {
 	font-size: 14px !important;
-	font-family: 'Raleway' !important;
+	font-family: 'Raleway' ;
   color: #2C99CD !important;
   padding-left: 10px !important;
   padding-bottom: 5px !important;
@@ -373,7 +373,7 @@ margin-top:120px;
 
 .menu-a-active
 {
-	color: white !important;
+	color: white ;
 }
 
 .menu-li
@@ -386,7 +386,7 @@ margin-top:120px;
 
 .menu-li:HOVER
 {
-	background-color: #77BB41 !important;
+	background-color: #77BB41 ;
 }
 
 .menu-a:HOVER
@@ -498,7 +498,7 @@ margin-top:120px;
 
 	.menu-li-active
 	{
-		  background-color: white !important;
+		  background-color: white ;
 	}
 
 	.menu-a-active
@@ -518,7 +518,7 @@ margin-top:120px;
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .menu-a
 	{
-		font-size: 1.4em !important;
+		font-size: 1.4em ;
 	}
 
 	.main-logo
@@ -697,7 +697,7 @@ margin-top:120px;
 }
 a:focus
 {
-	color: #72AB44 !important;
+	color: #72AB44 ;
 }
 
 .featured-labs
@@ -906,7 +906,7 @@ font-size: 30px;
 }
 
 .sidebar-a:HOVER, .text-h3-darkblue:HOVER {
-	color: #ff6600 !important;
+	color: #ff6600 ;
 }
 
 .lab-list-row-div
