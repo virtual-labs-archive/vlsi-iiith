@@ -112,10 +112,10 @@ a.active {
 .menu-a
 {
 	font-size: 18px !important;
-	font-family: Calibri !important;
-  color: #2C99CD !important;
+	font-family: Calibri ;
+  color: #2C99CD ;
   padding-left: 10px !important;
-  padding-bottom: 5px !important;
+  padding-bottom: 5px ;
   padding-top: 5px !important;
   padding-right: 10px ;
   
@@ -312,7 +312,7 @@ a.active {
 	}
 	.aboutus-col-8
 	{
-		padding-right: 15px !important;
+		padding-right: 15px ;
 	}
 	.footer-div
 	{
@@ -326,7 +326,7 @@ a.active {
 	 
 	.featured-labs-main-div
 	{
-		margin-top: -35px !important;	
+		margin-top: -35px ;	
 	}
 }
 
@@ -444,7 +444,7 @@ a.active {
 
 a:focus
 {
-	color: #72AB44 !important;
+	color: #72AB44 ;
 }
 
 .featured-labs
@@ -752,7 +752,7 @@ a:focus
 
 	.banner-text-small
 	 {
-		font-size: 0.8em !important;
+		font-size: 0.8em ;
   	 }
 
 	.banner-text-medium
@@ -834,7 +834,7 @@ a:focus
 @media only screen and (min-width: 501px) and (max-width: 767px) {
 	.banner-text-small
 	 {
-		font-size: 0.9em !important;
+		font-size: 0.9em ;
   	 }
 
 	.banner-text-medium
