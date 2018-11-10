@@ -111,7 +111,7 @@ a.active {
 
 .menu-a
 {
-	font-size: 18px !important;
+	font-size: 18px ;
 	font-family: Calibri ;
   color: #2C99CD ;
   padding-left: 10px ;
@@ -227,7 +227,7 @@ a.active {
 	}
 	.border-right-green-dotted
 	{
-		margin-top: 60px !important;
+		margin-top: 60px ;
 	}
 }
 
@@ -316,7 +316,7 @@ a.active {
 	}
 	.footer-div
 	{
-	background-size: cover !important;
+	background-size: cover ;
 	 }
 	 
 	 .lab-list-col-10
@@ -600,7 +600,7 @@ a:focus
   right: -45px;
   top: 55px;
   position: absolute;
-   background: none !important;
+   background: none ;
 }
 
 #owl-partner-institutions .owl-controls .owl-buttons .owl-next
@@ -655,7 +655,7 @@ a:focus
 }
 
 .sidebar-a:HOVER, .text-h3-darkblue:HOVER {
-	color: #ff6600 !important;
+	color: #ff6600 ;
 }
 
 .lab-list-row-div
