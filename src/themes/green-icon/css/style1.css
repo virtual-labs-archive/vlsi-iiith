@@ -117,7 +117,7 @@ a.active {
   padding-left: 10px !important;
   padding-bottom: 5px !important;
   padding-top: 5px !important;
-  padding-right: 10px !important;
+  padding-right: 10px ;
   
 }
 
@@ -191,7 +191,7 @@ a.active {
 	.custom-toggle
 	{
 		margin-bottom: 0px !important;
-		margin-top: 12% !important;
+		margin-top: 12% ;
 	}
 	
 	
@@ -409,8 +409,8 @@ a.active {
 
 .featured-labs-div
 {
-	margin-left: 0px !important;
-	margin-right: 0px !important;
+	margin-left: 0px ;
+	margin-right: 0px ;
 	padding-left: 15px !important;
 }
 .border-bottom-img
@@ -918,7 +918,7 @@ a:focus
 @media only screen and (max-width: 767px) { 
 	.banner-caption-div
 	{
-	  position: relative !important;
+	  position: relative ;
 	}		
 }
 
