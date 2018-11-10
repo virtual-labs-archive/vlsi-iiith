@@ -111,13 +111,13 @@ background: #FFF1AF;
 
 .container-fluid .calender  tbody td.hilite {
 padding: 1px 1px 1px 1px;
-background:#444 !important;
+background:#444 ;
 color:#fff !important;
 }
 
 .container-fluid .calender  tbody td.active {
 color:#fff;
-background: #529214 !important;
+background: #529214;
 padding: 2px 2px 0px 2px;
 }
 
@@ -125,7 +125,7 @@ padding: 2px 2px 0px 2px;
 font-weight: bold;
 border: 1px solid #888;
 padding: 1px 1px 1px 1px;
-background: #f5f5f5 !important;
+background: #f5f5f5;
 color: #222 !important;
 }
 
@@ -356,7 +356,7 @@ margin-top:120px;
 	overflow: visible;
 	margin-left: 0px !important;
 	padding-bottom: 10px !important;
-	padding-top: 10px !important;
+	padding-top: 10px ;
 }
 
 .menu-a
@@ -562,11 +562,11 @@ margin-top:120px;
 	}
 	.aboutus-col-8
 	{
-		padding-right: 15px !important;
+		padding-right: 15px ;
 	}
 	.footer-div
 	{
-	background-size: cover !important;
+	background-size: cover ;
 	 }
 
 	 .lab-list-col-10
@@ -659,8 +659,8 @@ margin-top:120px;
 .featured-labs-div
 {
 	margin-left: 0px !important;
-	margin-right: 0px !important;
-	padding-left: 15px !important;
+	margin-right: 0px ;
+	padding-left: 15px ;
 }
 .border-bottom-img
 {
@@ -791,7 +791,7 @@ font-size: 30px;
 
 .nounderline:HOVER
 {
-	text-decoration: none !important;
+	text-decoration: none;
 }
 .text-normal-gray-medium
 {
@@ -1006,7 +1006,7 @@ font-size: 30px;
 
 	.banner-text-big
 	{
-		font-size: 1.1em !important;
+		font-size: 1.1em ;
 	}
 
 	.banner-text
@@ -1040,7 +1040,7 @@ font-size: 30px;
 @media only screen and (min-width: 400px) and (max-width: 500px) {
 	.banner-text-small
 	 {
-		font-size: 0.9em !important;
+		font-size: 0.9em ;
   	 }
 
 	.banner-text-medium
