@@ -105,7 +105,7 @@ a.active {
 	height: auto;
 	overflow: visible;
 	margin-left: 0px !important;
-	padding-bottom: 10px !important;
+	padding-bottom: 10px ;
 	padding-top: 10px !important;
 }
 
@@ -114,9 +114,9 @@ a.active {
 	font-size: 18px !important;
 	font-family: Calibri ;
   color: #2C99CD ;
-  padding-left: 10px !important;
+  padding-left: 10px ;
   padding-bottom: 5px ;
-  padding-top: 5px !important;
+  padding-top: 5px ;
   padding-right: 10px ;
   
 }
@@ -243,7 +243,7 @@ a.active {
    
    .menu-ul
 	{
-		margin-top: 0px !important;
+		margin-top: 0px;
 	}
 	
 	.menu-li-active
@@ -288,7 +288,7 @@ a.active {
 	
 	.banner-text-big
 	{
-		font-size: 2.0em !important;
+		font-size: 2.0em ;
 	}
 	
 }
@@ -431,7 +431,7 @@ a.active {
 }
 .col-md-2-5-1-l:HOVER, .col-md-2-5-1-withbg:HOVER
 {
-		background-color: #e4e4e4 !important;	
+		background-color: #e4e4e4 ;	
 }
 
 .border-right-green-dotted
@@ -449,7 +449,7 @@ a:focus
 
 .featured-labs
 {
-	min-height: 208px !important;
+	min-height: 208px;
 	/*overflow: hidden;
  	text-overflow: ellipsis;
  	display: -webkit-box;
@@ -801,7 +801,7 @@ a:focus
 
 	.banner-text-medium
 	{
-		font-size: 1.1em !important;
+		font-size: 1.1em ;
 	}
 	
 	.banner-text-big
@@ -996,7 +996,7 @@ a:focus
 
 	.banner-text-medium
 	{
-		font-size: 1.7em !important;
+		font-size: 1.7em ;
 	}
 	
 	.banner-text-big
