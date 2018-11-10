@@ -365,8 +365,8 @@ margin-top:120px;
 	font-family: 'Raleway' ;
   color: #2C99CD ;
   padding-left: 10px ;
-  padding-bottom: 5px !important;
-  padding-top: 5px !important;
+  padding-bottom: 5px ;
+  padding-top: 5px ;
   padding-right: 10px ;
 
 }
@@ -427,7 +427,7 @@ margin-top:120px;
 	.custom-toggle
 	{
 		margin-bottom: 0px ;
-		margin-top: 27px !important;
+		margin-top: 27px ;
 	}
 }
 
@@ -503,7 +503,7 @@ margin-top:120px;
 
 	.menu-a-active
 	{
-		color: #2C99CE !important;
+		color: #2C99CE ;
 	}
 
 	.search-ul
@@ -533,7 +533,7 @@ margin-top:120px;
 
 	.banner-text-medium
 	{
-		font-size: 1.7em !important;
+		font-size: 1.7em ;
 	}
 
 	.banner-text-big
@@ -680,7 +680,7 @@ margin-top:120px;
 }
 .col-md-2-5-1-l:HOVER, .col-md-2-5-1-withbg:HOVER
 {
-		background-color: #e4e4e4 !important;
+		background-color: #e4e4e4 ;
 }
 
 .border-right-green-dotted
@@ -702,7 +702,7 @@ a:focus
 
 .featured-labs
 {
-	min-height: 190px !important;
+	min-height: 190px ;
 }
 /*========================font classes=======================*/
 .text-h2-lightblue
@@ -1050,7 +1050,7 @@ font-size: 30px;
 
 	.banner-text-big
 	{
-		font-size: 1.2em !important;
+		font-size: 1.2em ;
 	}
 
 	.banner-text
@@ -1078,17 +1078,17 @@ font-size: 30px;
 @media only screen and (min-width: 501px) and (max-width: 767px) {
 	.banner-text-small
 	 {
-		font-size: 0.9em !important;
+		font-size: 0.9em;
   	 }
 
 	.banner-text-medium
 	{
-		font-size: 1.2em !important;
+		font-size: 1.2em ;
 	}
 
 	.banner-text-big
 	{
-		font-size: 1.4em !important;
+		font-size: 1.4em ;
 	}
 	.banner-text
 	{
@@ -1162,7 +1162,7 @@ font-size: 30px;
 @media only screen and (max-width: 767px) {
 	.banner-caption-div
 	{
-	  position: relative !important;
+	  position: relative ;
 	}
 }
 
