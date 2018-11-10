@@ -203,7 +203,7 @@ button {  width: auto; overflow: visible; }
 /* Hide only visually, but have it available for screenreaders 
    www.webaim.org/techniques/css/invisiblecontent/ 
    Solution from: j.mp/visuallyhidden - Thanks Jonathan Neal!*/
-.visuallyhidden { position:absolute !important;    
+.visuallyhidden { position:absolute;    
   clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
   clip: rect(1px, 1px, 1px, 1px); }
 
@@ -223,7 +223,7 @@ clear: both; visibility: hidden; }
 */
 @media print {
   * { background: transparent !important; 
-color: #444 !important; text-shadow: none; }
+color: #444 ; text-shadow: none; }
 
   a, a:visited { color: #444 !important; 
           text-decoration: underline; }
