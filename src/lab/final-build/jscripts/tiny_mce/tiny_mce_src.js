@@ -4802,7 +4802,7 @@ window.tinymce.dom.Sizzle = Sizzle;
 			if (doc.attachEvent) {
 				doc.attachEvent("onreadystatechange", function() {
 					if (doc.readyState === "complete") {
-						doc.detachEvent("onreadystatechange", arguments.callee);
+						doc.detachEvent("onreadystatechange", function);
 						t._pageInit(win);
 					}
 				});
@@ -4817,7 +4817,7 @@ window.tinymce.dom.Sizzle = Sizzle;
 							// http://javascript.nwbox.com/IEContentLoaded/
 							doc.documentElement.doScroll("left");
 						} catch (ex) {
-							setTimeout(arguments.callee, 0);
+							setTimeout(function, 0);
 							return;
 						}
 

@@ -922,7 +922,7 @@ QUnit.equiv = function () {
             }
 
         // apply transition with (1..n) arguments
-        })(args[0], args[1]) && arguments.callee.apply(this, args.splice(1, args.length -1));
+        })(args[0], args[1]) && function.apply(this, args.splice(1, args.length -1));
     };
 
     return innerEquiv;
