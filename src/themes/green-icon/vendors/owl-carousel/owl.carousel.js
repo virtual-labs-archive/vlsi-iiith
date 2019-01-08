@@ -40,9 +40,9 @@ if (typeof Object.create !== "function") {
                 if (typeof base.options.jsonSuccess === "function") {
                     base.options.jsonSuccess.apply(this, [data]);
                 } else {
-                    for (i in data.owl) {
+                    data.owl.forEach(function(data.owl) {
                         if (data.owl.hasOwnProperty(i)) {
-                            content += data.owl[i].item;
+                            content += data.owl.item;
                         }
                     }
                     base.$elem.html(content);
@@ -233,11 +233,11 @@ if (typeof Object.create !== "function") {
                 //Reorder array by screen size
                 base.options.itemsCustom.sort(function (a, b) {return a[0] - b[0]; });
 
-                for (i = 0; i < base.options.itemsCustom.length; i += 1) {
-                    if (base.options.itemsCustom[i][0] <= width) {
-                        base.options.items = base.options.itemsCustom[i][1];
+                base.options.itemsCustom.forEach(function(base.options.itemsCustom){
+                    if (base.options.itemsCustom <= width) {
+                        base.options.items = base.options.itemsCustom;
                     }
-                }
+                });
 
             } else {
 
@@ -374,19 +374,20 @@ if (typeof Object.create !== "function") {
             base.positionsInArray = [0];
             base.pagesInArray = [];
 
-            for (i = 0; i < base.itemsAmount; i += 1) {
+            //for (i = 0; i < base.itemsAmount; i += 1) {
+              base.$owlItems.forEach(function(data.$owlItems){
                 elWidth += base.itemWidth;
                 base.positionsInArray.push(-elWidth);
 
                 if (base.options.scrollPerPage === true) {
-                    item = $(base.$owlItems[i]);
+                    item = $(base.$owlItems);
                     roundPageNum = item.data("owl-roundPages");
                     if (roundPageNum !== prev) {
-                        base.pagesInArray[prev] = base.positionsInArray[i];
+                        base.pagesInArray.forEach(base.pagesInArray) = base.positionsInArray.forEach(data.positionsInArray);
                         prev = roundPageNum;
                     }
                 }
-            }
+            });
         },
 
         buildControls : function () {
@@ -612,15 +613,15 @@ if (typeof Object.create !== "function") {
             if (base.options.transitionStyle !== false && drag !== "drag" && base.options.items === 1 && base.browser.support3d === true) {
                 base.swapSpeed(0);
                 if (base.browser.support3d === true) {
-                    base.transition3d(base.positionsInArray[position]);
+                    base.transition3d(base.positionsInArray.forEach(base.positionsInArray);
                 } else {
-                    base.css2slide(base.positionsInArray[position], 1);
+                    base.css2slide(base.positionsInArray.forEach(base.positionsInArray), 1);
                 }
                 base.afterGo();
                 base.singleItemTransition();
                 return false;
             }
-            goToPixel = base.positionsInArray[position];
+            goToPixel = base.positionsInArray.forEach(base.positionsInArray;
 
             if (base.browser.support3d === true) {
                 base.isCss3Finish = false;
