@@ -1,5 +1,5 @@
 //highlight color of answer - can change this color to a hex code or recognized color name
-var highlightColor = "#0066cc";
+var highlightColor = "#8AE234";
 
 
 //this should not be changed
