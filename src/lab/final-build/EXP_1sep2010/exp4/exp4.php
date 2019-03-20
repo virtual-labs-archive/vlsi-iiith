@@ -137,7 +137,7 @@ $(document).ready(function() {
 			<center> <font size="4" color="#E51A1A">  ENTER YOUR CODE HERE   </font>
 					<input type="button" name="submit" value="SIMULATE" onclick="loadXMLDoc()">
 					<br><br>
-					<textarea name="txt" id="code"  cols="65" rows="30"> Write Your Code Here and Delete this Line  </textarea>
+					<textarea name="txt" id="code"  cols="65" rows="30" placeholder="Write Your Code Here and Delete this Line"</textarea>
 			</center>
 		 </div>
 <!-- ------------------------------------------------------------------------------------------------  --!>
