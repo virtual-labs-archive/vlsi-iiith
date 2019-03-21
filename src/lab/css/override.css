@@ -4,3 +4,8 @@ span.term {
    font-weight: bold;
    color: #556B2F;
 }
+
+img.diagram {
+    width: 65%;
+    height: 65%;
+}
