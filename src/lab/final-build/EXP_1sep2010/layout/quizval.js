@@ -43,7 +43,7 @@ function checkQuiz() {
 
 
   //highlight correct answers from radio button groups...use span id name
-   highlightCorrectButton("correct1");
+ /*  highlightCorrectButton("correct1");
    highlightCorrectButton("correct2");
    highlightCorrectButton("correct3");
    highlightCorrectButton("correct4");
@@ -55,7 +55,7 @@ function checkQuiz() {
    highlightCorrectButton("correct7");
    highlightCorrectButton("correct8");
    highlightCorrectButton("correct9");
-   highlightCorrectButton("correct10");
+   highlightCorrectButton("correct10"); */
 
    //produce output in textarea.
    document.quiz.output.value =
