@@ -1,0 +1,858 @@
+*{margin:0;padding:0;}
+
+
+h1, h2, h3 {
+	margin-top: 0;
+	color: #8C0209;
+}
+
+h1 {
+	font-size: 1.6em;
+	font-weight: normal;
+}
+
+h2 {
+	font-size: 1.6em;
+}
+
+h3 {
+	font-size: 1em;
+}
+
+/*ul {
+}
+*/
+a {
+	text-decoration: none;
+	color: #3F5C10;
+}
+
+a:hover {
+	border-bottom: none;
+}
+
+a img {
+	border: none;
+}
+
+img.left {
+	float: left;
+	margin: 0 20px 0 0;
+}
+
+img.right {
+	float: right;
+	margin: 0 0 0 20px;
+	color: #FFF;
+}
+#header {
+	margin: 0 auto;
+	/*
+	margin-top:88px;
+	margin-bottom:30px;*/
+	width: 1024px;
+	/*height:55px;*/
+	text-align: center;
+	background:url(../images/header-blue.gif) no-repeat left top;
+	/*background: url(../images/header.jpg) no-repeat left top;*/
+	height:50px;
+/*	padding-bottom:55px !important;
+	padding-bottom:25px;*/
+
+}
+#header_main {
+	margin: 0 auto;
+	/*
+	margin-top:88px;
+	margin-bottom:30px;*/
+	width: 1024px;
+	/*height:55px;*/
+	text-align: center;
+	background:url(../images/header_01.jpg) no-repeat left top;
+	/*background: url(../images/header.jpg) no-repeat left top;*/
+	height:99px;
+/*	padding-bottom:55px !important;
+	padding-bottom:25px;*/
+
+}
+#header_olab {
+	margin: 0 auto;
+	/*
+	margin-top:88px;
+	margin-bottom:30px;*/
+	width: 1024px;
+	/*height:55px;*/
+	text-align: center;
+	background: url(../images/amrita-olab.jpg) no-repeat left top;
+	height:135px;
+/*	padding-bottom:55px !important;
+	padding-bottom:25px;*/
+
+}
+/* Header */
+
+#logo {
+	margin: 0 auto;
+}
+
+#logo h1, #logo p {
+	float: left;
+	margin: 0px;
+}
+
+#logo span {
+	color: #FFFFFF;
+}
+
+#logo h1 {
+	padding-top: 40px;
+	letter-spacing: -1px;
+	text-transform: lowercase;
+	font-weight: normal;
+	font-size: 5em;
+}
+
+#logo p {
+	display: block;
+	padding-top: 80px;
+	text-transform: uppercase;
+	font-size: 10px;
+	color: #FFFFFF;
+}
+
+#logo a {
+	border: none;
+	text-decoration: none;
+	color:#000000;
+}
+
+/* menuTop */
+
+#menu {
+	width: 960px;
+	margin: 0 auto;
+	padding: 0;
+	height: 50px;
+	background: #BF3503;
+}
+
+#menu ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#menu li {
+	display: inline;
+}
+
+#menu a {
+	display: block;
+	float: left;
+	margin: 1px 0px 0px 0px;
+	padding: 15px 35px 0px 35px;
+	text-decoration: none;
+	text-transform: capitalize;
+	font-size: 12px;
+	color: #FFFFFF;
+}
+
+#menu a:hover {
+	color: #FFFFFF;
+}
+
+#menu .current_page_item a {
+	color: #FFFFFF;
+}
+
+#menu .first {
+	background: none;
+}
+
+/* Wrapper */
+
+#wrapper {
+}
+
+/* Page */
+
+#page {
+	
+	margin: 0 auto;
+/*	background: url(../images/img05.gif) repeat-y left top;
+*/}
+
+#page-bg {
+	
+	background: url(../images/img06.gif) no-repeat left top;
+	
+
+padding: 0px 10px;
+}
+
+/* Latest Post */
+
+#latest-post {
+	padding: 20px;
+	border: 1px solid #E7E7E7;
+}
+
+/* Content */
+
+#content {
+	float: left;
+	width: 440px;
+	padding: 30px 40px 0px 40px;
+}
+.wholePage {
+	width: 1024px;
+	background-color:#FFF;
+	margin: 0 auto;
+		/*padding-bottom: 45px;
+	line-height: 200%;*/
+}
+.post {
+	width: 1024px;
+	background-color:#e3f2fc;
+	margin: 0 auto;
+	margin-top: 0;
+	vertical-align:top;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:12px;
+	/*min-height:500px;*/
+	/*padding-bottom: 45px;
+	line-height: 200%;*/
+}
+.post h1 {
+	font-weight: normal;
+}
+.title {
+	margin: 0px;
+	padding: 0px 50px 0px 25px;
+	letter-spacing: -1px;
+	font-size: 3em;
+	font-weight: normal;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	margin-left:0px;
+	/*background: url(../images/img04.gif) repeat-x left bottom ;*/
+}
+.tableClass{
+	padding-left:20px;
+	padding-right:50px;
+	}
+.title a {
+	border-bottom: none;
+	color: #454545;
+}
+
+.title a:hover {
+}
+
+.byline {
+	background: url(../images/img04.jpg) repeat-x left bottom;
+	padding-bottom: 10px;
+}
+
+.tag {
+	padding: 0 15px;
+}
+
+.entry {
+	position:relative;
+	padding : 0px 2px;
+}
+
+.links {
+	padding: 4px 0px;
+	text-align: right;
+	font-weight: bold;
+}
+
+.links a {
+	border: none;
+}
+
+.links a:hover {
+}
+
+/* Sidebars */
+
+#sidebar1 {
+	float: left;
+}
+
+#sidebar2 {
+	float: right;
+}
+
+.sidebar {
+	float: left;
+	width: 210px;
+	padding: 0;
+	font-size: 12px;
+}
+
+.sidebar ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.sidebar li {
+	padding: 0 0 20px 0;
+}
+
+.sidebar li ul {
+	padding: 10px 0px;
+}
+
+.sidebar li li {
+	margin: 0 20px 0 15px;
+	padding: 8px 0px;
+	background: url(../images/img04.gif) repeat-x left bottom;
+}
+
+
+.sidebar li h2 {
+	height: 34px;
+	margin: 0 0 0 0;
+	padding: 12px 15px 0px 15px;
+	font-size: 20px;
+	font-weight: normal;
+	color: #000000;
+}
+
+.sidebar a {
+}
+
+/* Search */
+
+#searchform {
+	margin: 0;
+	padding: 0 0 0 0;
+}
+
+#searchform br {
+	display: none;
+}
+
+#searchform h2 {
+}
+
+#s {
+	margin: 10px 0px 0 15px;
+	padding: 2px 2px;
+	width: 180px;
+	height: 18px;
+	border: none;
+	background: #FFFFFF;
+	font-size: 10px;
+	color: #000000;
+}
+
+#x {
+	margin: 0;
+	padding: 2px 5px;
+	height: 25px;
+	background: #CA8186;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #CCCCCC;
+}
+/* Calendar */
+
+#calendar_wrap {
+	padding: 0 15px;
+	text-align: center;
+}
+
+#calendar_wrap table {
+	width: 100%;
+}
+
+#calendar_wrap th {
+}
+
+#calendar_wrap td {
+}
+
+#calendar_wrap tfoot td {
+	border: none;
+}
+
+#calendar_wrap tfoot td#prev {
+	text-align: left;
+	font-weight: bold;
+	border: none;
+}
+
+#calendar_wrap tfoot td#prev a {
+	border: none;
+}
+
+#calendar_wrap tfoot td#next {
+	text-align: right;
+	font-weight: bold;
+	border: none;
+}
+
+#calendar_wrap tfoot td#next a {
+	border: none;
+}
+
+/* Footer */
+
+#footer {
+	/*width: 100%;
+	height: 70px;*/
+	margin: 0 auto;
+	background: #161600;
+	text-align:center;
+}
+
+#footer-bg {
+	margin: 0 auto;
+}
+
+#footer p {
+	margin: 0;
+	/*padding: 25px 0 0 0;*/
+	font-size: smaller;
+}
+
+#footer a {
+	color: #E7E7E7;
+}
+
+#footer .link {
+/*	float: right;
+*/}
+
+#footer .copyright {
+/*	float: left;
+*/}
+
+
+.breadcum{
+	font-family: Verdana, Geneva, sans-serif;
+	margin-left:28px;
+	font-size: 9px;
+	color: #666;
+	text-transform: lowercase;
+	}
+
+.postConentPadding{
+	
+	/*padding-left:50px;
+	padding-right:50px;*/
+	background-image:url(../images/content_bg.jpg);
+	}
+
+#tabs {
+	
+	float:center;
+	width:100%;
+	padding-left:10px;
+	font-size:93%;
+	line-height:normal;
+	border-bottom:1px solid #666;
+	margin-bottom:1em; /*margin between menu and rest of page*/
+	overflow:hidden;
+	}
+
+#tabs ul {
+	margin:0;
+	padding:10px 10px 0 0px;
+	list-style:none;
+	
+	}
+
+#tabs li {
+	display:inline;
+	margin:0;
+	padding:0;
+	}
+
+#tabs a {
+	float:left;
+	background:url("../images/left.png") no-repeat left top;
+	margin:0;
+	padding:0 0 0 6px;
+	text-decoration:none;
+	}
+
+#tabs a span {
+	float:left;
+	display:block;
+	background:url("../images/right.png") no-repeat right top;
+	padding:6px 15px 4px 6px;
+	margin-right:2px;
+	color:#FFF;
+	}
+
+/* Commented Backslash Hack hides rule from IE5-Mac \*/
+#tabs a span {float:none;}
+
+/* End IE5-Mac hack */
+#tabs a:hover span {
+	}
+
+#tabs a:hover {
+	background-position:0% -42px;
+	}
+
+#tabs a:hover span {
+	background-position:100% -42px;
+	}
+
+
+
+
+/*for menu bar*/
+
+			
+.menuText {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	color: #333;
+}
+
+/*menu top */
+#menuTop {
+	float: left;
+	list-style: none;
+	margin-left: 10px;
+	padding-left: 10px;
+	width: 50%;
+	padding-top:3px;
+	}
+#menuTop li {
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+#menuTop a {
+	background: url("../images/seperator.gif") bottom right no-repeat;
+	color: #FFF;
+	display: block;
+	float: left;
+	margin: 0;
+	padding: 8px 12px;
+	text-decoration: none;
+
+}
+#menuTop a:hover {
+	background: #02568e url("../images/hover.png") bottom center no-repeat;
+	color: #fff;
+	padding-bottom: 10px;
+	}
+/* olab menu top */	
+#omenuTop {
+	float: left;
+	list-style: none;
+	margin-left: 50px;
+	padding-left: 50px;
+	width: 50%;
+	padding-top:100px;
+	}
+#omenuTop li {
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+#omenuTop a {
+	background: url("../images/seperator.gif") bottom right no-repeat;
+	color: #FFF;
+	display: block;
+	float: left;
+	margin: 0;
+	padding: 8px 12px;
+	text-decoration: none;
+
+}
+#omenuTop a:hover {
+	background: #02568e url("../images/hover.png") bottom center no-repeat;
+	color: #fff;
+	padding-bottom: 10px;
+	}
+
+.searchbox{
+padding-top:8px;
+margin-left:640px;
+/*background:url(../images/search_bg.png) no-repeat bottom;*/
+}
+.search{
+background:none;
+border:none;
+width:160px;
+height:25px;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:12px;
+color:#CCCCCC;
+
+}
+
+
+
+
+/*for home page CSS
+*/
+
+
+/* Tips for Elastic layouts 
+1. Since the elastic layouts overall sizing is based on the user's default fonts size, they are more unpredictable. Used correctly, they are also more accessible for those that need larger fonts size since the line length remains proportionate.
+2. Sizing of divs in this layout are based on the 100% font size in the body element. If you decrease the text size overall by using a font-size: 80% on the body element or the #container, remember that the entire layout will downsize proportionately. You may want to increase the widths of the various divs to compensate for this.
+3. If font sizing is changed in differing amounts on each div instead of on the overall design (ie: #sidebar1 is given a 70% font size and #mainContent is given an 85% font size), this will proportionately change each of the divs overall size. You may want to adjust these divs based on your final font sizing.
+*/
+.twoColElsLt #container { 
+	width: 950px;  /* this width will create a container that will fit in an 800px browser window if text is left at browser default font sizes */
+	background: #FFFFFF;
+	margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
+	border: 0px solid #000000;
+	text-align: left; /* this overrides the text-align: center on the body element. */
+} 
+
+/* Tips for sidebar1:
+1. Be aware that if you set a font-size value on this div, the overall width of the div will be adjusted accordingly.
+2. Since we are working in ems, it's best not to use padding on the sidebar itself. It will be added to the width for standards compliant browsers creating an unknown actual width. 
+3. Space between the side of the div and the elements within it can be created by placing a left and right margin on those elements as seen in the ".twoColElsLt #sidebar1 p" rule.
+*/
+.twoColElsLt #sidebar1 {
+	float: left; 
+	width: 250px; /* since this element is floated, a width must be given */
+	/*background: #EBEBEB;*/ /* the background color will be displayed for the length of the content in the column, but no further */
+	padding: 15px 0; /* top and bottom padding create visual space within this div */
+}
+.twoColElsLt #sidebar1 h3, .twoColElsLt #sidebar1 p {
+	margin-left: 10px; /* the left and right margin should be given to every element that will be placed in the side columns */
+	margin-right: 10px;
+}
+
+/* Tips for mainContent:
+1. If you give this #mainContent div a font-size value different than the #sidebar1 div, the margins of the #mainContent div will be based on its font-size and the width of the #sidebar1 div will be based on its font-size. You may wish to adjust the values of these divs.
+2. The space between the mainContent and sidebar1 is created with the left margin on the mainContent div.  No matter how much content the sidebar1 div contains, the column space will remain. You can remove this left margin if you want the #mainContent div's text to fill the #sidebar1 space when the content in #sidebar1 ends.
+3. To avoid float drop, you may need to test to determine the approximate maximum image/element size since this layout is based on the user's font sizing combined with the values you set. However, if the user has their browser font size set lower than normal, less space will be available in the #mainContent div than you may see on testing.
+4. In the Internet Explorer Conditional Comment below, the zoom property is used to give the mainContent "hasLayout." This avoids several IE-specific bugs that may occur.
+*/
+.twoColElsLt #mainContent {
+ 	margin: 0 1.5em 0 13em; /* the right margin can be given in ems or pixels. It creates the space down the right side of the page. */
+} 
+
+/* Miscellaneous classes for reuse */
+.fltrt { /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class should be placed on a div or break element and should be the final element before the close of a container that should fully contain a float */
+	clear:both;
+    height:0;
+    font-size: 1px;
+    line-height: 0px;
+}
+.sidebarHead {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	font-weight: normal;
+	color: #036;
+}
+.sidebarHr{
+color: #ccc;
+background-color: #ccc;
+height: 1px;
+border: 0;
+  width:98%;
+}
+.featuredCointainer{ width: 250px; display:block}
+.featuredImage { width: 100px; float: left; padding-top:3px;}
+.featuredDescri{ width: 130px; height:90px; float: right;padding-top:3px; font-size:11px; font-family:Verdana, Arial, Helvetica, sans-serif; font-weight:500}
+
+/*for quotes */
+.bquote {
+display: block;
+padding: 0 60px;
+width: 350px;
+}
+.bquote:before, .bquote:after {
+color: #900;
+display: block;
+font-size: 700%;
+width: 50px;
+}
+.bquote:before {
+content: open-quote;
+height: 0;
+margin-left: -0.55em;
+}
+
+.bquote:after {
+content: close-quote;
+height: 50px;
+margin-top: -70px;
+margin-left: 360px;
+}
+/*for quotes ends */
+
+#no_screen{
+display:none;
+}
+
+
+.title-box-round{display:block}
+.title-box-round *{
+  display:block;
+  height:1px;
+  overflow:hidden;
+  font-size:.01em;
+  background:#3B3B3B}
+.title-box-round1{
+  margin-left:3px;
+  margin-right:3px;
+  padding-left:1px;
+  padding-right:1px;
+  border-left:1px solid #aaaaaa;
+  border-right:1px solid #aaaaaa;
+  background:#6c6c6c}
+.title-box-round2{
+  margin-left:1px;
+  margin-right:1px;
+  padding-right:1px;
+  padding-left:1px;
+  border-left:1px solid #ebebeb;
+  border-right:1px solid #ebebeb;
+  background:#606060}
+.title-box-round3{
+  margin-left:1px;
+  margin-right:1px;
+  border-left:1px solid #606060;
+  border-right:1px solid #606060;}
+.title-box-round4{
+  border-left:1px solid #aaaaaa;
+  border-right:1px solid #aaaaaa}
+.title-box-round5{
+  border-left:1px solid #6c6c6c;
+  border-right:1px solid #6c6c6c}
+.title-box-roundfg{
+  background:#3B3B3B}
+
+
+.yellowBox{display:block}
+.yellowBox *{
+  display:block;
+  height:1px;
+  overflow:hidden;
+  font-size:.01em;
+  background:#CF7730;
+  }
+.yellowBox1{
+  margin-left:3px;
+  margin-right:3px;
+  padding-left:1px;
+  padding-right:1px;
+  border-left:1px solid #eac2a2;
+  border-right:1px solid #eac2a2;
+  background:#db9862}
+.yellowBox2{
+  margin-left:1px;
+  margin-right:1px;
+  padding-right:1px;
+  padding-left:1px;
+  border-left:1px solid #faede4;
+  border-right:1px solid #faede4;
+  background:#d89056}
+.yellowBox3{
+  margin-left:1px;
+  margin-right:1px;
+  border-left:1px solid #d89056;
+  border-right:1px solid #d89056;}
+.yellowBox4{
+  border-left:1px solid #eac2a2;
+  border-right:1px solid #eac2a2}
+.yellowBox5{
+  border-left:1px solid #db9862;
+  border-right:1px solid #db9862}
+.yellowBoxfg{
+  background:#CF7730}
+
+
+
+.title-main-page {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	color: #EAEAEA;
+	padding: 3px;
+}
+.subjects {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	font-weight: lighter;
+	color: #47396A;
+	padding-left: 80px;
+}
+.subjects-small {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: lighter;
+	color: #49465E;
+	padding-left: 80px;
+}
+.yellowBoxHead {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #FFF;
+	padding-top: 5px;
+	padding-right: 0px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+}
+.text-yellowBox {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	color: #666;
+	text-align: justify;
+	padding: 5px;
+}
+.featuredTitle {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	font-weight: bolder;
+	color: #333;
+}
+.contentTitle {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 18px;
+	color: #000;
+	font-weight: bold;
+	padding-left:50px;
+	padding-right:50px;
+}
+.contentEquation {
+	font-family: "Courier New", Courier, monospace;
+	font-size: 18px;
+}
+.contentTitleSmall {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 14px;
+	color: #000;
+	font-weight: bold;
+	padding-left:50px;
+	padding-right:50px;
+}
+.content {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	color: #000;
+	text-align: justify;
+	padding-right: 50px;
+	padding-left: 50px;
+	list-style-position: inside;
+	list-style-type: circle;
+}

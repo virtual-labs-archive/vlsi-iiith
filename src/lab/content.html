@@ -1,0 +1,310 @@
+<!-- This file needs to be edited by the lab developer to suit
+their lab rquirements. -->
+
+<!-- Add class="default" to include any element as it is
+specified in default.html. 
+Do not include class="default" to the elements that you want to
+edit -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Very Large Scale Integration Lab</title>
+</head>
+
+<body>
+
+<div id="lab"> <!-- The Lab Document Container-->
+  
+  <!-- The lab Header contains the logo and the name of the lab, 
+  usually displayed on the top of the page-->
+
+  <header id="lab-header">
+    
+    <div id="lab-header-logo" class="logo">
+      <!-- Enclose the logo image of your lab or write it in 
+      text-->
+      <img src="images/logo.jpg" />
+    </div>
+
+    <div id="lab-header-heading" class="heading">
+    <!-- Write the name of your lab and link it to the home page
+    of your lab. -->
+      <a href="index.html">Very Large Scale Integration Lab</a>	
+    </div>
+
+    <!-- Add any additional element or link you want to add to 
+    the lab header, For example : Help (Enclosing them with 
+    suitable div is recommended)-->
+  
+  </header>
+
+
+  <!-- The lab article is the main content area where all the 
+  experiment content sits-->
+  <article id="lab-article">
+
+
+    <!-- The lab article has an header, optional navigational 
+    menu, number of sections, an optional sidebar and a closing 
+    footer-->
+    <header id="lab-article-header">
+      
+      <!-- You can add a welcome message or title of the 
+      experiment enclosed in h1 tag here -->
+      <div id="lab-article-heading" class="heading">
+        Welcome to VLSI lab!
+      </div>
+
+      <!-- Add any additional element if required with proper 
+      enclosing-->
+    </header>
+
+
+    <!-- Navigation menu is useful to organize the view of 
+    multiple sections inside the article-->
+    <nav id="lab-article-navigation" class="default">
+      
+      <!-- The menu will be dynamically generated to contain the 
+      headings of your sections or instead write the menu items 
+      of your choice individually enclosed in <li> tag as shown 
+      below-->
+
+    </nav>
+
+    
+    <!-- All the sections of your lab or experiment can be 
+    enclosed together with a div element as shown below-->
+    <div id="lab-article-sections">
+			
+      <!-- First section of the article-->
+      <section id="lab-article-section-1">
+        <div id="lab-article-section-1-icon" class="icon">
+          <!-- Enclose the icon image for the section. -->
+	  <img src="images/theory.jpg" />
+	</div>
+
+
+        <!-- The heading for the section can be enclosed in a 
+        div tag. -->
+	<div id="lab-article-section-1-heading" class="heading">
+	Introduction
+	</div>
+
+	<!-- Write the section content inside a paragraph 
+	element, You can also include images with <img> tag -->
+	<div id="lab-article-section-1-content" class="content">
+	<p>A single chip sized of few millimeters may have Millions of transistors in it for example a microprocessor is a VLSI device.
+	Very Large Scale Integration (VLSI) is the process of creating integrated circuits by combining large numbers of transistors into a single chip.<br></p>
+	<p><center><img src="./IntroFig1.png" width=300px height=200px /></center></p>
+		<br>
+		<p>This lab provides good understanding and learning opportunity of VLSI designing for users.
+		There are ten experiments in this lab, which covers following aspects of VLSI designing. </p>
+	<br>
+	<p><ul>
+	<li><p>First six experiments provide GUI interface of schematic design and simulation results of various circuits.</p></li><br>
+	<li><p>Seventh experiment provides WEB based Spice code simulation platform. User can learn circuit design using Spice coding.</p></li><br>
+	<li><p>Eighth and ninth experiments provide digital circuit designing using Verilog code for which a web based Verilog simulation 
+	platform is provided. User can test any level of Verilog code in ninth experiment.</p></li><br>
+	<li><p>Tenth experiment provides GUI interface of physical (layout) design of various circuits. By this experiment user can learn design rules 
+	(DRCs) for layout design and can test design rules of their designs.</p></li><br>
+	<ol/><br><br>
+	</p>
+	<center>
+	<img  name="slideImg" src="./images_slide/IntroFig2.png" width="" height="">
+	</center>
+
+	</div>
+	
+      </section>
+		
+
+      <!-- Second section of the article-->
+      <section id="lab-article-section-2">
+        
+        <div id="lab-article-section-2-icon" class="icon">
+          <!-- Enclose the icon image for the section. -->
+	  <img src="images/simulation.jpg" />
+	</div>
+
+
+        <!-- The heading for the section can be enclosed in a 
+        div tag and shown with a <h2> tag -->
+	<div id="lab-article-section-2-heading" class="heading">
+	  List of experiments
+	</div>
+				
+	<!-- Write the section content inside a paragraph 
+        element, You can also include images with <img> tag -->
+        <div id="lab-article-section-2-content" class="content">
+	  <ul id="list-of-experiments">
+	  
+            <li> 
+	      <!--Link and name of the experiment 1 -->
+	<!--	<meta http-equiv="refresh" content="0; URL=final-build/experimentHome.php">-->
+<!--	      <a target="_blank" href="final-build/Experiment.php?code=C001">Schematic Design Of Transistor Level Inverter.</a><br> -->
+	      <a  href="final-build/Experiment.php?code=C001">Schematic Design Of Transistor Level Inverter</a><br> 
+            </li> 
+            <li> 
+	      <a  href="final-build/Experiment.php?code=C002">Schematic Design Of Transistor Level NAND & NOR Gate.</a> <br>
+            </li> 
+            <li> 
+	      <a  href="final-build/Experiment.php?code=C003">Schematic Design Of Transistor Level XOR & XNOR Gate.</a> <br>
+            </li> 
+            <li> 
+	      <a  href="final-build/Experiment.php?code=C004">Schematic Design Of Pass Transistor Logic & Multiplexer.</a> <br>
+            </li> 
+            <li> 
+	      <a  href="final-build/Experiment.php?code=C005">Delay Estimation In Chain Of Inverters.</a> <br>
+            </li> 
+            <li> 
+	      <a  href="final-build/Experiment.php?code=C006">Schematic Design Of D-Latch and D-Flip Flop.</a><br> 
+            </li> 
+            <li> 
+	      <a href="final-build/Experiment.php?code=C008">Spice Code Platform.</a> <br>
+            </li> 
+            <li> 
+	      <a href="final-build/Experiment.php?code=C009">Design Of D-Flip Flop Using Verilog.</a> <br>
+            </li> 
+            <li> 
+	      <a href="final-build/Experiment.php?code=C0091">Design Of Digital Circuits Using Verilog.</a> <br>
+            </li> 
+            <li> 
+	      <a href="final-build/Experiment.php?code=C007">Layout Design.</a> <br>
+	    </li>
+	  </ul>
+	</div>
+	
+      </section>
+
+
+	 <!-- Second section of the article-->
+      <section id="lab-article-section-3">
+        
+        <div id="lab-article-section-3-icon" class="icon">
+          <!-- Enclose the icon image for the section. -->
+	  <img src="images/introduction.jpg" />
+	</div>
+
+
+        <!-- The heading for the section can be enclosed in a 
+        div tag and shown with a <h2> tag -->
+	<div id="lab-article-section-3-heading" class="heading">
+	 Target Audience
+	</div>
+				
+	<!-- Write the section content inside a paragraph 
+        element, You can also include images with <img> tag -->
+        <div id="lab-article-section-3-content" class="content">
+	  <p>
+	  For the students of UG-ECE and PG-ECE.
+	  </p>
+	</div>
+	
+      </section>
+
+	<section id="lab-article-section-4">
+        
+        <div id="lab-article-section-4-icon" class="icon">
+          <!-- Enclose the icon image for the section. -->
+	  <img src="images/readings.jpg" />
+	</div>
+
+
+        <!-- The heading for the section can be enclosed in a 
+        div tag and shown with a <h2> tag -->
+	<div id="lab-article-section-4-heading" class="heading">
+	 Courses Aligned
+	</div>
+				
+	<!-- Write the section content inside a paragraph 
+        element, You can also include images with <img> tag -->
+        <div id="lab-article-section-4-content" class="content">
+	  <p>
+	    The present lab is aligned with VLSI course structure.. The experiments touch on most topics covered in such courses in most curricula.
+	  </p>
+	</div>
+	
+      </section>
+
+	<section id="lab-article-section-5">
+        
+        <div id="lab-article-section-5-icon" class="icon">
+          <!-- Enclose the icon image for the section. -->
+	  <img src="images/procedure.jpg" />
+	</div>
+
+
+        <!-- The heading for the section can be enclosed in a 
+        div tag and shown with a <h2> tag -->
+	<div id="lab-article-section-5-heading" class="heading">
+	 Prerequisite S/W
+	</div>
+				
+	<!-- Write the section content inside a paragraph 
+        element, You can also include images with <img> tag -->
+        <div id="lab-article-section-5-content" class="content">
+	   <p>The current version of the Virtual Lab applets pages requires a web browser and the Java plug-in (version 1.5.0_11 or later is recommended). The Java plug-in is part of the <a href="http://www.java.com/en/download/index.jsp" target="blank">Java Runtime Environment </a> (JRE) . You may check whether Java is installed correctly by visiting the <a href="https://learning.sun.com/solc/check_java" target="blank">Test Your Java Version</a>  page on the Sun web site. In addition to testing the Java installation, you will obtain information on the installed version of Java.
+	   <br/><br/>
+	  <p>
+	   <ul> 
+		<li>Java allows you to play online virtual labs.</li>
+		<li>Adobe Flash (formerly Macromedia Flash) is a multimedia platform used to add animation, video, and interactivity to web pages. </li>
+	   </ul>
+	  </p>
+	</div>
+	
+	</section>
+	<section id="lab-article-section-6">
+
+		<div id="lab-article-section-6-icon" class="icon">
+		<!-- Enclose the icon image for the section. -->
+		<img src="images/manual.jpg" />
+		</div>
+
+	<!-- The heading for the section can be enclosed in a div tag and shown with a <h2> tag -->
+
+		<div id="lab-article-section-6-heading" class="heading">
+		Feedback
+		</div>
+
+		<!-- Write the section content inside a paragraph element, You can also include images with <img> tag -->
+		<div id="lab-article-section-6-content" class="content">
+		<p>
+		<ul>
+		<li><a href="http://virtual-labs.ac.in/feedback/?lab=cse14" >Feedback</a></li>
+
+		</ul>
+		</p>
+	</div>
+
+	</section>
+
+      </div>	
+
+      <!-- An article can have a sidebar that contain related 
+      links and additional material (it is optional at this 
+      moment)-->
+      <aside id="lab-article-sidebar" class="default">
+	<!-- put the content that you want to appear in the 
+        sidebar-->	
+      </aside>
+		
+      <!-- Article footer can display related content and 
+      additional links -->						
+      <footer id="lab-article-footer" class="default">
+	<!-- Put the content that you want to appear here-->
+      </footer>
+
+    </article>
+	
+  <!-- Links to other labs, about us page can be kept the lab 
+  footer-->
+  <footer id="lab-footer" class="default">
+    <!-- Put the content here-->
+  </footer>
+
+</div>
+</body>
+</html>

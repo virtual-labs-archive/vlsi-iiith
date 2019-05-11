@@ -1,0 +1,34 @@
+* Author: Suman
+* Date Created: 15 Apr 2016
+* Environment
+  - OS: Windows 7, Linux
+  - Browsers: Firefox,Chrome
+  - Bandwidth : 100Mbps
+  - Hardware Configuration:8GBRAM , 
+  - Processor:i5
+
+* Objective
+  - To view and take the post- test and cancel the post-Quiz and then submit the post-Quiz of “Spice Code Platform” experiment
+
+* Pre conditions
+  - Refer to first test case [[https://github.com/Virtual-Labs/vlsi-iiith/blob/master/test-cases/integration_test-cases/Spice Code Platform/Spice Code Platform_01_Usability_smk.org][Spice Code Platform_01_Usability_smk.org]]
+
+* Post conditions
+  - Nil
+* Test Steps
+  1. Click on the Quiz link 
+  2. Check if there are any distortions and junk characters in the Quiz page
+  3. Click on the Post-Quiz link present in the page
+  4. Select the correct answer using the corresponding radio buttons and Click on the cancel button
+  5. Don't choose the options and Click on the Check Quiz button
+
+* Expected result
+  1. Post-Quiz page should be opened
+  2. Content should be Postsent with no distortions and Junk characters
+  3. Post-Quiz content should be displayed on the top of the screen
+  4. Answers selected radio buttons should get unselected 
+  5. Result should be displayed with the correct options or an error message should be displayed as to choose any one of the options
+
+* Review/comments
+
+

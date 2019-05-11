@@ -1,0 +1,381 @@
+/* Form */
+form {
+	width: 400px;
+	border: 1px solid #EEE;
+	padding: 10px;
+	margin: 40px auto;
+}
+
+label {
+	display: block;
+	margin-top : 8px;
+	width: 100%;
+	background-repeat: no-repeat;
+}
+
+.blue {
+	color: #0099CC;
+	font-weight: bold;
+}
+
+/* footer */
+.dwnld {
+	Display: block;
+	padding: 10px;
+	text-align: center;
+	width: 400px;
+	margin: 0 auto;
+	border: 1px solid #EEE;
+	background-color: white;
+	color: #999;
+	font-size: 1.4em;
+	font-weight: bold;
+	line-height: 50px;
+	background: url(../images/download.gif) no-repeat 40px 10px;
+}
+
+/* footer */
+/*.footer {
+	Display: block;
+	padding: 10px;
+	margin: 40px auto;
+	width: 400px;
+	text-align: center;
+	border: 1px solid #EEE;
+	background-color: white;
+	color: #999;
+}
+
+.footer p {
+	color: #999;
+}*/
+
+/* Congratulation message */
+.MsgSent {
+	Display: block;
+	padding: 10px;
+	margin: 40px auto;
+	width: 400px;
+	text-align: center;
+	border: 1px solid #EEE;
+	background-color: white;
+}
+
+.MsgSent h1 {
+	background: url(../images/MsgSent.gif) no-repeat 0 0;
+	padding-left: 20px;
+	height: 85px;
+	line-height: 85px;
+}
+
+/* Error message */
+.MsgError {
+	Display: block;
+	padding: 10px;
+	margin: 40px auto;
+	width: 400px;
+	text-align: center;
+	border: 1px solid #EEE;
+	background-color: white;
+}
+
+.MsgError h1 {
+	background: url(../images/MsgError.gif) no-repeat 0 0;
+	padding-left: 20px;
+	height: 85px;
+	line-height: 85px;
+	color: #CC0000;
+}
+
+.MsgSent p, .MsgError p {
+	font-size: 1.3em;
+	color:#999;
+}
+
+/***** FormCheck *****/
+.tipsbox .tipsbox_top_left{
+	background : url('../images/top_left.png') no-repeat;
+	_background : url('../images/top_left.gif') no-repeat;
+	_background-position : 9px 8px;
+}
+
+.tipsbox .tipsbox_top{
+	background : url('../images/top.png') repeat-x;
+	height : 17px;
+	_background : url('../images/top.gif') repeat-x;
+	_background-position : 0px 8px;
+}
+
+.tipsbox .tipsbox_top_right{
+	background : url('../images/top_right.png') no-repeat;
+	_background : url('../images/top_right.gif') no-repeat;
+	_background-position : 0px 8px;
+}
+
+.tipsbox .tipsbox_left{
+	background : url('../images/left (2).png') repeat-y;
+	width : 17px;
+	_background : url('../images/side.gif') repeat-y;
+	_background-position : 9px 8px;
+}
+
+.tipsbox .tipsbox_right{
+	background : url('../images/right (2).png') repeat-y;
+	width : 22px;
+	_background : url('../images/side.gif') repeat-y;
+	_width : 9px;
+}
+
+.tipsbox .tipsbox_bottom_left{
+	background : url('../images/bottom_left.png');
+	_background : url('../images/bottom_left.gif') no-repeat;
+	_background-position : 9px 0px;
+}
+
+.tipsbox .tipsbox_mark{
+	background : url('../images/mark.png') no-repeat;
+	height : 36px;
+	_background : url('../images/mark.gif') no-repeat;
+}
+
+.tipsbox .tipsbox_bottom_right{
+	background : url('../images/bottom_right.png');
+	_background : url('../images/bottom_right.gif') no-repeat;
+}
+
+.tipsbox .tipsbox_inner, .tipsbox .tipsbox_inner_ie6{
+	background : url('../images/inner.png');
+}
+
+.tipsbox .tipsbox_inner_ie6 {
+	padding : 4px;
+}
+
+.tipsbox .tipsbox_error {
+	background : url('../images/error.png') no-repeat;
+	_background : url('../images/error.gif') no-repeat;
+	width: 40px;
+	height: 40px;
+	margin-top: 5px;
+	float: left;
+	clear: left;
+}
+
+.tipsbox p, .tipsbox {
+	font-size: 1em;
+	font-family: tahoma, verdana, "sans-serif";
+	margin : 0;
+	padding : 0;
+	border : 0;
+	color : #FFF;
+}
+
+.tipsbox p {
+	padding-left: 55px;
+	line-height: 15px;
+}
+
+.tipsbox p span {
+	font-size: 1em;
+	font-weight: bold;
+	color: red;
+	line-height: 35px;
+}
+
+
+.error_f {
+	border : 1px dotted #666;
+	margin-top : 5px;
+	background-color : #EAEAEA;
+}
+
+.error_f p {
+	margin : 5px;
+	color : #A00;
+}
+
+.error_f p span {
+	font-size : 1.1em;
+	color : #000;
+	margin : 5px 0px 0px 0px;
+}
+
+/***** Niceforms *****/
+/*##########################################
+Name: Default styling for Niceforms v.1.0
+Author: Lucian Slatineanu
+URL: http://www.badboy.ro/
+##########################################*/
+
+/*General styles - NOT really related to the forms*/
+/*#container {padding:20px;}*/
+
+/*Forms defaults - change as needed*/
+input, textarea {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#404040;
+}
+label {
+	color:#999;
+	cursor:pointer;
+	padding-left:2px;
+	line-height:16px;
+}
+label.chosen {color:#333;}
+
+/*Transparent items*/
+.outtaHere {
+	position:absolute;
+	left:-3000px;
+}
+
+/*Radio buttons*/
+.radioArea, .radioAreaChecked {
+	display:block;
+	float:left;
+	clear:left;
+	width:15px;
+	height:14px;
+	font-size:0;
+	cursor:pointer;
+}
+.radioArea {background:url(../images/radio.gif) no-repeat left top;}
+.radioAreaChecked {background:url(../images/radio.gif) no-repeat left bottom;}
+
+/*Checkboxes*/
+.checkboxArea, .checkboxAreaChecked {
+	display:block;
+	float:left;
+	clear:left;
+	width:13px;
+	height:13px;
+	font-size:0;
+	padding:0;
+	margin:0;
+	cursor:pointer;
+}
+.checkboxArea {background:url(../images/checkbox.gif) no-repeat left top;}
+.checkboxAreaChecked {background:url(../images/checkbox.gif) no-repeat left bottom;}
+.focused {border:1px dotted #ddd;}
+
+/*Text inputs*/
+.textinput, .textinputHovered {
+	height:15px;
+	background:url(../images/input_bg.gif) repeat-x left top;
+	border:none;
+	padding:4px 0;
+	vertical-align:middle;
+}
+.textinputHovered {background-position:left bottom;}
+.inputCorner {
+	padding-bottom:0;
+	vertical-align:middle;
+}
+
+/*Text areas*/
+.txtarea .tr, .txtarea .tr_xon {background:url(../images/txtarea_tr.gif) no-repeat top right;}
+.txtarea .tr_xon {background:url(../images/txtarea_tr_xon.gif) no-repeat top right;}
+.txtarea img.txt_corner {
+	width:5px;
+	height:5px;
+	display:block;
+}
+.txtarea .br, .txtarea .br_xon {background:url(../images/txtarea_br.gif) no-repeat top right;}
+.txtarea .br_xon {background:url(../images/txtarea_br_xon.gif) no-repeat top right;}
+.txtarea .cntr {background:url(../images/txtarea_cntr.gif) repeat-y right top;}
+.txtarea .cntr_xon {background:url(../images/txtarea_cntr_xon.gif) repeat-y right top;}
+.txtarea .cntr_l, .txtarea .cntr_l_xon {
+	width:5px;
+	background:url(../images/txtarea_l.gif) repeat-y left top;
+	float:left;
+}
+.txtarea .cntr_l_xon {background:url(../images/txtarea_l_xon.gif) repeat-y left top;}
+.txtarea textarea {
+	border:0;
+	background:none;
+	padding:0;
+	margin:5px;
+}
+
+/*Selects*/
+.selectArea {
+	width:200px;
+	height:21px;
+	background:url(../images/select_bg.gif) repeat-x left top;
+}
+.selectArea .left {
+	width:8px;
+	height:21px;
+	float:left;
+	background:url(../images/select_left.gif) no-repeat left top;
+}
+.selectArea .right {
+	width:21px;
+	height:21px;
+	float:right;
+	background:url(../images/select_right.gif) no-repeat left top;
+}
+.selectArea .right a {
+	display:block;
+	width:200px;
+	height:21px;
+	margin-left:-179px;
+	position:absolute;
+}
+.selectArea .right i {display:none;}
+.selectArea .center {
+	width:160px;
+	color:#FFF;
+	padding-top:3px;
+	overflow:hidden;
+	white-space:nowrap;
+}
+
+/*Selects drop-down*/
+.optionsDivInvisible, .optionsDivVisible {
+	position:absolute;
+	margin-top:-1px;
+	margin-left:3px;
+	width:172px;
+	background:#6f7074;
+	padding:2px;
+	font-size:11px;
+	z-index:20;
+}
+.optionsDivInvisible {display:none;}
+.optionsDivVisible {display:block;}
+.optionsDivVisible p {
+	margin:0;
+	padding:0;
+}
+.optionsDivVisible a {
+	color:#F2F2F2;
+	text-decoration:none;
+	display:block;
+	padding:1px 4px;
+	border:1px solid #6f7074;
+}
+.optionsDivVisible a:hover {
+	color:#FFF;
+	background:#5F6062;
+	border-color:#cfd0d6;
+}
+
+/*Button*/
+.buttonSubmit, .buttonSubmitHovered {
+	width:auto;
+	height:26px;
+	color:#FFF;
+	font-weight:bold;
+	padding:2px;
+	background:url(../images/button_bg.gif) repeat-x left top;
+	cursor:pointer;
+	border:none;
+}
+.buttonSubmitHovered {background-position:left bottom;}
+.buttonImg {vertical-align:bottom;}
+
+/*#no_print {
+display:none;
+}*/

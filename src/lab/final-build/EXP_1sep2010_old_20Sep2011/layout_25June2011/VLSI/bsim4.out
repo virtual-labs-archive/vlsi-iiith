@@ -1,0 +1,7 @@
+BSIM4v2: Berkeley Short Channel IGFET Model-4
+Developed by Weidong Liu, Xuemei Xi , Xiaodong Jin, Kanyu M. Cao and Prof. Chenming Hu in 2001.
+
+++++++++++ BSIM4v2 PARAMETER CHECKING BELOW ++++++++++
+Warning: This model is BSIM4.2.1; you specified a wrong version number.
+Model = pmos
+Warning:  Acde = 0.300892 is too small.

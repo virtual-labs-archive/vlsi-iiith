@@ -1,0 +1,500 @@
+   24  cd /home/anusha/.java/deployment/c
+   25  cd /home/anusha/.java/deployment/cache/
+   26  rm -rf 6.0/
+   27  exit
+   28  cd /var/www/
+   29  vi exp1.html 
+   30  vi exp1.java
+   31  sudo cp exp1.java anushabackup.java 
+   32  vi exp1.java
+   33  javac exp1.java 
+   34  vi exp1.java +1917
+   35  javac exp1.java 
+   36  java exp1
+   37  vi exp1.java
+   38  javac exp1.java 
+   39  java exp1
+   40  javac exp1.java 
+   41  java exp1
+   42  sudo cp anushabackup.java exp1.java
+   43  javac exp1.java 
+   44  java exp1
+   45  exit
+   46  cd /home/anusha/.java/deployment/cache/
+   47  rm -rf 6.0/
+   48  ls
+   49  rm -rf 6.0/
+   50  exit
+   51  cd /var/www/
+   52  javac exp1.java 
+   53  java exp1
+   54  exit
+   55  cd /home/anusha/.java/deployment/cache/
+   56  rm -rf 6.0/
+   57  cd'
+   58  cd
+   59  ssh prathi.divyaug08@mirage.iiit.ac.in -X
+   60  ssh shipra.malhotraug08@mirage.iiit.ac.in -X
+   61  exit
+   62  ssh anusha.maddalaug08@web.iiit.ac.in -X
+   63  cd /home/anusha/.java/deployment/cache/
+   64  rm -rf 6.0/
+   65  exit
+   66  passwd
+   67  cd /var/www/
+   68  vi exp1.java
+   69  cp exp1.java anushabackup.java 
+   70  sudo cp exp1.java anushabackup.java 
+   71  c
+   72  javac exp1.java 
+   73  sudo cp anushabackup.java exp1.java
+   74  vi exp1.java
+   75  javac exp1.java 
+   76  java exp1
+   77  cp exp1.java anushabackup.java 
+   78  sudo cp exp1.java anushabackup.java 
+   79  passwd
+   80  vi exp1.java
+   81  javac exp1.java 
+   82  vi exp1.java
+   83  javac exp1.java 
+   84  vi exp1.java
+   85  javac exp1.java 
+   86  java exp1
+   87  vi exp1.java
+   88  javac exp1.java 
+   89  vi exp1.java
+   90  javac exp1.java 
+   91  vi exp1.java +1567
+   92  javac exp1.java 
+   93  vi exp1.java +1567
+   94  javac exp1.java 
+   95  java exp1
+   96  vi exp1.java +1567
+   97  javac exp1.java 
+   98  java exp1
+   99  vi exp1.java +1567
+  100  javac exp1.java 
+  101  vi exp1.java +1567
+  102  javac exp1.java 
+  103  vi exp1.java +816
+  104  javac exp1.java 
+  105  vi exp1.java +818
+  106  javac exp1.java 
+  107  java exp1
+  108  vi exp1.java +818
+  109  javac exp1.java 
+  110  java exp1
+  111  vi exp1.java
+  112  javac exp1.java 
+  113  vi exp1.java
+  114  sudo cp exp1.java before_draw.java
+  115  vi exp1.java
+  116  javac exp1.java 
+  117  vi exp1.java
+  118  sudo cp exp1.java anushabackup.java 
+  119  vi exp1
+  120  vi exp1.java
+  121  javac exp1.java 
+  122  vi exp1.java +821
+  123  javac exp1.java 
+  124  java exp1
+  125  vi exp1.java +821
+  126  javac exp1.java 
+  127  vi exp1.java +763
+  128  javac exp1.java 
+  129  vi exp1.java +764
+  130  javac exp1.java 
+  131  vi exp1.java +764
+  132  javac exp1.java 
+  133  vi exp1.java +824
+  134  javac exp1.java 
+  135  java exp1
+  136  vi exp1.java
+  137  javac exp1.java 
+  138  java exp1
+  139  vi exp1.java
+  140  javac exp1.java 
+  141  java exp1
+  142  vi exp1.java
+  143  javac exp1.java 
+  144  vi exp1.java
+  145  javac exp1.java 
+  146  java exp1
+  147  vi exp1.java
+  148  javac exp1.java 
+  149  java exp1
+  150  vi exp1.java
+  151  javac exp1.java 
+  152  java exp1
+  153  vi exp1.java
+  154  javac exp1.java 
+  155  java exp1
+  156  vi exp1.java
+  157  javac exp1.java 
+  158  java exp1
+  159  vi exp1.java
+  160  javac exp1.java 
+  161  java exp1
+  162  vi exp1.java
+  163  javac exp1.java 
+  164  java exp1
+  165  vi exp1.java
+  166  javac exp1.java 
+  167  java exp1
+  168  vi exp1.java
+  169  javac exp1.java 
+  170  java exp1
+  171  vi exp1.java
+  172  javac exp1.java 
+  173  java exp1
+  174  vi exp1.java
+  175  javac exp1.java 
+  176  vi exp1.java +1266
+  177  javac exp1.java 
+  178  java exp1
+  179  vi exp1.java
+  180  javac exp1.java 
+  181  java exp1
+  182  vi exp1.java
+  183  javac exp1.java 
+  184  java exp1
+  185  vi exp1.java
+  186  javac exp1.java 
+  187  java exp1
+  188  vi exp1.java
+  189  javac exp1.java 
+  190  java exp1
+  191  sudo cp exp1.java anushabackup.java 
+  192  exit
+  193  cd /home/anusha/.java/deployment/cache/
+  194  cd /home/anusha/.java/deployment/cache/
+  195  rm -rf 6.0/
+  196  exit
+  197  cd Desktop/
+  198  ls
+  199  ./weka-3-6-3jre
+  200  chmod 544 weka-3-6-3jre.exe 
+  201  ./weka-3-6-3jre
+  202  ./weka-3-6-3jre.exe
+  203  ls
+  204  exit
+  205  cd /var/www/
+  206  vi exp1.java
+  207  javac exp1.java 
+  208  java exp1
+  209  exit
+  210  sudo cp /var/www/exp1.java /home/anusha/Desktop/
+  211  exit
+  212  cd /var/www/
+  213  ls
+  214  cd ..
+  215  sudo chmod 777 www
+  216  cp www/ /home/anusha/Desktop/
+  217  exit
+  218  sudo cp -r /var/www/exp1.java /home/anusha/Desktop/
+  219  sudo cp -r /var/www/ /home/anusha/Desktop/
+  220  cd Desktop/
+  221  sudo chmod 777 www
+  222  cd /home/anusha/Desktop/
+  223  sudo chmod 777 apt.conf 
+  224  cd /media
+  225  cd cdrom
+  226  ls
+  227  cd ../
+  228  l
+  229  ls
+  230  cd cdrom0/
+  231  ls
+  232  ls -a
+  233  cd ../cdrom
+  234  ls -a
+  235  sudo mount -o loop ~/Desktop/ubuntu-9.10-desktop-i386.iso /media/cdrom0
+  236  gksu "sh /cdrom/cdromupgrade"
+  237  cd
+  238  gksu "sh /cdrom0/cdromupgrade"
+  239  cd -
+  240  ls
+  241  cd ..
+  242  ls
+  243  cd disk/
+  244  ls
+  245  ls cd*
+  246  cd ..
+  247  ls cd*
+  248  sudo apt-get install grub2
+  249  vi /etc/apt/apt.conf
+  250  sudo vi /etc/apt/apt.conf
+  251  sudo cp /etc/apt/apt.conf /home/anusha/Desktop/
+  252  sudo vi /etc/apt/apt.conf
+  253  sudo vi /etc/bash.bashrc 
+  254  exit
+  255  sudo apt-get install grub2
+  256  sudo vi /etc/bash.bashrc 
+  257  sudo apt-get install grub2
+  258  exit
+  259  sudo vi /etc/apt/apt.conf
+  260  sudo vi /etc/bash.bashrc 
+  261  exit
+  262  cd /var/www/
+  263  vi exp1.java
+  264  javac exp1.java 
+  265  vi exp1.java +837
+  266  javac exp1.java 
+  267  java exp1
+  268  vi exp1.java +837
+  269  javac exp1.java 
+  270  java exp1
+  271  vi exp1.java
+  272  javac exp1.java 
+  273  java exp1
+  274  vi exp1.java
+  275  exit
+  276  cd /home/anusha/.java/deployment/cache/
+  277  rm -rf 6.0/
+  278  exit
+  279  cd /home/anusha/.java/deployment/cache/
+  280  rm -rf 6.0/
+  281  cd /var/www/
+  282  vi exp1.java
+  283  javac exp1.java 
+  284  java exp1
+  285  vi exp1.java
+  286  javac exp1.java 
+  287  java exp1
+  288  vi exp1.java
+  289  javac exp1.java 
+  290  vi exp1.java +847
+  291  javac exp1.java 
+  292  vi exp1.java
+  293  javac exp1.java 
+  294  vi exp1.java
+  295  sudo cp exp1.java anushabackup.java 
+  296  vi exp1.java
+  297  javac exp1.java 
+  298  vi exp1.java +841
+  299  javac exp1.java 
+  300  vi exp1.java +841
+  301  javac exp1.java 
+  302  vi exp1.java +841
+  303  javac exp1.java
+  304  vi exp1.java +841
+  305  javac exp1.java
+  306  vi exp1.java +841
+  307  javac exp1.java 
+  308  java exp1
+  309  vi exp1.java +841
+  310  javac exp1.java 
+  311  java exp1
+  312  vi exp1.java +841
+  313  javac exp1.java 
+  314  java exp1
+  315  vi exp1.java
+  316  javac exp1.java 
+  317  java exp1
+  318  vi exp1.java
+  319  javac exp1.java 
+  320  java exp1
+  321  vi exp1.java
+  322  javac exp1.java 
+  323  java exp1
+  324  vi exp1.java
+  325  javac exp1.java 
+  326  java exp1
+  327  vi exp1.java
+  328  javac exp1.java 
+  329  java exp1
+  330  vi exp1.java
+  331  javac exp1.java 
+  332  java exp1
+  333  vi exp1.java
+  334  javac exp1.java 
+  335  java e
+  336  java exp1
+  337  javac exp1.java 
+  338  java exp1
+  339  cd /home/anusha/.java/deployment/cache/
+  340  ls
+  341  rm -rf 6.0/
+  342  cd /home/anusha/Desktop/
+  343  vi exp1.java
+  344  cd /home/anusha/.java/deployment/cache/
+  345  rm -rf 6.0/
+  346  exit
+  347  cd /var/www/
+  348  vi exp1.java
+  349  javac exp1.java 
+  350  java exp1
+  351  vi exp1.java
+  352  javac exp1.java 
+  353  java exp1
+  354  vi exp1.java
+  355  javac exp1.java 
+  356  java exp1
+  357  vi exp1.java
+  358  javac exp1.java 
+  359  java exp1
+  360  vi exp1.java
+  361  javac exp1.java 
+  362  java exp1
+  363  vi exp1.java
+  364  javac exp1.java 
+  365  vi exp1.java
+  366  javac exp1.java 
+  367  vi exp1.java
+  368  javac exp1.java 
+  369  java exp1
+  370  sudo cp exp1.java backup_rightpanel.java 
+  371  sudo cp anushabackup.java exp1.java
+  372  javac exp1.java 
+  373  vi exp1.java
+  374  javac exp1.java 
+  375  java exp1
+  376  vi exp1.java
+  377  javac exp1.java 
+  378  vi exp1.java +1274
+  379  javac exp1.java 
+  380  java exp1
+  381  vi exp1.java
+  382  javac exp1.java 
+  383  java exp1
+  384  javac exp1.java 
+  385  java exp1
+  386  vi exp1.java
+  387  javac exp1.java 
+  388  java exp1
+  389  vi exp1.java
+  390  javac exp1.java 
+  391  java exp1
+  392  vi exp1.java
+  393  javac exp1.java 
+  394  java exp1
+  395  vi exp1.java
+  396  javac exp1.java 
+  397  java exp1
+  398  vi exp1.java
+  399  javac exp1.java 
+  400  java exp1
+  401  vi exp1.java
+  402  javac exp1.java 
+  403  vi exp1.java
+  404  javac exp1.java 
+  405  java exp1
+  406  javac exp1.java 
+  407  java exp1
+  408  vi exp1.java
+  409  javac exp1.java 
+  410  vi exp1.java
+  411  javac exp1.java 
+  412  java exp1
+  413  javac exp1.java 
+  414  java exp1
+  415  exit
+  416  cd /home/anusha/.java/deployment/cache/
+  417  rm -rf 6.0/
+  418  exit
+  419  cd /home/anusha/Desktop/
+  420  vi exp1.java
+  421  cd /var/www/
+  422  vi exp1.java
+  423  javac exp1.java 
+  424  java exp1
+  425  vi exp1.java
+  426  javac exp1.java 
+  427  java exp1
+  428  vi exp1.java
+  429  javac exp1.java 
+  430  java exp1
+  431  vi exp1.java
+  432  javac exp1.java
+  433  java exp1
+  434  vi exp1.java
+  435  sudo cp exp1.java anushabackup.java 
+  436  vi exp1.java
+  437  javac exp1.java 
+  438  vi exp1.java
+  439  javac exp1.java 
+  440  vi exp1.java +844
+  441  javac exp1.java 
+  442  vi exp1.java +844
+  443  javac exp1.java 
+  444  vi exp1.java +844
+  445  javac exp1.java 
+  446  java exp1
+  447  vi exp1.java +844
+  448  javac exp1.java 
+  449  java exp1
+  450  vi exp1.java +844
+  451  javac exp1
+  452  javac exp1.java 
+  453  java exp1
+  454  vi exp1.java
+  455  javac exp1.java
+  456  java exp1
+  457  vi exp1.java
+  458  javac exp1.java 
+  459  java exp1
+  460  vi exp1.java
+  461  javac exp1.java 
+  462  java exp1
+  463  vi exp1.java
+  464  javac exp1.java 
+  465  java exp1
+  466  vi exp1.java
+  467  javac exp1.java 
+  468  java exp1
+  469  vi exp1.java
+  470  javac exp1.java 
+  471  java exp1
+  472  vi exp1.java
+  473  java exp1
+  474  vi exp1.java
+  475  exit
+  476  cd /home/anusha/.java/deployment/cache/
+  477  rm -rf 6.0/
+  478  exit
+  479  cd /var/www/
+  480  vi exp1.java
+  481  javac exp1.java
+  482  java exp1
+  483  vi exp1.java
+  484  javac exp1.java 
+  485  java exp1
+  486  vi exp1.java
+  487  javac exp1.java 
+  488  java exp1
+  489  vi exp1.java
+  490  javac exp1.java 
+  491  java exp1
+  492  vi exp1.java
+  493  javac exp1.java 
+  494  java exp1
+  495  exit
+  496  cd /home/anusha/.java/deployment/cache/
+  497  rm -rf 6.0/
+  498  exit
+  499  cd /var/www/
+  500  vi exp1.java
+  501  javac exp1.java 
+  502  java exp1
+  503  vi exp1.java
+  504  javac exp1.java 
+  505  java exp1
+  506  vi exp1.java
+  507  javac exp1.java 
+  508  java exp1
+  509  vi exp1.java
+  510  javac exp1.java 
+  511  java exp1
+  512  javac exp1.java 
+  513  java exp1
+  514  vi exp1.java
+  515  javac exp1.java 
+  516  java exp1
+  517  vi exp1.java
+  518  javac exp1.java 
+  519  java exp1
+  520  vi exp1.java
+  521  sudo cp exp1.java temp_backup.java
+  522  history
+  523  history > hist

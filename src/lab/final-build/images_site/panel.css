@@ -1,0 +1,55 @@
+
+/*.left_column	{
+	float: left;
+	width: 100px;
+	min-height: 500px;
+	background: #; 
+}*/
+#navbar{
+	width:auto;
+	height:36px;
+	background: url(navbar-bg.jpg) left top repeat-x;
+}
+#navbar .inbar{
+	display:block;
+	height:36px;
+	background: url(right-round.jpg) right top no-repeat;
+}
+#navbar ul, #navbar ul li{
+	border:0px;
+	margin:0px;
+	padding:0px;
+	list-style:none;
+	height:36px;
+	line-height:36px;
+}
+#navbar ul{
+	background: url(left-round.jpg) left top no-repeat;
+}
+#navbar ul li{
+	float:left;
+	display:inline-block;
+	line-height:36px;
+}
+#navbar ul li a{
+	color: white;
+	text-decoration:none;
+	font-size:13;
+	display:inline-block;
+}
+#navbar ul li a span{
+	padding:0 20px 0 0;
+	height:36px;
+	line-height:36px;
+	display:inline-block;
+	margin-left:20px;
+}
+
+
+#navbar ul li a:hover{
+	color: #CCCCCC;
+}
+
+#navbar .navhome a span {
+	text-decoration: underline;
+}
