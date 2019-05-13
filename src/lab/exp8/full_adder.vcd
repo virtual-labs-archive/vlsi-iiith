@@ -1,0 +1,53 @@
+$date
+	Sat Jun 25 15:36:53 2011
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module tb_adder_tb $end
+$var wire 1 ! cout $end
+$var wire 1 " sum $end
+$var reg 1 # a $end
+$var reg 1 $ b $end
+$var reg 1 % cin $end
+$scope module uut $end
+$var wire 1 & a $end
+$var wire 1 ' b $end
+$var wire 1 ( cin $end
+$var wire 1 ! cout $end
+$var wire 1 " sum $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0(
+0'
+0&
+0%
+0$
+0#
+0"
+0!
+$end
+#10
+1"
+1$
+1'
+#20
+1#
+1&
+1"
+0$
+0'
+#30
+0#
+0&
+0!
+1"
+1$
+1'
+#60

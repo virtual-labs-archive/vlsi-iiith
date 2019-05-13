@@ -1,0 +1,59 @@
+.include 45nm_HP.pm
+va a gnd pulse  0 1.1 1n 100p 100p 1ns 3ns
+vb b gnd pulse  0 1.1 1n 100p 100p 1ns 6ns 
+vc c gnd pulse 0 1.1 1n 100p 100p 1ns 6ns
+*va a gnd 0
+*vb b gnd 3.5
+*vc c gnd 3.5
+
+vdd vdd gnd 1.1
+m1 x1 a vdd vdd PMOS
+m2 x1 b vdd vdd PMOS
+m3 x2 b vdd vdd PMOS
+m4 x3 c x1 x1 PMOS
+m5 x3 a x2 x2 PMOS
+m6 x3 c x5 x5 NMOS
+m7 x3  a x4 x4 NMOS
+m8 x5 a gnd gnd NMOS
+m9 x5 b gnd gnd NMOS
+m10 x4 b gnd gnd NMOS
+m11 carry x3 vdd vdd PMOS
+m12 carry x3 gnd gnd NMOS
+m13 x6 a vdd vdd PMOS
+m14 x6 b vdd vdd PMOS
+m15 x6 c vdd vdd PMOS
+m16 x8 c vdd vdd PMOS
+m17 x7 x3 x6 x6 PMOS
+m18 x9 b x8 x8 PMOS
+m19 x7 a x9 x9 PMOS
+m20 x7 x3 x11 x11 NMOS
+m21 x7 a x10 gnd NMOS
+m22 x10 b x12 gnd NMOS
+m23 x11 a gnd gnd NMOS
+m24 x11 b gnd gnd NMOS
+m25 x11 c gnd gnd NMOS
+m26 x12 c gnd gnd NMOS
+m27 sum x7 vdd vdd PMOS
+m28 sum x7 gnd gnd NMOS
+
+.tran 100p 10ns
+
+
+.print m1:LX70
+.MEASURE TRAN avgpwr AVG POWER FROM=1ns TO=3ns
+ .PARAM vvddpar=3.5
+ *.measure TRAN iavg AVG i(mnb) FROM=1ns TO=3ns
+ *.measure TRAN power PARAM=\'iavg*vvddpar\'
+.options accurate
+.options method=gear
+
+
+ .print tran v(sum)
+.print tran v(carry)
+.save V(sum)
+ .save V(a)
+.save V(b)
+.save v(c) 
+.save v(carry)
+.END
+ 
