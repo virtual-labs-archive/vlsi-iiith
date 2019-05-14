@@ -1,0 +1,27 @@
+  .box {
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    text-align: center;
+  }
+
+  .lightblue-box {
+    background-color: lightblue;
+    padding: 30px;
+  }
+  
+  .red-box {
+    background-color: crimson;
+    color: #fff;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-right: 10px;
+    margin-left: 10px; 
+    display: inline;
+  }
+
+  .blue-box {
+    background-color: blue;
+    color: #fff;
+    padding: 1px;
+  }

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+	<title>Simulator</title>
+  <link rel="stylesheet" href="boxes.css">
+</head>
+<body>
+
+<script type="text/javascript">
+   function myFunction(form)
+   {
+     alert(form.clock.value)
+   }
+</script>
+
+<h1 align="center">Simulator for D Flip Flop</h1>
+
+<div class="box lightblue-box">
+
+  <form name="myform" action="" method="get">
+
+    <select id="clock">
+      <option value="" selected disabled hidden>Select the clock type</option>
+      <option value="1">Positive edge Triggered</option>
+      <option value="2">Negative edge Triggered</option>
+    </select>
+
+    <select id="waveform">
+      <option value="" selected disabled hidden>Select input waveform</option>
+      <option value="1">Waveform 1</option>
+      <option value="2">Waveform 2</option>
+    </select>
+    <button onclick="myFunction(this.form)">Simulate</button>
+  </form>
+
+  <h5 class="box blue-box">Graph goes here</h5>
+</div>
+</body>
+</html>
