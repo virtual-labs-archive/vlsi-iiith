@@ -1,0 +1,236 @@
+<!--
+Simulator for D FF
+(No additional files needed. This has the whole thing)
+
+It simulates the output waveform when inputs are given to the D flip flop
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Simulator</title>
+  <!--<link rel="stylesheet" href="boxes.css">-->
+  <style type="text/css">
+      .box {
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    text-align: center;
+  }
+
+  .lightblue-box {
+    background-color: lightblue;
+    padding: 30px;
+  }
+
+  .some-margin {
+    margin: 1em;
+  }
+
+  .white-box {
+    background-color: white;
+    color: #fff;
+    padding: 1px;
+  }
+  </style>
+</head>
+<body onload="WaveDrom.ProcessAll()">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wavedrom/1.9.2/skins/default.js" type="text/javascript"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wavedrom/1.9.2/wavedrom.min.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+    var s = "";
+    var P = "P.";
+    var Q = "";
+    var Q0 = "";
+   function myFunction()
+   {
+      var clkval = document.getElementById("clock").value;
+      var waveval = document.getElementById("waveform").value;
+      var clkpulse = document.getElementById("number").value;
+      var str = document.getElementById("line").value;
+      if(clkval=="0")
+      {
+        alert("Choose a clock type!");
+        return;
+      }
+
+      if(clkpulse.length==0 && str.length==0)
+      {
+        if(waveval=="0")
+        {
+          alert("Choose a waveform!");
+          return;
+        }
+        if(clkval=="1")
+          P="P.......";
+        else
+          P="N.......";
+        switch (waveval)
+        {
+          case "1": s="h.lp.hlh";
+                    break;
+
+          case "2": s="lh.n.lhn";
+                    break;
+
+          case "3": s="plhn.h..";
+                    break;
+        }
+      }
+
+      else if(clkpulse.length!=0 && str.length!=0)
+      {
+        if(clkval=="1")
+          P="P";
+        else
+          P="N"
+        var pulseno = parseInt(clkpulse);
+        for(var j=1;j<pulseno;j++)
+          P = P + ".";
+        s = str;
+      }
+      else
+      {
+        alert("Enter both fields for the input waveform");
+      }
+
+  
+        var l = P.length;
+        var temp='';
+        for(var i = 0;i < l;i++)
+          {
+            if(s[i]=='h' || s[i]=='p')
+            {
+              if(temp=='h')
+                Q = Q + ".";
+              else
+              {
+                Q = Q + "h";
+                temp = 'h';
+              }
+            }
+            else if(s[i]=='l' || s[i]=='n')
+            {
+              if (temp=='l')
+                Q = Q + ".";
+              else
+              {
+                Q = Q + "l";
+                temp='l';
+              }
+            }
+            else if(s[i]=='.')
+            {
+              Q = Q + ".";
+            }
+          }
+          for(var i = 0;i < Q.length;i++)
+          {
+            if(Q[i]=='h')
+              Q0 = Q0 + "l";
+            else if(Q[i]=='l')
+              Q0 = Q0 + "h"
+            else if(Q[i]=='.')
+              Q0 = Q0 + ".";
+          }
+
+          try {
+            WaveDrom.ProcessAll();
+        } catch(e) {}
+    }
+</script>
+
+<h1 style="text-align: center;">Simulator for D Flip Flop</h1>
+
+<div class="box lightblue-box" style="text-align: left;">
+  <div>
+
+    <select id="clock" class="some-margin">
+      <option value="0" selected disabled hidden>Select the clock type</option>
+      <option value="1">Positive edge Triggered</option>
+      <option value="2">Negative edge Triggered</option>
+    </select>
+    <br>
+    <select id="waveform" class="some-margin">
+      <option value="0" selected disabled hidden>Select input waveform</option>
+      <option value="1">Waveform 1</option>
+      <option value="2">Waveform 2</option>
+      <option value="3">Waveform 3</option>
+    </select>
+    <h4 style="display: inline;" class="some-margin">Or Make your own waveform:</h4>
+    <input type="text" id="number" placeholder="Enter number of clock pulses">
+    <input type="text" id="line" placeholder="Enter the waveform">
+    <br>
+    <button onclick="myFunction()" class="some-margin">Simulate</button>
+  </div>
+
+  <h5 class="box white-box">
+    <script type="WaveDrom">
+    { signal : 
+    [
+      ['input',
+      { name: "clk",  wave: P },
+        { name: "D",  wave: s },
+      ],
+      ['output',
+        { name: "Q", wave: Q },
+        { name: "Q'", wave: Q0 },
+      ],
+      
+    ],
+    head:{
+       text:'Simulation:',
+       tick:0,
+     },
+    }
+    </script>
+  </h5>
+  <div style="text-align: center;">
+    <button onclick="document.location.reload(false)" class="some-margin">Clear</button>
+  </div> 
+ </div>
+  <div>
+    <h1 style="text-align: left;">How to use the simulator</h1>
+    <p>
+      <ol>
+        <li>Choose the type of clock (positive/negative edge triggered)</li>
+        <li>Now you can either select predefined input waveforms or you can construct your own waveform <a href="#howto">(shown below)</a></li>
+        <li>Click on the simulate button to view the result</li>
+        <li>After viewing the simulation, click the clear button to simulate again</li>
+      </ol>
+    </p>
+  </div>
+  <div>
+    <h1 style="text-align: left;">Making your own waveform</h1>
+    <p>
+      <a id="howto"></a>
+      Enter the number of clock pulses in the text box.<br>
+      <br>
+      The waveform can be generated with the rules seen below.<br>
+      Entering that letter in the textbox will give that corresponding wave.<br>
+      Letters can be used together to generate a whole waveform. example: "phlhnl".<br>
+      Each character in the waveform represents the wave in one clock pulse.<br>
+    </p>
+    <script type="WaveDrom">
+      { signal : [
+      { name: "p",  wave: "p" },
+      { name: "n",  wave: "n" },
+      { name: "h",  wave: "h" },
+      { name: "l",  wave: "l" },
+      ]}
+    </script>
+    <p>
+      A dot "." is used to continue the previous waveform. example: "ph..l.n".<br>
+      Here are a few examples of waveforms:<br>
+    </p>
+    <script type="WaveDrom">
+      { signal : [
+      { name: "phlhnl",  wave: "phlhnl" },
+      { name: "ph..l.n",  wave: "ph..l.n" },
+      { name: "n.hl..nh",  wave: "n.hl..nh" },
+      ]}
+    </script>
+  </div>
+</body>
+</html>
