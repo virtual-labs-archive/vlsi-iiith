@@ -1,0 +1,22 @@
+.box {
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    text-align: center;
+  }
+
+  .lightblue-box {
+    background-color: lightblue;
+    text-align: left;
+    padding: 30px;
+  }
+
+  .some-margin {
+    margin: 1em;
+  }
+
+  .white-box {
+    background-color: white;
+    color: #fff;
+    padding: 1px;
+  }

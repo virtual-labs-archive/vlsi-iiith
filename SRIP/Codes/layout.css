@@ -1,0 +1,35 @@
+
+  .item1 {
+    background: LightSkyBlue;
+    grid-area: head;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+  }
+  
+  .item2 {
+    background: LightSalmon;
+    grid-area: advert;
+  }
+  
+  .item3 {
+    background: PaleTurquoise;
+    grid-area: content;
+  }
+  
+  
+  .container {
+    font-size: 1.5em;
+    height: 600px;
+    width: 800px;
+    background: LightGray;
+    display: grid;
+    grid-template-columns: 100px 680px;
+    grid-gap: 10px;
+    grid-template-rows: auto 1fr;
+    grid-template-areas:
+      "advert head"
+      "advert content";
+  }
+  
+ 
