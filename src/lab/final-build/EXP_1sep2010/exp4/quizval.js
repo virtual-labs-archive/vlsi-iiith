@@ -45,6 +45,14 @@ function checkQuiz() {
    numCorrect += checkQuestionRadio( document.quiz.q10);
 
   //highlight correct answers from radio button groups...use span id name
+  
+   //produce output in textarea.
+   document.quiz.output.value =
+     "You got " + numCorrect + " out of 10 questions correct." 
+
+} 
+
+function viewsol(){
    highlightCorrectButton("correct1");
    highlightCorrectButton("correct2");
    highlightCorrectButton("correct3");
@@ -56,9 +64,6 @@ function checkQuiz() {
    highlightCorrectButton("correct9");
    highlightCorrectButton("correct10");
 
-   //produce output in textarea.
-   document.quiz.output.value =
-     "You got " + numCorrect + " out of 10 questions correct.\n" +
-     "The correct answers are highlighted." 
 
-} 
+    document.quiz.output.value= "The correct answers are highlighted."
+}
