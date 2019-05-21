@@ -1,4 +1,5 @@
-For now the UI(undeveloped) is in the mainCanvas.html file.
+For now the UI(undeveloped) is in the Canvastest.html file.
+The UI can be simulated there. Will add more functionality.
 
 The Waveform Simulator can be run by clicking finalSimulator.html
 

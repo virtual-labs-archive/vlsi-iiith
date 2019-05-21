@@ -8,7 +8,7 @@ It simulates the output waveform when inputs are given to the D flip flop
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Simulator</title>
+  <title>Graph</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body onload="WaveDrom.ProcessAll()">
@@ -65,47 +65,6 @@ It simulates the output waveform when inputs are given to the D flip flop
     <button onclick="document.location.reload(false)" class="some-margin">Clear</button>
   </div> 
  </div>
- <div>
-  <h1 style="text-align: left;">How to use the simulator</h1>
-    <p>
-      <ol>
-        <li>Choose the type of clock (positive/negative edge triggered)</li>
-        <li>Now you can either select predefined input waveforms or you can construct your own waveform <a href="#howto">(shown below)</a></li>
-        <li>Click on the simulate button to view the result</li>
-        <li>After viewing the simulation, click the clear button to simulate again</li>
-      </ol>
-    </p>
-</div>
-<div>
-  <h1 style="text-align: left;">Making your own waveform</h1>
-    <p>
-      <a id="howto"></a>
-      Enter the number of clock pulses in the text box.<br>
-      <br>
-      The waveform can be generated with the rules seen below.<br>
-      Entering that letter in the textbox will give that corresponding wave.<br>
-      Letters can be used together to generate a whole waveform. example: "phlhnl".<br>
-      Each character in the waveform represents the wave in one clock pulse.<br>
-    </p>
-    <script type="WaveDrom">
-      { signal : [
-      { name: "p",  wave: "p" },
-      { name: "n",  wave: "n" },
-      { name: "h",  wave: "h" },
-      { name: "l",  wave: "l" },
-      ]}
-    </script>
-    <p>
-      A dot "." is used to continue the previous waveform. example: "ph..l.n".<br>
-      Here are a few examples of waveforms:<br>
-    </p>
-    <script type="WaveDrom">
-      { signal : [
-      { name: "phlhnl",  wave: "phlhnl" },
-      { name: "ph..l.n",  wave: "ph..l.n" },
-      { name: "n.hl..nh",  wave: "n.hl..nh" },
-      ]}
-    </script>
-</div>
+
 </body>
 </html>
