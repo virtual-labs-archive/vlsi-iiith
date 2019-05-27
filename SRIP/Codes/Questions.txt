@@ -1,0 +1,75 @@
+Does the order of input and output ports in the argument of module matters?
+
+yes
+>no  
+may matter in some situation
+may not matter in certain conditions
+
+
+Which of the following loops are supported by verilog?
+if-else loop
+for loop
+while loop
+>all of these
+
+
+What defines the beginning and end of a loop
+begin----end
+curly brackets ()
+>none of these
+both of them
+
+
+What defines high impedance state or floating state in verilog?
+1
+X
+>Z
+Both X and Z
+
+
+In the following figure A is input and B is output of inverter and C is clock. Tell whether inverter is working synchronously or asynchronously?
+
+
+asynchronous
+>synchronous
+unpredictable
+sometimes synchronous and sometimes asynchronous
+
+
+In the above figure, tell whether inverter is working on positive edge or negative edge of clock?
+
+
+negative edge
+>positive edge
+both on positive edge and negative edge
+middle of positive and negative edge of clock
+
+
+In the following figure tell whether reset is synchronous or asynchronous?
+
+
+asynchronous
+synchronous
+>unpredictable
+sometimes synchronous and sometimes asynchronous
+
+
+What is the similar system task in verilog as printf in C?
+$monitor
+>$display
+$print
+all of these
+
+
+In the figure given in ques7, tell whether it is a positive edge reset or negative edge?
+both positive and negative edge reset
+negative edge reset
+>positive edge
+unpredictable
+
+
+Can we include one source file in another in verilog?
+no
+>yes using `include
+yes using `define
+yes by just writing the name of file in another file
