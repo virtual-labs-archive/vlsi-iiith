@@ -6,12 +6,17 @@ ul {
 li {
     font-family:sans-serif;
     font-size: 1.5em;
+    list-style: none;
 }
 input[type=radio] 
 {
     border: 0px;
     width: 1.5em;
     height: 1.5em;
+}
+
+h1,h2 {
+    text-align: center;
 }
 
 
@@ -24,17 +29,22 @@ input[type=radio]
     padding-top: 5px;
     position: relative;
 }
+
+#container {
+    text-align: center;
+}
 .nextButton {
     border-radius: 50px;
     width: 150px;
     height: 40px;
-    text-align: center;
+    /* text-align: center; */
     background-color: green;
     color: black;
     font-family: monospace;
     position: relative;
     margin: auto;
     padding: 20px;
+    display: inline-block;
 }
 .question {
     font-family:'Rokkitt', serif;
@@ -68,5 +78,28 @@ input[type=radio]
     margin: auto;
     text-align: center;
     font-family:'Rokkitt', serif;
+}
+.resultButton {
+    border-radius: 50px;
+    width: 150px;
+    height: 40px;
+    /* text-align: center; */
+    background-color: darkblue;
+    color: white;
+    font-family: monospace;
+    position: relative;
+    margin: auto;
+    padding: 20px;
+    display: inline-block;
+}
+
+.resultContainer {
+    background-color: peachpuff;
+    border-radius: 6px;
+    width: auto;
+    height: auto;
+    margin: auto;
+    padding-top: 5px;
+    position: relative;
 }
 /* End of Quiz Classes */

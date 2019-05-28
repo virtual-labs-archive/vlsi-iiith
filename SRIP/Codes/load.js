@@ -4,6 +4,7 @@ $(document).ready(function ()
     // Display the first question
     displayCurrentQuestion();
     $(this).find(".quizMessage").hide();
+    $(this).find(".resultButton").hide();
 
     // On clicking next, display the next question
     $(this).find(".nextButton").on("click", function () 
@@ -12,6 +13,7 @@ $(document).ready(function ()
         {
 
             value = $("input[type='radio']:checked").val();
+            choiceArr.push(value);
 
             if (value == undefined) 
             {
@@ -20,7 +22,7 @@ $(document).ready(function ()
             } 
             else 
             {
-                // TODO: Remove any message -> not sure if this is efficient to call this each time....
+                // TODO: Remove any message
                 $(document).find(".quizMessage").hide();
 
                 if (value == questions[currentQuestion].correctAnswer) 
@@ -36,7 +38,7 @@ $(document).ready(function ()
                 else 
                 {
                     displayScore();
-                    
+                    $(document).find(".resultButton").show();
                     // Change the text in the next button to ask if user wants to play again
                     $(document).find(".nextButton").text("Try Again?");
                     quizOver = true;
@@ -45,13 +47,15 @@ $(document).ready(function ()
         } 
         else 
         {   
-            // quiz is over and clicked the next button (which now displays 'Try Again?'
-            quizOver = false;
-            $(document).find(".nextButton").text("Next Question");
-            resetQuiz();
-            displayCurrentQuestion();
-            hideScore();
+            // quiz is over and clicked the next button (basically the 'Try Again?')
+            document.location.reload(false);
         }
+    });
+
+    $(this).find(".resultButton").one("click", function()
+    {
+        displayResults(); 
+
     });
 
 });
