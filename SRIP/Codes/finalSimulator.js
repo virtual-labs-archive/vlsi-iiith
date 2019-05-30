@@ -8,15 +8,15 @@ var Q0 = "";
       var waveval = document.getElementById("waveform").value;
       var clkpulse = document.getElementById("number").value;
       var str = document.getElementById("line").value;
-      if(clkval=="0")
+      if(clkval==="0")
       {
         alert("Choose a clock type!");
         return;
       }
 
-      if(clkpulse.length==0 && str.length==0)
+      if(clkpulse.length===0 && str.length===0)
       {
-        if(waveval=="0")
+        if(waveval==="0")
         {
           alert("Choose a waveform!");
           return;
@@ -38,15 +38,21 @@ var Q0 = "";
         }
       }
 
-      else if(clkpulse.length!=0 && str.length!=0)
+      else if(clkpulse.length!==0 && str.length!==0)
       {
         if(clkval=="1")
+        {
           P="P";
+        }
         else
-          P="N"
+        {
+          P="N";
+        }
         var pulseno = parseInt(clkpulse);
         for(var j=1;j<pulseno;j++)
+        {
           P = P + ".";
+        }
         s = str;
       }
       else
@@ -56,42 +62,52 @@ var Q0 = "";
 
   
         var l = P.length;
-        var temp='';
+        var temp="";
         for(var i = 0;i < l;i++)
           {
-            if(s[i]=='h' || s[i]=='p')
+            if(s[i]==="h" || s[i]==="p")
             {
-              if(temp=='h')
+              if(temp==="h")
+              {
                 Q = Q + ".";
+              }
               else
               {
                 Q = Q + "h";
-                temp = 'h';
+                temp = "h";
               }
             }
-            else if(s[i]=='l' || s[i]=='n')
+            else if(s[i]==="l" || s[i]==="n")
             {
-              if (temp=='l')
+              if (temp==="l")
+              {
                 Q = Q + ".";
+              }
               else
               {
                 Q = Q + "l";
-                temp='l';
+                temp="l";
               }
             }
-            else if(s[i]=='.')
+            else if(s[i]===".")
             {
               Q = Q + ".";
             }
           }
           for(var i = 0;i < Q.length;i++)
           {
-            if(Q[i]=='h')
+            if(Q[i]==="h")
+            {
               Q0 = Q0 + "l";
-            else if(Q[i]=='l')
-              Q0 = Q0 + "h"
-            else if(Q[i]=='.')
+            }
+            else if(Q[i]==="l")
+            {
+              Q0 = Q0 + "h";
+            }
+            else if(Q[i]===".")
+            {
               Q0 = Q0 + ".";
+            }
           }
 
           try {

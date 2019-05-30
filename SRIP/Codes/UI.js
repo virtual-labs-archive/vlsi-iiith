@@ -8,7 +8,34 @@ $(function(){
     var clicks = 0;
     var lastClick = [0, 0];
 
-    document.getElementById('canvas').addEventListener('click', drawLine, false);
+    function drawLine(l) 
+    {
+        context = this.getContext("2d");
+
+        x = getCursorPosition(l)[0] - this.offsetLeft;
+        y = getCursorPosition(l)[1] - this.offsetTop;
+        
+        if (clicks != 1) 
+        {
+            clicks++;
+        } 
+        else 
+        {
+            context.beginPath();
+            context.moveTo(lastClick[0], lastClick[1]);
+            context.lineTo(x, y, 6);
+            context.lineWidth = 3;
+            context.strokeStyle = "#76ea2e";
+            context.lineCap = "round";
+            context.stroke();
+            
+            clicks = 0;
+        }
+        
+        lastClick = [x, y];
+    }
+
+    document.getElementById("canvas").addEventListener("click", drawLine, false);
 
     function getCursorPosition(l) 
     {
@@ -28,32 +55,7 @@ $(function(){
         return [x, y];
     }
 
-    function drawLine(l) 
-    {
-        context = this.getContext('2d');
-
-        x = getCursorPosition(l)[0] - this.offsetLeft;
-        y = getCursorPosition(l)[1] - this.offsetTop;
-        
-        if (clicks != 1) 
-        {
-            clicks++;
-        } 
-        else 
-        {
-            context.beginPath();
-            context.moveTo(lastClick[0], lastClick[1]);
-            context.lineTo(x, y, 6);
-            context.lineWidth = 3;
-            context.strokeStyle = '#76ea2e';
-            context.lineCap = 'round';
-            context.stroke();
-            
-            clicks = 0;
-        }
-        
-        lastClick = [x, y];
-    }
+    
 
     // get the offset position of the canvas
     var $canvas=$("#canvas");
@@ -69,7 +71,7 @@ $(function(){
 
     // make all .tool's draggable
     $tools.draggable({
-            helper:'clone',
+            helper:"clone",
     });
 
 
@@ -77,13 +79,6 @@ $(function(){
     $tools.each(function(index,element){
         $(this).data("toolsIndex",index);
     });
-
-
-    // make the canvas a dropzone
-    $canvas.droppable({
-        drop:dragDrop,
-    });
-
 
     // Drop into the canvas
     function dragDrop(e,ui)
@@ -105,13 +100,20 @@ $(function(){
         //Need to somehow make this temporary so that it can be draggable.
 
     }
+
+    // make the canvas a dropzone
+    $canvas.droppable({
+        drop:dragDrop,
+    });
+
   });
 
 
 
 function Erase()
 {
-    const context = canvas.getContext('2d');
+    /*global canvas*/
+    const context = canvas.getContext("2d");
 
 context.clearRect(0, 0, canvas.width, canvas.height);
 }

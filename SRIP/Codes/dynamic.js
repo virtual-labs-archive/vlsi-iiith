@@ -86,7 +86,7 @@ function displayCurrentQuestion()
     $(choiceList).find("li").remove();
 
     var choice;
-    for (i = 0; i < numChoices; i++) 
+    for (var i = 0; i < numChoices; i++) 
     {
         choice = questions[currentQuestion].choices[i];
         $("<li><input type=\"radio\" value=" + i + " name=\"dynradio\" />" + choice + "</li>").appendTo(choiceList);
@@ -143,6 +143,11 @@ function displayResults()
     }
 }
 
+function hideScore() 
+{
+    $(document).find(".result").hide();
+}
+
 function resetQuiz() 
 {
     currentQuestion = 0;
@@ -157,7 +162,3 @@ function displayScore()
     $(results).show();
 }
 
-function hideScore() 
-{
-    $(document).find(".result").hide();
-}
