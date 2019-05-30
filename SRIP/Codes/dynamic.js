@@ -81,7 +81,7 @@ function displayCurrentQuestion()
 
     $(questionClass).text(question);
 
-    $('<br><img src= ' + questions[currentQuestion].source +' alt=" ">').appendTo(questionClass);
+    $("<br><img src= " + questions[currentQuestion].source +" alt=\" \">").appendTo(questionClass);
 
     $(choiceList).find("li").remove();
 
@@ -89,7 +89,7 @@ function displayCurrentQuestion()
     for (i = 0; i < numChoices; i++) 
     {
         choice = questions[currentQuestion].choices[i];
-        $('<li><input type="radio" value=' + i + ' name="dynradio" />' + choice + '</li>').appendTo(choiceList);
+        $("<li><input type=\"radio\" value=" + i + " name=\"dynradio\" />" + choice + "</li>").appendTo(choiceList);
     }
 }
 
@@ -98,43 +98,43 @@ function displayResults()
     var i = 0;
     var resultClass = $(document).find(".resultContainer");
     var flag;
-    $('<h1>Result:</h1>').appendTo(resultClass);
-    $('<h2>The highlighted answers are the correct answers.<br>The selected options are the ones you selected.<br></h2>').appendTo(resultClass);
+    $("<h1>Result:</h1>").appendTo(resultClass);
+    $("<h2>The highlighted answers are the correct answers.<br>The selected options are the ones you selected.<br></h2>").appendTo(resultClass);
     while(i<questions.length)
     {
         var question = questions[i].question;
         var numChoices = questions[i].choices.length;
 
-        $('<div class="question">' + question + '</div>').appendTo(resultClass);
-        $('<br><img src= ' + questions[i].source +' alt=" ">').appendTo(resultClass);
+        $("<div class=\"question\">" + question + "</div>").appendTo(resultClass);
+        $("<br><img src= " + questions[i].source +" alt=\" \">").appendTo(resultClass);
 
 
         //$(resultClass).append(question);
         //console.log("In loop");
-        $('<br>').appendTo(resultClass);
+        $("<br>").appendTo(resultClass);
         var choice;
         flag=0;
-        for (j = 0; j < numChoices; j++)
+        for (var j = 0; j < numChoices; j++)
         {
             choice = questions[i].choices[j];
-            if(choiceArr[i]==questions[i].correctAnswer && flag==0 && choiceArr[i]==j)
+            if(choiceArr[i]==questions[i].correctAnswer && flag===0 && choiceArr[i]==j)
             {
-                $('<li> <input type="radio" checked> <mark>' + choice + '</mark> </li>').appendTo(resultClass);
+                $("<li> <input type=\"radio\" checked> <mark>" + choice + "</mark> </li>").appendTo(resultClass);
                 flag = 1;
             }
             else
             {
-                if(choiceArr[i]==j && flag==0)
+                if(choiceArr[i]==j && flag===0)
                 {
-                    $('<li> <input type="radio" checked> ' + choice + '</li>').appendTo(resultClass);
+                    $("<li> <input type=\"radio\" checked> " + choice + "</li>").appendTo(resultClass);
                 }
-                else if(questions[i].correctAnswer==j && flag==0)
+                else if(questions[i].correctAnswer==j && flag===0)
                 {
-                    $('<li> <input type="radio"> <mark>' + choice + '</mark> </li>').appendTo(resultClass);
+                    $("<li> <input type=\"radio\"> <mark>" + choice + "</mark> </li>").appendTo(resultClass);
                 }
                 else
                 {
-                    $('<li> <input type="radio">' + choice + '</li>').appendTo(resultClass);
+                    $("<li> <input type=\"radio\">" + choice + "</li>").appendTo(resultClass);
                 }
             }
         }

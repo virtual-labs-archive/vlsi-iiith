@@ -12,8 +12,7 @@ $(document).ready(function ()
         if (!quizOver) 
         {
 
-            value = $("input[type='radio']:checked").val();
-            choiceArr.push(value);
+            var value = $("input[type='radio']:checked").val();
 
             if (value == undefined) 
             {
@@ -22,6 +21,7 @@ $(document).ready(function ()
             } 
             else 
             {
+                choiceArr.push(value);
                 // TODO: Remove any message
                 $(document).find(".quizMessage").hide();
 
@@ -52,6 +52,7 @@ $(document).ready(function ()
         }
     });
 
+    /*global displayResults */
     $(this).find(".resultButton").one("click", function()
     {
         displayResults(); 
