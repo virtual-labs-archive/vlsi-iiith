@@ -25,6 +25,7 @@
     <link href="../../../css/style.css" rel="stylesheet">
   <script type="text/javascript" src = 'tabs.js'></script>
 <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-67558473-1', 'auto');ga('send', 'pageview');</script> 
+<script type="text/javascript" src =" prequizval.js"></script>
 </head>
 <body id="page-top" class="index">
 <div id="top">
@@ -129,20 +130,20 @@
 <li><b>A D flip-flop can be made from a _________</b><br>
    <input type="radio" name="q4" value="wrong">JK flip-flop and an inverter .<br>
    <input type="radio" name="q4" value="wrong">RS flip-flop .<br>
-   <span id="correct4"><input type="radio" name="q4" value="correct"></span>RS flip-flop and an inverter .<br>
+   <span id="correct4"><input type="radio" name="q4" value="correct">RS flip-flop and an inverter .</span><br>
    <input type="radio" name="q4" value="wrong">both (a) and (b)..<br>
 
 </li><br />
 
 <li><b> Which of the following flip-flops does not have race around condition ?</b><br>
    <input type="radio" name="q5" value="wrong">JK flip-flops .<br>
-   <span id="correct5"><input type="radio" name="q5" value="correct"></span>D flip-flops .<br>
+    <span id="correct5"><input type="radio" name="q5" value="correct"> flip-flops .</span><br>
    <input type="radio" name="q5" value="wrong">S-R flip-flop converted to J-K flip-flop .<br>
    <input type="radio" name="q5" value="wrong">Master slave JK flip flop.<br>
 </ol>
 <br />
 <input type="button" onClick="checkQuiz()" value="Check Quiz"><br><br>
-<input type="button" value="Reset" onClick="document.quiz.reset()">
+<input type="button" value="Reset" onClick="window.location.reload();document.quiz.reset()">
 <hr>
 <textarea cols="80" rows="10" name="output"></textarea><br>
 </form>
