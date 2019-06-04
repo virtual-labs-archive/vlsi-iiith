@@ -2,16 +2,45 @@
 <html>
 <head>
 	<title>Simulator Help</title>
+	<script type="text/javascript" src="../Libraries/simcirjs/simcir.js"></script>
+  <link rel="stylesheet" type="text/css" href="../Libraries/simcirjs/simcir.css" />
+  <script type="text/javascript" src="../Libraries/simcirjs/simcir-basicset.js"></script>
+  <link rel="stylesheet" type="text/css" href="../Libraries/simcirjs/simcir-basicset.css" />
+  <script type="text/javascript" src="../Libraries/simcirjs/simcir-library.js"></script>
 </head>
 <body>
 	<h1>How to use the Simulator:</h1>
 	<p>
-		Take the components from the left and arrange them accordingly on the blank space on the left.<br>
-		Once the components are arranged, wires can be drawn by clicking two points on the space.<br>
-		Here is how it looks:<br>
-		<img src="Images/Example.png" width="602" height="500"><br>
-		After this is done you can click on the graph simulator to see how the graph works.
+	<ul>
+		<li>Choose a component from the toolbox and move it to the right</li>
+		<li>Connections can be made clicking the input node and dragging it to an output node(or vice versa) </li>
+		<li>To disconnect two components click on the ipnut node</li>
+		<li>To remove a component drag it back to the toolbox</li>
+		<li>To edit the device name double click the label</li>
+	</ul>
+	<h2>Here is an example of a circuit:</h2>
+	<div class="simcir">
+		{
+  "width":500,
+  "height":250,
+  "showToolbox":false,
+ "devices":[
+    {"type":"LED","id":"dev0","x":376,"y":32,"label":"LED"},
+    {"type":"LED","id":"dev1","x":376,"y":168,"label":"LED"},
+    {"type":"OSC","freq":10,"label":"CLK(10MHZ)","id":"dev2","x":56,"y":168},
+    {"type":"OSC","freq":1,"label":"CLK(1MHZ)","id":"dev3","x":56,"y":32},
+    {"type":"D-FF","id":"dev4","x":200,"y":96,"label":"D-FF"}
+  ],
+  "connectors":[
+    {"from":"dev0.in0","to":"dev4.out0"},
+    {"from":"dev1.in0","to":"dev4.out1"},
+    {"from":"dev4.in0","to":"dev3.out0"},
+    {"from":"dev4.in1","to":"dev2.out0"}
+  ]
+}
+	</div>
 
+	<h4>To test with an input waveform, click on the graph simulator</h4>
 	</p>
 </body>
 </html>

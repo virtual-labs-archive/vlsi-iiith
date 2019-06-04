@@ -7,11 +7,6 @@
     font-weight: bold;
   }
   
-  .item2 {
-    background: LightSalmon;
-    grid-area: advert;
-  }
-  
   .item3 {
     background: PaleTurquoise;
     grid-area: content;
@@ -27,7 +22,7 @@
     width: 800px;
     background: LightGray;
     display: grid;
-    grid-template-columns: 100px 680px;
+    grid-template-columns: 0px 780px;
     grid-gap: 10px;
     grid-template-rows: auto 525px;
     grid-template-areas:
