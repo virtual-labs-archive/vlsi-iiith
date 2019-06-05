@@ -13,6 +13,8 @@ This is only the UI part of the simulator.
   <script type="text/javascript" src="../Libraries/simcirjs/simcir-basicset.js"></script>
   <link rel="stylesheet" type="text/css" href="../Libraries/simcirjs/simcir-basicset.css" />
   <script type="text/javascript" src="../Libraries/simcirjs/simcir-library.js"></script>
+  <script type="text/javascript" src="../Libraries/simcirjs/misc/simcir-dso.js"></script>
+  <script type="text/javascript" src="../Libraries/simcirjs/misc/simcir-num.js"></script>
 </head>
 <body>
   
@@ -30,10 +32,13 @@ This is only the UI part of the simulator.
       "toolbox":[
       {"type":"In"},
       {"type":"Out"},
-      {"type":"OSC","freq":1,"label":"CLK(1MHZ)"},
-      {"type":"OSC","freq":10,"label":"CLK(10MHZ)"},
+      {"type":"OSC","freq":0.5,"label":"CLK(0.5MHZ)"},
+      {"type":"OSC","freq":2,"label":"CLK(2MHZ)"},
       {"type":"D-FF"},
-      {"type":"LED"}
+      {"type":"LED"},
+      {"type":"NumSrc"},
+      {"type":"NumDsp"},
+      {"type":"DSO","label":"Graph"}
       ]
     }
     </div>
