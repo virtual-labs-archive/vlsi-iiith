@@ -54,6 +54,21 @@ var Q0 = "";
           P = P + ".";
         }
         s = str;
+
+        //Input validation
+        for(var k = 0; k<s.length;k++)
+        {
+          if(s[k]==="h" || s[k]==="p" || s[k]==="l" || s[k]==="n")
+          {
+            continue;
+          }
+          else
+          {
+            alert("Invalid input waveform (Refer Help)");
+            return;
+          }
+        }
+
       }
       else
       {

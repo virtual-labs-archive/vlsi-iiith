@@ -108,6 +108,7 @@
         append($s.createSVGElement('rect').
           css('stroke', 'none').
           css('fill', '#000000').
+          //size of time range window
           attr({x : 0, y : 0, width: unit * 7, height : unit}) ).
         append($lcd).
         on('mousedown', function(event) {
@@ -180,6 +181,7 @@
         return state;
       };
 
+      //external body size
       device.getSize = function() {
         return { width : unit * 4,
           height : unit * (numInputs * scale + 2) };
@@ -189,10 +191,12 @@
       device.createUI = function() {
         super_createUI();
 
+        //position of display
         var $display = $s.createSVGElement('g');
         device.$ui.append($display);
         $s.transform($display, unit / 2, unit / 2);
 
+        //Inner LCD size
         var $rect = $s.createSVGElement('rect').
           css('stroke', 'none').css('fill', '#000000').
           attr({x: 0, y: 0, width: unit * 3,

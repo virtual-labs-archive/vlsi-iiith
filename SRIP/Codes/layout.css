@@ -6,6 +6,10 @@
     font-size: 40px;
     font-weight: bold;
   }
+
+  .align {
+    display: inline-block;
+  }
   
   .item3 {
     background: PaleTurquoise;

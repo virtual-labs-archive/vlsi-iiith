@@ -15,16 +15,15 @@ This is only the UI part of the simulator.
   <script type="text/javascript" src="../Libraries/simcirjs/simcir-library.js"></script>
   <script type="text/javascript" src="../Libraries/simcirjs/misc/simcir-dso.js"></script>
   <script type="text/javascript" src="../Libraries/simcirjs/misc/simcir-num.js"></script>
+  <script type="text/javascript" src="../Libraries/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="simHelper.js"></script>
 </head>
 <body>
-  
-
-
+<div class="align">
 <div class="container">
   <div class="item1">Simulator for D Flip Flop</div>
   
-  <div class="item3">
-    <div class="simcir">
+    <div class="simcir item3">
     {
       "width":780,
       "height":525,
@@ -42,11 +41,12 @@ This is only the UI part of the simulator.
       ]
     }
     </div>
-  </div>
 </div>
-
   <input type="button" class="button-style" value="Graph Simulator" onclick="window.open('finalSimulator.html')" />
-  <input type="button" class="button-style" value="Help" onclick="window.open('Help2.html')" />
-
+  <input type="button" id="helpmeButton" class="button-style" value="Help" />
+</div>
+<div class="align" id="helpme">
+  <iframe src="Help2.html" height="625" width="400"></iframe>
+</div>
 </body>
 </html>

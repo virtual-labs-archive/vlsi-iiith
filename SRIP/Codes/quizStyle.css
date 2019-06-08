@@ -21,13 +21,16 @@ h1,h2 {
 
 
  .quizContainer {
-    background-color: lightblue;
+    background-color: cornsilk;
     border-radius: 6px;
     width: auto;
     height: auto;
     margin: auto;
     padding-top: 5px;
     position: relative;
+    border-style: solid;
+    border-color: black;
+    border-width: 3px;
 }
 
 #container {
@@ -37,14 +40,18 @@ h1,h2 {
     border-radius: 50px;
     width: 150px;
     height: 40px;
-    /* text-align: center; */
-    background-color: green;
+    background-color: lightgrey;
     color: black;
     font-family: monospace;
+    font-weight: bold;
+    font-size: 18px;
     position: relative;
     margin: auto;
     padding: 20px;
     display: inline-block;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
 }
 .question {
     font-family:'Rokkitt', serif;
@@ -53,8 +60,11 @@ h1,h2 {
     height: auto;
     margin: auto;
     border-radius: 6px;
-    background-color: lightgrey;
+    background-color: bisque;
     text-align: center;
+    border-style: solid;
+    border-color: black;
+    border-width: 3px;
 }
 .quizMessage {
     background-color: peachpuff;
@@ -83,18 +93,22 @@ h1,h2 {
     border-radius: 50px;
     width: 150px;
     height: 40px;
-    /* text-align: center; */
-    background-color: darkblue;
-    color: white;
-    font-family: monospace;
+    color: black;
     position: relative;
     margin: auto;
+    font-size: 18px;
     padding: 20px;
     display: inline-block;
+    background-color: lightgrey;
+    font-family: monospace;
+    font-weight: bold;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
 }
 
 .resultContainer {
-    background-color: peachpuff;
+    background-color: lightblue;
     border-radius: 6px;
     width: auto;
     height: auto;
