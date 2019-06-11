@@ -56,6 +56,7 @@ var Q0 = "";
         s = str;
 
         //Input validation
+        //-----------------------------------------------------------------------
         for(var k = 0; k<s.length;k++)
         {
           if(s[k]==="h" || s[k]==="p" || s[k]==="l" || s[k]==="n" || s[k]===".")
@@ -73,6 +74,12 @@ var Q0 = "";
           alert("Invalid number of pulses");
           return;
         }
+        if(s.length!=pulseno)
+        {
+          alert("No of pulses and length of input waveform should be same");
+          return;
+        }
+        //----------------------------------------------------------------------
 
       }
       else
@@ -130,7 +137,16 @@ var Q0 = "";
             }
           }
 
+        /*var x = document.getElementById("wavebox").style.width;
+        alert(x);*/
+
           try {
             WaveDrom.ProcessAll();
         } catch(e) {}
+
+
+        var stop = document.getElementById("simulate");
+        stop.disabled=true;
+        stop.style.backgroundColor = "grey";
+        stop.style.color = "lightgrey";
     }
