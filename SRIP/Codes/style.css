@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 .box {
     border-style: solid;
     border-color: black;
@@ -6,7 +7,7 @@
   }
 
   .lightblue-box {
-    background-color: lightblue;
+    background-color: wheat;
     text-align: left;
     padding: 30px;
   }
@@ -21,9 +22,61 @@
     padding: 1px;
   }
 
-  .button-style {
-    width: 150px;
+  .button {
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: #232323;
+  color: white;
+  padding: 10px;
+  width: 150px;
+  height: 50px;
+  }
+
+  .button:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+  }
+
+  .select {
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: #232323;
+    color: white;
+    width: 155px;
     height: 50px;
-    background-color: #69e5c0;
-    font-weight: bold;
+  }
+
+  .select:hover {
+    background-color: white;
+    color: black;
+
+  }
+
+  .text {
+    background-color: #232323;
+    color: white;
+    cursor: pointer;
+    transition-duration: 0.4s;
+  }
+
+  .text:hover {
+    background-color: white;
+    color: black;
+  }
+
+  .helpbutton {
+    transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: blue;
+  color: white;
+  padding: 10px;
+  width: 150px;
+  height: 50px;
+  }
+
+  .helpbutton:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
   }

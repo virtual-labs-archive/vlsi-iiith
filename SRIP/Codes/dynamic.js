@@ -119,22 +119,22 @@ function displayResults()
             choice = questions[i].choices[j];
             if(choiceArr[i]==questions[i].correctAnswer && flag===0 && choiceArr[i]==j)
             {
-                $("<li> <input type=\"radio\" checked> <mark>" + choice + "</mark> </li>").appendTo(resultClass);
+                $("<li> <input type=\"radio\" checked disabled> <mark>" + choice + "</mark> </li>").appendTo(resultClass);
                 flag = 1;
             }
             else
             {
                 if(choiceArr[i]==j && flag===0)
                 {
-                    $("<li> <input type=\"radio\" checked> " + choice + "</li>").appendTo(resultClass);
+                    $("<li> <input type=\"radio\" checked disabled> " + choice + "</li>").appendTo(resultClass);
                 }
                 else if(questions[i].correctAnswer==j && flag===0)
                 {
-                    $("<li> <input type=\"radio\"> <mark>" + choice + "</mark> </li>").appendTo(resultClass);
+                    $("<li> <input type=\"radio\" disabled> <mark>" + choice + "</mark> </li>").appendTo(resultClass);
                 }
                 else
                 {
-                    $("<li> <input type=\"radio\">" + choice + "</li>").appendTo(resultClass);
+                    $("<li> <input type=\"radio\" disabled>" + choice + "</li>").appendTo(resultClass);
                 }
             }
         }

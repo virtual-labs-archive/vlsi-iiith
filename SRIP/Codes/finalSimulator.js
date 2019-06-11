@@ -58,7 +58,7 @@ var Q0 = "";
         //Input validation
         for(var k = 0; k<s.length;k++)
         {
-          if(s[k]==="h" || s[k]==="p" || s[k]==="l" || s[k]==="n")
+          if(s[k]==="h" || s[k]==="p" || s[k]==="l" || s[k]==="n" || s[k]===".")
           {
             continue;
           }
@@ -67,6 +67,11 @@ var Q0 = "";
             alert("Invalid input waveform (Refer Help)");
             return;
           }
+        }
+        if(!Number.isInteger(pulseno))
+        {
+          alert("Invalid number of pulses");
+          return;
         }
 
       }

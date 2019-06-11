@@ -23,25 +23,25 @@ It simulates the output waveform when inputs are given to the D flip flop
    <iframe src="Help.html" height="300" width="1000"></iframe>
  </div>
  <div class="box lightblue-box">
-  <div>
+  <div style="text-align: center;">
 
-    <select id="clock" class="some-margin">
+    <select id="clock" class="select">
       <option value="0" selected disabled hidden>Select the clock type</option>
       <option value="1">Positive edge Triggered</option>
       <option value="2">Negative edge Triggered</option>
     </select>
     <br>
-    <select id="waveform" class="some-margin">
+    <select id="waveform" class="select">
       <option value="0" selected disabled hidden>Select input waveform</option>
       <option value="1">Waveform 1</option>
       <option value="2">Waveform 2</option>
       <option value="3">Waveform 3</option>
     </select>
-    <h4 style="display: inline;" class="some-margin">Or Make your own waveform:</h4>
-    <input type="text" id="number" placeholder="Enter number of clock pulses">
-    <input type="text" id="line" placeholder="Enter the waveform">
+    <h4 style="display: inline; font-family: Open Sans" class="some-margin">Or make your own waveform:</h4>
+    <input type="text" class="text" id="number" placeholder="Enter number of clock pulses">
+    <input type="text" class="text" id="line" placeholder="Enter the waveform">
     <br>
-    <button onclick="myFunction()" class="some-margin">Simulate</button>
+    <button onclick="myFunction()" class="button">Simulate</button>
   </div>
 
   <h5 class="box white-box">
@@ -66,9 +66,9 @@ It simulates the output waveform when inputs are given to the D flip flop
     </script>
   </h5>
   <div style="text-align: center;">
-    <button onclick="document.location.reload(false)" class="some-margin">Clear</button>
+    <button onclick="document.location.reload(false)" class="some-margin button">Clear</button>
+    <input type="button" id="helpmeButton" class="helpbutton" value="Help" />
   </div> 
  </div>
-  <input type="button" id="helpmeButton" class="button-style" value="Help" />
 </body>
 </html>
