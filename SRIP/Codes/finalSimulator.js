@@ -85,8 +85,22 @@ var Q0 = "";
       else
       {
         alert("Enter both fields for the input waveform");
+        return;
       }
 
+      var elewidth = document.getElementById("wavebox").offsetWidth;
+      var calc = 49.5*pulseno;
+      var ch = true;
+      if(calc>elewidth)
+      {
+        var ch = confirm("Warning: Your waveform could exceed the size limit of your window");
+        //console.log("In if");
+      }
+      if(!ch)
+      {
+        //console.log("In other if");
+        return;
+      }
   
         var l = P.length;
         var temp="";
@@ -137,8 +151,6 @@ var Q0 = "";
             }
           }
 
-        /*var x = document.getElementById("wavebox").style.width;
-        alert(x);*/
 
           try {
             WaveDrom.ProcessAll();

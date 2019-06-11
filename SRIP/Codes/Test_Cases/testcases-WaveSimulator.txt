@@ -11,7 +11,7 @@ status: fixed
 status: fixed
 
 5.No of clock pulses should not exceed window size.
-status: not fixed
+status: fixed
 
 6.No of clock pulses should be equal to the input waveform.
 status: fixed
