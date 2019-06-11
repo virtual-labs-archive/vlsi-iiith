@@ -22,9 +22,13 @@ var Q0 = "";
           return;
         }
         if(clkval=="1")
+        {
           P="P.......";
+        }
         else
+        {
           P="N.......";
+        }
         switch (waveval)
         {
           case "1": s="h.lp.hlh";
@@ -40,7 +44,7 @@ var Q0 = "";
 
       else if(clkpulse.length!==0 && str.length!==0)
       {
-        if(clkval=="1")
+        if(clkval==="1")
         {
           P="P";
         }
@@ -48,7 +52,7 @@ var Q0 = "";
         {
           P="N";
         }
-        var pulseno = parseInt(clkpulse);
+        var pulseno = parseInt(clkpulse,10);
         for(var j=1;j<pulseno;j++)
         {
           P = P + ".";
@@ -74,7 +78,7 @@ var Q0 = "";
           alert("Invalid number of pulses");
           return;
         }
-        if(s.length!=pulseno)
+        if(s.length!==pulseno)
         {
           alert("No of pulses and length of input waveform should be same");
           return;
@@ -93,7 +97,7 @@ var Q0 = "";
       var ch = true;
       if(calc>elewidth)
       {
-        var ch = confirm("Warning: Your waveform could exceed the size limit of your window");
+        ch = confirm("Warning: Your waveform could exceed the size limit of your window");
         //console.log("In if");
       }
       if(!ch)
@@ -153,6 +157,7 @@ var Q0 = "";
 
 
           try {
+            /*global WaveDrom*/
             WaveDrom.ProcessAll();
         } catch(e) {}
 
