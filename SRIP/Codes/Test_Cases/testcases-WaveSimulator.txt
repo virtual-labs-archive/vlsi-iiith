@@ -1,0 +1,22 @@
+1.Mandatory options not being selected (must give alert)
+status:fixed
+
+2. Selecting between input waveform and custom waveform (only one has to be selected)
+status: fixed
+
+3.Clock pulse can only be integer
+status: fixed
+
+4.Waveform has to only follow the standard mentioned in help doc.
+status: fixed
+
+5.No of clock pulses should not exceed window size.
+status: not fixed
+
+6.No of clock pulses should be equal to the input waveform.
+status: fixed
+
+7.Simulate can still be pressed without clearing the graph.
+status: fixed
+
+
