@@ -1,0 +1,23 @@
+body {
+	text-align: center;
+	background-color: cornsilk;
+}
+
+p {
+	font-family: sans-serif;
+}
+
+h1 {
+	font-size: 3.5em;
+	background-color: burlywood;
+}
+
+h2 {
+	background-color: wheat;
+	font-size: 2em;
+}
+
+h3 {
+	background-color: blanchedalmond;
+	font-family: monospace;
+}

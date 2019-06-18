@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Documentation</title>
+	<link rel="stylesheet" type="text/css" href="project_doc_style.css">
+</head>
+<body>
+	<h1>Design of D Flip Flop</h1>
+
+	<h2>Introduction</h2>
+
+	<p>Inverter is a logic gate, with one input and one output. Its symbol is shown below:-<br>
+	<img src="Images/not.png"><br>
+	The output of inverter is complement of the input i.e. if the input is 0, the output will be 1 and vice-versa.<br> The truth table for inverter is shown below:-<br> 
+	<img src="Images/truthTable.png"><br>
+	The transistor level schematic of inverter can be designed in many logics,following two logics will be used for<br>designing in the experiment, Complementary CMOS logic and Pseudo NMOS logic.<br>
+	</p>
+
+	<h2>Theory</h2>
+
+		<h3>CMOS INVERTER</h3>
+		<p>
+		In the transistor level design of CMOS inverter consists of nmos and pmos transistor in series.The PMOS <br>transistor is connected between Vdd and output node,whereas the NMOS is connected betweeen the output node and<br> gnd. <br>
+		</p>
+
+		<h3>WORKING OF CMOS INVERTER</h3>
+		<p>
+		Before knowing the working of CMOS inverter we will see the regions of operation of transistor so that we can <br>understand what is actually happening inside the inverter. MOS transistors have three regions of operations :<br> 
+		1) cut-off region 2) linear region 3) saturation region. <br><br>
+
+		The transistor is said to be in cut-off region when Vgs < Vt. Vgs is the voltage applied at gate with respect <br>
+		to source and Vt is the threshhold voltage below which the transistor does not work. So for transistor to work<br> Vgs - Vt should be greater than zero always. <br><br>
+
+		The transistor is in linear region when Vgs-Vt>Vds where Vds is the voltage at drain with respect to source. <br> 
+		The transistor is said to be in saturation region when Vgs-Vt < Vds. <br><br> 
+
+		The transfer characteristic(i.e. the output voltage vs input voltage) is shown in the figure below. <br>
+		<img src="Images/CMOSgraph.png"><br>
+		The operation is divided into 5 region depending on the range of input voltage. The output voltage in every <br> region is obtained by equating drain to source current of pmos and nmos.<br><br> 
+		</p>
+
+		<h3>EFFECT OF W/L RATIO ON OUTPUT WAVEFORM</h3>
+		<p>
+		β is the MOS transistor gain factor which depends both on process parameters and geometry parameters.<br>
+		β = k(W/L)<br>
+    		where K is the factor which shows process dependencyand W & L shows geometry dependency.<br>
+    		    For NMOS, gain factor is denoted by βn and for PMOS, gain factor is denoted by βp.<br><br>
+
+		W/L ratio is directly proportional to β.The ratio βn/βp is crucial in determinig the transfer characteristic<br>
+		of the inverter. When the ratio is increased the transition shifts from left to right,but the output voltage<br> transition remains sharp. For CMOS the ratio is desired to be 1 so that it requires equal time to charge and<br> discharge.<br><br>
+		</p>
+		<h3>EFFECT OF CAPACITANCE ON THE RISE AND FALL TIME</h3> 
+		<p>
+		The rise time is defined as the time required to charge the capacitor from 10% to 90% and fall time is defined<br>
+		 as the time required for the capacitor to discharge from 90% to 10%.<br><br> 
+
+		Greater value of capacitor implies larger rise and fall time,which furthur implies large delay. The rise time <br>
+		and fall time are directly proportional to the capacitance, therefore, greater the value of capacitance,<br> 
+		greater will be the time taken for rising and falling.<br><br>
+		</p>
+		<h3>PSEUDO NMOS</h3>
+		<p>
+		The gate of p-device is permanently grounded which is equivalent to use of NMOS in depletion mode. <br>
+		</p>
+
+
+
+
+</body>
+</html>
