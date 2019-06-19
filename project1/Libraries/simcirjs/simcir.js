@@ -18,8 +18,6 @@
 
 var simcir = {};
 
-var dataFinal;
-
 //
 // https://github.com/kazuhikoarase/lessQuery
 //
@@ -1076,14 +1074,6 @@ simcir.$ = function() {
             (nodes + 1) / 2 : nodes)};
     };
 
-    var getMOSSize = function() {
-      var nodes = Math.max(device.getInputs().length,
-          device.getOutputs().length);
-      return { width: unit * 2,
-        height: unit * Math.max(2, device.halfPitch?
-            (nodes + 1) / 2 : nodes)};
-    };
-
     var layoutUI = function() {
 
       var size = device.getSize();
@@ -1181,7 +1171,6 @@ simcir.$ = function() {
       getLabel: getLabel,
       halfPitch: false,
       getSize: getSize,
-      getMOSSize: getMOSSize,
       createUI: createUI,
       layoutUI: layoutUI,
       getState: getState
@@ -1903,8 +1892,6 @@ simcir.$ = function() {
     };
     var getText = function() {
 
-      /*global dataFinal*/
-      dataFinal = getData();
       var data = getData();
 
       var buf = '';

@@ -12,8 +12,6 @@
 // includes following device types:
 //  DC
 //  LED
-//  PMOS
-//  NMOS
 //  PushOff
 //  PushOn
 //  Toggle
@@ -119,43 +117,6 @@
     g.curveTo(x + depth, y + height, x + depth, y + height / 2);
     g.curveTo(x + depth, y, x, y);
     g.closePath(true);
-  };
-  var drawNMOS = function(g, x, y, width, height) {
-    g.moveTo(x, y + height/2);
-    g.lineTo(x + 2*width/5, y + height/2);
-    g.moveTo(x + 2*width/5, y + height*2/3 );
-    g.lineTo(x + 2*width/5, y + height/3);
-    g.moveTo(x + 3*width/5, y + height*2/3);
-    g.lineTo(x + 3*width/5, y + height/3);
-
-    g.moveTo(x + 3*width/5, y + height*2/5);
-    g.lineTo(x + width, y + height*2/5);
-    g.lineTo(x + width, y);
-
-    g.moveTo(x + 3*width/5, y + height*3/5);
-    g.lineTo(x + width, y + height*3/5);
-    g.lineTo(x + width, y + height);
-    g.closePath(false);
-  };
-  var drawPMOS = function(g, x, y, width, height) {
-    g.moveTo(x, y + height/2);
-    g.lineTo(x + 2*width/5 - 3, y + height/2);
-
-    g.drawCircle(x + 2*width/5 - 2, y + height/2,1.5);
-
-    g.moveTo(x + 2*width/5, y + height*2/3 );
-    g.lineTo(x + 2*width/5, y + height/3);
-    g.moveTo(x + 3*width/5, y + height*2/3);
-    g.lineTo(x + 3*width/5, y + height/3);
-
-    g.moveTo(x + 3*width/5, y + height*2/5);
-    g.lineTo(x + width, y + height*2/5);
-    g.lineTo(x + width, y);
-
-    g.moveTo(x + 3*width/5, y + height*3/5);
-    g.lineTo(x + width, y + height*3/5);
-    g.lineTo(x + width, y + height);
-    g.closePath(false);
   };
   var drawEOR = function(g, x, y, width, height) {
     drawOR(g, x + 3, y, width - 3, height);
@@ -334,53 +295,6 @@
     };
   };
   */
-  //----------------------------------------------------------------------------------
-  var createMOSFactory = function(op, out, draw) {
-    return function(device) {
-      var numInputs = (op == null)? 1 :
-        Math.max(2, device.deviceDef.numInputs || 2);
-      device.halfPitch = numInputs > 2;
-      device.addInput();
-      device.addInput();
-      device.addOutput();
-      var inputs = device.getInputs();
-      var outputs = device.getOutputs();
-      device.$ui.on('inputValueChange', function() {
-        var b = intValue(inputs[0].getValue() );
-        if (op != null) {
-          for (var i = 1; i < inputs.length; i += 1) {
-            b = op(b, intValue(inputs[i].getValue() ) );
-          }
-        }
-        b = out(b);
-        outputs[0].setValue( (b == 1)? 1 : null);
-      });
-      var super_createUI = device.createUI;
-      device.createUI = function() {
-        super_createUI();
-        var size = device.getMOSSize();
-        var g = $s.graphics(device.$ui);
-        g.attr['class'] = 'simcir-basicset-symbol';
-        draw(g, 
-          (size.width - unit) / 2,
-          (size.height - unit) / 2,
-          unit, unit);
-        if (op != null) {
-          device.doc = {
-            params: [
-              {name: 'numInputs', type: 'number',
-                defaultValue: 2,
-                description: 'number of inputs.'}
-            ],
-            code: '{"type":"' + device.deviceDef.type + '","numInputs":2}'
-          };
-        }
-      };
-    };
-  };
-
-
-  //----------------------------------------------------------------------------------
 
   var _7Seg = function() {
     var _SEGMENT_DATA = {
@@ -812,11 +726,6 @@
   $s.registerDevice('NOR', createLogicGateFactory(OR, NOT, drawNOR) );
   $s.registerDevice('XOR', createLogicGateFactory(EOR, BUF, drawEOR) );
   $s.registerDevice('XNOR', createLogicGateFactory(EOR, NOT, drawENOR) );
-  //---------------------------------------------------------------
-  $s.registerDevice('NMOS', createMOSFactory(null, NOT, drawNMOS) );
-  $s.registerDevice('PMOS', createMOSFactory(null, NOT, drawPMOS) );
-  //---------------------------------------------------------------
-
   // deprecated. not displayed in the default toolbox.
   $s.registerDevice('EOR', createLogicGateFactory(EOR, BUF, drawEOR), true);
   $s.registerDevice('ENOR', createLogicGateFactory(EOR, NOT, drawENOR), true);
