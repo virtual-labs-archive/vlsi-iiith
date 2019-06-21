@@ -14,16 +14,31 @@
 //  Out
 //  Joint
 
+/*
+  Changes made by Utkarsh Chhapekar:
+
+  dataFinal is a global variable that now stores the dynamic data when the 
+  circuit is generated.
+
+  For debugging purposes find the console.log(); functions in this file, all
+  of these functions are commented so remove the // and run use console on browser 
+  to debug.
+  Note: The ones which are not commented are part of the default debugging options
+  of SimCir.
+
+*/
+
 'use strict';
 
 var simcir = {};
 
 var dataFinal;
-
 //
 // https://github.com/kazuhikoarase/lessQuery
 //
 simcir.$ = function() {
+
+  //console.log("in first main function");
 
   var debug = location.hash == '#debug';
 
@@ -664,7 +679,7 @@ simcir.$ = function() {
 }();
 
 !function($s) {
-
+  //console.log("in second main function");
   var $ = $s.$;
 
   var createSVGElement = function(tagName) {
@@ -1689,6 +1704,7 @@ simcir.$ = function() {
 
   var createWorkspace = function(data) {
 
+    //console.log("In create workspace function");
     data = $.extend({
       width: 400,
       height: 200,
@@ -1844,7 +1860,7 @@ simcir.$ = function() {
     };
 
     var getData = function() {
-
+      //console.log("in getData function");
       // renumber all id
       var devIdCount = 0;
       $devicePane.children('.simcir-device').each(function() {
@@ -1902,6 +1918,7 @@ simcir.$ = function() {
       };
     };
     var getText = function() {
+      //console.log("In getText function");
 
       /*global dataFinal*/
       dataFinal = getData();
@@ -1946,6 +1963,7 @@ simcir.$ = function() {
     var dragCompleteHandler = null;
 
     var adjustDevice = function($dev) {
+      //console.log("In adjust");
       var pitch = unit / 2;
       var adjust = function(v) { return Math.round(v / pitch) * pitch; };
       var pos = transform($dev);
@@ -1955,6 +1973,8 @@ simcir.$ = function() {
       var y = Math.max(0, Math.min(pos.y,
           workspaceHeight - size.height) );
       transform($dev, adjust(x), adjust(y) );
+      //deselectAll();
+      getText();
     };
 
     var beginConnect = function(event, $target) {
@@ -1971,6 +1991,7 @@ simcir.$ = function() {
         $temporaryPane.append(createConnector(pos.x, pos.y, x, y) );
       };
       dragCompleteHandler = function(event) {
+        //console.log("drag connection complete");
         $temporaryPane.children().remove();
         var $dst = $(event.target);
         if (isActiveNode($dst) ) {
@@ -1978,6 +1999,7 @@ simcir.$ = function() {
           connect($srcNode, $dstNode);
           updateConnectors();
         }
+        getText();
       };
     };
 
@@ -1996,6 +2018,7 @@ simcir.$ = function() {
             event.pageY - dragPoint.y);
       };
       dragCompleteHandler = function(event) {
+        //console.log("drag complete newdev");
         var $target = $(event.target);
         if ($target.closest('.simcir-toolbox').length == 0) {
           $dev.detach();
@@ -2006,15 +2029,18 @@ simcir.$ = function() {
         } else {
           $dev.trigger('dispose');
         }
+        getText();
       };
     };
 
     var $selectedDevices = [];
     var addSelected = function($dev) {
+      //console.log("selected");
       controller($dev).setSelected(true);
       $selectedDevices.push($dev);
     };
     var deselectAll = function() {
+      //console.log("deselectAll");
       $devicePane.children('.simcir-device').each(function() {
         controller($(this) ).setSelected(false);
       });
@@ -2050,6 +2076,7 @@ simcir.$ = function() {
         updateConnectors();
       };
       dragCompleteHandler = function(event) {
+        //console.log("drag complete dev");
         var $target = $(event.target);
         enableEvents($dev, true);
         $.each($selectedDevices, function(i, $dev) {
@@ -2060,6 +2087,7 @@ simcir.$ = function() {
             removeDevice($dev);
           }
         });
+        getText();
       };
     };
 
@@ -2107,6 +2135,7 @@ simcir.$ = function() {
     };
 
     var mouseDownHandler = function(event) {
+      //console.log("Mouse down");
       event.preventDefault();
       event.stopPropagation();
       var $target = $(event.target);
@@ -2133,6 +2162,7 @@ simcir.$ = function() {
       }
     };
     var mouseUpHandler = function(event) {
+      //console.log("Mouse up");
       if (dragCompleteHandler != null) {
         dragCompleteHandler(event);
       }
@@ -2144,6 +2174,7 @@ simcir.$ = function() {
       $temporaryPane.children().remove();
       $(document).off('mousemove', mouseMoveHandler);
       $(document).off('mouseup', mouseUpHandler);
+      getText();
     };
     $workspace.on('mousedown', mouseDownHandler);
 
@@ -2155,12 +2186,11 @@ simcir.$ = function() {
       addDevice($dev);
     });
     updateConnectors();
-
     controller($workspace, {
       data: getData,
       text: getText
     });
-
+    getText();
     return $workspace;
   };
 
@@ -2182,7 +2212,8 @@ simcir.$ = function() {
       css('width', $workspace.attr('width') + 'px').
       css('height', $workspace.attr('height') + 'px');
     var showData = false;
-    var toggle = function() {
+    var toggle = function() 
+    {
       $workspace.css('display', !showData? 'inline' : 'none');
       $dataArea.css('display', showData? 'inline' : 'none');
       if (showData) {
