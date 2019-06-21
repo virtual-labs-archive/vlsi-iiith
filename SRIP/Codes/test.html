@@ -16,10 +16,12 @@ This is only the UI part of the simulator.
   <script type="text/javascript" src="../Libraries/simcirjs/misc/simcir-num.js"></script>
   <script type="text/javascript" src="../Libraries/simcirjs/misc/simcir-delay.js"></script>
   <script type="text/javascript" src="../Libraries/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="circuitCheck.js" ></script> 
+
   <script type="text/javascript" src="simHelper.js"></script>
 </head>
 <body>
-    <div class="simcir item3">
+    <div id="sim" class="simcir item3">
     {
       "width":780,
       "height":525,
@@ -74,5 +76,6 @@ This is only the UI part of the simulator.
   ]
     }
     </div>
+    <input type="button" class="button" value="Simulate" onclick="circCheck()" />
 </body>
 </html>

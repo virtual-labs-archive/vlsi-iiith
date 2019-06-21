@@ -1,6 +1,6 @@
 
   .item1 {
-    background: LightSkyBlue;
+    background: lightskyblue;
     grid-area: head;
     text-align: center;
     font-size: 40px;
@@ -11,6 +11,23 @@
     display: inline-block;
   }
   
+ .select {
+    transition-duration: 0.4s;
+    cursor: pointer;
+    text-align: center;
+    background-color: #232323;
+    color: white;
+    width: 155px;
+    height: 40px;
+    border-radius: 10px;
+  }
+
+.select:hover {
+    background-color: white;
+    color: black;
+
+  }
+
   .item3 {
     background: PaleTurquoise;
     grid-area: content;

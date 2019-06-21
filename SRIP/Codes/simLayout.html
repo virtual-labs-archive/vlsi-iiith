@@ -23,7 +23,14 @@ This is only the UI part of the simulator.
 <body>
 <div id="ali" class="align">
 <div id="cont" class="container">
-  <div class="item1">Simulator</div>
+  <div class="item1">Simulator 
+    <select id="simop" class="select">
+      <option value="0" selected disabled hidden>Select Simulation</option>
+      <option value="1">Positive level Pass transistor</option>
+      <option value="2">Negative level Pass transistor</option>
+      <option value="3">Multiplexer</option>
+    </select>
+  </div>
   
     <div id="sim" class="simcir item3">
     {
