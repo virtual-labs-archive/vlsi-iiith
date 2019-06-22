@@ -8,45 +8,55 @@ This is only the UI part of the simulator.
 <head>
   <title>Simulator</title>
   <link rel="stylesheet" href="layout.css">
-  <script type="text/javascript" src="../Libraries/simcirjs/simcir.js"></script>
+ <link rel="stylesheet" type="text/css" href="../Libraries/Bootstrap/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="../Libraries/simcirjs/simcir.css" />
-  <script type="text/javascript" src="../Libraries/simcirjs/simcir-basicset.js"></script>
+  <script type="text/javascript" src="../Libraries/simcirjs/simcir.js"></script>
+<script type="text/javascript" src="../Libraries/simcirjs/simcir-basicset.js"></script>
   <link rel="stylesheet" type="text/css" href="../Libraries/simcirjs/simcir-basicset.css" />
   <script type="text/javascript" src="../Libraries/simcirjs/simcir-library.js"></script>
   <script type="text/javascript" src="../Libraries/simcirjs/misc/simcir-dso.js"></script>
   <script type="text/javascript" src="../Libraries/simcirjs/misc/simcir-num.js"></script>
   <script type="text/javascript" src="../Libraries/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="../Libraries/Bootstrap/bootstrap.bundle.min.js"></script>
   <script type="text/javascript" src="simHelper.js"></script>
 </head>
-<body>
-<div class="align">
-<div class="container">
-  <div class="item1">Simulator for D Flip Flop</div>
-  
-    <div class="simcir item3">
-    {
-      "width":780,
-      "height":525,
-      "showToolbox":true,
-      "toolbox":[
-      {"type":"In"},
-      {"type":"Out"},
-      {"type":"OSC","freq":0.5,"label":"CLK(0.5MHZ)"},
-      {"type":"OSC","freq":2,"label":"CLK(2MHZ)"},
-      {"type":"D-FF"},
-      {"type":"LED"},
-      {"type":"NumSrc"},
-      {"type":"NumDsp"},
-      {"type":"DSO","label":"Graph"}
-      ]
-    }
+<body style="background-color: white;">
+  <div style="text-align: center;">
+    <h1>Simulator</h1>
+    <h2>D Flip-Flop</h2>
+    <button class="buttonCalm" id="menu-toggle">Menu</button>
+  </div>
+  <hr>
+  <div class="d-flex" id="wrapper">
+    <!-- Sidebar -->
+    <div class="bg-light border-right border-top" id="sidebar-wrapper">
+      <div class="list-group list-group-flush">
+        <div class="sidebar-heading">See simulation:</div>
+        <div class="button" id="dfli">D Flip Flop (Inner working)</div>
+        <div class="button" id="dfl">D Flip Flop (Example Circuit)</div>
+        <div class="redColor button extraBottom" id="clear">Clear workspace</div>
+        <div class="sidebar-heading">Waveform Simulator:</div>
+        <div class="button extraBottom" onclick="window.open('finalSimulator.html')">Simulator</div>
+        <div class="sidebar-heading">Documentation:</div>
+        <a href="#helpme"><div id="helpmeButton" class="helpbutton ">Simulator Help</div></a>
+        <div class="helpbutton extraBottom" onclick="window.open('project_doc.html')">Project Documentation</div>
+      </div>
     </div>
-</div>
-  <input type="button" class="button" value="Graph Simulator" onclick="window.open('finalSimulator.html')" />
-  <input type="button" id="helpmeButton" class="helpbutton" value="Help" />
-</div>
+
+    <div id="page-content-wrapper">
+      <div class="container-fluid">
+        <div class="align">
+                <div class="simcir">
+                
+                </div>
+            </div>
+      </div>
+
 <div class="align" id="helpme">
-  <iframe src="Help2.html" height="625" width="400"></iframe>
+  <iframe src="Help2.html" height="500" width="800"></iframe>
 </div>
+</div>
+</div>
+<script type="text/javascript" src="simulatorOptions.js"></script>
 </body>
 </html>

@@ -1,4 +1,5 @@
 
+
   .item1 {
     background: LightSkyBlue;
     grid-area: head;
@@ -12,7 +13,7 @@
   }
   
   .item3 {
-    background: PaleTurquoise;
+    background: white;
     grid-area: content;
   }
   
@@ -20,51 +21,109 @@
     text-align: left;
     font-size: 15px;
   }
-  .container {
-    font-size: 1.5em;
-    height: 600px;
-    width: 800px;
-    background: LightGray;
-    display: grid;
-    grid-template-columns: 0px 780px;
-    grid-gap: 10px;
-    grid-template-rows: auto 525px;
-    grid-template-areas:
-      "advert head"
-      "advert content";
-  }
 
  .button {
   transition-duration: 0.4s;
   cursor: pointer;
-  background-color: #232323;
-  color: white;
+  background-color: white;
+  color: black;
+  border-top: 0.5px solid black;
   padding: 10px;
-  width: 150px;
+  width: 15rem;
   height: 50px;
   }
 
+  .extraBottom {
+    border-bottom: 0.5px solid black;
+  }
+
   .button:hover {
-    background-color: white;
+    background-color: cornsilk;
     color: black;
-    border: 1px solid black;
+  }
+
+  .buttonCalm {
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  padding: 10px;
+  width: 15rem;
+  height: 50px;
+  border: 1px solid black;
+  }
+
+  .buttonCalm:hover {
+    background-color: lightgrey;
+
   }
 
   .helpbutton {
     transition-duration: 0.4s;
   cursor: pointer;
-  background-color: blue;
-  color: white;
+  background-color: lightcyan;
+  color: black;
+  border-top: 0.5px solid black;
   padding: 10px;
-  width: 150px;
+  width: 15rem;
   height: 50px;
   }
 
-  .helpbutton:hover {
-    background-color: white;
+   .helpbutton:hover {
+    background-color: aquamarine;
     color: black;
-    border: 1px solid black;
   }
+
+  .redColor {
+    background-color: #FED7D7;
+  }
+
+  .redColor:hover {
+    background-color: #FE5A5A;
+  }
+
+
+  #sidebar-wrapper {
+  min-height: 100vh;
+  margin-left: -15rem;
+  -webkit-transition: margin .25s ease-out;
+  -moz-transition: margin .25s ease-out;
+  -o-transition: margin .25s ease-out;
+  transition: margin .25s ease-out;
+}
+
+#sidebar-wrapper .sidebar-heading {
+  padding: 0.875rem 1.25rem;
+  font-size: 1.2rem;
+  background-color: #D4D3D3;
+}
+
+#sidebar-wrapper .list-group {
+  width: 15rem;
+}
+
+#page-content-wrapper {
+  min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  margin-left: 0;
+}
+
+@media (min-width: 768px) {
+  #sidebar-wrapper {
+    margin-left: 0;
+  }
+
+  #page-content-wrapper {
+    min-width: 0;
+    width: 100%;
+  }
+
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: -15rem;
+  }
+}
   
   
  
