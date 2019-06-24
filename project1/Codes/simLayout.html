@@ -8,29 +8,30 @@ This is only the UI part of the simulator.
 <head>
   <title>Simulator</title>
   <link rel="stylesheet" href="layout.css">
- <link rel="stylesheet" type="text/css" href="../Libraries/Bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../Libraries/Bootstrap/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="../Libraries/simcirjs/simcir.css" />
   <script type="text/javascript" src="../Libraries/simcirjs/simcir.js"></script>
-<script type="text/javascript" src="../Libraries/simcirjs/simcir-basicset.js"></script>
+  <script type="text/javascript" src="../Libraries/simcirjs/simcir-basicset.js"></script>
   <link rel="stylesheet" type="text/css" href="../Libraries/simcirjs/simcir-basicset.css" />
   <script type="text/javascript" src="../Libraries/simcirjs/simcir-library.js"></script>
   <script type="text/javascript" src="../Libraries/simcirjs/misc/simcir-dso.js"></script>
   <script type="text/javascript" src="../Libraries/simcirjs/misc/simcir-num.js"></script>
   <script type="text/javascript" src="../Libraries/jquery-3.4.1.min.js"></script>
-  <script type="text/javascript" src="../Libraries/Bootstrap/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="../Libraries/Bootstrap/bootstrap.bundle.min.js"></script> 
   <script type="text/javascript" src="simHelper.js"></script>
 </head>
 <body style="background-color: white;">
   <div style="text-align: center;">
-    <h1>Simulator</h1>
+    <h1 style="font-size: 5em;">Simulator</h1>
     <h2>D Flip-Flop</h2>
-    <button class="buttonCalm" id="menu-toggle">Menu</button>
+    <!-- <button class="buttonCalm" id="menu-toggle">Menu</button> -->
   </div>
   <hr>
-  <div class="d-flex" id="wrapper">
+  <div class="d-flex">
     <!-- Sidebar -->
-    <div class="bg-light border-right border-top" id="sidebar-wrapper">
+    <div class="someMargin bg-light border-right border-top" id="sidebar-wrapper">
       <div class="list-group list-group-flush">
+        <div style="text-align: center; font-size: 2em;">Menu</div>
         <div class="sidebar-heading">See simulation:</div>
         <div class="button" id="dfli">D Flip Flop (Inner working)</div>
         <div class="button" id="dfl">D Flip Flop (Example Circuit)</div>
@@ -38,25 +39,96 @@ This is only the UI part of the simulator.
         <div class="sidebar-heading">Waveform Simulator:</div>
         <div class="button extraBottom" onclick="window.open('finalSimulator.html')">Simulator</div>
         <div class="sidebar-heading">Documentation:</div>
-        <a href="#helpme"><div id="helpmeButton" class="helpbutton ">Simulator Help</div></a>
+        <a href="help.html" data-toggle="modal" data-target="#instructions"><div id="helpmeButton" class="helpbutton ">Simulator Help</div></a>
         <div class="helpbutton extraBottom" onclick="window.open('project_doc.html')">Project Documentation</div>
       </div>
     </div>
-
-    <div id="page-content-wrapper">
-      <div class="container-fluid">
-        <div class="align">
+        <div class="someMargin align">
                 <div class="simcir">
                 
                 </div>
+        </div>
+<div class="modal fade bd-example-modal-lg" id="instructions" tabindex="-1" role="dialog" aria-labelledby="instructionsTitle" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="instructionsTitle">Help</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h1>The main Simulator page:</h1>
+            <p>
+              The main simulator page consists of a menu bar and the simulator.<br>
+              The menu bar consists of pre-made simulations under the "See Simulation" heading.<br>
+              The clear workspace button can be used to clear the simulator space and make it blank.<br>
+              The waveform simulator can be accessed under the "Waveform Simulator" heading.<br>
+              The theory and logic behind the experiment is given in the "Project Documentation" button.<br>
+            </p>
+            <h2>How to use the Simulator:</h2>
+            <p>
+            <ul>
+              <li>Choose a component from the toolbox and move it to the right.</li>
+              <li>Connections can be made clicking the input node and dragging it to an output node(or vice versa). </li>
+              <li>To disconnect two components click on the ipnut node.</li>
+              <li>To remove a component drag it back to the toolbox.</li>
+              <li>To edit the device name double click the label.</li>
+              <li>To test the D Flip flop with a custom input waveform, click on the simulator button.</li>
+            </ul>
+            <h2>Here is an example of the D flip-flop circuit:</h2>
+            <p>This circuit shows a negative edge triggered clock with a frequency of 0.5Hz.<br>
+              The input to the D Flip-Flop can be varied by clicking on the digit (which makes it either 0 or 1).<br>
+              The graph has 4 inputs which are: D (input), Clock (input), Q and Q' (outputs) respectively.<br></p>
+            <div class="simcir">
+              {
+            "width":700,
+            "height":250,
+            "showToolbox":false,
+            "devices":[
+              {"type":"OSC","freq":0.5,"label":"CLK(0.5MHZ)","id":"dev0","x":24,"y":192},
+              {"type":"NumSrc","id":"dev1","x":16,"y":24,"label":"NumSrc","state":{"direction":0,"on":true}},
+              {"type":"D-FF","id":"dev2","x":88,"y":96,"label":"D-FF"},
+              {"type":"DSO","label":"Graph","id":"dev3","x":208,"y":56,"state":{"playing":true,"rangeIndex":0}}
+            ],
+            "connectors":[
+              {"from":"dev2.in0","to":"dev1.out0"},
+              {"from":"dev2.in1","to":"dev0.out0"},
+              {"from":"dev3.in0","to":"dev1.out0"},
+              {"from":"dev3.in1","to":"dev0.out0"},
+              {"from":"dev3.in2","to":"dev2.out0"},
+              {"from":"dev3.in3","to":"dev2.out1"}
+            ]
+          }
             </div>
+            </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
       </div>
+    </div>
+</div>
+</div>
+<script type="text/javascript">
+  var modal = document.getElementById("myModal");
+  var btn = document.getElementById("helpmeButton");
+  var span = document.getElementsByClassName("close")[0];
 
-<div class="align" id="helpme">
-  <iframe src="Help2.html" height="500" width="800"></iframe>
-</div>
-</div>
-</div>
+  btn.onclick = function() {
+    modal.style.display = "block";
+  }
+
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+</script>
 <script type="text/javascript" src="simulatorOptions.js"></script>
 </body>
 </html>

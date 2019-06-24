@@ -24,6 +24,7 @@ Circuit Simulator:
 simLayout.html
 layout.css
 simHelper.js
+simulatorOptions.js
 
 ----------------------------------------------------------------------------------
 

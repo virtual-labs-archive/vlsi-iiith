@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
 .box {
     border-style: solid;
     border-color: black;
@@ -30,12 +31,18 @@
   padding: 10px;
   width: 150px;
   height: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   }
 
   .button:hover {
     background-color: white;
     color: black;
     border: 1px solid black;
+  }
+
+  .erode {
+    border-radius: 7px;
   }
 
   .select {
@@ -45,6 +52,8 @@
     color: white;
     width: 155px;
     height: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 
   .select:hover {

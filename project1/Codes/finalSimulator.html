@@ -20,7 +20,7 @@ It simulates the output waveform when inputs are given to the D flip flop
   <script type="text/javascript" src="../Libraries/Bootstrap/bootstrap.bundle.min.js"></script>
 
 <div style="text-align: center;">
-    <h1>Simulator</h1>
+    <h1 style="font-size: 3em;">Simulator</h1>
     <h2>Waveform</h2>
 </div>
 <hr>
@@ -28,25 +28,25 @@ It simulates the output waveform when inputs are given to the D flip flop
    <iframe src="Help.html" height="300" width="1000"></iframe>
  </div>
  <div class="box lightblue-box">
-  <div style="text-align: center;">
+  <div style="text-align: left;">
 
-    <select id="clock" class="select">
+    <select id="clock" class="erode select">
       <option value="0" selected disabled hidden>Select the clock type</option>
       <option value="1">Positive edge Triggered</option>
       <option value="2">Negative edge Triggered</option>
     </select>
     <br>
-    <select id="waveform" class="select">
+    <select id="waveform" class="erode select">
       <option value="0" selected disabled hidden>Select input waveform</option>
       <option value="1">Waveform 1</option>
       <option value="2">Waveform 2</option>
       <option value="3">Waveform 3</option>
     </select>
     <h4 style="display: inline; font-family: Open Sans" class="some-margin">Or make your own waveform:</h4>
-    <input type="text" class="text" id="number" placeholder="Enter number of clock pulses">
-    <input type="text" class="text" id="line" placeholder="Enter the waveform">
+    <input type="text" class="erode text" id="number" placeholder="Enter number of clock pulses">
+    <input type="text" class="erode text" id="line" placeholder="Enter the waveform">
     <br>
-    <button id="simulate" onclick="myFunction()" class="button">Simulate</button>
+    <button id="simulate" onclick="myFunction()" class="erode button">Simulate</button>
   </div>
 
   <h5 id="wavebox" class="box white-box">
@@ -71,8 +71,8 @@ It simulates the output waveform when inputs are given to the D flip flop
     </script>
   </h5>
   <div style="text-align: center;">
-    <button onclick="document.location.reload(false)" class="some-margin button">Clear</button>
-    <input type="button" id="helpmeButton" class="helpbutton" value="Help" />
+    <button onclick="document.location.reload(false)" class="erode some-margin button">Clear</button>
+    <input type="button" id="helpmeButton" class="erode helpbutton" value="Help" />
   </div> 
  </div>
 </body>

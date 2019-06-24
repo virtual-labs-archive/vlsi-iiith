@@ -1,11 +1,14 @@
 
-
   .item1 {
     background: LightSkyBlue;
     grid-area: head;
     text-align: center;
     font-size: 40px;
     font-weight: bold;
+  }
+
+  .someMargin {
+    margin-left: 50px;
   }
 
   .align {
@@ -38,7 +41,7 @@
   }
 
   .button:hover {
-    background-color: cornsilk;
+    background-color: lightgrey;
     color: black;
   }
 
@@ -95,7 +98,8 @@
 #sidebar-wrapper .sidebar-heading {
   padding: 0.875rem 1.25rem;
   font-size: 1.2rem;
-  background-color: #D4D3D3;
+  background-color: #3f3f3f;
+  color: white;
 }
 
 #sidebar-wrapper .list-group {
@@ -119,11 +123,9 @@
     min-width: 0;
     width: 100%;
   }
-
-  #wrapper.toggled #sidebar-wrapper {
-    margin-left: -15rem;
-  }
 }
+
+
   
   
  
