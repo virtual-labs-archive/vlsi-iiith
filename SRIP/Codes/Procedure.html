@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Procedure</title>
+	<script type="text/javascript" src="../Libraries/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+	<h1>Procedure</h1>
+	<select id="choice">
+		<option value="0" selected disabled hidden>Select the circuit</option>
+        <option value="1">Positive pass transistor</option>
+        <option value="2">Negative pass transistor</option>
+        <option value="3">Multiplexer</option>
+	</select>
+	<div id="pos">
+		<p>pos</p>
+	</div>
+	<div id="neg">
+		<p>neg</p>
+	</div>
+	<div id="mux">
+		<p>mux</p>
+	</div>
+	<script type="text/javascript">
+		$("#pos").hide();
+		$("#neg").hide();
+		$("#mux").hide();
+		$("#choice").change(function(event)
+		{
+			var ch = document.getElementById("choice").value;
+			if(ch==="1")
+			{
+				$("#pos").show();
+				$("#neg").hide();
+				$("#mux").hide();
+			}
+			else if(ch==="2")
+			{
+				$("#pos").hide();
+				$("#neg").show();
+				$("#mux").hide();
+			}
+			else
+			{
+				$("#pos").hide();
+				$("#neg").hide();
+				$("#mux").show();
+			}
+		});
+	</script>
+</body>
+</html>

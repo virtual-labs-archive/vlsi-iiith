@@ -536,3 +536,64 @@ simcir.registerDevice('4to16BinaryDecoder',
   ]
 }
 );
+
+simcir.registerDevice('OSCo', 
+  {
+  "width":300,
+  "height":100,
+  "showToolbox":false,
+  "toolbox":[
+    {"type":"In"},
+    {"type":"Out"},
+    {"type":"PMOS"},
+    {"type":"NMOS"},
+    {"type":"Delay","delay":1000},
+    {"type":"OSC","freq":0.5,"label":"CLK(0.5MHZ)"},
+    {"type":"OSC","freq":2,"label":"CLK(2MHZ)"},
+    {"type":"LED"},
+    {"type":"DSO","label":"Graph"}
+  ],
+  "devices":[
+    {"type":"OSC","freq":0.5,"label":"CLK","id":"dev0","x":48,"y":64},
+    {"type":"Delay","delay":1000,"id":"dev1","x":120,"y":72,"label":"Delay","state":{"direction":0}},
+    {"type":"Out","id":"dev2","x":176,"y":64,"label":"Out"}
+  ],
+  "connectors":[
+    {"from":"dev1.in0","to":"dev0.out0"},
+    {"from":"dev2.in0","to":"dev1.out0"}
+  ]
+
+  });
+
+simcir.registerDevice('PassTransistor', 
+  {
+  "width":400,
+  "height":300,
+  "showToolbox":false,
+  "toolbox":[
+    {"type":"In"},
+    {"type":"Out"},
+    {"type":"PMOS"},
+    {"type":"NMOS"},
+    {"type":"Delay","delay":1000},
+    {"type":"OSC","freq":0.5,"label":"CLK"},
+    {"type":"LED"},
+    {"type":"DSO","label":"Graph"}
+  ],
+  "devices":[
+    {"type":"PMOS","id":"dev0","x":72,"y":128,"label":"PMOS"},
+    {"type":"NMOS","id":"dev1","x":272,"y":128,"label":"NMOS"},
+    {"type":"In","id":"dev2","x":40,"y":32,"label":"PGate"},
+    {"type":"In","id":"dev3","x":240,"y":32,"label":"NGate"},
+    {"type":"In","id":"dev4","x":120,"y":224,"label":"In"},
+    {"type":"Out","id":"dev5","x":200,"y":224,"label":"Out"}
+  ],
+  "connectors":[
+    {"from":"dev0.in0","to":"dev2.out0"},
+    {"from":"dev0.in1","to":"dev4.out0"},
+    {"from":"dev1.in0","to":"dev3.out0"},
+    {"from":"dev1.in1","to":"dev5.out0"},
+    {"from":"dev4.in0","to":"dev1.out0"},
+    {"from":"dev5.in0","to":"dev0.out0"}
+  ]
+});
