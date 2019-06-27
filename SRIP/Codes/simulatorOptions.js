@@ -95,6 +95,7 @@ else
                     {"type":"Delay","delay":1000},
                     {"type":"OSC","freq":0.5,"label":"CLK"},
                     {"type":"LED"},
+                    {"type":"OR"},
                     {"type":"PassTransistor"}
                     ]
                     

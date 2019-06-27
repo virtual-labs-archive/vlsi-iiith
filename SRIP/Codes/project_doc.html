@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Documentation</title>
+	<link rel="stylesheet" type="text/css" href="project_doc_style.css">
+</head>
+<body>
+	<h1>Schematic Design Of Pass Transistor Logic & Multiplexer.</h1>
+
+	<h2>Introduction</h2>
+
+	<p>
+		Transmission gates are used in digital circuits to pass or block particular signal from the components. In <br>transmission gates, NMOS and PMOS are parallel connected to each other. Schematic representation of transmission
+		<br> gate and its circuit symbol are shown below.<br>
+		<img src="Images/img1.png"><br>
+		In the <strong>transmission</strong> gates the input to the gate acts as the controlling input and depending on the value of <br>control variable, the input at the source end of transistor appears at the drain end or in other words the <br>control variable controls a transmission gate to which pass variables are applied. In figure shown above A <br>
+		is the control signal. <br><br>
+		<strong>Pass transistor logic is an efficient alternative to Complementary CMOS logic design because of following reasons:</strong><br>
+		
+			<li>Decreased node capacitance.</li>
+			<li>Reduced transistor count required to implement a logic function.</li>
+			<li>Due to the low voltage swing pass transistors require lower switching energy to charge up the node.</li>
+			<li>Better speed.</li>
+			<li>Low power design.</li>
+			<li>No static power consumption.</li>
+		
+		<br><strong>Applications of Transmission Gate:</strong><br>
+		
+			<li>Transmission gates are typically used as building blocks for logic circuitry, such as a D Latch or D Flip-Flop.</li>
+			<li>Transmission gates are basic building block for multiplexer.</li>
+			<li>Transmission gates can be used for blocking particular component from live signal.</li>
+		<br>
+	</p>
+		<h3>Multiplexer</h3>
+		<p>
+			Multiplexer or MUX, which is also known as data selector, is a combinational circuit with multiple input and <br>single output. At a time a single input is selected and given as output based on select signal.<br>
+            
+            A multiplexer selects binary information present on any one on the input line, depending upon logic status of<br>the selection inputs and routes to the output line. If there are n selection line then number of possible<br>routes input lines is 2^n and then multiplexer is referred as a 2^n x 1 multiplexer.	<br><br>	
+		</p>
+
+	<h2>Pass transistor logic through NMOS</h2>
+	<p>
+		As we already know NMOS permits flow of current from source to drain when the input to the gate is 1 <br>
+		 therefore when control variable is equal to 1 the input at the source end appears on the drain.<br>
+	</p>
+
+</body>
+</html>

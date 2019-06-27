@@ -3,8 +3,20 @@
 <head>
 	<title>Procedure</title>
 	<script type="text/javascript" src="../Libraries/jquery-3.4.1.min.js"></script>
+	<style type="text/css">
+		select {
+				  transition-duration: 0.4s;
+				  cursor: pointer;
+				  background-color: white;
+				  color: black;
+				}
+		 select:hover {
+				    background-color: lightgrey;
+				}
+	</style>
 </head>
 <body>
+	<div style="text-align: center;">
 	<h1>Procedure</h1>
 	<select id="choice">
 		<option value="0" selected disabled hidden>Select the circuit</option>
@@ -12,14 +24,46 @@
         <option value="2">Negative pass transistor</option>
         <option value="3">Multiplexer</option>
 	</select>
+	</div>
 	<div id="pos">
-		<p>pos</p>
+		<img width="375" src="Images/Label.png">
+		<p><strong>Components which will be used for this:</strong>PMOS, NMOS, Clock, Delay, Input, Output.</p><br>
+		<strong>Steps:</strong>
+		<ol>
+			<li>Select positive pass transistor from the list on the top of the page.</li>
+			<li>Connect source of PMOS with drain of NMOS and connect input pin serially to it.</li>
+			<li>Connect drain of PMOS with source of NMOS and connect output pin serially to it.</li>
+			<li>Connect clock to the delay and connect that to gate of PMOS (clock bar).</li>
+			<li>Connect clock to gate of NMOS (clock).</li>
+			<li>Press the simulate button and observe the graph.</li>
+		</ol>
 	</div>
 	<div id="neg">
-		<p>neg</p>
+		<img width="375" src="Images/Label.png">
+		<p><strong>Components which will be used for this:</strong>PMOS, NMOS, Clock, Delay, Input, Output.</p><br>
+		<strong>Steps:</strong>
+		<ol>
+			<li>Select negative pass transistor from the list on the top of the page.</li>
+			<li>Connect source of PMOS with drain of NMOS and connect input pin serially to it.</li>
+			<li>Connect drain of PMOS with source of NMOS and connect output pin serially to it.</li>
+			<li>Connect clock to gate of PMOS (clock).</li>
+			<li>Connect clock to the delay and connect that to gate of NMOS (clock bar).</li>
+			<li>Press the simulate button and observe the graph.</li>
+		</ol>
 	</div>
 	<div id="mux">
-		<p>mux</p>
+		<p><strong>Components which will be used for this:</strong>Pass transistor, Clock, Delay, Input, Output, OR gate.</p><br>
+		<strong>Steps:</strong>
+		<ol>
+			<li>Select multiplexer from the list on the top of the page.</li>
+			<li>Place two pass transistors on the workspace.</li>
+			<li>Connect clock to delay (clock bar) and connect it to gate of NMOS (NGate) of 1st pass transistor and gate of PMOS (PGate) of 2nd pass transistor.</li>
+			<li>Connect an Input pin to each transistor's input.</li>
+			<li>Connect clock to gate of PMOS of first transistor and gate of NMOS of 2nd transistor.</li>
+			<li>Connect the outputs of the two transistors to an OR gate.</li>
+			<li>Connect the output of the OR gate to an output pin.</li>
+
+		</ol>
 	</div>
 	<script type="text/javascript">
 		$("#pos").hide();

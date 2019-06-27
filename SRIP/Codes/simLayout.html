@@ -47,7 +47,7 @@ This is only the UI part of the simulator.
         <div class="redColor button extraBottom" id="clear">Clear workspace</div>
         <div class="sidebar-heading">Documentation:</div>
         <a href="help.html" data-toggle="modal" data-target="#instructions"><div id="helpmeButton" class="helpbutton ">Simulator Help</div></a>
-        <div class="helpbutton" id="procedure">Procedure</div>
+        <a href="#end"><div class="helpbutton" id="procedure">Procedure</div></a>
         <div class="helpbutton" onclick="window.open('project_doc.html')">Project Documentation</div>
         <div class="simulate extraBottom" onclick="circCheck()">Simulate</div>
       </div>
@@ -67,7 +67,24 @@ This is only the UI part of the simulator.
           </button>
         </div>
         <div class="modal-body">
-          
+          <h1>Simulator layout</h1>
+          <p>
+            Firstly you have to select which simulation you want to run by choosing one of the options which is in the list area under the main heading of the page.<br>
+              The simulator consists of a menu on the left. You can load the pass transistor circuits by clicking on one of the circuits given there.<br>
+            To know how to build the circuits on your own click on <strong>procedure</strong>, a new window will appear on the right side of the workspace where you can refer to the instructions.<br>
+            Once you have completed the circuit, either by choosing the <i>See circuit</i> options or building your own, click on the simulate button to simulate the waveform, which can be seen right below the workspace of the circuit simulator.<br>
+            Clear workspace can be clicked to remove the simulation as well as the circuit.<br>
+          </p>
+          <h1>How to use the Simulator:</h1>
+          <ul>
+            <li>Choose a component from the toolbox and move it to the right.</li>
+            <li>Connections can be made clicking the input node and dragging it to an output node(or vice versa). </li>
+            <li>To disconnect two components click on the input node.</li>
+            <li>To remove a component drag it back to the toolbox.</li>
+            <li>To edit the device name double click the label.</li>
+            <li>To see the inner workings of a device, double click it.</li>
+            <li>Once you are done with the circuit, click on simulate to simulate the waveform.</li>
+          </ul>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -77,7 +94,7 @@ This is only the UI part of the simulator.
 </div>
 <!--Put stuff here to make it side by side-->
 <div id="proc" style="margin-left: 20px;">
-  <iframe height="525" width="300" src="Procedure.html"></iframe>
+  <iframe height="525" width="400" src="Procedure.html"></iframe>
 </div>
 <div id="end"></div>
 </div>

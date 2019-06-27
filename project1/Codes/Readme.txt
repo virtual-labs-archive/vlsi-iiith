@@ -1,7 +1,6 @@
 SRIP
 
 VLSI | issue no 385 | Design of D FF
-Project Documentation can be found in project_doc.html
 
 --------------------------------------------------------------------------------
 
@@ -11,6 +10,7 @@ The waveform simulator can be accessed through that webpage itself by clicking t
 graph simulator button, or it can also be independently accessed by clicking the 
 finalSimulator.html file.
 Help button can be pressed to access help.
+Project Documentation can be found in project_doc.html
 
 The following are the files used for the simulator:
 
