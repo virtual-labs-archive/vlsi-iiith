@@ -19,7 +19,6 @@ This is only the UI part of the simulator.
   <script type="text/javascript" src="../Libraries/simcirjs/misc/simcir-delay.js"></script>
   <script type="text/javascript" src="../Libraries/jquery-3.4.1.min.js"></script>
   <script type="text/javascript" src="../Libraries/Bootstrap/bootstrap.bundle.min.js"></script> 
-  <script type="text/javascript" src="simHelper.js"></script>
   <script type="text/javascript" src="circuitCheck.js"></script>
 </head>
 <body style="background-color: white;">
@@ -28,8 +27,8 @@ This is only the UI part of the simulator.
     <h3>
       <select id="whichSim">
         <option value="0" selected disabled hidden>Select the Simulation</option>
-        <option value="1">Positive pass transistor</option>
-        <option value="2">Negative pass transistor</option>
+        <option value="1">Positive level pass transistor</option>
+        <option value="2">Negative level pass transistor</option>
         <option value="3">Multiplexer</option>
       </select>
     </h3>
@@ -42,8 +41,8 @@ This is only the UI part of the simulator.
       <div>
         <div style="text-align: center; font-size: 2em;">Menu</div>
         <div class="sidebar-heading">See Circuit:</div>
-        <div class="button" id="dfli">Positive Pass Transistor</div>
-        <div class="button" id="dfl">Negative Pass Transistor</div>
+        <div class="button" id="dfli">Positive level pass transistor</div>
+        <div class="button" id="dfl">Negative level pass transistor</div>
         <div class="redColor button extraBottom" id="clear">Clear workspace</div>
         <div class="sidebar-heading">Documentation:</div>
         <a href="help.html" data-toggle="modal" data-target="#instructions"><div id="helpmeButton" class="helpbutton ">Simulator Help</div></a>
@@ -70,8 +69,8 @@ This is only the UI part of the simulator.
           <h1>Simulator layout</h1>
           <p>
             Firstly you have to select which simulation you want to run by choosing one of the options which is in the list area under the main heading of the page.<br>
-              The simulator consists of a menu on the left. You can load the pass transistor circuits by clicking on one of the circuits given there.<br>
-            To know how to build the circuits on your own click on <strong>procedure</strong>, a new window will appear on the right side of the workspace where you can refer to the instructions.<br>
+              The simulator consists of a menu on the left. You can load the pass transistor circuits by clicking on one of the circuits given there or you could make it yourself.<br>
+            To know how to build the circuits on your own, click on <strong>procedure</strong>, a new window will appear on the right side of the workspace where you can refer to the instructions.<br>
             Once you have completed the circuit, either by choosing the <i>See circuit</i> options or building your own, click on the simulate button to simulate the waveform, which can be seen right below the workspace of the circuit simulator.<br>
             Clear workspace can be clicked to remove the simulation as well as the circuit.<br>
           </p>

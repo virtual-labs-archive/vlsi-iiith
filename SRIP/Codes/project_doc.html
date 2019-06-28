@@ -14,7 +14,7 @@
 		<br> gate and its circuit symbol are shown below.<br>
 		<img src="Images/img1.png"><br>
 		In the <strong>transmission</strong> gates the input to the gate acts as the controlling input and depending on the value of <br>control variable, the input at the source end of transistor appears at the drain end or in other words the <br>control variable controls a transmission gate to which pass variables are applied. In figure shown above A <br>
-		is the control signal. <br><br>
+		is the control signal. When control signal (signal A) is high then transmission gate passes signal from input to<br> output. NMOS passes good zero and PMOS passes good one, putting NMOS and PMOS in parallel produces a <br>transmission gate that passes both logic levels good. <br><br>
 		<strong>Pass transistor logic is an efficient alternative to Complementary CMOS logic design because of following reasons:</strong><br>
 		
 			<li>Decreased node capacitance.</li>
@@ -41,8 +41,24 @@
 	<h2>Pass transistor logic through NMOS</h2>
 	<p>
 		As we already know NMOS permits flow of current from source to drain when the input to the gate is 1 <br>
-		 therefore when control variable is equal to 1 the input at the source end appears on the drain.<br>
+		 therefore when control variable is equal to 1 the input at the source end appears on the drain.<br><br>
+		 <img src="Images/img2.png">
 	</p>
+	<h2>Pass transistor logic through PMOS</h2>
+	<p>
+		As we already know PMOS permits flow of current from source to drain when the input to the gate is 0 <br>
+		therefore when control variable is equal to 0 the input at the source end appears on the drain. <br><br>
+		<img src="Images/img3.png">
+	</p>
+	<h2>Multiplexer</h2>
+	<p>
+		The multiplexer selects one of many analog or digital input. A multiplexer with 2n input lines have n select<br> lines. The select lines can either be 0 or 1. Depending on the binary number(formed by combination of 1s and 0s)<br> at the select lines. One of the input is selected and it is passed on to the output.<br>
+		The block diagram and truth table of the 2 input multiplexer is given below:<br>
+		<img src="Images/img4.png">
+		<img src="Images/img5.png"><br>
+		The logical expression for output can be AS'+BS . If we implement this logic using nands and nors then no. of<br>transistor required would be 5.We can use the knowledge of pass transistors,control variables an pass variables.<br>
+	</p>
+
 
 </body>
 </html>

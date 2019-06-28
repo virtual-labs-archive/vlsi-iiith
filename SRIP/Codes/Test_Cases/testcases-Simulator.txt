@@ -1,0 +1,11 @@
+1. Circuit used to disappear when you change simulations:
+fixed
+
+2.Press Simulate button without selecting what type of simulation:
+fixed
+
+3.Press Simulate button with mismatch circuit and simulation option:
+fixed
+
+4.Circuit Check
+fixed
