@@ -7,15 +7,17 @@ This document captures the technical details related to the experiment developme
 ## Project 
 **Domain name:** Computer Science & Engineering.    
 **Lab name:** Very Large Scale Integration.    
-**Experiment name:** Design of D FLip Flop.    
+**Experiment name:** Schematic Design Of Pass Transistor Logic & Multiplexer.   
 
-The D flip-flop tracks the input, making transitions which match those of the input D. The D stands for "data"; this flip-flop stores the value that is on the data line. It can be thought of as a basic memory cell. A D flip-flop can be made from a set/reset flip-flop by tying the set to the reset through an inverter. The result may be clocked.    
+Pass transistor logic (PTL) describes several logic families used in the design of integrated circuits. It reduces the count of transistors used to make different logic gates, by eliminating redundant transistors. Transistors are used as switches to pass logic levels between nodes of a circuit, instead of as switches connected directly to supply voltages.   
 
-This experiment is used to simulate the working of a D Flip-Flop circuit wise. It can also be used with a custom input waveform to observe the output of the circuit.
+This reduces the number of active devices, but has the disadvantage that the difference of the voltage between high and low logic levels decreases at each stage. Each transistor in series is less saturated at its output than at its input.   
+
+This experiment is used to simulate the working of a Pass transistor on different levels and a multiplexer. A graph can be observed with the simulation itself.
 
 ## Purpose of the Project
 
-The purpose of this project is to convert the D Flip-flop experiment simulation from Java to Javascript.    
+The purpose of this project is to convert Pass transistor logic and multiplexer simulation from Java to Javascript.       
 
 ## Project Developers Details
 
@@ -31,10 +33,9 @@ The purpose of this project is to convert the D Flip-flop experiment simulation 
 3. Javascript  
 
 **Libraries:**  
-1. SimCir JS  
-2. Wavedrom JS  
-3. JQuery  
-4. Bootstrap  
+1. SimCir JS    
+2. JQuery  
+3. Bootstrap   
 
 ## Development Environment
 
@@ -50,23 +51,21 @@ The purpose of this project is to convert the D Flip-flop experiment simulation 
 | Sl.no |        File        |                                      Role                                      |
 | 1.    | Codes              | Contains the major code as well as the images related to it.                   |
 | 2.    | Libraries          | Contains libraries used by the code                                            |
-
+ 
 ## Process Followed to convert the experiment 
 
 1. Understand the assigned experiment Java simulation.
 2. Understanding the experiment concept.
 3. Re-implement the same in javascript.
 
-## Value Added by our Project
+## Value Added by our Project   
 
-It is beneficial to engineering students who want to understand the inner working of the D Flip-Flop and observe the simulated graph with a custom input waveform.
+It is beneficial to engineering students who want to understand the inner working of the pass transistors and multiplexers and understand the output graphs seen by them.
 
 ## Risks and Challenges
 
-A few challenges faced during the development process was integrating the wavedrom and checking the waveform for any issues.
+A few challenges faced during the development process was understanding the simcir library so that it can be used to retrieve the circuit data dynamically. The circuit checking functionality also took some time to implement.
 
 ## Issues
 
-In Firefox, in the waveform simulator, when you click on the help button the graph is not displayed in the help section.
-
-
+No current issues open.
