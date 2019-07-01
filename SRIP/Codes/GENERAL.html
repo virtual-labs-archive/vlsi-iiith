@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+* {
+  box-sizing: border-box;
+}
+
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 20px;
+  height: 500px; 
+}
+
+.left, {
+  width: 25%;
+}
+.right{
+  width:25%;
+}
+.middle {
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+<style>
+body {
+  width: 1400px;
+}
+</style>
+</head>
+<body>
+<button onclick="scrollWin()">Click </button><br><br>
+
+<script>
+function scrollWin() {
+  window.scrollTo(500, 0);
+}
+</script>
+<body>
+
+<h2><center>D FLIP FLOP:Negetive Edge</center></h2>
+
+
+</head>
+<body>
+<center>
+<button type="button" onclick="alert">simulate</button>
+<a href="timing.html">simulate</a>
+</center>
+<br><br><br>
+<div class="row">
+  <div class="column left" style="background-color:grey;">
+    <h2>TOOL BAR</h2>
+    <p>Available icons</p>
+  </div>
+  <div class="column middle" style="background-color:black;">
+    <h2>Column 2</h2>
+    <p></p>
+  </div>
+  <div class="column right" style="background-color:white;">
+    <h2>SIMULATION OF CIRCUIT</h2>
+    <p></p>
+  </div>
+</div>
+
+</body>
+</html>
