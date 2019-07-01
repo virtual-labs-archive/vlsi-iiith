@@ -37,13 +37,13 @@ if(sessionStorage.getItem("PPT"))
                 {"from":"dev5.in0","to":"dev2.out0"},
                 {"from":"dev6.in0","to":"dev1.out0"}
               ]
-            }
+            };
     var html1=JSON.stringify(dfl);
     document.querySelector(".simcir").innerHTML=html1;
 }
 else if(sessionStorage.getItem("NPT"))
 {
-  var dfl = {
+  var dfli = {
   "width":870,
   "height":525,
   "showToolbox":true,
@@ -74,16 +74,17 @@ else if(sessionStorage.getItem("NPT"))
     {"from":"dev4.in0","to":"dev0.out0"},
     {"from":"dev6.in0","to":"dev2.out0"}
   ]
-}
-  var html1=JSON.stringify(dfl);
-  document.querySelector(".simcir").innerHTML=html1;
+};
+  var html2=JSON.stringify(dfli);
+  document.querySelector(".simcir").innerHTML=html2;
 
 }
 else
 {
-  if(sessionStorage.getItem("MUX")=="3")
+  var obj = {};
+  if(sessionStorage.getItem("MUX")==="3")
   {
-  var obj =  {
+  obj =  {
                     "width":870,
                     "height":525,
                     "showToolbox":true,
@@ -99,11 +100,11 @@ else
                     {"type":"PassTransistor"}
                     ]
                     
-              }
+              };
   }
   else
   {
-    var obj =  {
+  obj =  {
                     "width":870,
                     "height":525,
                     "showToolbox":true,
@@ -117,7 +118,7 @@ else
                     {"type":"LED"}
                     ]
                     
-              }
+              };
   }
   var html=JSON.stringify(obj);
   document.querySelector(".simcir").innerHTML=html;

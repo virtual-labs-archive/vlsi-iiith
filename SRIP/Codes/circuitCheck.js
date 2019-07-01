@@ -2,7 +2,9 @@ function circCheck()
 {
 	//console.log(JSON.stringify(dataFinal.devices));
 	//console.log(JSON.stringify(dataFinal.connectors));
+	/*global dataFinal*/
 	var dev = dataFinal.devices;
+	/*global dataFinal*/
 	var con = dataFinal.connectors;
 	//console.log(dev.length);
 	//console.log(con.length);
@@ -23,10 +25,10 @@ function circCheck()
 			{
 				var fro = JSON.stringify(con[i].from);
 				var too = JSON.stringify(con[i].to);
-				spl1 = "";
-				spl2 = "";
-				spl4 = "";
-				spl5 = "";
+				var spl1 = "";
+				var spl2 = "";
+				var spl4 = "";
+				var spl5 = "";
 				var flag = true;
 				for(var j=0;j<fro.length;j++)
 				{
@@ -58,7 +60,7 @@ function circCheck()
 				spl6 = devic[spl4] + spl5;
 				connec[spl3] = spl6;
 			}
-	console.log(devic);
+	//console.log(devic);
 	console.log(connec);
 	//-----------------------------------------------------------------------------
 
@@ -123,7 +125,7 @@ function circCheck()
 					"PassTransistor.in0": "Delay.out",
 					"PassTransistor.in1": "In.out",
 					"PassTransistor.in2": "OSC.out"
-		}
+		};
 		if(isEqual(check, connec))
 		{
 			document.getElementById("blnk").style.display = "none";
