@@ -1,0 +1,89 @@
+
+<html>
+<head>
+	<title>Instruction</title>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</head>
+<body class="bg-light">
+	<div class="container">
+		<div class="jumbotron">
+			<h1 class="display-4" align="center">INSTRUCTIONS</h1>
+			<p class="lead">This page contains the description and instructions for using the simulator. </p>
+			<hr class="my-4">
+			<p>The simulator basically consists two toolboxes: Settings toolbox, Grid toolbox.</p>
+			<ul>
+				<li>
+					<p><strong>Settings: </strong>You can change the settings using this toolbox.</p>
+					<ol>
+						<li>
+							<p><strong>Frequency Input: </strong>This takes in the frequency user inputs for generating the graph, frequency ranging between 1 and 20.</p>
+						</li>
+						<li>
+							<p><strong>Modules:</strong> This contains 2 checkboxes: POSITIVE LEVEL D-LATCH AND D FLIP FLOP and NEGATIVE EDGE D FLIP FLOP, depending on the checkbox selected, a circuit appears on the grid.</p>
+						</li>
+						<li>
+							<p><strong>SAVE: </strong>Click on the button to save your settings. You need to do it, in order for the settings to apply.</p>
+						</li>
+						<li>
+							<p><strong>REFRESH: </strong>Clicking on this would clear the grid, it would remove all the components from the grid.</p>
+							<div class="alert alert-danger" role="alert">
+								<strong>WARNING</strong>: When you click on save settings or clear settings, your circuit gets cleared automatically, so please choose your settings before hand.	
+							</div>
+						</li>
+						
+						<li>
+							<p>Click the "CLEAR GRID" button to clear the simulation.</p>
+						</li>
+					</ol>
+				</li>
+				<li>
+					<p><strong>Grid Toolbox:</strong> This Toolbox contains the workspace where you will simulate the experiment.</p>
+					<ol>
+						<li>
+							<p>The toolbox on the left contains the pre-made logic circuits you will require to build a counter.</p>
+						</li>
+						<li>
+							<p>Drag the components the right and place them on your grid.</p>
+						</li>
+						<li>
+							<p>The left part of the abstracted circuit contains the inputs, and the right side the outputs.</p>
+						</li>
+						<li>
+							<p>Click on the circle of the input or output to another input/output to make a connection.</p>
+							<div class="alert alert-danger" role="alert">
+								You can connect only one line to an input, but an output can have multiple lines.
+							</div>
+						</li>
+						<li>
+							<p>The "DC" icon outputs digital 1 at all times, connnect it to:</p>
+							<ul>
+								<li>
+									<p>-push on: to simulate the 1 only when you're pressing on the button</p>
+								</li>
+								<li>
+									<p>-push off: to simulate 0 when you're pushing the button</p>
+								</li>
+								<li>
+									<p>-toggle: to toggle the output between 1 and 0.</p>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<p>The joint icon is a connection to make the connections look neater, as the lines from an output to an input are straight.</p>
+						</li>
+		
+					</ol>
+				</li>
+			</ul>
+		</div>
+
+	</div>
+</body>
+</html>
