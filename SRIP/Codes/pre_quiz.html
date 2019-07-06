@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Quiz</title>
+<style>
+div#test{ border:#5AB029 3px solid; padding:10px 40px 40px 40px; background-color:#E5FCE3; width:50%;}
+.figure
+{
+   float:left;
+}
+.fig
+{
+   float:right;
+}
+h1
+{
+   color: red;
+   text-decoration-style: underline;
+   border: 3px solid black;
+   border-radius: 25px;
+   border-color:green;
+}
+</style>
+<script type="text/javascript">
+// pos is position of where the user in the test or which question they're up to
+var pos = 0, test, test_status, question, choice, choices, chA, chB, chC,cdD,correct = 0;
+var questions = [
+  ["Multiplex is a ?", "combinational circuit", "flip flop", "sequencial circuit", "none of the above", "A"],
+  ["Transmission gate is a?", "parallel combination of two NMOS", "Series combination of NMOS and PMOS", "Parallel combination of NMOS and PMOS", "None of the above", "C"],
+  ["Transmission gate is preferred over Complementary CMOS logic  because ____", "Transistor count required to implement a logic function in transmission gate is low ", "Low Delay", "Both of them", "None of the above","C"],
+  ["How many 2x1 multiplexer will be require to design 8x1 multiplexer?", "Three", "Seven", "Four", "Eight", "B"],
+  ["Multiplexer is also known as:","Counter ","Data Select","Data Select","None","B"]
+  ];
+function get(x){
+  return document.getElementById(x);
+}
+function renderQuestion(){
+  test = get("test");
+  if(pos >= questions.length){
+    test.innerHTML = "<h2>You got "+correct+" of "+questions.length+" questions correct</h2>";
+    get("test_status").innerHTML = "Test completed";
+    // resets the variable to allow users to restart the test
+    pos = 0;
+    correct = 0;
+    // stops rest of renderQuestion function running when test is completed
+    return false;
+  }
+  get("test_status").innerHTML = "Question "+(pos+1)+" of "+questions.length;
+  question = questions[pos][0];
+  chA = questions[pos][1];
+  chB = questions[pos][2];
+  chC = questions[pos][3];
+  chD = questions[pos][4];
+
+  test.innerHTML = "<h3>"+question+"</h3>";
+  // the += appends to the data we started on the line above
+  test.innerHTML += "<input type='radio' name='choices' value='A'> "+chA+"<br>";
+  test.innerHTML += "<input type='radio' name='choices' value='B'> "+chB+"<br>";
+  test.innerHTML += "<input type='radio' name='choices' value='C'> "+chC+"<br>";
+  test.innerHTML += "<input type='radio' name='choices' value='D'> "+chD+"<br><br>";
+  test.innerHTML += "<button onclick='checkAnswer()'>Submit Answer</button>";
+}
+function checkAnswer(){
+  // use getElementsByName because we have an array which it will loop through
+  choices = document.getElementsByName("choices");
+  for(var i=0; i<choices.length; i++){
+    if(choices[i].checked){
+      choice = choices[i].value;
+    }
+  }
+  // checks if answer matches the correct choice
+  if(choice == questions[pos][5]){
+    //each time there is a correct answer this value increases
+    correct++;
+  }
+  // changes position of which character user is on
+  pos++;
+  // then the renderQuestion function runs again to go to next question
+  renderQuestion();
+}
+window.addEventListener("load", renderQuestion, false);
+</script>
+</head>
+<body>
+<h1 align="center"> POST-QUIZ </h1>
+<h2 id="test_status"></h2>
+<div id="test"></div>
+<p class="figure"></p><img src="" class="figure">
+<p class="figure"></p><img src="" class="figure">
+
+</body>
+</html>
