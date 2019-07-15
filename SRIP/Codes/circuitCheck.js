@@ -82,10 +82,15 @@ function circCheck()
 			document.getElementById("mux").style.display = "none";
 			document.getElementById("pos").style.display = "inline";
 			alert("Simulation successful!");
+			$("#proc").hide();
 		}
 		else
 		{
 			alert("This is not the correct circuit. Please refer procedure carefully");
+			document.getElementById("blnk").style.display = "inline";
+			document.getElementById("neg").style.display = "none";
+			document.getElementById("mux").style.display = "none";
+			document.getElementById("pos").style.display = "none";
 			return;
 		}
 
@@ -108,10 +113,15 @@ function circCheck()
 			document.getElementById("mux").style.display = "none";
 			document.getElementById("pos").style.display = "none";
 			alert("Simulation successful!");
+			$("#proc").hide();
 		}
 		else
 		{
 			alert("This is not the correct circuit. Please refer procedure carefully");
+			document.getElementById("blnk").style.display = "inline";
+			document.getElementById("neg").style.display = "none";
+			document.getElementById("mux").style.display = "none";
+			document.getElementById("pos").style.display = "none";
 			return;
 		}
 	}
@@ -133,10 +143,15 @@ function circCheck()
 			document.getElementById("mux").style.display = "inline";
 			document.getElementById("pos").style.display = "none";
 			alert("Simulation successful!");
+			$("#proc").hide();
 		}
 		else
 		{
 			alert("This is not the correct circuit. Please refer procedure carefully");
+			document.getElementById("blnk").style.display = "inline";
+			document.getElementById("neg").style.display = "none";
+			document.getElementById("mux").style.display = "none";
+			document.getElementById("pos").style.display = "none";
 			return;
 		}
 

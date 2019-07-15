@@ -9,3 +9,6 @@ fixed
 
 4.Circuit Check
 fixed
+
+5. Graph was still showing if a previous simulation was made and not getting cleared.
+fixed
