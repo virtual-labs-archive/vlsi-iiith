@@ -428,7 +428,7 @@
           }
         }
         b = out(b);
-        outputs[0].setValue( (b == 1)? 1 : null);
+        //outputs[0].setValue( (b == 1)? 1 : null);
       });
       var super_createUI = device.createUI;
       device.createUI = function() {

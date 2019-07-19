@@ -67,20 +67,24 @@ function circCheck()
 	if(opt==="1")
 	{
 		var check = {
-					"Delay.in0": "OSC.out", 
-					"In.in0": "NMOS.out", 
-					"NMOS.in0": "OSC.out",
-					"NMOS.in1": "Out.out", 
-					"Out.in0": "PMOS.out", 
-					"PMOS.in0": "Delay.out",
-					"PMOS.in1": "In.out"
+					"CAP.in0": "GND.out",
+					"Joint.in0": "DC.out",
+					"NMOS.in0": "PMOS0.ou",
+					"NMOS.in1": "PMOS3.ou",
+					"NMOS.in2": "PMOS1.ou",
+					"OR.in0": "OJoint.out",
+					"OR.in1": "OJoint.out",
+					"OR.in2": "PMOS4.ou",
+					"Out.in0": "OR.out",
+					"PMOS.in0": "Joint.out",
+					"PMOS.in1": "PMOS2.ou",
+					"PMOS.in2": "OJoint.out"
 				};
 		if(isEqual(check, connec))
 		{
 			document.getElementById("blnk").style.display = "none";
-			document.getElementById("neg").style.display = "none";
-			document.getElementById("mux").style.display = "none";
-			document.getElementById("pos").style.display = "inline";
+			document.getElementById("nor").style.display = "none";
+			document.getElementById("nand").style.display = "inline";
 			alert("Simulation successful!");
 			$("#proc").hide();
 		}
@@ -88,9 +92,8 @@ function circCheck()
 		{
 			alert("This is not the correct circuit. Please refer procedure carefully");
 			document.getElementById("blnk").style.display = "inline";
-			document.getElementById("neg").style.display = "none";
-			document.getElementById("mux").style.display = "none";
-			document.getElementById("pos").style.display = "none";
+			document.getElementById("nor").style.display = "none";
+			document.getElementById("nand").style.display = "none";
 			return;
 		}
 
@@ -98,20 +101,24 @@ function circCheck()
 	else if(opt==="2")
 	{
 		var check = {
-					"Delay.in0": "OSC.out",
-					"In.in0": "NMOS.out",
-					"NMOS.in0": "Delay.out",
-					"NMOS.in1": "Out.out",
-					"Out.in0": "PMOS.out",
-					"PMOS.in0": "OSC.out",
-					"PMOS.in1": "In.out"
+					"CAP.in0": "GND.out",
+					"Joint.in0": "GND.out",
+					"NMOS.in0": "OJoint.out",
+					"NMOS.in1": "PMOS4.ou",
+					"NMOS.in2": "PMOS0.ou",
+					"OR.in0": "OJoint.out",
+					"OR.in1": "OJoint.out",
+					"OR.in2": "PMOS2.ou",
+					"Out.in0": "OR.out",
+					"PMOS.in0": "OJoint.out",
+					"PMOS.in1": "PMOS4.ou",
+					"PMOS.in2": "OJoint.out"
 					};
 		if(isEqual(check, connec))
 		{
 			document.getElementById("blnk").style.display = "none";
-			document.getElementById("neg").style.display = "inline";
-			document.getElementById("mux").style.display = "none";
-			document.getElementById("pos").style.display = "none";
+			document.getElementById("nor").style.display = "inline";
+			document.getElementById("nand").style.display = "none";
 			alert("Simulation successful!");
 			$("#proc").hide();
 		}
@@ -119,9 +126,8 @@ function circCheck()
 		{
 			alert("This is not the correct circuit. Please refer procedure carefully");
 			document.getElementById("blnk").style.display = "inline";
-			document.getElementById("neg").style.display = "none";
-			document.getElementById("mux").style.display = "none";
-			document.getElementById("pos").style.display = "none";
+			document.getElementById("nand").style.display = "none";
+			document.getElementById("nor").style.display = "none";
 			return;
 		}
 	}

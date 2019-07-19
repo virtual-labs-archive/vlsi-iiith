@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Documentation</title>
+	<link rel="stylesheet" type="text/css" href="project_doc_style.css">
+</head>
+<body>
+	<h1>Schematic Design Of Transistor Level NAND & NOR Gate</h1>
+
+	<h2>Introduction</h2>
+
+	<h3>Definition of NAND Gate</h3>
+	<p>
+	NAND gate has 1 output and 2 or more inputs.
+	The output of the NAND gate is low only when all the inputs are high else it is low.<br>
+	A NAND gate could be veiwed as an AND gate with inverter at the output.<br>
+	</p>
+
+	<h3>Schematic and truth table of NAND Gate:</h3>
+	<img src="Images/nand1.png">
+
+	<h3>Definition of NOR Gate</h3>
+	<p>
+	NOR gate has 1 output and 2 or more input 
+	The output of NOR gate is high only when all the inputs are low else it is high.<br>
+	A NOR gate could be viewed as an OR gate with inverter at the output.<br>
+	</p>
+
+	<h3>Schematic and truth table of NOR Gate:</h3>
+	<img src="Images/nor1.png">
+
+	<h2>Theory</h2>
+
+	<h3>Switching behaviour of transistor</h3>
+	<p>
+		The gate of the MOS transistor controls the passage of the current between the drain and source. If the voltage at the gate is<br> Vdd, no current flows between the drain and source of PMOS and same is the case with NMOS if its gate is grounded. This<br> characteristic of MOS transistors, enables it to be viewed as a switch. The switching behaviour of nmos and pmos device is<br> 
+		shown in the figure below. Here the input 0 indicates that the gate is grounded and input 1 indicates that Vdd is applied to the gate:<br>
+		<img src="Images/trans.png">
+	</p>
+	<h3>Series and Parallel Connection</h3>
+	<p>
+		The transistor level schematic of any combinational logic can be obtained by placing two or more n/p-switches in series or parallel.<br>
+
+        If switches are connected in series then the composite switch hence constructed is closed when both the switches are closed.<br>
+        The series connection is shown in the figure below.The table indicates the states of the switch contructed by series connection<br> depending on the inputs A and B.<br>
+        <img src="Images/series.png"><br>
+        If the switches are connected in parallel then the composite switch hence constructed is closed when either or both of the<br> switches are closed.The parallel connection is shown in the figure below.The table indicates the states of the switch <br>
+        obtained by parallel connection depending on the inputs A and B.<br>
+        <img src="Images/parallel.png">
+	</p>
+	<h3>K-Map for NAND</h3>
+	<p>
+		<img src="Images/nandkmap.png"><br>
+		Thus for NAND gate PMOS devices are connected in parallel between Vdd and output node, whereas the NMOS devices are in series<br>
+		between output node and ground.
+	</p>
+	<h3>K-Map for NOR</h3>
+	<p>
+		<img src="Images/norkmap.png"><br>
+		Thus for NOR gate PMOS devices are connected in series between Vdd and output node,whereas the NMOS devices are in parallel<br> between output node and ground.
+	</p>
+
+</body>
+</html>

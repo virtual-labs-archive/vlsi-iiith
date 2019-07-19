@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Procedure</title>
+	<script type="text/javascript" src="../Libraries/jquery-3.4.1.min.js"></script>
+	<style type="text/css">
+		select {
+				  transition-duration: 0.4s;
+				  cursor: pointer;
+				  background-color: white;
+				  color: black;
+				}
+		 select:hover {
+				    background-color: lightgrey;
+				}
+	</style>
+</head>
+<body>
+	<div style="text-align: center;">
+	<h1>Procedure</h1>
+	<select id="choice">
+		<option value="0" selected disabled hidden>Select the circuit</option>
+        <option value="1">NAND gate circuit</option>
+        <option value="2">NOR gate circuit</option>
+	</select>
+	</div>
+	<div id="pos">
+		<img width="375" src="Images/label.png">
+		<p><strong>Components which will be used for this:</strong>PMOS, NMOS, Input, Output, Vdd, GND, Capacitor, Joint, OJoint.</p><br>
+		<strong>Steps:</strong>
+		<ol>
+			<li>Select <i>NAND Gate</i> from the option on the top of the page, under the heading.</li>
+			<li>Connect two PMOS in parallel, in between Vdd and 3 input OR. To do so:
+				<ul>
+				<li>Place two PMOS on the workspace.</li>
+				<li>Connect drain of first PMOS to output of a Joint and connect that to drain of second PMOS.</li>
+				<li>Connect Vdd to the input of the above mentioned Joint.</li>
+				<li>Connect source of first PMOS to an OJoint and connect that to source of second PMOS.</li>
+				<li>Connect the above OJoint to the first input of the OR gate.</li>
+			 	</ul> 
+			</li>
+			<li>
+				Connect two NMOS in series, in between the 3 input OR and GND. To do so:
+				<ul>
+					<li>Place two NMOS on the workspace.</li>
+					<li>Connect the second input of the OR gate to an OJoint and connect that to the drain of the first NMOS.</li>
+					<li>Connect the Source of first NMOS to an OJoint and connect that to Drain of Second NMOS.</li>
+					<li>Connect the Drain of the Second NMOS to GND. </li>
+				</ul>
+			</li>
+			<li>Connect the GND to input of a capacitor and connect the output of that capacitor to the third input of the OR gate.</li>
+			<li>Connect the output of the OR gate to an <i>Out</i> Component.</li>
+			<li>Take one <i>In</i> component and connect it to gate of first PMOS and gate of first NMOS.</li>
+			<li>Take another <i>In</i> component and connect it to gate of second PMOS and gate of second NMOS </li>
+			<li>Click on Simulate and observe the graph on the right.</li>
+		</ol>
+	</div>
+	<div id="neg">
+		<img width="375" src="Images/label.png">
+		<p><strong>Components which will be used for this:</strong>PMOS, NMOS, Input, Output, Vdd, GND, Capacitor, Joint, OJoint.</p><br>
+		<strong>Steps:</strong>
+		<ol>
+			<li>Select <i>NOR Gate</i> from the option on the top of the page, under the heading.</li>
+			<li>
+				Connect two PMOS in series, in between Vdd and 3 input OR. To do so:
+				<ul>
+					<li>Place two PMOS on the workspace.</li>
+					<li>Connect Vdd to the drain of the first PMOS.</li>
+					<li>Connect the source of the first PMOS to an OJoint and connect that to the drain of the second PMOS.</li>
+					<li>Connect the source of the second PMOS to another OJoint and connect that to the first input of the OR Gate.</li>
+				</ul>
+			</li>
+			<li>
+				Connect two NMOS in parallel, in between 3 input OR and GND. To do so:
+				<ul>
+					<li>Place two NMOS on the workspace.</li>
+					<li>Connect the drain of first NMOS to an OJoint and connect that to the drain of the second NMOS.</li>
+					<li>Connect the second input of the OR gate to the above mentioned OJoint.</li>
+					<li>Connect the source of the first NMOS to the output of a Joint and connect that to the source of the second NMOS.</li>
+					<li>Connect the input of the above mentioned Joint to a GND.</li>
+				</ul>
+			</li>
+			<li>Connect the GND to input of a capacitor and connect the output of that capacitor to the third input of the OR gate.</li>
+			<li>Connect the output of the OR gate to an <i>Out</i> Component.</li>
+			<li>Take one <i>In</i> component and connect it to gate of first PMOS and gate of first NMOS.</li>
+			<li>Take another <i>In</i> component and connect it to gate of second PMOS and gate of second NMOS </li>
+			<li>Click on Simulate and observe the graph on the right.</li>
+		</ol>
+	</div>
+
+	<script type="text/javascript">
+		$("#pos").hide();
+		$("#neg").hide();
+		$("#choice").change(function(event)
+		{
+			var ch = document.getElementById("choice").value;
+			if(ch==="1")
+			{
+				$("#pos").show();
+				$("#neg").hide();
+			}
+			else if(ch==="2")
+			{
+				$("#pos").hide();
+				$("#neg").show();
+			}
+		});
+	</script>
+</body>
+</html>
