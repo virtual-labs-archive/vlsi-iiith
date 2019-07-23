@@ -1,0 +1,129 @@
+<!--
+This is only the UI part of the simulator.
+
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simulator</title>
+  <link rel="stylesheet" href="layout.css">
+  <link rel="stylesheet" type="text/css" href="../Libraries/Bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../Libraries/simcirjs/simcir.css" />
+  <link rel="stylesheet" type="text/css" href="../Libraries/simcirjs/simcir-basicset.css" />
+  <script type="text/javascript" src="../Libraries/simcirjs/simcir.js"></script>
+  <script type="text/javascript" src="../Libraries/simcirjs/simcir-basicset.js"></script>
+  <script type="text/javascript" src="../Libraries/simcirjs/simcir-library.js"></script>
+  <script type="text/javascript" src="../Libraries/simcirjs/misc/simcir-dso.js"></script>
+  <script type="text/javascript" src="../Libraries/simcirjs/misc/simcir-num.js"></script>
+  <script type="text/javascript" src="../Libraries/simcirjs/misc/simcir-delay.js"></script>
+  <script type="text/javascript" src="../Libraries/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="../Libraries/Bootstrap/bootstrap.bundle.min.js"></script> 
+  <script type="text/javascript" src="circuitCheck.js"></script>
+</head>
+<body style="background-color: white;">
+  <div style="text-align: center;">
+    <h1 style="font-size: 5em;">Simulator</h1>
+    <h3>
+      <select id="whichSim">
+        <option value="0" selected disabled hidden>Select the Simulation</option>
+        <option value="1">XOR Gate</option>
+        <option value="2">XNOR Gate</option>
+      </select>
+    </h3>
+    <!-- <button class="buttonCalm" id="menu-toggle">Menu</button> -->
+  </div>
+  <hr>
+  <div class="d-flex">
+    <!-- Sidebar -->
+    <div class="someMargin bg-light border-right border-top" id="sidebar-wrapper">
+      <div>
+        <div style="text-align: center; font-size: 2em;">Menu</div>
+        <div class="sidebar-heading">See Circuit:</div>
+        <div class="button" id="dfli">XOR Gate</div>
+        <div class="button" id="dfl">XNOR Gate</div>
+        <div class="redColor button extraBottom" id="clear">Clear workspace</div>
+        <div class="sidebar-heading">Documentation:</div>
+        <a href="help.html" data-toggle="modal" data-target="#instructions"><div id="helpmeButton" class="helpbutton ">Simulator Help</div></a>
+        <a href="#end"><div class="helpbutton" id="procedure">Procedure</div></a>
+        <div class="helpbutton" onclick="window.open('project_doc.html')">Project Documentation</div>
+        <div class="simulate extraBottom" onclick="circCheck()">Simulate</div>
+      </div>
+    </div>
+        <div class="someMargin align">
+                <div class="simcir">
+                  
+                </div>
+        </div>
+<div class="modal fade bd-example-modal-lg" id="instructions" tabindex="-1" role="dialog" aria-labelledby="instructionsTitle" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="instructionsTitle">Help</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h1>Simulator layout</h1>
+          <p>
+            Firstly you have to select which simulation you want to run by choosing one of the options which is in the list area under the main heading of the page.<br>
+              The simulator consists of a menu on the left. You can load the respective circuits by clicking on one of the options under <i>See Circuit</i> or you could make it yourself.<br>
+            To know how to build the circuits on your own, click on <strong>procedure</strong>, a new window will appear on the right side of the workspace where you can refer to the instructions.<br>
+            Once you have completed the circuit, either by choosing the <i>See circuit</i> options or building your own, click on the simulate button to simulate the waveform, which can be seen right next to the workspace of the circuit simulator.<br>
+            Clear workspace can be clicked to remove the simulation as well as the circuit.<br>
+          </p>
+          <h1>How to use the Simulator:</h1>
+          <ul>
+            <li>Choose a component from the toolbox and move it to the right.</li>
+            <li>Connections can be made clicking the input node and dragging it to an output node(or vice versa). </li>
+            <li>To disconnect two components click on the input node.</li>
+            <li>To remove a component drag it back to the toolbox.</li>
+            <li>To edit the device name double click the label.</li>
+            <li>Double click on a joint to change its orientation.</li>
+            <li>For a component, the yellow circle denotes input node and white circle denotes output node.</li>
+            <li>Once you are done with the circuit, click on simulate to simulate the waveform.</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+</div>
+<!--Put stuff here to make it side by side-->
+<div id="proc" style="margin-left: 20px;">
+  <iframe height="525" width="450" src="Procedure.html"></iframe>
+</div>
+<div id="end">
+  
+</div>
+<div id="imgg" class="graph" style="margin-left: 20px; margin-top: -0px">
+  <!-- IMAGE GOES HERE-->
+  <img id="blnk" style="border: 1px solid black;" src="Images/blank.png" />
+  <img id="nand" style="border: 1px solid black; display: none;" src="Images/XOR.png" />
+  <img id="nor" style="border: 1px solid black; display: none;" src="Images/XNOR.png" />
+
+<script type="text/javascript">
+  $("#proc").hide();
+  var modal = document.getElementById("myModal");
+  var btn = document.getElementById("helpmeButton");
+  var span = document.getElementsByClassName("close")[0];
+
+  btn.onclick = function() {
+    modal.style.display = "block";
+  }
+
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+</script>
+<script type="text/javascript" src="simulatorOptions.js"></script> 
+</body>
+</html>

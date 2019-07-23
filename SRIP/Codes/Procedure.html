@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Procedure</title>
+	<script type="text/javascript" src="../Libraries/jquery-3.4.1.min.js"></script>
+	<style type="text/css">
+		select {
+				  transition-duration: 0.4s;
+				  cursor: pointer;
+				  background-color: white;
+				  color: black;
+				}
+		 select:hover {
+				    background-color: lightgrey;
+				}
+	</style>
+</head>
+<body>
+	<div style="text-align: center;">
+	<h1>Procedure</h1>
+	<select id="choice">
+		<option value="0" selected disabled hidden>Select the circuit</option>
+        <option value="1">XOR gate circuit</option>
+        <option value="2">XNOR gate circuit</option>
+	</select>
+	</div>
+	<div id="pos">
+		<img width="375" src="Images/label.png">
+		<p><strong>Components which will be used for this:</strong>PMOS, NMOS, Input, Output, Vdd, GND, Capacitor, Joint, OJoint.</p><br>
+		<strong>Steps:</strong>
+		<ol>
+			<li>Select <i>XOR Gate</i> from the option on the top of the page, under the heading.</li>
+			<li></li>
+			
+		</ol>
+	</div>
+	<div id="neg">
+		<img width="375" src="Images/label.png">
+		<p><strong>Components which will be used for this:</strong>PMOS, NMOS, Input, Output, Vdd, GND, Capacitor, Joint, OJoint.</p><br>
+		<strong>Steps:</strong>
+		
+	</div>
+
+	<script type="text/javascript">
+		$("#pos").hide();
+		$("#neg").hide();
+		$("#choice").change(function(event)
+		{
+			var ch = document.getElementById("choice").value;
+			if(ch==="1")
+			{
+				$("#pos").show();
+				$("#neg").hide();
+			}
+			else if(ch==="2")
+			{
+				$("#pos").hide();
+				$("#neg").show();
+			}
+		});
+	</script>
+</body>
+</html>

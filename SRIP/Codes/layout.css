@@ -1,0 +1,163 @@
+
+  .item1 {
+    background: LightSkyBlue;
+    grid-area: head;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+  }
+
+  .someMargin {
+    margin-left: 20px;
+  }
+
+  .align {
+    display: inline-block;
+  }
+  
+  .item3 {
+    background: white;
+    grid-area: content;
+  }
+  
+  .some-text {
+    text-align: left;
+    font-size: 15px;
+  }
+
+  select {
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  }
+
+  select:hover {
+    background-color: lightgrey;
+  }
+
+  .simulate {
+    transition-duration: 0.4s;
+    text-align: center;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border-top: 0.5px solid black;
+    padding: 10px;
+    width: 15rem;
+    height: 50px;
+  }
+
+  .simulate:hover {
+    background-color: white;
+    color: black;
+  }
+
+ .button {
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  border-top: 0.5px solid black;
+  padding: 10px;
+  width: 15rem;
+  height: 50px;
+  }
+
+  .extraBottom {
+    border-bottom: 0.5px solid black;
+  }
+
+  .button:hover {
+    background-color: lightgrey;
+    color: black;
+  }
+
+  .buttonCalm {
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  padding: 10px;
+  width: 15rem;
+  height: 50px;
+  border: 1px solid black;
+  }
+
+  .buttonCalm:hover {
+    background-color: lightgrey;
+
+  }
+
+  .helpbutton {
+    transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: lightcyan;
+  color: black;
+  border-top: 0.5px solid black;
+  padding: 10px;
+  width: 15rem;
+  height: 50px;
+  }
+
+   .helpbutton:hover {
+    background-color: aquamarine;
+    color: black;
+  }
+
+  .redColor {
+    background-color: #FED7D7;
+  }
+
+  .redColor:hover {
+    background-color: #FE5A5A;
+  }
+
+  .graph {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  #sidebar-wrapper {
+  min-height: 75vh;
+  margin-left: -15rem;
+  -webkit-transition: margin .25s ease-out;
+  -moz-transition: margin .25s ease-out;
+  -o-transition: margin .25s ease-out;
+  transition: margin .25s ease-out;
+}
+
+#sidebar-wrapper .sidebar-heading {
+  padding: 0.875rem 1.25rem;
+  font-size: 1.2rem;
+  background-color: #3f3f3f;
+  color: white;
+}
+
+#sidebar-wrapper .list-group {
+  width: 15rem;
+}
+
+#page-content-wrapper {
+  min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  margin-left: 0;
+}
+
+@media (min-width: 768px) {
+  #sidebar-wrapper {
+    margin-left: 0;
+  }
+
+  #page-content-wrapper {
+    min-width: 0;
+    width: 100%;
+  }
+}
+
+
+  
+  
+ 
