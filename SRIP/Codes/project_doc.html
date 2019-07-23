@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Documentation</title>
+	<link rel="stylesheet" type="text/css" href="project_doc_style.css">
+</head>
+<body>
+	<h1>Schematic Design Of Transistor Level XOR & XNOR Gate.</h1>
+
+	<h2>Introduction</h2>
+
+	<strong>XOR(exclusive OR):<strong><br>
+	For a 2 input XOR, the output of the gate is low when both the inputs are same(either both low or both high). The output is<br>
+	high if one and only one of the inputs is high. The function is addition modulo 2 and hence the gate is used in half adder<br>
+
+	The schematic and truth table for 2 input A and B for XOR gate :-<br>
+
+	<img src="Images/xortruth.png"><br>
+
+	<strong>XNOR(exclusive NOR):<strong><br>
+	For a 2 input XNOR, the output of the gate is high when both the inputs are same(either both low or both high). The output is<br> 
+	low if one and only one of the inputs is high.<br>
+
+	The schematic and truth table for 2 input A and B for XOR gate :-<br>
+	<img src="Images/xnortruth.png"><br>
+
+	<h2>Theory</h2>
+
+	We now move towards desining transistor level schematic for any given combinational logic. This is done by analysing the kmap<br>
+	of the given combination for p- and n-switches and then deducing the required series or parallel combination. The following <br> 
+	example will give you an idea about how to go for designing a combinational logic using transistors. We want to design <br>
+	transistor level schematic of (AB+CD)'. <br>
+	<img src="Images/kmap.png">
+
+	<h3>Implementation for N-Switches:</h3>
+
+	<img src="Images/nswitches.png"><br>
+	The series combination of A and B is in parallel with the series combination of C and D.
+
+	<h3>Implementation for P-Switches:</h3>
+
+	<img src="Images/pswitches.png"><br>
+	The parallel combination of A and B is in series with the parallel combination of C and D.<br>
+
+	<h3>Complete design:</h3>
+
+	<img src="Images/full.png"><br>
+
+	<strong>XOR:</strong>
+	A ⊕ B = AB' + A'B 
+	A' is analogous to C and B' is analogous to D. If implementation is done according to the example described above we would require<br>
+	5 NMOS and 5 PMOS.<br>
+	4 NMOS and PMOS for implementation of complement of AB'+A'B 
+	and 1 pair for the inverter. <br>
+	Now,think of a method to reduce the number of transistor. 1 pair needed for inverting can be reduced if XOR is implemented as the complement of XNOR.<br>
+
+	<strong>XNOR:</strong>
+	(A ⊕ B)' in the similar way xnor if implemented as complement of A ⊕ B rather than AB+A'B' would require 4 NMOS and PMOS. <br>
+	In that case A would be analogous to A' and vice versa in the XOR example. <br>
+
+
+
+</body>
+</html>

@@ -27,17 +27,76 @@
 	<div id="pos">
 		<img width="375" src="Images/label.png">
 		<p><strong>Components which will be used for this:</strong>PMOS, NMOS, Input, Output, Vdd, GND, Capacitor, Joint, OJoint.</p><br>
-		<strong>Steps:</strong>
+		<strong>Steps (Can also refer to the diagram below):</strong>
+		<img src="Images/xor.png"><br>
 		<ol>
 			<li>Select <i>XOR Gate</i> from the option on the top of the page, under the heading.</li>
-			<li></li>
-			
+			<li>Connect two pairs of PMOS (4 in total) in parallel and connect that in series between Vdd and 3 input OR. To do that:</li>
+			<ul>
+				<li>Place two PMOS side by side</li>
+				<li>Connect drain of first PMOS to output of a Joint and connect that to the drain of the second PMOS.</li>
+				<li>Connect Vdd to the input to the input of the above mentioned Joint.</li>
+				<li>Connect source of first PMOS to an OJoint and connect that to source of second PMOS.</li>
+				<br>
+				<li>Place two more PMOS side by side below the above connections.</li>
+				<li>Connect drain of first PMOS to output of a Joint and connect that to the drain of the second PMOS.</li>
+				<li>Connect the input of the above mentioned Joint to the OJoint of the first parallel connection of PMOS.</li>
+				<li>Connect source of first PMOS to an OJoint and connect that to source of second PMOS.</li>
+				<li>Connect the above mentioned OJoint to the first input of the 3 input OR gate.</li>
+			</ul>
+			<li>Connect two pairs of NMOS (4 in total) in series and connect that in parallel between 3 input OR and GND. To do that:</li>
+			<ul>
+				<li>Place four NMOS in the same way the PMOS has been placed.</li>
+				<li>Connect the second input of the 3 input OR gate to an OJoint.</li>
+				<li>Connect the above OJoint to the Drain of the top two NMOS.</li>
+				<li>Connect the source of one of the NMOS to an OJoint and connect that to the Drain of the NMOS below it.</li>
+				<li>Do the above step for the two NMOS on the other side.</li>
+				<li>Connect the source of the bottom two NMOS to the Output of a Joint.</li>
+				<li>Connect the input of the above mentioned Joint to GND.</li>
+			</ul>
+			<li>Connect the GND to the Input of a capacitor.</li>
+			<li>Connect the output of the capacitor to the third input of the 3 input OR.</li>
+			<li>Connect the output of the 3 input OR to an <i>Out</i> component.</li>
+			<li>For the inputs, put 4 <i>In</i> components on the workspace.</li>
+			<li>Each <i>In</i> component should be connected to one PMOS and one NMOS. For this, follow the diagram given above.</li>
 		</ol>
 	</div>
 	<div id="neg">
 		<img width="375" src="Images/label.png">
 		<p><strong>Components which will be used for this:</strong>PMOS, NMOS, Input, Output, Vdd, GND, Capacitor, Joint, OJoint.</p><br>
-		<strong>Steps:</strong>
+		<strong>Steps (Can also refer to the diagram below):</strong>
+		<img src="Images/xnor.png"><br>
+		<ol>
+			<li>Select <i>XOR Gate</i> from the option on the top of the page, under the heading.</li>
+			<li>Connect two pairs of PMOS (4 in total) in parallel and connect that in series between Vdd and 3 input OR. To do that:</li>
+			<ul>
+				<li>Place two PMOS side by side</li>
+				<li>Connect drain of first PMOS to output of a Joint and connect that to the drain of the second PMOS.</li>
+				<li>Connect Vdd to the input to the input of the above mentioned Joint.</li>
+				<li>Connect source of first PMOS to an OJoint and connect that to source of second PMOS.</li>
+				<br>
+				<li>Place two more PMOS side by side below the above connections.</li>
+				<li>Connect drain of first PMOS to output of a Joint and connect that to the drain of the second PMOS.</li>
+				<li>Connect the input of the above mentioned Joint to the OJoint of the first parallel connection of PMOS.</li>
+				<li>Connect source of first PMOS to an OJoint and connect that to source of second PMOS.</li>
+				<li>Connect the above mentioned OJoint to the first input of the 3 input OR gate.</li>
+			</ul>
+			<li>Connect two pairs of NMOS (4 in total) in series and connect that in parallel between 3 input OR and GND. To do that:</li>
+			<ul>
+				<li>Place four NMOS in the same way the PMOS has been placed.</li>
+				<li>Connect the second input of the 3 input OR gate to an OJoint.</li>
+				<li>Connect the above OJoint to the Drain of the top two NMOS.</li>
+				<li>Connect the source of one of the NMOS to an OJoint and connect that to the Drain of the NMOS below it.</li>
+				<li>Do the above step for the two NMOS on the other side.</li>
+				<li>Connect the source of the bottom two NMOS to the Output of a Joint.</li>
+				<li>Connect the input of the above mentioned Joint to GND.</li>
+			</ul>
+			<li>Connect the GND to the Input of a capacitor.</li>
+			<li>Connect the output of the capacitor to the third input of the 3 input OR.</li>
+			<li>Connect the output of the 3 input OR to an <i>Out</i> component.</li>
+			<li>For the inputs, put 4 <i>In</i> components on the workspace.</li>
+			<li>Each <i>In</i> component should be connected to one PMOS and one NMOS. For this, follow the diagram given above.</li>
+		</ol>
 		
 	</div>
 

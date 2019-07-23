@@ -67,17 +67,18 @@ function circCheck()
 	if(opt==="1")
 	{
 		var check = {
+					"CAP.in0": "GND.out",
 					"Joint.in0": "GND.out",
 					"NMOS.in0": "OJoint.out",
 					"NMOS.in1": "In.out",
 					"NMOS.in2": "Joint.out",
-					"OR.in0": "OJoint.out",
-					"OR.in1": "PMOS6.ou",
-					"OR.in2": "PMOS8.ou",
+					"OR.in0": "undefinedout0",
+					"OR.in1": "OJoint.out",
+					"OR.in2": "CAP.out",
+					"Out.in0": "OR.out",
 					"PMOS.in0": "Joint.out",
-					"PMOS.in1": "PMOS1.ou",
+					"PMOS.in1": "PMOS9.ou",
 					"PMOS.in2": "OJoint.out"
-
 				};
 		if(isEqual(check, connec))
 		{
@@ -100,6 +101,7 @@ function circCheck()
 	else if(opt==="2")
 	{
 		var check = {
+					"CAP.in0": "GND.out",
 					"Joint.in0": "GND.out",
 					"NMOS.in0": "OJoint.out",
 					"NMOS.in1": "In.out",
@@ -107,6 +109,7 @@ function circCheck()
 					"OR.in0": "OJoint.out",
 					"OR.in1": "PMOS6.ou",
 					"OR.in2": "PMOS8.ou",
+					"Out.in0": "undefinedout0",
 					"PMOS.in0": "Joint.out",
 					"PMOS.in1": "PMOS0.ou",
 					"PMOS.in2": "OJoint.out"
