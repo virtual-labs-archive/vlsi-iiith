@@ -98,7 +98,7 @@
             <div class="col-md-10 lab-list-col-10">
               
               <!--edit -->
-<h1 class="text-h2-lightblue">Schematic Design Of Pass Transistor Logic & Multiplexer.</h1><div class="content" id="lab-article-section-5-content">
+<h1 class="text-h2-lightblue">Delay Estimation In Chain Of Inverters.</h1><div class="content" id="lab-article-section-5-content">
 
 <form name="quiz">
 <ol>
