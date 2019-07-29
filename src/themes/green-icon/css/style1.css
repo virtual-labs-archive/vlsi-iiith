@@ -105,19 +105,19 @@ a.active {
 	height: auto;
 	overflow: visible;
 	margin-left: 0px !important;
-	padding-bottom: 10px !important;
-	padding-top: 10px !important;
+	padding-bottom: 10px ;
+	padding-top: 10px ;
 }
 
 .menu-a
 {
-	font-size: 18px !important;
-	font-family: Calibri !important;
-  color: #2C99CD !important;
-  padding-left: 10px !important;
-  padding-bottom: 5px !important;
-  padding-top: 5px !important;
-  padding-right: 10px !important;
+	font-size: 18px ;
+	font-family: Calibri ;
+  color: #2C99CD ;
+  padding-left: 10px ;
+  padding-bottom: 5px ;
+  padding-top: 5px ;
+  padding-right: 10px ;
   
 }
 
@@ -136,12 +136,12 @@ a.active {
 
 .menu-li:HOVER
 {
-	background-color: #77BB41 !important;
+	background-color: #77BB41 ;
 }
 
 .menu-a:HOVER
 {
-	color: white !important;	
+	color: white ;	
 }
 .menu-li-active
 {
@@ -177,7 +177,7 @@ a.active {
 	.custom-toggle
 	{
 		margin-bottom: 0px !important;
-		margin-top: 27px !important;
+		margin-top: 27px ;
 	}
 }
 
@@ -190,8 +190,8 @@ a.active {
 	
 	.custom-toggle
 	{
-		margin-bottom: 0px !important;
-		margin-top: 12% !important;
+		margin-bottom: 0px ;
+		margin-top: 12% ;
 	}
 	
 	
@@ -227,7 +227,7 @@ a.active {
 	}
 	.border-right-green-dotted
 	{
-		margin-top: 60px !important;
+		margin-top: 60px ;
 	}
 }
 
@@ -243,22 +243,22 @@ a.active {
    
    .menu-ul
 	{
-		margin-top: 0px !important;
+		margin-top: 0px;
 	}
 	
 	.menu-li-active
 	{
-		  background-color: white !important;
+		  background-color: white ;
 	}
 	
 	.menu-a-active
 	{
-		color: #2C99CE !important;
+		color: #2C99CE ;
 	}
 	
 	.search-ul
 	{
-		display: none !important;
+		display: none ;
 	}
 	
 
@@ -288,7 +288,7 @@ a.active {
 	
 	.banner-text-big
 	{
-		font-size: 2.0em !important;
+		font-size: 2.0em ;
 	}
 	
 }
@@ -312,11 +312,11 @@ a.active {
 	}
 	.aboutus-col-8
 	{
-		padding-right: 15px !important;
+		padding-right: 15px ;
 	}
 	.footer-div
 	{
-	background-size: cover !important;
+	background-size: cover ;
 	 }
 	 
 	 .lab-list-col-10
@@ -326,7 +326,7 @@ a.active {
 	 
 	.featured-labs-main-div
 	{
-		margin-top: -35px !important;	
+		margin-top: -35px ;	
 	}
 }
 
@@ -409,9 +409,9 @@ a.active {
 
 .featured-labs-div
 {
-	margin-left: 0px !important;
-	margin-right: 0px !important;
-	padding-left: 15px !important;
+	margin-left: 0px ;
+	margin-right: 0px ;
+	padding-left: 15px ;
 }
 .border-bottom-img
 {
@@ -431,7 +431,7 @@ a.active {
 }
 .col-md-2-5-1-l:HOVER, .col-md-2-5-1-withbg:HOVER
 {
-		background-color: #e4e4e4 !important;	
+		background-color: #e4e4e4 ;	
 }
 
 .border-right-green-dotted
@@ -444,12 +444,12 @@ a.active {
 
 a:focus
 {
-	color: #72AB44 !important;
+	color: #72AB44 ;
 }
 
 .featured-labs
 {
-	min-height: 208px !important;
+	min-height: 208px;
 	/*overflow: hidden;
  	text-overflow: ellipsis;
  	display: -webkit-box;
@@ -540,7 +540,7 @@ a:focus
 
 .nounderline:HOVER
 {
-	text-decoration: none !important;
+	text-decoration: none ;
 }
 .text-normal-gray-medium
 {
@@ -600,7 +600,7 @@ a:focus
   right: -45px;
   top: 55px;
   position: absolute;
-   background: none !important;
+   background: none ;
 }
 
 #owl-partner-institutions .owl-controls .owl-buttons .owl-next
@@ -655,7 +655,7 @@ a:focus
 }
 
 .sidebar-a:HOVER, .text-h3-darkblue:HOVER {
-	color: #ff6600 !important;
+	color: #ff6600 ;
 }
 
 .lab-list-row-div
@@ -752,7 +752,7 @@ a:focus
 
 	.banner-text-small
 	 {
-		font-size: 0.8em !important;
+		font-size: 0.8em ;
   	 }
 
 	.banner-text-medium
@@ -801,7 +801,7 @@ a:focus
 
 	.banner-text-medium
 	{
-		font-size: 1.1em !important;
+		font-size: 1.1em ;
 	}
 	
 	.banner-text-big
@@ -834,17 +834,17 @@ a:focus
 @media only screen and (min-width: 501px) and (max-width: 767px) {
 	.banner-text-small
 	 {
-		font-size: 0.9em !important;
+		font-size: 0.9em ;
   	 }
 
 	.banner-text-medium
 	{
-		font-size: 1.2em !important;
+		font-size: 1.2em ;
 	}
 	
 	.banner-text-big
 	{
-		font-size: 1.4em !important;
+		font-size: 1.4em ;
 	}
 	.banner-text
 	{
@@ -918,7 +918,7 @@ a:focus
 @media only screen and (max-width: 767px) { 
 	.banner-caption-div
 	{
-	  position: relative !important;
+	  position: relative ;
 	}		
 }
 
@@ -996,7 +996,7 @@ a:focus
 
 	.banner-text-medium
 	{
-		font-size: 1.7em !important;
+		font-size: 1.7em ;
 	}
 	
 	.banner-text-big

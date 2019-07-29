@@ -141,12 +141,12 @@ function _uInfo(page) {
  if (_userv==0 || _userv==2) {
   var i=new Image(1,1);
   i.src=_ugifpath+"?"+"utmwv="+_uwv+s;
-  i.onload=function() {_uVoid();}
+  i.onload=function() {_uVoid()}
  }
  if (_userv==1 || _userv==2) {
   var i2=new Image(1,1);
   i2.src=_ugifpath2+"?"+"utmwv="+_uwv+s+"&utmac="+_uacct+"&utmcc="+_uGCS();
-  i2.onload=function() { _uVoid(); }
+  i2.onload=function() { _uVoid() }
  }
  return;
 }
