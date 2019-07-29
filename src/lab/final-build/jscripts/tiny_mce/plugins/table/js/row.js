@@ -95,7 +95,7 @@ function updateAction() {
 
 			break;
 
-		case "odd":
+		case "odd": 	break;
 		case "even":
 			var rows = tableElm.getElementsByTagName("tr");
 

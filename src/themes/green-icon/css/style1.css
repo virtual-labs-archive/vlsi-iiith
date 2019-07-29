@@ -114,10 +114,8 @@ a.active {
 	font-size: 18px !important;
 	font-family: Calibri !important;
   color: #2C99CD !important;
-  padding-left: 10px !important;
-  padding-bottom: 5px !important;
-  padding-top: 5px !important;
-  padding-right: 10px !important;
+ 
+   padding: 5px 10px !important;
   
 }
 
