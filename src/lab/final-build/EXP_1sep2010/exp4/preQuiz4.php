@@ -25,6 +25,7 @@
     <link href="../../../css/style.css" rel="stylesheet">
   <script type="text/javascript" src = 'tabs.js'></script>
 <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-67558473-1', 'auto');ga('send', 'pageview');</script> 
+<script type="text/javascript" src =" prequizval.js"></script>
 </head>
 <body id="page-top" class="index">
 <div id="top">
@@ -127,7 +128,7 @@
 </li><br />
 <li><b> How many 2x1 multiplexer will be require to design 8x1 multiplexer ?</b><br>
    <input type="radio" name="q4" value="wrong">Three .<br>
-   <span id="correct4"><input type="radio" name="q4" value="correct"></span>Seven .<br>
+   <span id="correct4"><input type="radio" name="q4" value="correct">Seven .</span><br>
    <input type="radio" name="q4" value="wrong">Four .<br>
    <input type="radio" name="q4" value="wrong">Eight .<br>
 
@@ -135,7 +136,7 @@
 
 <li><b> Multiplexer is also known as:</b><br>
    <input type="radio" name="q5" value="wrong">Counter .<br>
-   <span id="correct5"><input type="radio" name="q5" value="correct"></span>Data Select .<br>
+   <span id="correct5"><input type="radio" name="q5" value="correct">Data Select .</span><br>
    <input type="radio" name="q5" value="wrong">Single Input Many Output .<br>
    <input type="radio" name="q5" value="wrong">None .<br>
 </ol>
