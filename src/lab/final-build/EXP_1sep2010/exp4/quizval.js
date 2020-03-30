@@ -19,7 +19,7 @@ function checkQuestionRadio(radioGroup) {
        }
      }
    }
-return 0;
+//return 0;
 }
 
 
@@ -29,20 +29,21 @@ function highlightCorrectButton(radioButton) {
 }
 
 function checkQuiz() {
+ 
 //The orange highlighted code may need to be changed
    //you will need to match these question types(Radio/DropDown)
    //and names (q1, q2, ...) to the ones in your quiz
    numCorrect = 0;
-   numCorrect += checkQuestionRadio( document.quiz.q1);
-   numCorrect += checkQuestionRadio( document.quiz.q2);
-   numCorrect += checkQuestionRadio( document.quiz.q3);
-   numCorrect += checkQuestionRadio( document.quiz.q4);
-   numCorrect += checkQuestionRadio( document.quiz.q5);
-   numCorrect += checkQuestionRadio( document.quiz.q6);
-   numCorrect += checkQuestionRadio( document.quiz.q7);
-   numCorrect += checkQuestionRadio( document.quiz.q8);
-   numCorrect += checkQuestionRadio( document.quiz.q9);
-   numCorrect += checkQuestionRadio( document.quiz.q10);
+  numCorrect += checkQuestionRadio(document.getElementsByTagName("q1"));  
+  numCorrect += checkQuestionRadio(document.getElementsByTagName("q2"));
+  numCorrect += checkQuestionRadio(document.getElementsByTagName("q3"));
+  numCorrect += checkQuestionRadio(document.getElementsByTagName("q4"));
+  numCorrect += checkQuestionRadio(document.getElementsByTagName("q5"));
+  numCorrect += checkQuestionRadio(document.getElementsByTagName("q6"));
+  numCorrect += checkQuestionRadio(document.getElementsByTagName("q7"));
+  numCorrect += checkQuestionRadio(document.getElementsByTagName("q8"));
+  numCorrect += checkQuestionRadio(document.getElementsByTagName("q9"));
+  numCorrect += checkQuestionRadio(document.getElementsByTagName("q10"));
 
   //highlight correct answers from radio button groups...use span id name
    highlightCorrectButton("correct1");
