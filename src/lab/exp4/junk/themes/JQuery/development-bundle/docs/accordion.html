@@ -1,5 +1,8 @@
-
-<ul class="UIAPIPlugin-toc">
+<html><head><!--Google Tag Manager--><script class="gtm">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W59SWTR');</script><!--End Google Tag Manager--></head><body><!--Google Tag Manager (noscript)--><noscript class="gtm"><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-W59SWTR" style="display:none;visibility:hidden" width="0"></iframe></noscript><!--End Google Tag Manager (noscript)--><ul class="UIAPIPlugin-toc">
 <li><a href="#overview">Overview</a></li>
 <li><a href="#options">Options</a></li>
 <li><a href="#events">Events</a></li>
@@ -13,10 +16,10 @@
     <div id="overview-main">
         <p>Make the selected elements Accordion widgets. Semantic requirements:</p>
 <p>The markup of your accordion container needs pairs of headers and content panels:</p>
-<pre>&lt;div id=&quot;accordion&quot;&gt;
-    &lt;h3&gt;&lt;a href=&quot;#&quot;&gt;First header&lt;/a&gt;&lt;/h3&gt;
+<pre>&lt;div id="accordion"&gt;
+    &lt;h3&gt;&lt;a href="#"&gt;First header&lt;/a&gt;&lt;/h3&gt;
     &lt;div&gt;First content&lt;/div&gt;
-    &lt;h3&gt;&lt;a href=&quot;#&quot;&gt;Second header&lt;/a&gt;&lt;/h3&gt;
+    &lt;h3&gt;&lt;a href="#"&gt;Second header&lt;/a&gt;&lt;/h3&gt;
     &lt;div&gt;Second content&lt;/div&gt;
 &lt;/div&gt;</pre>
 <p>If you use a different element for the header, specify the header-option with an appropriate selector, eg. header: 'a.header'. The content element must be always next to its header.</p>
@@ -47,32 +50,32 @@
     </div>
     <div id="overview-example">
         <h3>Example</h3>
-        <div id="overview-example" class="example">
+        <div class="example" id="overview-example">
 <ul><li><a href="#demo"><span>Demo</span></a></li><li><a href="#source"><span>View Source</span></a></li></ul>
-<p><div id="demo" class="tabs-container" rel="310">
-A simple jQuery UI Accordion.<br />
-</p>
-<pre>$(&quot;#accordion&quot;).accordion();
+<p></p><div class="tabs-container" id="demo" rel="310">
+A simple jQuery UI Accordion.<br/>
+<p></p>
+<pre>$("#accordion").accordion();
 </pre>
-<p></div><div id="source" class="tabs-container">
-</p>
+<p></p></div><div class="tabs-container" id="source">
+<p></p>
 <pre>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;head&gt;
-  &lt;link href=&quot;http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;/&gt;
-  &lt;script src=&quot;http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js&quot;&gt;&lt;/script&gt;
-  &lt;script src=&quot;http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js&quot;&gt;&lt;/script&gt;
+  &lt;link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/&gt;
+  &lt;script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"&gt;&lt;/script&gt;
+  &lt;script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"&gt;&lt;/script&gt;
   
   &lt;script&gt;
   $(document).ready(function() {
-    $(&quot;#accordion&quot;).accordion();
+    $("#accordion").accordion();
   });
   &lt;/script&gt;
 &lt;/head&gt;
 &lt;body style="font-size:62.5%;"&gt;
   
-&lt;div id=&quot;accordion&quot;&gt;
-	&lt;h3&gt;&lt;a href=&quot;#&quot;&gt;Section 1&lt;/a&gt;&lt;/h3&gt;
+&lt;div id="accordion"&gt;
+	&lt;h3&gt;&lt;a href="#"&gt;Section 1&lt;/a&gt;&lt;/h3&gt;
 	&lt;div&gt;
 		&lt;p&gt;
 		Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
@@ -81,7 +84,7 @@ A simple jQuery UI Accordion.<br />
 		odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
 		&lt;/p&gt;
 	&lt;/div&gt;
-	&lt;h3&gt;&lt;a href=&quot;#&quot;&gt;Section 2&lt;/a&gt;&lt;/h3&gt;
+	&lt;h3&gt;&lt;a href="#"&gt;Section 2&lt;/a&gt;&lt;/h3&gt;
 	&lt;div&gt;
 		&lt;p&gt;
 		Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
@@ -90,7 +93,7 @@ A simple jQuery UI Accordion.<br />
 		suscipit faucibus urna.
 		&lt;/p&gt;
 	&lt;/div&gt;
-	&lt;h3&gt;&lt;a href=&quot;#&quot;&gt;Section 3&lt;/a&gt;&lt;/h3&gt;
+	&lt;h3&gt;&lt;a href="#"&gt;Section 3&lt;/a&gt;&lt;/h3&gt;
 	&lt;div&gt;
 		&lt;p&gt;
 		Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
@@ -104,7 +107,7 @@ A simple jQuery UI Accordion.<br />
 			&lt;li&gt;List item three&lt;/li&gt;
 		&lt;/ul&gt;
 	&lt;/div&gt;
-	&lt;h3&gt;&lt;a href=&quot;#&quot;&gt;Section 4&lt;/a&gt;&lt;/h3&gt;
+	&lt;h3&gt;&lt;a href="#"&gt;Section 4&lt;/a&gt;&lt;/h3&gt;
 	&lt;div&gt;
 		&lt;p&gt;
 		Cras dictum. Pellentesque habitant morbi tristique senectus et netus
@@ -123,8 +126,8 @@ A simple jQuery UI Accordion.<br />
 &lt;/body&gt;
 &lt;/html&gt;
 </pre>
-<p></div>
-</p><p></div>
+<p></p></div>
+<p></p><p></p></div>
     </div>
   </div>
   <div id="options">
@@ -475,7 +478,7 @@ $( ".selector" ).accordion( "option", "fillSpace", true );</code></pre>
         <dd class="option-type">Selector, jQuery</dd>
       
       <dt class="option-default-label">Default:</dt>
-        <dd class="option-default">'&gt; li &gt;&nbsp;:first-child,&gt;&nbsp;:not(li):even'</dd>
+        <dd class="option-default">'&gt; li &gt; :first-child,&gt; :not(li):even'</dd>
       
     </dl>
   </div>
@@ -522,7 +525,7 @@ $( ".selector" ).accordion( "option", "header", 'h3' );</code></pre>
     </dl>
   </div>
   <div class="option-description">
-    <p>Icons to use for headers. Icons may be specified for 'header' and 'headerSelected', and we recommend using the icons native to the jQuery UI CSS Framework manipulated by <a href="http://www.themeroller.com" class="external text" title="http://www.themeroller.com">jQuery UI ThemeRoller</a></p>
+    <p>Icons to use for headers. Icons may be specified for 'header' and 'headerSelected', and we recommend using the icons native to the jQuery UI CSS Framework manipulated by <a class="external text" href="http://www.themeroller.com" title="http://www.themeroller.com">jQuery UI ThemeRoller</a></p>
   </div>
   <div class="option-examples">
     <h4>Code examples</h4>
@@ -656,7 +659,7 @@ $( ".selector" ).accordion( "option", "navigationFilter", function(){ ... } );</
   ui.oldHeader // jQuery object, previous header
   ui.newContent // jQuery object, activated content
   ui.oldContent // jQuery object, previous content
-});</pre></p>
+});</pre><p></p>
   </div>
   <div class="event-examples">
     <h4>Code examples</h4>
@@ -666,7 +669,7 @@ $( ".selector" ).accordion( "option", "navigationFilter", function(){ ... } );</
   Supply a callback function to handle the <code>change</code> event as an init option.
 </dt>
 <dd>
-<pre><code>$( &quot;.selector&quot; ).accordion({
+<pre><code>$( ".selector" ).accordion({
    change: function(event, ui) { ... }
 });</code></pre>
 </dd>
@@ -676,7 +679,7 @@ $( ".selector" ).accordion( "option", "navigationFilter", function(){ ... } );</
   Bind to the <code>change</code> event by type: <code>accordionchange</code>.
 </dt>
 <dd>
-<pre><code>$( &quot;.selector&quot; ).bind( &quot;accordionchange&quot;, function(event, ui) {
+<pre><code>$( ".selector" ).bind( "accordionchange", function(event, ui) {
   ...
 });</code></pre>
 </dd>
@@ -686,7 +689,7 @@ $( ".selector" ).accordion( "option", "navigationFilter", function(){ ... } );</
 </li>
 
 <p>
-<li class="event" id="event-changestart">
+</p><li class="event" id="event-changestart">
   <div class="event-header">
     <h3 class="event-name"><a href="#event-changestart">changestart</a></h3>
     <dl>
@@ -702,7 +705,7 @@ $( ".selector" ).accordion( "option", "navigationFilter", function(){ ... } );</
   ui.oldHeader // jQuery object, previous header
   ui.newContent // jQuery object, activated content
   ui.oldContent // jQuery object, previous content
-});</pre></p>
+});</pre><p></p>
   </div>
   <div class="event-examples">
     <h4>Code examples</h4>
@@ -712,7 +715,7 @@ $( ".selector" ).accordion( "option", "navigationFilter", function(){ ... } );</
   Supply a callback function to handle the <code>changestart</code> event as an init option.
 </dt>
 <dd>
-<pre><code>$( &quot;.selector&quot; ).accordion({
+<pre><code>$( ".selector" ).accordion({
    changestart: function(event, ui) { ... }
 });</code></pre>
 </dd>
@@ -722,7 +725,7 @@ $( ".selector" ).accordion( "option", "navigationFilter", function(){ ... } );</
   Bind to the <code>changestart</code> event by type: <code>accordionchangestart</code>.
 </dt>
 <dd>
-<pre><code>$( &quot;.selector&quot; ).bind( &quot;accordionchangestart&quot;, function(event, ui) {
+<pre><code>$( ".selector" ).bind( "accordionchangestart", function(event, ui) {
   ...
 });</code></pre>
 </dd>
@@ -759,7 +762,7 @@ $( ".selector" ).accordion( "option", "navigationFilter", function(){ ... } );</
 </li>
 
 <p>
-<li class="method" id="method-disable">
+</p><li class="method" id="method-disable">
   <div class="method-header">
     <h3 class="method-name"><a href="#method-disable">disable</a></h3>
     <dl>
@@ -922,44 +925,44 @@ $( ".selector" ).accordion( "option", "navigationFilter", function(){ ... } );</
 </p>
     
   <h3>Sample markup with jQuery UI CSS Framework classes</h3>
-  &lt;div class="<strong>ui-accordion</strong> ui-widget ui-helper-reset"&gt;<br />
-&nbsp;&nbsp;&lt;h3 class="<strong>ui-accordion-header</strong> ui-helper-reset ui-state-active ui-corner-top"&gt;<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="ui-icon ui-icon-triangle-1-s"/&gt;<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#"&gt;Section 1&lt;/a&gt;<br />
-&nbsp;&nbsp;&lt;/h3&gt;<br />
-&nbsp;&nbsp;&lt;div class="<strong>ui-accordion-content</strong> ui-helper-reset ui-widget-content ui-corner-bottom <strong>ui-accordion-content-active</strong>"&gt;<br />
-&nbsp;&nbsp;&nbsp;&nbsp;Section 1 content<br />
-&nbsp;&nbsp;&lt;/div&gt;<br />
-&nbsp;&nbsp;&lt;h3 class="<strong>ui-accordion-header</strong> ui-helper-reset ui-state-default ui-corner-all"&gt;<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="ui-icon ui-icon-triangle-1-e"/&gt;<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#"&gt;Section 2&lt;/a&gt;<br />
-&nbsp;&nbsp;&lt;/h3&gt;<br />
-&nbsp;&nbsp;&lt;div class="<strong>ui-accordion-content</strong> ui-helper-reset ui-widget-content ui-corner-bottom"&gt;<br />
-&nbsp;&nbsp;&nbsp;&nbsp;Section 2 content<br />
-&nbsp;&nbsp;&lt;/div&gt;<br />
-&nbsp;&nbsp;&lt;h3 class="<strong>ui-accordion-header</strong> ui-helper-reset ui-state-default ui-corner-all"&gt;<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="ui-icon ui-icon-triangle-1-e"/&gt;<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#"&gt;Section 3&lt;/a&gt;<br />
-&nbsp;&nbsp;&lt;/h3&gt;<br />
-&nbsp;&nbsp;&lt;div class="<strong>ui-accordion-content</strong> ui-helper-reset ui-widget-content ui-corner-bottom"&gt;<br />
-&nbsp;&nbsp;&nbsp;&nbsp;Section 3 content<br />
-&nbsp;&nbsp;&lt;/div&gt;<br />
-&lt;/div&gt;<br />
+  &lt;div class="<strong>ui-accordion</strong> ui-widget ui-helper-reset"&gt;<br/>
+  &lt;h3 class="<strong>ui-accordion-header</strong> ui-helper-reset ui-state-active ui-corner-top"&gt;<br/>
+    &lt;span class="ui-icon ui-icon-triangle-1-s"/&gt;<br/>
+    &lt;a href="#"&gt;Section 1&lt;/a&gt;<br/>
+  &lt;/h3&gt;<br/>
+  &lt;div class="<strong>ui-accordion-content</strong> ui-helper-reset ui-widget-content ui-corner-bottom <strong>ui-accordion-content-active</strong>"&gt;<br/>
+    Section 1 content<br/>
+  &lt;/div&gt;<br/>
+  &lt;h3 class="<strong>ui-accordion-header</strong> ui-helper-reset ui-state-default ui-corner-all"&gt;<br/>
+    &lt;span class="ui-icon ui-icon-triangle-1-e"/&gt;<br/>
+    &lt;a href="#"&gt;Section 2&lt;/a&gt;<br/>
+  &lt;/h3&gt;<br/>
+  &lt;div class="<strong>ui-accordion-content</strong> ui-helper-reset ui-widget-content ui-corner-bottom"&gt;<br/>
+    Section 2 content<br/>
+  &lt;/div&gt;<br/>
+  &lt;h3 class="<strong>ui-accordion-header</strong> ui-helper-reset ui-state-default ui-corner-all"&gt;<br/>
+    &lt;span class="ui-icon ui-icon-triangle-1-e"/&gt;<br/>
+    &lt;a href="#"&gt;Section 3&lt;/a&gt;<br/>
+  &lt;/h3&gt;<br/>
+  &lt;div class="<strong>ui-accordion-content</strong> ui-helper-reset ui-widget-content ui-corner-bottom"&gt;<br/>
+    Section 3 content<br/>
+  &lt;/div&gt;<br/>
+&lt;/div&gt;<br/>
   <p class="theme-note">
     <strong>
-      Note: This is a sample of markup generated by the accordion plugin, not markup you should use to create a accordion. The only markup needed for that is <br />&lt;div&gt;<br />
-&#160;&#160;&#160;&lt;h3&gt;&lt;a href=&quot;#&quot;&gt;Section 1&lt;/a&gt;&lt;/h3&gt;<br />
-&#160;&#160;&#160;&lt;div&gt;<br />
-&#160;&#160;&#160;&#160;&#160;&#160;Section 1 content<br />
-&#160;&#160;&#160;&lt;/div&gt;<br />
-&#160;&#160;&#160;&lt;h3&gt;&lt;a href=&quot;#&quot;&gt;Section 2&lt;/a&gt;&lt;/h3&gt;<br />
-&#160;&#160;&#160;&lt;div&gt;<br />
-&#160;&#160;&#160;&#160;&#160;&#160;Section 2 content<br />
-&#160;&#160;&#160;&lt;/div&gt;<br />
-&#160;&#160;&#160;&lt;h3&gt;&lt;a href=&quot;#&quot;&gt;Section 3&lt;/a&gt;&lt;/h3&gt;<br />
-&#160;&#160;&#160;&lt;div&gt;<br />
-&#160;&#160;&#160;&#160;&#160;&#160;Section 3 content<br />
-&#160;&#160;&#160;&lt;/div&gt;<br />
+      Note: This is a sample of markup generated by the accordion plugin, not markup you should use to create a accordion. The only markup needed for that is <br/>&lt;div&gt;<br/>
+   &lt;h3&gt;&lt;a href="#"&gt;Section 1&lt;/a&gt;&lt;/h3&gt;<br/>
+   &lt;div&gt;<br/>
+      Section 1 content<br/>
+   &lt;/div&gt;<br/>
+   &lt;h3&gt;&lt;a href="#"&gt;Section 2&lt;/a&gt;&lt;/h3&gt;<br/>
+   &lt;div&gt;<br/>
+      Section 2 content<br/>
+   &lt;/div&gt;<br/>
+   &lt;h3&gt;&lt;a href="#"&gt;Section 3&lt;/a&gt;&lt;/h3&gt;<br/>
+   &lt;div&gt;<br/>
+      Section 3 content<br/>
+   &lt;/div&gt;<br/>
 &lt;/div&gt;.
     </strong>
   </p>
@@ -967,7 +970,7 @@ $( ".selector" ).accordion( "option", "navigationFilter", function(){ ... } );</
   </div>
 </div>
 
-</p><!-- 
+<p></p><!-- 
 Pre-expand include size: 36551 bytes
 Post-expand include size: 61985 bytes
 Template argument size: 35253 bytes
@@ -975,3 +978,4 @@ Maximum: 2097152 bytes
 -->
 
 <!-- Saved in parser cache with key jqdocs_docs:pcache:idhash:3773-1!1!0!!en!2 and timestamp 20100910151506 -->
+</body></html>

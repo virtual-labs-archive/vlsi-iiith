@@ -1,5 +1,8 @@
-
-<ul class="UIAPIPlugin-toc">
+<html><head><!--Google Tag Manager--><script class="gtm">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W59SWTR');</script><!--End Google Tag Manager--></head><body><!--Google Tag Manager (noscript)--><noscript class="gtm"><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-W59SWTR" style="display:none;visibility:hidden" width="0"></iframe></noscript><!--End Google Tag Manager (noscript)--><ul class="UIAPIPlugin-toc">
 <li><a href="#overview">Overview</a></li>
 <li><a href="#options">Options</a></li>
 <li><a href="#events">Events</a></li>
@@ -53,7 +56,7 @@
 <p>And can then override an individual datepicker for a specific locale:</p>
 <p><code>$(selector).datepicker($.datepicker.regional['fr']);</code>
 </p>
-The localization files are also available in the UI svn: <a href="http://jquery-ui.googlecode.com/svn/trunk/ui/i18n/" class="external free" title="http://jquery-ui.googlecode.com/svn/trunk/ui/i18n/">http://jquery-ui.googlecode.com/svn/trunk/ui/i18n/</a>
+The localization files are also available in the UI svn: <a class="external free" href="http://jquery-ui.googlecode.com/svn/trunk/ui/i18n/" title="http://jquery-ui.googlecode.com/svn/trunk/ui/i18n/">http://jquery-ui.googlecode.com/svn/trunk/ui/i18n/</a>
     </div>
     <div id="overview-dependencies">
         <h3>Dependencies</h3>
@@ -63,37 +66,37 @@ The localization files are also available in the UI svn: <a href="http://jquery-
     </div>
     <div id="overview-example">
         <h3>Example</h3>
-        <div id="overview-example" class="example">
+        <div class="example" id="overview-example">
 <ul><li><a href="#demo"><span>Demo</span></a></li><li><a href="#source"><span>View Source</span></a></li></ul>
-<p><div id="demo" class="tabs-container" rel="220">
-A simple jQuery UI Datepicker.<br />
-</p>
-<pre>$(&quot;#datepicker&quot;).datepicker();
+<p></p><div class="tabs-container" id="demo" rel="220">
+A simple jQuery UI Datepicker.<br/>
+<p></p>
+<pre>$("#datepicker").datepicker();
 </pre>
-<p></div><div id="source" class="tabs-container">
-</p>
+<p></p></div><div class="tabs-container" id="source">
+<p></p>
 <pre>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;head&gt;
-  &lt;link href=&quot;http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;/&gt;
-  &lt;script src=&quot;http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js&quot;&gt;&lt;/script&gt;
-  &lt;script src=&quot;http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js&quot;&gt;&lt;/script&gt;
+  &lt;link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/&gt;
+  &lt;script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"&gt;&lt;/script&gt;
+  &lt;script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"&gt;&lt;/script&gt;
   
   &lt;script&gt;
   $(document).ready(function() {
-    $(&quot;#datepicker&quot;).datepicker();
+    $("#datepicker").datepicker();
   });
   &lt;/script&gt;
 &lt;/head&gt;
 &lt;body style="font-size:62.5%;"&gt;
   
-&lt;div type=&quot;text&quot; id=&quot;datepicker&quot;&gt;&lt;/div&gt;
+&lt;div type="text" id="datepicker"&gt;&lt;/div&gt;
 
 &lt;/body&gt;
 &lt;/html&gt;
 </pre>
-<p></div>
-</p><p></div>
+<p></p></div>
+<p></p><p></p></div>
     </div>
   </div>
   <div id="options">
@@ -1541,7 +1544,7 @@ $( ".selector" ).datepicker( "option", "shortYearCutoff", 50 );</code></pre>
     </dl>
   </div>
   <div class="option-description">
-    <p>Set the name of the animation used to show/hide the datepicker. Use 'show' (the default), 'slideDown', 'fadeIn', any of the show/hide <a href="http://docs.jquery.com/UI/Effects" class="external text" title="http://docs.jquery.com/UI/Effects">jQuery UI effects</a>, or '' for no animation.</p>
+    <p>Set the name of the animation used to show/hide the datepicker. Use 'show' (the default), 'slideDown', 'fadeIn', any of the show/hide <a class="external text" href="http://docs.jquery.com/UI/Effects" title="http://docs.jquery.com/UI/Effects">jQuery UI effects</a>, or '' for no animation.</p>
   </div>
   <div class="option-examples">
     <h4>Code examples</h4>
@@ -2486,32 +2489,32 @@ $( ".selector" ).datepicker( "option", "yearSuffix", 'CE' );</code></pre>
 </p>
     
   <h3>Sample markup with jQuery UI CSS Framework classes</h3>
-  &lt;div id=&quot;ui-datepicker-div&quot; class=&quot;<strong>ui-datepicker</strong> ui-widget ui-widget-content ui-helper-clearfix ui-corner-all ui-helper-hidden-accessible&quot;&gt;<br />
-&nbsp;&nbsp;&nbsp;&lt;div class=&quot;<strong>ui-datepicker-header</strong> ui-widget-header ui-helper-clearfix ui-corner-all&quot;&gt;<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a class=&quot;<strong>ui-datepicker-prev</strong> ui-corner-all&quot;&gt;title=&quot;Prev&quot;&gt;&lt;span class=&quot;ui-icon ui-icon-circle-triangle-w&quot;&gt;Prev&lt;/span&gt;&lt;/a&gt;<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a class=&quot;<strong>ui-datepicker-next</strong> ui-corner-all&quot; title=&quot;Next&quot;&gt;&lt;span class=&quot;ui-icon ui-icon-circle-triangle-e&quot;&gt;Next&lt;/span&gt;&lt;/a&gt;<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;<strong>ui-datepicker-title</strong>&quot;&gt;<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class=&quot;<strong>ui-datepicker-month</strong>&quot;&gt;January&lt;/span&gt;&lt;span class=&quot;<strong>ui-datepicker-year</strong>&quot;&gt;2009&lt;/span&gt;<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />
-&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />
-&nbsp;&nbsp;&nbsp;&lt;table class=&quot;<strong>ui-datepicker-calendar</strong>&quot;&gt;<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;thead&gt;<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th class=&quot;<strong>ui-datepicker-week-end</strong>&quot;&gt;&lt;span title=&quot;Sunday&quot;&gt;Su&lt;/span&gt;&lt;/th&gt;<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/thead&gt;<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tbody&gt;&lt;tr&gt;<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td class=&quot;<strong>ui-datepicker-week-end ui-datepicker-other-month</strong> &quot;&gt;&nbsp;1&nbsp;&lt;/td&gt;<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tbody&gt;<br />
-&nbsp;&nbsp;&nbsp;&lt;/table&gt;<br />
-&nbsp;&nbsp;&nbsp;&lt;div class=&quot;<strong>ui-datepicker-buttonpane</strong> ui-widget-content&quot;&gt;<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button type=&quot;button&quot; class=&quot;<strong>ui-datepicker-current</strong> ui-state-default ui-priority-secondary ui-corner-all&quot;&gt;Today&lt;/button&gt;<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button type=&quot;button&quot; class=&quot;<strong>ui-datepicker-close</strong> ui-state-default ui-priority-primary ui-corner-all&quot;&gt;Done&lt;/button&gt;<br />
-&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />
-&lt;/div&gt;<br />
+  &lt;div id="ui-datepicker-div" class="<strong>ui-datepicker</strong> ui-widget ui-widget-content ui-helper-clearfix ui-corner-all ui-helper-hidden-accessible"&gt;<br/>
+   &lt;div class="<strong>ui-datepicker-header</strong> ui-widget-header ui-helper-clearfix ui-corner-all"&gt;<br/>
+      &lt;a class="<strong>ui-datepicker-prev</strong> ui-corner-all"&gt;title="Prev"&gt;&lt;span class="ui-icon ui-icon-circle-triangle-w"&gt;Prev&lt;/span&gt;&lt;/a&gt;<br/>
+      &lt;a class="<strong>ui-datepicker-next</strong> ui-corner-all" title="Next"&gt;&lt;span class="ui-icon ui-icon-circle-triangle-e"&gt;Next&lt;/span&gt;&lt;/a&gt;<br/>
+      &lt;div class="<strong>ui-datepicker-title</strong>"&gt;<br/>
+         &lt;span class="<strong>ui-datepicker-month</strong>"&gt;January&lt;/span&gt;&lt;span class="<strong>ui-datepicker-year</strong>"&gt;2009&lt;/span&gt;<br/>
+      &lt;/div&gt;<br/>
+   &lt;/div&gt;<br/>
+   &lt;table class="<strong>ui-datepicker-calendar</strong>"&gt;<br/>
+      &lt;thead&gt;<br/>
+      &lt;tr&gt;<br/>
+         &lt;th class="<strong>ui-datepicker-week-end</strong>"&gt;&lt;span title="Sunday"&gt;Su&lt;/span&gt;&lt;/th&gt;<br/>
+         ...<br/>
+      &lt;/tr&gt;<br/>
+      &lt;/thead&gt;<br/>
+      &lt;tbody&gt;&lt;tr&gt;<br/>
+         &lt;td class="<strong>ui-datepicker-week-end ui-datepicker-other-month</strong> "&gt; 1 &lt;/td&gt;<br/>
+         ...<br/>
+      &lt;/tr&gt;<br/>
+      &lt;/tbody&gt;<br/>
+   &lt;/table&gt;<br/>
+   &lt;div class="<strong>ui-datepicker-buttonpane</strong> ui-widget-content"&gt;<br/>
+      &lt;button type="button" class="<strong>ui-datepicker-current</strong> ui-state-default ui-priority-secondary ui-corner-all"&gt;Today&lt;/button&gt;<br/>
+      &lt;button type="button" class="<strong>ui-datepicker-close</strong> ui-state-default ui-priority-primary ui-corner-all"&gt;Done&lt;/button&gt;<br/>
+   &lt;/div&gt;<br/>
+&lt;/div&gt;<br/>
   <p class="theme-note">
     <strong>
       Note: This is a sample of markup generated by the datepicker plugin, not markup you should use to create a datepicker. The only markup needed for that is &lt;input type="text" /&gt; or &lt;div&gt;&lt;/div&gt;.
@@ -2521,7 +2524,7 @@ $( ".selector" ).datepicker( "option", "yearSuffix", 'CE' );</code></pre>
   </div>
 </div>
 
-</p><!-- 
+<p></p><!-- 
 Pre-expand include size: 97232 bytes
 Post-expand include size: 193237 bytes
 Template argument size: 120737 bytes
@@ -2529,3 +2532,4 @@ Maximum: 2097152 bytes
 -->
 
 <!-- Saved in parser cache with key jqdocs_docs:pcache:idhash:3774-1!1!0!!en!2 and timestamp 20100910172906 -->
+</body></html>

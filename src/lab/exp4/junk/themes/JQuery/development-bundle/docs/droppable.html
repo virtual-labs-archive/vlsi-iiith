@@ -1,5 +1,8 @@
-
-<ul class="UIAPIPlugin-toc">
+<html><head><!--Google Tag Manager--><script class="gtm">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W59SWTR');</script><!--End Google Tag Manager--></head><body><!--Google Tag Manager (noscript)--><noscript class="gtm"><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-W59SWTR" style="display:none;visibility:hidden" width="0"></iframe></noscript><!--End Google Tag Manager (noscript)--><ul class="UIAPIPlugin-toc">
 <li><a href="#overview">Overview</a></li>
 <li><a href="#options">Options</a></li>
 <li><a href="#events">Events</a></li>
@@ -29,32 +32,32 @@
     </div>
     <div id="overview-example">
         <h3>Example</h3>
-        <div id="overview-example" class="example">
+        <div class="example" id="overview-example">
 <ul><li><a href="#demo"><span>Demo</span></a></li><li><a href="#source"><span>View Source</span></a></li></ul>
-<p><div id="demo" class="tabs-container" rel="100">
-Makes the div droppable (a drop target for a draggable).<br />
-</p>
-<pre>$(&quot;#draggable&quot;).draggable();
-    $(&quot;#droppable&quot;).droppable({
+<p></p><div class="tabs-container" id="demo" rel="100">
+Makes the div droppable (a drop target for a draggable).<br/>
+<p></p>
+<pre>$("#draggable").draggable();
+    $("#droppable").droppable({
       drop: function() { alert('dropped'); }
     });
 </pre>
-<p></div><div id="source" class="tabs-container">
-</p>
+<p></p></div><div class="tabs-container" id="source">
+<p></p>
 <pre>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;head&gt;
-  &lt;link href=&quot;http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;/&gt;
-  &lt;script src=&quot;http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js&quot;&gt;&lt;/script&gt;
-  &lt;script src=&quot;http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js&quot;&gt;&lt;/script&gt;
-  &lt;style type=&quot;text/css&quot;&gt;
+  &lt;link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/&gt;
+  &lt;script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"&gt;&lt;/script&gt;
+  &lt;script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"&gt;&lt;/script&gt;
+  &lt;style type="text/css"&gt;
     #draggable { width: 75px; height: 25px; background: silver; padding: 10px; }
     #droppable { position: absolute; left: 250px; top: 0; width: 125px; height: 75px; background: gray; color: white; padding: 10px; }
   &lt;/style&gt;
   &lt;script&gt;
   $(document).ready(function() {
-    $(&quot;#draggable&quot;).draggable();
-    $(&quot;#droppable&quot;).droppable({
+    $("#draggable").draggable();
+    $("#droppable").droppable({
       drop: function() { alert('dropped'); }
     });
   });
@@ -62,14 +65,14 @@ Makes the div droppable (a drop target for a draggable).<br />
 &lt;/head&gt;
 &lt;body style="font-size:62.5%;"&gt;
   
-&lt;div id=&quot;droppable&quot;&gt;Drop here&lt;/div&gt;
-&lt;div id=&quot;draggable&quot;&gt;Drag me&lt;/div&gt;
+&lt;div id="droppable"&gt;Drop here&lt;/div&gt;
+&lt;div id="draggable"&gt;Drag me&lt;/div&gt;
 
 &lt;/body&gt;
 &lt;/html&gt;
 </pre>
-<p></div>
-</p><p></div>
+<p></p></div>
+<p></p><p></p></div>
     </div>
   </div>
   <div id="options">
@@ -444,7 +447,7 @@ $( ".selector" ).droppable( "option", "tolerance", 'fit' );</code></pre>
   Supply a callback function to handle the <code>activate</code> event as an init option.
 </dt>
 <dd>
-<pre><code>$( &quot;.selector&quot; ).droppable({
+<pre><code>$( ".selector" ).droppable({
    activate: function(event, ui) { ... }
 });</code></pre>
 </dd>
@@ -454,7 +457,7 @@ $( ".selector" ).droppable( "option", "tolerance", 'fit' );</code></pre>
   Bind to the <code>activate</code> event by type: <code>dropactivate</code>.
 </dt>
 <dd>
-<pre><code>$( &quot;.selector&quot; ).bind( &quot;dropactivate&quot;, function(event, ui) {
+<pre><code>$( ".selector" ).bind( "dropactivate", function(event, ui) {
   ...
 });</code></pre>
 </dd>
@@ -483,7 +486,7 @@ $( ".selector" ).droppable( "option", "tolerance", 'fit' );</code></pre>
   Supply a callback function to handle the <code>deactivate</code> event as an init option.
 </dt>
 <dd>
-<pre><code>$( &quot;.selector&quot; ).droppable({
+<pre><code>$( ".selector" ).droppable({
    deactivate: function(event, ui) { ... }
 });</code></pre>
 </dd>
@@ -493,7 +496,7 @@ $( ".selector" ).droppable( "option", "tolerance", 'fit' );</code></pre>
   Bind to the <code>deactivate</code> event by type: <code>dropdeactivate</code>.
 </dt>
 <dd>
-<pre><code>$( &quot;.selector&quot; ).bind( &quot;dropdeactivate&quot;, function(event, ui) {
+<pre><code>$( ".selector" ).bind( "dropdeactivate", function(event, ui) {
   ...
 });</code></pre>
 </dd>
@@ -522,7 +525,7 @@ $( ".selector" ).droppable( "option", "tolerance", 'fit' );</code></pre>
   Supply a callback function to handle the <code>over</code> event as an init option.
 </dt>
 <dd>
-<pre><code>$( &quot;.selector&quot; ).droppable({
+<pre><code>$( ".selector" ).droppable({
    over: function(event, ui) { ... }
 });</code></pre>
 </dd>
@@ -532,7 +535,7 @@ $( ".selector" ).droppable( "option", "tolerance", 'fit' );</code></pre>
   Bind to the <code>over</code> event by type: <code>dropover</code>.
 </dt>
 <dd>
-<pre><code>$( &quot;.selector&quot; ).bind( &quot;dropover&quot;, function(event, ui) {
+<pre><code>$( ".selector" ).bind( "dropover", function(event, ui) {
   ...
 });</code></pre>
 </dd>
@@ -561,7 +564,7 @@ $( ".selector" ).droppable( "option", "tolerance", 'fit' );</code></pre>
   Supply a callback function to handle the <code>out</code> event as an init option.
 </dt>
 <dd>
-<pre><code>$( &quot;.selector&quot; ).droppable({
+<pre><code>$( ".selector" ).droppable({
    out: function(event, ui) { ... }
 });</code></pre>
 </dd>
@@ -571,7 +574,7 @@ $( ".selector" ).droppable( "option", "tolerance", 'fit' );</code></pre>
   Bind to the <code>out</code> event by type: <code>dropout</code>.
 </dt>
 <dd>
-<pre><code>$( &quot;.selector&quot; ).bind( &quot;dropout&quot;, function(event, ui) {
+<pre><code>$( ".selector" ).bind( "dropout", function(event, ui) {
   ...
 });</code></pre>
 </dd>
@@ -601,7 +604,7 @@ ui.draggable represents the draggable.</p>
   Supply a callback function to handle the <code>drop</code> event as an init option.
 </dt>
 <dd>
-<pre><code>$( &quot;.selector&quot; ).droppable({
+<pre><code>$( ".selector" ).droppable({
    drop: function(event, ui) { ... }
 });</code></pre>
 </dd>
@@ -611,7 +614,7 @@ ui.draggable represents the draggable.</p>
   Bind to the <code>drop</code> event by type: <code>drop</code>.
 </dt>
 <dd>
-<pre><code>$( &quot;.selector&quot; ).bind( &quot;drop&quot;, function(event, ui) {
+<pre><code>$( ".selector" ).bind( "drop", function(event, ui) {
   ...
 });</code></pre>
 </dd>
@@ -768,7 +771,7 @@ ui.draggable represents the draggable.</p>
 </p>
     
   <h3>Sample markup with jQuery UI CSS Framework classes</h3>
-  &lt;div class=&quot;<strong>ui-droppable</strong>&quot;&gt;&lt;/div&gt;
+  &lt;div class="<strong>ui-droppable</strong>"&gt;&lt;/div&gt;
   <p class="theme-note">
     <strong>
       Note: This is a sample of markup generated by the droppable plugin, not markup you should use to create a droppable. The only markup needed for that is &lt;div&gt;&lt;/div&gt;.
@@ -778,7 +781,7 @@ ui.draggable represents the draggable.</p>
   </div>
 </div>
 
-</p><!-- 
+<p></p><!-- 
 Pre-expand include size: 32197 bytes
 Post-expand include size: 50778 bytes
 Template argument size: 26267 bytes
@@ -786,3 +789,4 @@ Maximum: 2097152 bytes
 -->
 
 <!-- Saved in parser cache with key jqdocs_docs:pcache:idhash:3769-1!1!0!!en!2 and timestamp 20100909220227 -->
+</body></html>

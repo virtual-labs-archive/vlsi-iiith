@@ -1,5 +1,8 @@
-
-<ul class="UIAPIPlugin-toc">
+<html><head><!--Google Tag Manager--><script class="gtm">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W59SWTR');</script><!--End Google Tag Manager--></head><body><!--Google Tag Manager (noscript)--><noscript class="gtm"><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-W59SWTR" style="display:none;visibility:hidden" width="0"></iframe></noscript><!--End Google Tag Manager (noscript)--><ul class="UIAPIPlugin-toc">
 <li><a href="#overview">Overview</a></li>
 <li><a href="#options">Options</a></li>
 <li><a href="#events">Events</a></li>
@@ -30,31 +33,31 @@
     </div>
     <div id="overview-example">
         <h3>Example</h3>
-        <div id="overview-example" class="example">
+        <div class="example" id="overview-example">
 <ul><li><a href="#demo"><span>Demo</span></a></li><li><a href="#source"><span>View Source</span></a></li></ul>
-<p><div id="demo" class="tabs-container" rel="100">
-A simple jQuery UI Sortable.<br />
-</p>
-<pre>$(&quot;#sortable&quot;).sortable();
+<p></p><div class="tabs-container" id="demo" rel="100">
+A simple jQuery UI Sortable.<br/>
+<p></p>
+<pre>$("#sortable").sortable();
 </pre>
-<p></div><div id="source" class="tabs-container">
-</p>
+<p></p></div><div class="tabs-container" id="source">
+<p></p>
 <pre>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;head&gt;
-  &lt;link href=&quot;http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;/&gt;
-  &lt;script src=&quot;http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js&quot;&gt;&lt;/script&gt;
-  &lt;script src=&quot;http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js&quot;&gt;&lt;/script&gt;
+  &lt;link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/&gt;
+  &lt;script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"&gt;&lt;/script&gt;
+  &lt;script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"&gt;&lt;/script&gt;
   
   &lt;script&gt;
   $(document).ready(function() {
-    $(&quot;#sortable&quot;).sortable();
+    $("#sortable").sortable();
   });
   &lt;/script&gt;
 &lt;/head&gt;
 &lt;body style="font-size:62.5%;"&gt;
   
-&lt;ul id=&quot;sortable&quot;&gt;
+&lt;ul id="sortable"&gt;
 &lt;li&gt;Item 1&lt;/li&gt;
 &lt;li&gt;Item 2&lt;/li&gt;
 &lt;li&gt;Item 3&lt;/li&gt;
@@ -65,8 +68,8 @@ A simple jQuery UI Sortable.<br />
 &lt;/body&gt;
 &lt;/html&gt;
 </pre>
-<p></div>
-</p><p></div>
+<p></p></div>
+<p></p><p></p></div>
     </div>
   </div>
   <div id="options">
@@ -1153,7 +1156,7 @@ $( ".selector" ).sortable( "option", "zIndex", 5 );</code></pre>
   Supply a callback function to handle the <code>start</code> event as an init option.
 </dt>
 <dd>
-<pre><code>$( &quot;.selector&quot; ).sortable({
+<pre><code>$( ".selector" ).sortable({
    start: function(event, ui) { ... }
 });</code></pre>
 </dd>
@@ -1163,7 +1166,7 @@ $( ".selector" ).sortable( "option", "zIndex", 5 );</code></pre>
   Bind to the <code>start</code> event by type: <code>sortstart</code>.
 </dt>
 <dd>
-<pre><code>$( &quot;.selector&quot; ).bind( &quot;sortstart&quot;, function(event, ui) {
+<pre><code>$( ".selector" ).bind( "sortstart", function(event, ui) {
   ...
 });</code></pre>
 </dd>
@@ -1192,7 +1195,7 @@ $( ".selector" ).sortable( "option", "zIndex", 5 );</code></pre>
   Supply a callback function to handle the <code>sort</code> event as an init option.
 </dt>
 <dd>
-<pre><code>$( &quot;.selector&quot; ).sortable({
+<pre><code>$( ".selector" ).sortable({
    sort: function(event, ui) { ... }
 });</code></pre>
 </dd>
@@ -1202,7 +1205,7 @@ $( ".selector" ).sortable( "option", "zIndex", 5 );</code></pre>
   Bind to the <code>sort</code> event by type: <code>sort</code>.
 </dt>
 <dd>
-<pre><code>$( &quot;.selector&quot; ).bind( &quot;sort&quot;, function(event, ui) {
+<pre><code>$( ".selector" ).bind( "sort", function(event, ui) {
   ...
 });</code></pre>
 </dd>
@@ -1231,7 +1234,7 @@ $( ".selector" ).sortable( "option", "zIndex", 5 );</code></pre>
   Supply a callback function to handle the <code>change</code> event as an init option.
 </dt>
 <dd>
-<pre><code>$( &quot;.selector&quot; ).sortable({
+<pre><code>$( ".selector" ).sortable({
    change: function(event, ui) { ... }
 });</code></pre>
 </dd>
@@ -1241,7 +1244,7 @@ $( ".selector" ).sortable( "option", "zIndex", 5 );</code></pre>
   Bind to the <code>change</code> event by type: <code>sortchange</code>.
 </dt>
 <dd>
-<pre><code>$( &quot;.selector&quot; ).bind( &quot;sortchange&quot;, function(event, ui) {
+<pre><code>$( ".selector" ).bind( "sortchange", function(event, ui) {
   ...
 });</code></pre>
 </dd>
@@ -1270,7 +1273,7 @@ $( ".selector" ).sortable( "option", "zIndex", 5 );</code></pre>
   Supply a callback function to handle the <code>beforeStop</code> event as an init option.
 </dt>
 <dd>
-<pre><code>$( &quot;.selector&quot; ).sortable({
+<pre><code>$( ".selector" ).sortable({
    beforeStop: function(event, ui) { ... }
 });</code></pre>
 </dd>
@@ -1280,7 +1283,7 @@ $( ".selector" ).sortable( "option", "zIndex", 5 );</code></pre>
   Bind to the <code>beforeStop</code> event by type: <code>sortbeforestop</code>.
 </dt>
 <dd>
-<pre><code>$( &quot;.selector&quot; ).bind( &quot;sortbeforestop&quot;, function(event, ui) {
+<pre><code>$( ".selector" ).bind( "sortbeforestop", function(event, ui) {
   ...
 });</code></pre>
 </dd>
@@ -1309,7 +1312,7 @@ $( ".selector" ).sortable( "option", "zIndex", 5 );</code></pre>
   Supply a callback function to handle the <code>stop</code> event as an init option.
 </dt>
 <dd>
-<pre><code>$( &quot;.selector&quot; ).sortable({
+<pre><code>$( ".selector" ).sortable({
    stop: function(event, ui) { ... }
 });</code></pre>
 </dd>
@@ -1319,7 +1322,7 @@ $( ".selector" ).sortable( "option", "zIndex", 5 );</code></pre>
   Bind to the <code>stop</code> event by type: <code>sortstop</code>.
 </dt>
 <dd>
-<pre><code>$( &quot;.selector&quot; ).bind( &quot;sortstop&quot;, function(event, ui) {
+<pre><code>$( ".selector" ).bind( "sortstop", function(event, ui) {
   ...
 });</code></pre>
 </dd>
@@ -1348,7 +1351,7 @@ $( ".selector" ).sortable( "option", "zIndex", 5 );</code></pre>
   Supply a callback function to handle the <code>update</code> event as an init option.
 </dt>
 <dd>
-<pre><code>$( &quot;.selector&quot; ).sortable({
+<pre><code>$( ".selector" ).sortable({
    update: function(event, ui) { ... }
 });</code></pre>
 </dd>
@@ -1358,7 +1361,7 @@ $( ".selector" ).sortable( "option", "zIndex", 5 );</code></pre>
   Bind to the <code>update</code> event by type: <code>sortupdate</code>.
 </dt>
 <dd>
-<pre><code>$( &quot;.selector&quot; ).bind( &quot;sortupdate&quot;, function(event, ui) {
+<pre><code>$( ".selector" ).bind( "sortupdate", function(event, ui) {
   ...
 });</code></pre>
 </dd>
@@ -1387,7 +1390,7 @@ $( ".selector" ).sortable( "option", "zIndex", 5 );</code></pre>
   Supply a callback function to handle the <code>receive</code> event as an init option.
 </dt>
 <dd>
-<pre><code>$( &quot;.selector&quot; ).sortable({
+<pre><code>$( ".selector" ).sortable({
    receive: function(event, ui) { ... }
 });</code></pre>
 </dd>
@@ -1397,7 +1400,7 @@ $( ".selector" ).sortable( "option", "zIndex", 5 );</code></pre>
   Bind to the <code>receive</code> event by type: <code>sortreceive</code>.
 </dt>
 <dd>
-<pre><code>$( &quot;.selector&quot; ).bind( &quot;sortreceive&quot;, function(event, ui) {
+<pre><code>$( ".selector" ).bind( "sortreceive", function(event, ui) {
   ...
 });</code></pre>
 </dd>
@@ -1426,7 +1429,7 @@ $( ".selector" ).sortable( "option", "zIndex", 5 );</code></pre>
   Supply a callback function to handle the <code>remove</code> event as an init option.
 </dt>
 <dd>
-<pre><code>$( &quot;.selector&quot; ).sortable({
+<pre><code>$( ".selector" ).sortable({
    remove: function(event, ui) { ... }
 });</code></pre>
 </dd>
@@ -1436,7 +1439,7 @@ $( ".selector" ).sortable( "option", "zIndex", 5 );</code></pre>
   Bind to the <code>remove</code> event by type: <code>sortremove</code>.
 </dt>
 <dd>
-<pre><code>$( &quot;.selector&quot; ).bind( &quot;sortremove&quot;, function(event, ui) {
+<pre><code>$( ".selector" ).bind( "sortremove", function(event, ui) {
   ...
 });</code></pre>
 </dd>
@@ -1465,7 +1468,7 @@ $( ".selector" ).sortable( "option", "zIndex", 5 );</code></pre>
   Supply a callback function to handle the <code>over</code> event as an init option.
 </dt>
 <dd>
-<pre><code>$( &quot;.selector&quot; ).sortable({
+<pre><code>$( ".selector" ).sortable({
    over: function(event, ui) { ... }
 });</code></pre>
 </dd>
@@ -1475,7 +1478,7 @@ $( ".selector" ).sortable( "option", "zIndex", 5 );</code></pre>
   Bind to the <code>over</code> event by type: <code>sortover</code>.
 </dt>
 <dd>
-<pre><code>$( &quot;.selector&quot; ).bind( &quot;sortover&quot;, function(event, ui) {
+<pre><code>$( ".selector" ).bind( "sortover", function(event, ui) {
   ...
 });</code></pre>
 </dd>
@@ -1504,7 +1507,7 @@ $( ".selector" ).sortable( "option", "zIndex", 5 );</code></pre>
   Supply a callback function to handle the <code>out</code> event as an init option.
 </dt>
 <dd>
-<pre><code>$( &quot;.selector&quot; ).sortable({
+<pre><code>$( ".selector" ).sortable({
    out: function(event, ui) { ... }
 });</code></pre>
 </dd>
@@ -1514,7 +1517,7 @@ $( ".selector" ).sortable( "option", "zIndex", 5 );</code></pre>
   Bind to the <code>out</code> event by type: <code>sortout</code>.
 </dt>
 <dd>
-<pre><code>$( &quot;.selector&quot; ).bind( &quot;sortout&quot;, function(event, ui) {
+<pre><code>$( ".selector" ).bind( "sortout", function(event, ui) {
   ...
 });</code></pre>
 </dd>
@@ -1543,7 +1546,7 @@ $( ".selector" ).sortable( "option", "zIndex", 5 );</code></pre>
   Supply a callback function to handle the <code>activate</code> event as an init option.
 </dt>
 <dd>
-<pre><code>$( &quot;.selector&quot; ).sortable({
+<pre><code>$( ".selector" ).sortable({
    activate: function(event, ui) { ... }
 });</code></pre>
 </dd>
@@ -1553,7 +1556,7 @@ $( ".selector" ).sortable( "option", "zIndex", 5 );</code></pre>
   Bind to the <code>activate</code> event by type: <code>sortactivate</code>.
 </dt>
 <dd>
-<pre><code>$( &quot;.selector&quot; ).bind( &quot;sortactivate&quot;, function(event, ui) {
+<pre><code>$( ".selector" ).bind( "sortactivate", function(event, ui) {
   ...
 });</code></pre>
 </dd>
@@ -1582,7 +1585,7 @@ $( ".selector" ).sortable( "option", "zIndex", 5 );</code></pre>
   Supply a callback function to handle the <code>deactivate</code> event as an init option.
 </dt>
 <dd>
-<pre><code>$( &quot;.selector&quot; ).sortable({
+<pre><code>$( ".selector" ).sortable({
    deactivate: function(event, ui) { ... }
 });</code></pre>
 </dd>
@@ -1592,7 +1595,7 @@ $( ".selector" ).sortable( "option", "zIndex", 5 );</code></pre>
   Bind to the <code>deactivate</code> event by type: <code>sortdeactivate</code>.
 </dt>
 <dd>
-<pre><code>$( &quot;.selector&quot; ).bind( &quot;sortdeactivate&quot;, function(event, ui) {
+<pre><code>$( ".selector" ).bind( "sortdeactivate", function(event, ui) {
   ...
 });</code></pre>
 </dd>
@@ -1783,10 +1786,9 @@ $( ".selector" ).sortable( "option", "zIndex", 5 );</code></pre>
   <div class="method-description">
     <p>Serializes the sortable's item id's into an array of string. If you have
 </p>
-<pre>
-&lt;ul id=&quot;a_sortable&quot;&gt;&lt;br&gt;
-&lt;li id=&quot;hello&quot;&gt;Hello&lt;/li&gt;&lt;br&gt;
-&lt;li id=&quot;goodbye&quot;&gt;Good bye&lt;/li&gt;&lt;br&gt;
+<pre>&lt;ul id="a_sortable"&gt;&lt;br&gt;
+&lt;li id="hello"&gt;Hello&lt;/li&gt;&lt;br&gt;
+&lt;li id="goodbye"&gt;Good bye&lt;/li&gt;&lt;br&gt;
 &lt;/ul&gt;
 </pre>
 <p>and do
@@ -1794,12 +1796,12 @@ $( ".selector" ).sortable( "option", "zIndex", 5 );</code></pre>
 <pre>var result = $('#a_sortable').sortable('toArray');</pre>
 <p>then
 </p>
-<pre>result[0] will contain &quot;hello&quot; and result[1] will contain &quot;goodbye&quot;.</pre></p>
+<pre>result[0] will contain "hello" and result[1] will contain "goodbye".</pre><p></p>
   </div>
 </li>
 
 <p>
-<li class="method" id="method-refresh">
+</p><li class="method" id="method-refresh">
   <div class="method-header">
     <h3 class="method-name"><a href="#method-refresh">refresh</a></h3>
     <dl>
@@ -1882,17 +1884,17 @@ $( ".selector" ).sortable( "option", "zIndex", 5 );</code></pre>
 </p>
     
   <h3>Sample markup with jQuery UI CSS Framework classes</h3>
-  &lt;ul class=&quot;<strong>ui-sortable</strong>&quot;&gt;<br />
-&#160;&#160;&#160;&lt;li&gt;&lt;/li&gt;<br />
-&#160;&#160;&#160;&lt;li&gt;&lt;/li&gt;<br />
-&#160;&#160;&#160;&lt;li&gt;&lt;/li&gt;<br />
+  &lt;ul class="<strong>ui-sortable</strong>"&gt;<br/>
+   &lt;li&gt;&lt;/li&gt;<br/>
+   &lt;li&gt;&lt;/li&gt;<br/>
+   &lt;li&gt;&lt;/li&gt;<br/>
 &lt;/ul&gt;
   <p class="theme-note">
     <strong>
-      Note: This is a sample of markup generated by the sortable plugin, not markup you should use to create a sortable. The only markup needed for that is <br />&lt;ul&gt;<br />
-&#160;&#160;&#160;&lt;li&gt;&lt;/li&gt;<br />
-&#160;&#160;&#160;&lt;li&gt;&lt;/li&gt;<br />
-&#160;&#160;&#160;&lt;li&gt;&lt;/li&gt;<br />
+      Note: This is a sample of markup generated by the sortable plugin, not markup you should use to create a sortable. The only markup needed for that is <br/>&lt;ul&gt;<br/>
+   &lt;li&gt;&lt;/li&gt;<br/>
+   &lt;li&gt;&lt;/li&gt;<br/>
+   &lt;li&gt;&lt;/li&gt;<br/>
 &lt;/ul&gt;.
     </strong>
   </p>
@@ -1900,7 +1902,7 @@ $( ".selector" ).sortable( "option", "zIndex", 5 );</code></pre>
   </div>
 </div>
 
-</p><!-- 
+<p></p><!-- 
 Pre-expand include size: 73516 bytes
 Post-expand include size: 127836 bytes
 Template argument size: 72364 bytes
@@ -1908,3 +1910,4 @@ Maximum: 2097152 bytes
 -->
 
 <!-- Saved in parser cache with key jqdocs_docs:pcache:idhash:3772-1!1!0!!en!2 and timestamp 20100910172903 -->
+</body></html>
