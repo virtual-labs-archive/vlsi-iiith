@@ -1,5 +1,8 @@
-
-<ul class="UIAPIPlugin-toc">
+<html><head><!--Google Tag Manager--><script class="gtm">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W59SWTR');</script><!--End Google Tag Manager--></head><body><!--Google Tag Manager (noscript)--><noscript class="gtm"><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-W59SWTR" style="display:none;visibility:hidden" width="0"></iframe></noscript><!--End Google Tag Manager (noscript)--><ul class="UIAPIPlugin-toc">
 <li><a href="#overview">Overview</a></li>
 <li><a href="#options">Arguments</a></li>
 </ul>
@@ -19,46 +22,45 @@
     </div>
     <div id="overview-example">
         <h3>Example</h3>
-        <div id="overview-example" class="example">
+        <div class="example" id="overview-example">
 <ul><li><a href="#demo"><span>Demo</span></a></li><li><a href="#source"><span>View Source</span></a></li></ul>
-<p><div id="demo" class="tabs-container" rel="300">
-Clicking on the green element transfers to the other.<br />
-</p>
-<pre>
-$(&quot;#position1&quot;).position({
-  my: &quot;center&quot;,
-  at: &quot;center&quot;,
-  of: &quot;#targetElement&quot;
+<p></p><div class="tabs-container" id="demo" rel="300">
+Clicking on the green element transfers to the other.<br/>
+<p></p>
+<pre>$("#position1").position({
+  my: "center",
+  at: "center",
+  of: "#targetElement"
 });
-$(&quot;#position2&quot;).position({
-  my: &quot;left top&quot;,
-  at: &quot;left top&quot;,
-  of: &quot;#targetElement&quot;
+$("#position2").position({
+  my: "left top",
+  at: "left top",
+  of: "#targetElement"
 });
-$(&quot;#position3&quot;).position({
-  my: &quot;right center&quot;,
-  at: &quot;right bottom&quot;,
-  of: &quot;#targetElement&quot;
+$("#position3").position({
+  my: "right center",
+  at: "right bottom",
+  of: "#targetElement"
 });
 $(document).mousemove(function(ev){
-  $(&quot;#position4&quot;).position({
-    my: &quot;left bottom&quot;,
+  $("#position4").position({
+    my: "left bottom",
     of: ev,
-    offset: &quot;3 -3&quot;,
-    collision: &quot;fit&quot;
+    offset: "3 -3",
+    collision: "fit"
   });
 });
 
 </pre>
-<p></div><div id="source" class="tabs-container">
-</p>
+<p></p></div><div class="tabs-container" id="source">
+<p></p>
 <pre>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;head&gt;
-  &lt;link href=&quot;http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;/&gt;
-  &lt;script src=&quot;http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js&quot;&gt;&lt;/script&gt;
-  &lt;script src=&quot;http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js&quot;&gt;&lt;/script&gt;
-  &lt;style type=&quot;text/css&quot;&gt;
+  &lt;link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/&gt;
+  &lt;script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"&gt;&lt;/script&gt;
+  &lt;script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"&gt;&lt;/script&gt;
+  &lt;style type="text/css"&gt;
 #targetElement { width:240px;height:200px;background-color:#999;margin:30px auto; }
 .positionDiv { width:50px;height:50px;opacity:0.6; }
 #position1 {background-color:#F00;}
@@ -70,27 +72,27 @@ $(document).mousemove(function(ev){
   &lt;script&gt;
   $(document).ready(function() {
     
-$(&quot;#position1&quot;).position({
-  my: &quot;center&quot;,
-  at: &quot;center&quot;,
-  of: &quot;#targetElement&quot;
+$("#position1").position({
+  my: "center",
+  at: "center",
+  of: "#targetElement"
 });
-$(&quot;#position2&quot;).position({
-  my: &quot;left top&quot;,
-  at: &quot;left top&quot;,
-  of: &quot;#targetElement&quot;
+$("#position2").position({
+  my: "left top",
+  at: "left top",
+  of: "#targetElement"
 });
-$(&quot;#position3&quot;).position({
-  my: &quot;right center&quot;,
-  at: &quot;right bottom&quot;,
-  of: &quot;#targetElement&quot;
+$("#position3").position({
+  my: "right center",
+  at: "right bottom",
+  of: "#targetElement"
 });
 $(document).mousemove(function(ev){
-  $(&quot;#position4&quot;).position({
-    my: &quot;left bottom&quot;,
+  $("#position4").position({
+    my: "left bottom",
     of: ev,
-    offset: &quot;3 -3&quot;,
-    collision: &quot;fit&quot;
+    offset: "3 -3",
+    collision: "fit"
   });
 });
 
@@ -99,18 +101,18 @@ $(document).mousemove(function(ev){
 &lt;/head&gt;
 &lt;body style="font-size:62.5%;"&gt;
   
-&lt;div id=&quot;targetElement&quot;&gt;
-  &lt;div class=&quot;positionDiv&quot; id=&quot;position1&quot;&gt;&lt;/div&gt;
-  &lt;div class=&quot;positionDiv&quot; id=&quot;position2&quot;&gt;&lt;/div&gt;
-  &lt;div class=&quot;positionDiv&quot; id=&quot;position3&quot;&gt;&lt;/div&gt;
-  &lt;div class=&quot;positionDiv&quot; id=&quot;position4&quot;&gt;&lt;/div&gt;
+&lt;div id="targetElement"&gt;
+  &lt;div class="positionDiv" id="position1"&gt;&lt;/div&gt;
+  &lt;div class="positionDiv" id="position2"&gt;&lt;/div&gt;
+  &lt;div class="positionDiv" id="position3"&gt;&lt;/div&gt;
+  &lt;div class="positionDiv" id="position4"&gt;&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;/body&gt;
 &lt;/html&gt;
 </pre>
-<p></div>
-</p><p></div>
+<p></p></div>
+<p></p><p></p></div>
     </div>
   </div>
   <div id="options">
@@ -216,7 +218,7 @@ $(document).mousemove(function(ev){
   </div>
 </div>
 
-</p><!-- 
+<p></p><!-- 
 Pre-expand include size: 7094 bytes
 Post-expand include size: 10335 bytes
 Template argument size: 7101 bytes
@@ -224,3 +226,4 @@ Maximum: 2097152 bytes
 -->
 
 <!-- Saved in parser cache with key jqdocs_docs:pcache:idhash:3784-1!1!0!!en!2 and timestamp 20100909204144 -->
+</body></html>

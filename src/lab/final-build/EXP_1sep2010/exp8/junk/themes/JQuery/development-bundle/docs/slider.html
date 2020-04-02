@@ -1,5 +1,8 @@
-
-<ul class="UIAPIPlugin-toc">
+<html><head><!--Google Tag Manager--><script class="gtm">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W59SWTR');</script><!--End Google Tag Manager--></head><body><!--Google Tag Manager (noscript)--><noscript class="gtm"><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-W59SWTR" style="display:none;visibility:hidden" width="0"></iframe></noscript><!--End Google Tag Manager (noscript)--><ul class="UIAPIPlugin-toc">
 <li><a href="#overview">Overview</a></li>
 <li><a href="#options">Options</a></li>
 <li><a href="#events">Events</a></li>
@@ -17,8 +20,8 @@
 </p>
 <ul>
   <li><b>ui.handle</b>: DOMElement - the current focused handle
-  <li><b>ui.value</b>: Integer - the current handle's value
-</ul>
+  </li><li><b>ui.value</b>: Integer - the current handle's value
+</li></ul>
     </div>
     <div id="overview-dependencies">
         <h3>Dependencies</h3>
@@ -30,39 +33,39 @@
     </div>
     <div id="overview-example">
         <h3>Example</h3>
-        <div id="overview-example" class="example">
+        <div class="example" id="overview-example">
 <ul><li><a href="#demo"><span>Demo</span></a></li><li><a href="#source"><span>View Source</span></a></li></ul>
-<p><div id="demo" class="tabs-container" rel="">
-A simple jQuery UI Slider.<br />
-</p>
-<pre>$(&quot;#slider&quot;).slider();
+<p></p><div class="tabs-container" id="demo" rel="">
+A simple jQuery UI Slider.<br/>
+<p></p>
+<pre>$("#slider").slider();
 </pre>
-<p></div><div id="source" class="tabs-container">
-</p>
+<p></p></div><div class="tabs-container" id="source">
+<p></p>
 <pre>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;head&gt;
-  &lt;link href=&quot;http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;/&gt;
-  &lt;script src=&quot;http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js&quot;&gt;&lt;/script&gt;
-  &lt;script src=&quot;http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js&quot;&gt;&lt;/script&gt;
-    &lt;style type=&quot;text/css&quot;&gt;
+  &lt;link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/&gt;
+  &lt;script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"&gt;&lt;/script&gt;
+  &lt;script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"&gt;&lt;/script&gt;
+    &lt;style type="text/css"&gt;
     #slider { margin: 10px; }
   &lt;/style&gt;
   &lt;script&gt;
   $(document).ready(function() {
-    $(&quot;#slider&quot;).slider();
+    $("#slider").slider();
   });
   &lt;/script&gt;
 &lt;/head&gt;
 &lt;body style="font-size:62.5%;"&gt;
   
-&lt;div id=&quot;slider&quot;&gt;&lt;/div&gt;
+&lt;div id="slider"&gt;&lt;/div&gt;
 
 &lt;/body&gt;
 &lt;/html&gt;
 </pre>
-<p></div>
-</p><p></div>
+<p></p></div>
+<p></p><p></p></div>
     </div>
   </div>
   <div id="options">
@@ -471,7 +474,7 @@ $( ".selector" ).slider( "option", "values", [1,5,9] );</code></pre>
   Supply a callback function to handle the <code>start</code> event as an init option.
 </dt>
 <dd>
-<pre><code>$( &quot;.selector&quot; ).slider({
+<pre><code>$( ".selector" ).slider({
    start: function(event, ui) { ... }
 });</code></pre>
 </dd>
@@ -481,7 +484,7 @@ $( ".selector" ).slider( "option", "values", [1,5,9] );</code></pre>
   Bind to the <code>start</code> event by type: <code>slidestart</code>.
 </dt>
 <dd>
-<pre><code>$( &quot;.selector&quot; ).bind( &quot;slidestart&quot;, function(event, ui) {
+<pre><code>$( ".selector" ).bind( "slidestart", function(event, ui) {
   ...
 });</code></pre>
 </dd>
@@ -511,7 +514,7 @@ $( ".selector" ).slider( "option", "values", [1,5,9] );</code></pre>
   Supply a callback function to handle the <code>slide</code> event as an init option.
 </dt>
 <dd>
-<pre><code>$( &quot;.selector&quot; ).slider({
+<pre><code>$( ".selector" ).slider({
    slide: function(event, ui) { ... }
 });</code></pre>
 </dd>
@@ -521,7 +524,7 @@ $( ".selector" ).slider( "option", "values", [1,5,9] );</code></pre>
   Bind to the <code>slide</code> event by type: <code>slide</code>.
 </dt>
 <dd>
-<pre><code>$( &quot;.selector&quot; ).bind( &quot;slide&quot;, function(event, ui) {
+<pre><code>$( ".selector" ).bind( "slide", function(event, ui) {
   ...
 });</code></pre>
 </dd>
@@ -550,7 +553,7 @@ $( ".selector" ).slider( "option", "values", [1,5,9] );</code></pre>
   Supply a callback function to handle the <code>change</code> event as an init option.
 </dt>
 <dd>
-<pre><code>$( &quot;.selector&quot; ).slider({
+<pre><code>$( ".selector" ).slider({
    change: function(event, ui) { ... }
 });</code></pre>
 </dd>
@@ -560,7 +563,7 @@ $( ".selector" ).slider( "option", "values", [1,5,9] );</code></pre>
   Bind to the <code>change</code> event by type: <code>slidechange</code>.
 </dt>
 <dd>
-<pre><code>$( &quot;.selector&quot; ).bind( &quot;slidechange&quot;, function(event, ui) {
+<pre><code>$( ".selector" ).bind( "slidechange", function(event, ui) {
   ...
 });</code></pre>
 </dd>
@@ -589,7 +592,7 @@ $( ".selector" ).slider( "option", "values", [1,5,9] );</code></pre>
   Supply a callback function to handle the <code>stop</code> event as an init option.
 </dt>
 <dd>
-<pre><code>$( &quot;.selector&quot; ).slider({
+<pre><code>$( ".selector" ).slider({
    stop: function(event, ui) { ... }
 });</code></pre>
 </dd>
@@ -599,7 +602,7 @@ $( ".selector" ).slider( "option", "values", [1,5,9] );</code></pre>
   Bind to the <code>stop</code> event by type: <code>slidestop</code>.
 </dt>
 <dd>
-<pre><code>$( &quot;.selector&quot; ).bind( &quot;slidestop&quot;, function(event, ui) {
+<pre><code>$( ".selector" ).bind( "slidestop", function(event, ui) {
   ...
 });</code></pre>
 </dd>
@@ -799,9 +802,9 @@ $( ".selector" ).slider( "option", "values", [1,5,9] );</code></pre>
 </p>
     
   <h3>Sample markup with jQuery UI CSS Framework classes</h3>
-  &lt;div class=&quot;ui-slider<strong> ui-slider-horizontal</strong> ui-widget ui-widget-content ui-corner-all&quot;&gt;<br />
-&nbsp;&nbsp;&nbsp;&lt;a style=&quot;left: 0%;&quot; class=&quot;<strong>ui-slider-handle</strong> ui-state-default ui-corner-all&quot; href=&quot;#&quot;&gt;&lt;/a&gt;<br />
-&lt;/div&gt;<br />
+  &lt;div class="ui-slider<strong> ui-slider-horizontal</strong> ui-widget ui-widget-content ui-corner-all"&gt;<br/>
+   &lt;a style="left: 0%;" class="<strong>ui-slider-handle</strong> ui-state-default ui-corner-all" href="#"&gt;&lt;/a&gt;<br/>
+&lt;/div&gt;<br/>
   <p class="theme-note">
     <strong>
       Note: This is a sample of markup generated by the slider plugin, not markup you should use to create a slider. The only markup needed for that is &lt;div&gt;&lt;div&gt;.
@@ -811,7 +814,7 @@ $( ".selector" ).slider( "option", "values", [1,5,9] );</code></pre>
   </div>
 </div>
 
-</p><!-- 
+<p></p><!-- 
 Pre-expand include size: 34930 bytes
 Post-expand include size: 52896 bytes
 Template argument size: 27114 bytes
@@ -819,3 +822,4 @@ Maximum: 2097152 bytes
 -->
 
 <!-- Saved in parser cache with key jqdocs_docs:pcache:idhash:3776-1!1!0!!en!2 and timestamp 20100910172928 -->
+</body></html>

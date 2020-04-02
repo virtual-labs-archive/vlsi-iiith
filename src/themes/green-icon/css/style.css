@@ -10,6 +10,11 @@ Version: 1.0
 body {
     overflow-x: hidden;
     font-family:'Raleway' !important;
+    min-height: 100%;
+}
+
+html {
+    height: 100%;
 }
 
 p {
@@ -319,6 +324,102 @@ a.active {
 {
 margin-top:120px;
 }
+
+
+#top {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: max-content auto max-content;
+}
+
+
+#footer {
+  color: #eee;
+  font-size: 14px;
+  width: 100%;
+  bottom: 0;
+}
+
+#footer .footer-top {
+  background: #111;
+   padding: 15px 0 0px 0;
+}
+
+#footer .row {
+    padding-bottom: 2rem;
+}
+
+#footer .footer-top .footer-info h3 {
+  font-size: 34px;
+  margin: 0 0 20px 0;
+  padding: 2px 0 2px 10px;
+  line-height: 1;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  letter-spacing: 3px;
+  border-left: 4px solid #18d26e;
+}
+
+#footer .footer-top p {
+  font-size: 1.4rem;
+  margin-bottom: 0;
+  color: #eee;
+}
+
+#footer .footer-top .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #333;
+  color: #eee;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+
+#footer .footer-top .social-links a:hover {
+  background: #3cd6ed;
+  color: #fff;
+}
+
+#footer .footer-top h4 {
+  font-size: 14px;
+  color: #fff; 
+  position: relative;
+  padding-bottom: 12px;
+}
+
+#footer .footer-top h4::before, #footer .footer-top h4::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+}
+
+#footer .footer-top h4::before {
+  right: 0;
+  background: #555;
+}
+
+#footer .footer-top h4::after {
+  background: #3EC1D5;
+  width: 60px;
+}
+#footer .footer-top i {
+  color:#fff;
+}
+
+#footer .footer-top a {
+  color:#fff;
+}
+
+
+
 
 /*******************************************************************************/
 /*****************************CUSTOME STYLE*************************************/

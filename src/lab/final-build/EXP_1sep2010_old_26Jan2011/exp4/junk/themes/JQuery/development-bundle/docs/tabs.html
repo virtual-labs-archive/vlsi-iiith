@@ -1,5 +1,8 @@
-
-<ul class="UIAPIPlugin-toc">
+<html><head><!--Google Tag Manager--><script class="gtm">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W59SWTR');</script><!--End Google Tag Manager--></head><body><!--Google Tag Manager (noscript)--><noscript class="gtm"><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-W59SWTR" style="display:none;visibility:hidden" width="0"></iframe></noscript><!--End Google Tag Manager (noscript)--><ul class="UIAPIPlugin-toc">
 <li><a href="#overview">Overview</a></li>
 <li><a href="#options">Options</a></li>
 <li><a href="#events">Events</a></li>
@@ -14,7 +17,7 @@
         <p>Tabs are generally used to break content into multiple sections that can be swapped to save space, much like an accordion.</p>
 <p>By default a tab widget will swap between tabbed sections onClick, but the events can be changed to onHover through an option. Tab content can be loaded via Ajax by setting an href on a tab.</p>
 <p><em>NOTE: Tabs created dynamically using .tabs( "add", ... ) are given an id of ui-tabs-NUM, where NUM is an auto-incrementing id. If you use this naming convention for your own elements, you may encounter problems.</em></p>
-<table id="toc" class="toc" summary="Contents"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<table class="toc" id="toc" summary="Contents"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
 <li class="toclevel-1"><a href="#Events"><span class="tocnumber">1</span> <span class="toctext">Events</span></a></li>
 <li class="toclevel-1"><a href="#Ajax_mode"><span class="tocnumber">2</span> <span class="toctext">Ajax mode</span></a>
@@ -39,7 +42,7 @@
 </ul>
 </li>
 </ul>
-</td></tr></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+</td></tr></tbody></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
 <div class="editsection" style="float:right;margin-left:5px;">[<a href="http://docs.jquery.com/action/edit/Template:UIAPIPlugin?section=1" title="Template:UIAPIPlugin">edit</a>]</div><a name="Events"></a><h2>Events</h2>
 <p>A series of events fire when interacting with a tabs interface:
 </p>
@@ -63,12 +66,11 @@
 <p>Tabs supports loading tab content via Ajax in an unobtrusive manner.
 </p><p>The HTML you need is slightly different from the one that is used for static tabs: A list of links pointing to existing resources (from where the content gets loaded) and no additional containers at all (unobtrusive!). The containers' markup is going to be created on the fly:
 </p>
-<pre>
-&lt;div id=&quot;example&quot;&gt;
+<pre>&lt;div id="example"&gt;
      &lt;ul&gt;
-         &lt;li&gt;&lt;a href=&quot;ahah_1.html&quot;&gt;&lt;span&gt;Content 1&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-         &lt;li&gt;&lt;a href=&quot;ahah_2.html&quot;&gt;&lt;span&gt;Content 2&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-         &lt;li&gt;&lt;a href=&quot;ahah_3.html&quot;&gt;&lt;span&gt;Content 3&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+         &lt;li&gt;&lt;a href="ahah_1.html"&gt;&lt;span&gt;Content 1&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+         &lt;li&gt;&lt;a href="ahah_2.html"&gt;&lt;span&gt;Content 2&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+         &lt;li&gt;&lt;a href="ahah_3.html"&gt;&lt;span&gt;Content 3&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
      &lt;/ul&gt;
 &lt;/div&gt;
 </pre>
@@ -76,13 +78,11 @@
 </p><p>Note that if you wish to reuse an existing container, you
 could do so by matching a title attribute and the container's id:
 </p>
-<pre>
-&lt;li&gt;&lt;a href=&quot;hello/world.html&quot; title=&quot;Todo Overview&quot;&gt; ... &lt;/a&gt;&lt;/li&gt;
+<pre>&lt;li&gt;&lt;a href="hello/world.html" title="Todo Overview"&gt; ... &lt;/a&gt;&lt;/li&gt;
 </pre>
 <p>and a container like:
 </p>
-<pre>
-&lt;div id=&quot;Todo_Overview&quot;&gt; ... &lt;/div&gt;
+<pre>&lt;div id="Todo_Overview"&gt; ... &lt;/div&gt;
 </pre>
 <p>(Note how white space is replaced with an underscore)
 </p><p>This is useful if you want a human readable hash in the URL instead of
@@ -130,7 +130,7 @@ $('#my-text-link').click(function() { // bind click event to link
 });</pre>
 <div class="editsection" style="float:right;margin-left:5px;">[<a href="http://docs.jquery.com/action/edit/Template:UIAPIPlugin?section=10" title="Template:UIAPIPlugin">edit</a>]</div><a name="...follow_a_tab.27s_URL_instead_of_loading_its_content_via_ajax"></a><h3>...follow a tab's URL instead of loading its content via ajax</h3>
 <p>Note that opening a tab in a new window is unexpected, e.g.
-inconsistent behaviour exposing a usablity problem (<a href="http://www.useit.com/alertbox/tabs.html" class="external free" title="http://www.useit.com/alertbox/tabs.html">http://www.useit.com/alertbox/tabs.html</a>).
+inconsistent behaviour exposing a usablity problem (<a class="external free" href="http://www.useit.com/alertbox/tabs.html" title="http://www.useit.com/alertbox/tabs.html">http://www.useit.com/alertbox/tabs.html</a>).
 </p>
 <pre>$('#example').tabs({
     select: function(event, ui) {
@@ -142,14 +142,14 @@ inconsistent behaviour exposing a usablity problem (<a href="http://www.useit.co
         return true;
     }
 });</pre>
-<p><br />
+<p><br/>
 </p>
 <div class="editsection" style="float:right;margin-left:5px;">[<a href="http://docs.jquery.com/action/edit/Template:UIAPIPlugin?section=11" title="Template:UIAPIPlugin">edit</a>]</div><a name="...prevent_a_FOUC_.28Flash_of_Unstyled_Content.29_before_tabs_are_initialized"></a><h3>...prevent a FOUC (Flash of Unstyled Content) before tabs are initialized</h3>
 <p>Add the necessary classes to hide an inactive tab panel to the HTML right away - note that this will <b>not</b> degrade gracefully with JavaScript being disabled:
 </p>
-<pre>&lt;div id=&quot;example&quot; class=&quot;ui-tabs&quot;&gt;
+<pre>&lt;div id="example" class="ui-tabs"&gt;
   ...
-  &lt;div id=&quot;a-tab-panel&quot; class=&quot;ui-tabs-hide&quot;&gt; &lt;/div&gt;
+  &lt;div id="a-tab-panel" class="ui-tabs-hide"&gt; &lt;/div&gt;
   ...
 &lt;/div&gt;</pre>
 <div class="editsection" style="float:right;margin-left:5px;">[<a href="http://docs.jquery.com/action/edit/Template:UIAPIPlugin?section=12" title="Template:UIAPIPlugin">edit</a>]</div><a name="Why_does..."></a><h2>Why does...</h2>
@@ -164,7 +164,7 @@ inconsistent behaviour exposing a usablity problem (<a href="http://www.useit.co
 <p>For Google maps you can also resize the map once the tab is displayed like this:
 </p>
 <pre>$('#example').bind('tabsshow', function(event, ui) {
-    if (ui.panel.id == &quot;map-tab&quot;) {
+    if (ui.panel.id == "map-tab") {
         resizeMap();
     }
 });</pre>
@@ -174,7 +174,7 @@ resizeMap() will call Google Maps' checkResize() on the particular map.
         <h3>Dependencies</h3>
         <ul>
 <li>UI Core</li>
-<li>To use the cookie option: <a href="http://plugins.jquery.com/project/cookie" class="external text" title="http://plugins.jquery.com/project/cookie">jquery.cookie.js</a></li>
+<li>To use the cookie option: <a class="external text" href="http://plugins.jquery.com/project/cookie" title="http://plugins.jquery.com/project/cookie">jquery.cookie.js</a></li>
 <li>Required CSS:
 <pre>.ui-tabs .ui-tabs-hide {
      display: none;
@@ -183,45 +183,45 @@ resizeMap() will call Google Maps' checkResize() on the particular map.
     </div>
     <div id="overview-example">
         <h3>Example</h3>
-        <div id="overview-example" class="example">
+        <div class="example" id="overview-example">
 <ul><li><a href="#demo"><span>Demo</span></a></li><li><a href="#source"><span>View Source</span></a></li></ul>
-<p><div id="demo" class="tabs-container" rel="295">
-A simple jQuery UI Tabs.<br />
-</p>
-<pre>$(&quot;#tabs&quot;).tabs();
+<p></p><div class="tabs-container" id="demo" rel="295">
+A simple jQuery UI Tabs.<br/>
+<p></p>
+<pre>$("#tabs").tabs();
 </pre>
-<p></div><div id="source" class="tabs-container">
-</p>
+<p></p></div><div class="tabs-container" id="source">
+<p></p>
 <pre>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;head&gt;
-  &lt;link href=&quot;http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;/&gt;
-  &lt;script src=&quot;http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js&quot;&gt;&lt;/script&gt;
-  &lt;script src=&quot;http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js&quot;&gt;&lt;/script&gt;
+  &lt;link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/&gt;
+  &lt;script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"&gt;&lt;/script&gt;
+  &lt;script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"&gt;&lt;/script&gt;
   
   &lt;script&gt;
   $(document).ready(function() {
-    $(&quot;#tabs&quot;).tabs();
+    $("#tabs").tabs();
   });
   &lt;/script&gt;
 &lt;/head&gt;
 &lt;body style="font-size:62.5%;"&gt;
   
-&lt;div id=&quot;tabs&quot;&gt;
+&lt;div id="tabs"&gt;
     &lt;ul&gt;
-        &lt;li&gt;&lt;a href=&quot;#fragment-1&quot;&gt;&lt;span&gt;One&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&quot;#fragment-2&quot;&gt;&lt;span&gt;Two&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&quot;#fragment-3&quot;&gt;&lt;span&gt;Three&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#fragment-1"&gt;&lt;span&gt;One&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#fragment-2"&gt;&lt;span&gt;Two&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#fragment-3"&gt;&lt;span&gt;Three&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
-    &lt;div id=&quot;fragment-1&quot;&gt;
+    &lt;div id="fragment-1"&gt;
         &lt;p&gt;First tab is active by default:&lt;/p&gt;
         &lt;pre&gt;&lt;code&gt;$('#example').tabs();&lt;/code&gt;&lt;/pre&gt;
     &lt;/div&gt;
-    &lt;div id=&quot;fragment-2&quot;&gt;
+    &lt;div id="fragment-2"&gt;
         Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
         Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
     &lt;/div&gt;
-    &lt;div id=&quot;fragment-3&quot;&gt;
+    &lt;div id="fragment-3"&gt;
         Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
         Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
         Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
@@ -230,8 +230,8 @@ A simple jQuery UI Tabs.<br />
 &lt;/body&gt;
 &lt;/html&gt;
 </pre>
-<p></div>
-</p><p></div>
+<p></p></div>
+<p></p><p></p></div>
     </div>
   </div>
   <div id="options">
@@ -419,7 +419,7 @@ $( ".selector" ).tabs( "option", "collapsible", true );</code></pre>
     </dl>
   </div>
   <div class="option-description">
-    <p>Store the latest selected tab in a cookie. The cookie is then used to determine the initially selected tab if the <i>selected</i> option is not defined. Requires cookie plugin. The object needs to have key/value pairs of the form the cookie plugin expects as options. Available options (example): &#123; expires: 7, path: '/', domain: 'jquery.com', secure: true &#125;. Since jQuery UI 1.7 it is also possible to define the cookie name being used via <i>name</i> property.</p>
+    <p>Store the latest selected tab in a cookie. The cookie is then used to determine the initially selected tab if the <i>selected</i> option is not defined. Requires cookie plugin. The object needs to have key/value pairs of the form the cookie plugin expects as options. Available options (example): { expires: 7, path: '/', domain: 'jquery.com', secure: true }. Since jQuery UI 1.7 it is also possible to define the cookie name being used via <i>name</i> property.</p>
   </div>
   <div class="option-examples">
     <h4>Code examples</h4>
@@ -792,12 +792,12 @@ $( ".selector" ).tabs( "option", "spinner", 'Retrieving data...' );</code></pre>
         <dd class="option-type">String</dd>
       
       <dt class="option-default-label">Default:</dt>
-        <dd class="option-default">'&lt;li&gt;&lt;a href&#61;"#&#123;href&#125;"&gt;&lt;span&gt;#&#123;label&#125;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;'</dd>
+        <dd class="option-default">'&lt;li&gt;&lt;a href="#{href}"&gt;&lt;span&gt;#{label}&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;'</dd>
       
     </dl>
   </div>
   <div class="option-description">
-    <p>HTML template from which a new tab is created and added. The placeholders #&#123;href&#125; and #&#123;label&#125; are replaced with the url and tab label that are passed as arguments to the add method.</p>
+    <p>HTML template from which a new tab is created and added. The placeholders #{href} and #{label} are replaced with the url and tab label that are passed as arguments to the add method.</p>
   </div>
   <div class="option-examples">
     <h4>Code examples</h4>
@@ -807,7 +807,7 @@ $( ".selector" ).tabs( "option", "spinner", 'Retrieving data...' );</code></pre>
   Initialize a tabs with the <code>tabTemplate</code> option specified.
 </dt>
 <dd>
-<pre><code>$( ".selector" ).tabs({ tabTemplate: '&lt;div&gt;&lt;a href&#61;"#&#123;href&#125;"&gt;&lt;span&gt;#&#123;label&#125;&lt;/span&gt;&lt;/a&gt;&lt;/div&gt;' });</code></pre>
+<pre><code>$( ".selector" ).tabs({ tabTemplate: '&lt;div&gt;&lt;a href="#{href}"&gt;&lt;span&gt;#{label}&lt;/span&gt;&lt;/a&gt;&lt;/div&gt;' });</code></pre>
 </dd>
 
     
@@ -818,7 +818,7 @@ $( ".selector" ).tabs( "option", "spinner", 'Retrieving data...' );</code></pre>
 <pre><code>//getter
 var tabTemplate = $( ".selector" ).tabs( "option", "tabTemplate" );
 //setter
-$( ".selector" ).tabs( "option", "tabTemplate", '&lt;div&gt;&lt;a href&#61;"#&#123;href&#125;"&gt;&lt;span&gt;#&#123;label&#125;&lt;/span&gt;&lt;/a&gt;&lt;/div&gt;' );</code></pre>
+$( ".selector" ).tabs( "option", "tabTemplate", '&lt;div&gt;&lt;a href="#{href}"&gt;&lt;span&gt;#{label}&lt;/span&gt;&lt;/a&gt;&lt;/div&gt;' );</code></pre>
 </dd>
 
     </dl>
@@ -850,7 +850,7 @@ $( ".selector" ).tabs( "option", "tabTemplate", '&lt;div&gt;&lt;a href&#61;"#&#1
   Supply a callback function to handle the <code>select</code> event as an init option.
 </dt>
 <dd>
-<pre><code>$( &quot;.selector&quot; ).tabs({
+<pre><code>$( ".selector" ).tabs({
    select: function(event, ui) { ... }
 });</code></pre>
 </dd>
@@ -860,7 +860,7 @@ $( ".selector" ).tabs( "option", "tabTemplate", '&lt;div&gt;&lt;a href&#61;"#&#1
   Bind to the <code>select</code> event by type: <code>tabsselect</code>.
 </dt>
 <dd>
-<pre><code>$( &quot;.selector&quot; ).bind( &quot;tabsselect&quot;, function(event, ui) {
+<pre><code>$( ".selector" ).bind( "tabsselect", function(event, ui) {
   ...
 });</code></pre>
 </dd>
@@ -889,7 +889,7 @@ $( ".selector" ).tabs( "option", "tabTemplate", '&lt;div&gt;&lt;a href&#61;"#&#1
   Supply a callback function to handle the <code>load</code> event as an init option.
 </dt>
 <dd>
-<pre><code>$( &quot;.selector&quot; ).tabs({
+<pre><code>$( ".selector" ).tabs({
    load: function(event, ui) { ... }
 });</code></pre>
 </dd>
@@ -899,7 +899,7 @@ $( ".selector" ).tabs( "option", "tabTemplate", '&lt;div&gt;&lt;a href&#61;"#&#1
   Bind to the <code>load</code> event by type: <code>tabsload</code>.
 </dt>
 <dd>
-<pre><code>$( &quot;.selector&quot; ).bind( &quot;tabsload&quot;, function(event, ui) {
+<pre><code>$( ".selector" ).bind( "tabsload", function(event, ui) {
   ...
 });</code></pre>
 </dd>
@@ -928,7 +928,7 @@ $( ".selector" ).tabs( "option", "tabTemplate", '&lt;div&gt;&lt;a href&#61;"#&#1
   Supply a callback function to handle the <code>show</code> event as an init option.
 </dt>
 <dd>
-<pre><code>$( &quot;.selector&quot; ).tabs({
+<pre><code>$( ".selector" ).tabs({
    show: function(event, ui) { ... }
 });</code></pre>
 </dd>
@@ -938,7 +938,7 @@ $( ".selector" ).tabs( "option", "tabTemplate", '&lt;div&gt;&lt;a href&#61;"#&#1
   Bind to the <code>show</code> event by type: <code>tabsshow</code>.
 </dt>
 <dd>
-<pre><code>$( &quot;.selector&quot; ).bind( &quot;tabsshow&quot;, function(event, ui) {
+<pre><code>$( ".selector" ).bind( "tabsshow", function(event, ui) {
   ...
 });</code></pre>
 </dd>
@@ -967,7 +967,7 @@ $( ".selector" ).tabs( "option", "tabTemplate", '&lt;div&gt;&lt;a href&#61;"#&#1
   Supply a callback function to handle the <code>add</code> event as an init option.
 </dt>
 <dd>
-<pre><code>$( &quot;.selector&quot; ).tabs({
+<pre><code>$( ".selector" ).tabs({
    add: function(event, ui) { ... }
 });</code></pre>
 </dd>
@@ -977,7 +977,7 @@ $( ".selector" ).tabs( "option", "tabTemplate", '&lt;div&gt;&lt;a href&#61;"#&#1
   Bind to the <code>add</code> event by type: <code>tabsadd</code>.
 </dt>
 <dd>
-<pre><code>$( &quot;.selector&quot; ).bind( &quot;tabsadd&quot;, function(event, ui) {
+<pre><code>$( ".selector" ).bind( "tabsadd", function(event, ui) {
   ...
 });</code></pre>
 </dd>
@@ -1006,7 +1006,7 @@ $( ".selector" ).tabs( "option", "tabTemplate", '&lt;div&gt;&lt;a href&#61;"#&#1
   Supply a callback function to handle the <code>remove</code> event as an init option.
 </dt>
 <dd>
-<pre><code>$( &quot;.selector&quot; ).tabs({
+<pre><code>$( ".selector" ).tabs({
    remove: function(event, ui) { ... }
 });</code></pre>
 </dd>
@@ -1016,7 +1016,7 @@ $( ".selector" ).tabs( "option", "tabTemplate", '&lt;div&gt;&lt;a href&#61;"#&#1
   Bind to the <code>remove</code> event by type: <code>tabsremove</code>.
 </dt>
 <dd>
-<pre><code>$( &quot;.selector&quot; ).bind( &quot;tabsremove&quot;, function(event, ui) {
+<pre><code>$( ".selector" ).bind( "tabsremove", function(event, ui) {
   ...
 });</code></pre>
 </dd>
@@ -1045,7 +1045,7 @@ $( ".selector" ).tabs( "option", "tabTemplate", '&lt;div&gt;&lt;a href&#61;"#&#1
   Supply a callback function to handle the <code>enable</code> event as an init option.
 </dt>
 <dd>
-<pre><code>$( &quot;.selector&quot; ).tabs({
+<pre><code>$( ".selector" ).tabs({
    enable: function(event, ui) { ... }
 });</code></pre>
 </dd>
@@ -1055,7 +1055,7 @@ $( ".selector" ).tabs( "option", "tabTemplate", '&lt;div&gt;&lt;a href&#61;"#&#1
   Bind to the <code>enable</code> event by type: <code>tabsenable</code>.
 </dt>
 <dd>
-<pre><code>$( &quot;.selector&quot; ).bind( &quot;tabsenable&quot;, function(event, ui) {
+<pre><code>$( ".selector" ).bind( "tabsenable", function(event, ui) {
   ...
 });</code></pre>
 </dd>
@@ -1084,7 +1084,7 @@ $( ".selector" ).tabs( "option", "tabTemplate", '&lt;div&gt;&lt;a href&#61;"#&#1
   Supply a callback function to handle the <code>disable</code> event as an init option.
 </dt>
 <dd>
-<pre><code>$( &quot;.selector&quot; ).tabs({
+<pre><code>$( ".selector" ).tabs({
    disable: function(event, ui) { ... }
 });</code></pre>
 </dd>
@@ -1094,7 +1094,7 @@ $( ".selector" ).tabs( "option", "tabTemplate", '&lt;div&gt;&lt;a href&#61;"#&#1
   Bind to the <code>disable</code> event by type: <code>tabsdisable</code>.
 </dt>
 <dd>
-<pre><code>$( &quot;.selector&quot; ).bind( &quot;tabsdisable&quot;, function(event, ui) {
+<pre><code>$( ".selector" ).bind( "tabsdisable", function(event, ui) {
   ...
 });</code></pre>
 </dd>
@@ -1470,32 +1470,32 @@ $( ".selector" ).tabs( "option", "tabTemplate", '&lt;div&gt;&lt;a href&#61;"#&#1
 </p>
     
   <h3>Sample markup with jQuery UI CSS Framework classes</h3>
-  &lt;div class=&quot;<strong>ui-tabs</strong> ui-widget ui-widget-content ui-corner-all&quot; id=&quot;tabs&quot;&gt;<br />
-&nbsp;&nbsp;&nbsp;&lt;ul class=&quot;<strong>ui-tabs-nav</strong> ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all&quot;&gt;<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class=&quot;ui-state-default ui-corner-top ui-tabs-selected ui-state-active&quot;&gt;&lt;a href=&quot;#tabs-1&quot;&gt;Nunc tincidunt&lt;/a&gt;&lt;/li&gt;<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class=&quot;ui-state-default ui-corner-top&quot;&gt;&lt;a href=&quot;#tabs-2&quot;&gt;Proin dolor&lt;/a&gt;&lt;/li&gt;<br />
-&nbsp;&nbsp;&nbsp;&lt;div class=&quot;<strong>ui-tabs-panel</strong> ui-widget-content ui-corner-bottom&quot; id=&quot;tabs-1&quot;&gt;<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Tab one content goes here.&lt;/p&gt;<br />
-&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />
-&nbsp;&nbsp;&nbsp; ...<br />
-&lt;/div&gt;<br />
+  &lt;div class="<strong>ui-tabs</strong> ui-widget ui-widget-content ui-corner-all" id="tabs"&gt;<br/>
+   &lt;ul class="<strong>ui-tabs-nav</strong> ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all"&gt;<br/>
+     &lt;li class="ui-state-default ui-corner-top ui-tabs-selected ui-state-active"&gt;&lt;a href="#tabs-1"&gt;Nunc tincidunt&lt;/a&gt;&lt;/li&gt;<br/>
+      &lt;li class="ui-state-default ui-corner-top"&gt;&lt;a href="#tabs-2"&gt;Proin dolor&lt;/a&gt;&lt;/li&gt;<br/>
+   &lt;div class="<strong>ui-tabs-panel</strong> ui-widget-content ui-corner-bottom" id="tabs-1"&gt;<br/>
+      &lt;p&gt;Tab one content goes here.&lt;/p&gt;<br/>
+   &lt;/div&gt;<br/>
+    ...<br/>
+&lt;/div&gt;<br/>
   <p class="theme-note">
     <strong>
-      Note: This is a sample of markup generated by the tabs plugin, not markup you should use to create a tabs. The only markup needed for that is <br />&lt;div id=&quot;tabs&quot;&gt;<br />
-&#160;&#160;&#160;&lt;ul&gt;<br />
-&#160;&#160;&#160;&#160;&#160;&#160;&lt;li&gt;&lt;a href=&quot;#tabs-1&quot;&gt;Nunc tincidunt&lt;/a&gt;&lt;/li&gt;<br />
-&#160;&#160;&#160;&#160;&#160;&#160;&lt;li&gt;&lt;a href=&quot;#tabs-2&quot;&gt;Proin dolor&lt;/a&gt;&lt;/li&gt;<br />
-&#160;&#160;&#160;&#160;&#160;&#160;&lt;li&gt;&lt;a href=&quot;#tabs-3&quot;&gt;Aenean lacinia&lt;/a&gt;&lt;/li&gt;<br />
-&#160;&#160;&#160;&lt;/ul&gt;<br />
-&#160;&#160;&#160;&lt;div id=&quot;tabs-1&quot;&gt;<br />
-&#160;&#160;&#160;&#160;&#160;&#160;&lt;p&gt;Tab 1 content&lt;/p&gt;<br />
-&#160;&#160;&#160;&lt;/div&gt;<br />
-&#160;&#160;&#160;&lt;div id=&quot;tabs-2&quot;&gt;<br />
-&#160;&#160;&#160;&#160;&#160;&#160;&lt;p&gt;Tab 2 content&lt;/p&gt;<br />
-&#160;&#160;&#160;&lt;/div&gt;<br />
-&#160;&#160;&#160;&lt;div id=&quot;tabs-3&quot;&gt;<br />
-&#160;&#160;&#160;&#160;&#160;&#160;&lt;p&gt;Tab 3 content&lt;/p&gt;<br />
-&#160;&#160;&#160;&lt;/div&gt;<br />
+      Note: This is a sample of markup generated by the tabs plugin, not markup you should use to create a tabs. The only markup needed for that is <br/>&lt;div id="tabs"&gt;<br/>
+   &lt;ul&gt;<br/>
+      &lt;li&gt;&lt;a href="#tabs-1"&gt;Nunc tincidunt&lt;/a&gt;&lt;/li&gt;<br/>
+      &lt;li&gt;&lt;a href="#tabs-2"&gt;Proin dolor&lt;/a&gt;&lt;/li&gt;<br/>
+      &lt;li&gt;&lt;a href="#tabs-3"&gt;Aenean lacinia&lt;/a&gt;&lt;/li&gt;<br/>
+   &lt;/ul&gt;<br/>
+   &lt;div id="tabs-1"&gt;<br/>
+      &lt;p&gt;Tab 1 content&lt;/p&gt;<br/>
+   &lt;/div&gt;<br/>
+   &lt;div id="tabs-2"&gt;<br/>
+      &lt;p&gt;Tab 2 content&lt;/p&gt;<br/>
+   &lt;/div&gt;<br/>
+   &lt;div id="tabs-3"&gt;<br/>
+      &lt;p&gt;Tab 3 content&lt;/p&gt;<br/>
+   &lt;/div&gt;<br/>
 &lt;/div&gt;.
     </strong>
   </p>
@@ -1503,7 +1503,7 @@ $( ".selector" ).tabs( "option", "tabTemplate", '&lt;div&gt;&lt;a href&#61;"#&#1
   </div>
 </div>
 
-</p><!-- 
+<p></p><!-- 
 Pre-expand include size: 56145 bytes
 Post-expand include size: 94471 bytes
 Template argument size: 56684 bytes
@@ -1511,3 +1511,4 @@ Maximum: 2097152 bytes
 -->
 
 <!-- Saved in parser cache with key jqdocs_docs:pcache:idhash:3777-1!1!0!!en!2 and timestamp 20100910172930 -->
+</body></html>

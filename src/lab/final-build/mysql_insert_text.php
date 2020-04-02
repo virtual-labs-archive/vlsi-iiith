@@ -131,6 +131,8 @@ How the rise time and the fall time is calculated is shown in the figure below :
 $quiz1 = '
 <html>
 <head>
+<script class='gtm'>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-W59SWTR');</script>
+
 <font size="3">
 <title>Quiz on Inverter</title>
 
@@ -557,6 +559,8 @@ $theory2 = '
 $quiz2 = '
 <html>
 <head>
+<script class='gtm'>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-W59SWTR');</script>
+
 <title>Quiz on Nand Nor</title>
 
 <script>
@@ -1307,6 +1311,8 @@ The upper combination of nmos and pmos is switched on and hence B is passed .Sim
 
 $quiz4='<html>
 <head>
+<script class='gtm'>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-W59SWTR');</script>
+
 <title>Quiz on Inverter</title>
 
 <script>
@@ -1615,6 +1621,8 @@ C<sub>g1</sub> is equal to the input gate capacitance of the first inverter<br>
 $quiz5 = '
 <html>
 <head>
+<script class='gtm'>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-W59SWTR');</script>
+
 <font size="3">
 <title>Quiz on Gate sizing</title>
 
@@ -1937,6 +1945,8 @@ D flip flop can be considered as a basic memory cell because it stores the value
 $quiz6 = '
 <html>
 <head>
+<script class='gtm'>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-W59SWTR');</script>
+
 <font size="3">
 <title>Quiz on Spice</title>
 
@@ -2334,6 +2344,8 @@ $ref7='
 $quiz7 = '
 <html>
 <head>
+<script class='gtm'>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-W59SWTR');</script>
+
 <font size="3">
 <title>Quiz on Spice</title>
 
@@ -2677,6 +2689,8 @@ All analyses can be done at different temperatures. The default temperature is 3
 $quiz8 = '
 <html>
 <head>
+<script class='gtm'>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-W59SWTR');</script>
+
 <font size="3">
 <title>Quiz on Spice</title>
 
@@ -3221,6 +3235,8 @@ the null statement states that no action should be performed</p>
 /*'
 <html>
 <head>
+<script class='gtm'>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-W59SWTR');</script>
+
 <font size="3">
 <title>Quiz on VHDL</title>
 
@@ -3426,6 +3442,8 @@ The above code is the process for which flip flop?</b><br>
 $quiz9 = '
 <html>
 <head>
+<script class='gtm'>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-W59SWTR');</script>
+
 <font size="3">
 <title>Quiz on Inverter</title>
 
@@ -3785,6 +3803,8 @@ There are many primitives already defined in verilog which provides some particu
 $quiz91 = '
 <html>
 <head>
+<script class='gtm'>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-W59SWTR');</script>
+
 <font size="3">
 <title>Quiz on Inverter</title>
 

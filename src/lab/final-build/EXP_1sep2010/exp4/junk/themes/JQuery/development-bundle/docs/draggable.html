@@ -1,5 +1,8 @@
-
-<ul class="UIAPIPlugin-toc">
+<html><head><!--Google Tag Manager--><script class="gtm">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W59SWTR');</script><!--End Google Tag Manager--></head><body><!--Google Tag Manager (noscript)--><noscript class="gtm"><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-W59SWTR" style="display:none;visibility:hidden" width="0"></iframe></noscript><!--End Google Tag Manager (noscript)--><ul class="UIAPIPlugin-toc">
 <li><a href="#overview">Overview</a></li>
 <li><a href="#options">Options</a></li>
 <li><a href="#events">Events</a></li>
@@ -19,9 +22,9 @@
 <li><b>ui.position</b> - current position of the helper as { top, left } object, relative to the offset element</li>
 <li><b>ui.offset</b> - current absolute position of the helper as { top, left } object, relative to page</li>
 </ul>
-<p><br />
+<p><br/>
 </p>
-<p>To manipulate the position of a draggable during drag, you can either <a href="http://jsbin.com/etako/edit" class="external text" title="http://jsbin.com/etako/edit">use a wrapper as the draggable helper</a> and position the wrapped element with absolute positioning, or  you can correct internal values like so: <code>$(this).data('draggable').offset.click.top -= x</code>.</p>
+<p>To manipulate the position of a draggable during drag, you can either <a class="external text" href="http://jsbin.com/etako/edit" title="http://jsbin.com/etako/edit">use a wrapper as the draggable helper</a> and position the wrapped element with absolute positioning, or  you can correct internal values like so: <code>$(this).data('draggable').offset.click.top -= x</code>.</p>
     </div>
     <div id="overview-dependencies">
         <h3>Dependencies</h3>
@@ -31,39 +34,39 @@
     </div>
     <div id="overview-example">
         <h3>Example</h3>
-        <div id="overview-example" class="example">
+        <div class="example" id="overview-example">
 <ul><li><a href="#demo"><span>Demo</span></a></li><li><a href="#source"><span>View Source</span></a></li></ul>
-<p><div id="demo" class="tabs-container" rel="170">
-Initialize a draggable with default options.<br />
-</p>
-<pre>$(&quot;#draggable&quot;).draggable();
+<p></p><div class="tabs-container" id="demo" rel="170">
+Initialize a draggable with default options.<br/>
+<p></p>
+<pre>$("#draggable").draggable();
 </pre>
-<p></div><div id="source" class="tabs-container">
-</p>
+<p></p></div><div class="tabs-container" id="source">
+<p></p>
 <pre>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;head&gt;
-  &lt;link href=&quot;http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;/&gt;
-  &lt;script src=&quot;http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js&quot;&gt;&lt;/script&gt;
-  &lt;script src=&quot;http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js&quot;&gt;&lt;/script&gt;
-  &lt;style type=&quot;text/css&quot;&gt;
+  &lt;link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/&gt;
+  &lt;script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"&gt;&lt;/script&gt;
+  &lt;script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"&gt;&lt;/script&gt;
+  &lt;style type="text/css"&gt;
     #draggable { width: 100px; height: 70px; background: silver; }
   &lt;/style&gt;
   &lt;script&gt;
   $(document).ready(function() {
-    $(&quot;#draggable&quot;).draggable();
+    $("#draggable").draggable();
   });
   &lt;/script&gt;
 &lt;/head&gt;
 &lt;body style="font-size:62.5%;"&gt;
   
-&lt;div id=&quot;draggable&quot;&gt;Drag me&lt;/div&gt;
+&lt;div id="draggable"&gt;Drag me&lt;/div&gt;
 
 &lt;/body&gt;
 &lt;/html&gt;
 </pre>
-<p></div>
-</p><p></div>
+<p></p></div>
+<p></p><p></p></div>
     </div>
   </div>
   <div id="options">
@@ -1186,7 +1189,7 @@ $( ".selector" ).draggable( "option", "snapTolerance", 40 );</code></pre>
   Initialize a draggable with the <code>stack</code> option specified.
 </dt>
 <dd>
-<pre><code>$( ".selector" ).draggable({ stack: &quot;.products&quot; });</code></pre>
+<pre><code>$( ".selector" ).draggable({ stack: ".products" });</code></pre>
 </dd>
 
     
@@ -1197,7 +1200,7 @@ $( ".selector" ).draggable( "option", "snapTolerance", 40 );</code></pre>
 <pre><code>//getter
 var stack = $( ".selector" ).draggable( "option", "stack" );
 //setter
-$( ".selector" ).draggable( "option", "stack", &quot;.products&quot; );</code></pre>
+$( ".selector" ).draggable( "option", "stack", ".products" );</code></pre>
 </dd>
 
     </dl>
@@ -1271,7 +1274,7 @@ $( ".selector" ).draggable( "option", "zIndex", 2700 );</code></pre>
   Supply a callback function to handle the <code>start</code> event as an init option.
 </dt>
 <dd>
-<pre><code>$( &quot;.selector&quot; ).draggable({
+<pre><code>$( ".selector" ).draggable({
    start: function(event, ui) { ... }
 });</code></pre>
 </dd>
@@ -1281,7 +1284,7 @@ $( ".selector" ).draggable( "option", "zIndex", 2700 );</code></pre>
   Bind to the <code>start</code> event by type: <code>dragstart</code>.
 </dt>
 <dd>
-<pre><code>$( &quot;.selector&quot; ).bind( &quot;dragstart&quot;, function(event, ui) {
+<pre><code>$( ".selector" ).bind( "dragstart", function(event, ui) {
   ...
 });</code></pre>
 </dd>
@@ -1310,7 +1313,7 @@ $( ".selector" ).draggable( "option", "zIndex", 2700 );</code></pre>
   Supply a callback function to handle the <code>drag</code> event as an init option.
 </dt>
 <dd>
-<pre><code>$( &quot;.selector&quot; ).draggable({
+<pre><code>$( ".selector" ).draggable({
    drag: function(event, ui) { ... }
 });</code></pre>
 </dd>
@@ -1320,7 +1323,7 @@ $( ".selector" ).draggable( "option", "zIndex", 2700 );</code></pre>
   Bind to the <code>drag</code> event by type: <code>drag</code>.
 </dt>
 <dd>
-<pre><code>$( &quot;.selector&quot; ).bind( &quot;drag&quot;, function(event, ui) {
+<pre><code>$( ".selector" ).bind( "drag", function(event, ui) {
   ...
 });</code></pre>
 </dd>
@@ -1349,7 +1352,7 @@ $( ".selector" ).draggable( "option", "zIndex", 2700 );</code></pre>
   Supply a callback function to handle the <code>stop</code> event as an init option.
 </dt>
 <dd>
-<pre><code>$( &quot;.selector&quot; ).draggable({
+<pre><code>$( ".selector" ).draggable({
    stop: function(event, ui) { ... }
 });</code></pre>
 </dd>
@@ -1359,7 +1362,7 @@ $( ".selector" ).draggable( "option", "zIndex", 2700 );</code></pre>
   Bind to the <code>stop</code> event by type: <code>dragstop</code>.
 </dt>
 <dd>
-<pre><code>$( &quot;.selector&quot; ).bind( &quot;dragstop&quot;, function(event, ui) {
+<pre><code>$( ".selector" ).bind( "dragstop", function(event, ui) {
   ...
 });</code></pre>
 </dd>
@@ -1516,7 +1519,7 @@ $( ".selector" ).draggable( "option", "zIndex", 2700 );</code></pre>
 </p>
     
   <h3>Sample markup with jQuery UI CSS Framework classes</h3>
-  &lt;div class=&quot;<strong>ui-draggable</strong>&quot;&gt;&lt;/div&gt;
+  &lt;div class="<strong>ui-draggable</strong>"&gt;&lt;/div&gt;
   <p class="theme-note">
     <strong>
       Note: This is a sample of markup generated by the draggable plugin, not markup you should use to create a draggable. The only markup needed for that is &lt;div&gt;&lt;/div&gt;.
@@ -1526,7 +1529,7 @@ $( ".selector" ).draggable( "option", "zIndex", 2700 );</code></pre>
   </div>
 </div>
 
-</p><!-- 
+<p></p><!-- 
 Pre-expand include size: 59871 bytes
 Post-expand include size: 104871 bytes
 Template argument size: 58170 bytes
@@ -1534,3 +1537,4 @@ Maximum: 2097152 bytes
 -->
 
 <!-- Saved in parser cache with key jqdocs_docs:pcache:idhash:3768-1!1!0!!en!2 and timestamp 20100910103629 -->
+</body></html>
