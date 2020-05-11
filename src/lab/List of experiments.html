@@ -1,341 +1,371 @@
 <!DOCTYPE html>
-<html lang="en"><head><!--Google Tag Manager--><script class="gtm">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-W59SWTR');</script><!--End Google Tag Manager-->
+<html lang="en"><head>
+        <!--Google Tag Manager-->
+        <script class="gtm">
+            (function (w, d, s, l, i) {
+                w[l] = w[l] || [];
+                w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+                var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s),
+                    dl = l != "dataLayer" ? "&l=" + l : "";
+                j.async = true;
+                j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+                f.parentNode.insertBefore(j, f);
+            })(window, document, "script", "dataLayer", "GTM-W59SWTR");
+        </script>
+        <!--End Google Tag Manager-->
 
-    <meta charset="utf-8"/>
-    <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
-    <meta content="width=device-width, initial-scale=1" name="viewport"/>
-    <meta content="Welcome to Virtual Labs - A MHRD Govt of india Initiative" name="description"/>
-    <meta content="Virtual Labs - A MHRD Govt of india Initiative" name="author"/>
-    
-    <title>Welcome to Virtual Labs - A MHRD Govt of india Initiative</title>
-    
-     <link href="images/favicon.ico" rel="shortcut icon"/>
-    
- 
-    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+        <meta charset="utf-8"/>
+        <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+        <meta content="width=device-width, initial-scale=1" name="viewport"/>
+        <meta content="Welcome to Virtual Labs - A MHRD Govt of india Initiative" name="description"/>
+        <meta content="Virtual Labs - A MHRD Govt of india Initiative" name="author"/>
 
-	<!-- Important Owl stylesheet -->
-	<link href="vendors/owl-carousel/owl.carousel.css" rel="stylesheet"/>
-	<link href="vendors/owl-carousel/owl.theme.css" rel="stylesheet"/>
-	
-	<link href="vendors/font-awesome/css/font-awesome.css" rel="stylesheet"/>
+        <title>Welcome to Virtual Labs - A MHRD Govt of india Initiative</title>
 
-    <!-- Custom CSS -->
-    <link href="css/style.css" rel="stylesheet"/>
-	<script src="tabs.js" type="text/javascript"></script>
-<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-67558473-1', 'auto');ga('send', 'pageview');</script>	
+        <link href="images/favicon.ico" rel="shortcut icon"/>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <link href="css/bootstrap.min.css" rel="stylesheet"/>
 
-<style type="text/css">
+        <!-- Important Owl stylesheet -->
+        <link href="vendors/owl-carousel/owl.carousel.css" rel="stylesheet"/>
+        <link href="vendors/owl-carousel/owl.theme.css" rel="stylesheet"/>
 
-#panel1
-{
-	display:none;
-}
-#panel2
-{
-	display:none;
-}
-#panel3
-{
-	display:none;
-}
-#panel4
-{
-	display:none;
-}
-#panel5
-{
-	display:none;
-}
-#panel6
-{
-	display:none;
-}
-#panel7
-{
-	display:none;
-}
-#panel8
-{
-	display:none;
-}
-#panel9
-{
-	display:none;
-}
-#panel10
-{
-	display:none;
-}
+        <link href="vendors/font-awesome/css/font-awesome.css" rel="stylesheet"/>
 
-.panel{
-    padding: 5px;
-    color:black;
-    text-align: center;
-    background-color: #e59400;
-    border: solid 1px black;
-}
-.desc{
-	cursor: pointer;
-}
-</style>
+        <!-- Custom CSS -->
+        <link href="css/style.css" rel="stylesheet"/>
+        <!--	<script src="tabs.js" type="text/javascript"></script>
+<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-67558473-1', 'auto');ga('send', 'pageview');</script>-->
 
-<script type="text/javascript"> 
-function panel1()
-{
-	    $("#panel1").slideToggle("slow");
-}
-function panel2()
-{
-	    $("#panel2").slideToggle("slow");
-}
-function panel3()
-{
-	    $("#panel3").slideToggle("slow");
-}
-function panel4()
-{
-	    $("#panel4").slideToggle("slow");
-}
-function panel5()
-{
-	    $("#panel5").slideToggle("slow");
-}
-function panel6()
-{
-	    $("#panel6").slideToggle("slow");
-}
-function panel7()
-{
-	    $("#panel7").slideToggle("slow");
-}
-function panel8()
-{
-	    $("#panel8").slideToggle("slow");
-}
-function panel9()
-{
-	    $("#panel9").slideToggle("slow");
-}
-function panel10()
-{
-	    $("#panel10").slideToggle("slow");
-}
-</script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
+        <style type="text/css">
+            #panel1 {
+                display: none;
+            }
+            #panel2 {
+                display: none;
+            }
+            #panel3 {
+                display: none;
+            }
+            #panel4 {
+                display: none;
+            }
+            #panel5 {
+                display: none;
+            }
+            #panel6 {
+                display: none;
+            }
+            #panel7 {
+                display: none;
+            }
+            #panel8 {
+                display: none;
+            }
+            #panel9 {
+                display: none;
+            }
+            #panel10 {
+                display: none;
+            }
 
-</head>
-<body class="index" id="page-top"><!--Google Tag Manager (noscript)--><noscript class="gtm"><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-W59SWTR" style="display:none;visibility:hidden" width="0"></iframe></noscript><!--End Google Tag Manager (noscript)-->
-<div id="top">
-	<header>
-	<!-- Navigation -->
-	    <nav class="navbar navbar-default " style="background-color: white !important; margin-bottom: 0px !important;">
-	        <div class="container-fluid">
-			            <!-- Brand and toggle get grouped for better mobile display -->
-			            <div class="navbar-header page-scroll">
-			                <button class="navbar-toggle" data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" type="button">
-			                    <span class="sr-only">Toggle navigation</span>
-			                    <span class="icon-bar" style="background-color: #77BB41"></span>
-			                    <span class="icon-bar" style="background-color: #77BB41"></span>
-			                    <span class="icon-bar" style="background-color: #77BB41"></span>
-			                </button>
-			                <a class="navbar-brand main-logo-a" href="http://vlabs.ac.in/index.html"><img class="img-responsive main-logo" src="images/logo-new.png"/></a>
-			            </div>			
-			                        
-			            <!-- Collect the nav links, forms, and other content for toggling -->
-			            <div class="collapse navbar-collapse menu-div" id="bs-example-navbar-collapse-1" style="border: 0px;">
-			               
-			                <ul class="nav navbar-nav navbar-right menu-ul search-ul" style="position: relative; top: -5px;">
-			                	<li>
-			                		<form action="search-result.html" method="get">
-			                        	<!-- <input type="text" class="search-textbox" placeholder="SEARCH FOR A LAB" name="q" id="q"/>
+            .panel {
+                padding: 5px;
+                color: black;
+                text-align: left;
+                background-color: #e59400;
+                border: solid 1px black;
+            }
+            .desc {
+                cursor: pointer;
+            }
+        </style>
+
+        <script type="text/javascript">
+            function panel1() {
+                $("#panel1").slideToggle("slow");
+            }
+            function panel2() {
+                $("#panel2").slideToggle("slow");
+            }
+            function panel3() {
+                $("#panel3").slideToggle("slow");
+            }
+            function panel4() {
+                $("#panel4").slideToggle("slow");
+            }
+            function panel5() {
+                $("#panel5").slideToggle("slow");
+            }
+            function panel6() {
+                $("#panel6").slideToggle("slow");
+            }
+            function panel7() {
+                $("#panel7").slideToggle("slow");
+            }
+            function panel8() {
+                $("#panel8").slideToggle("slow");
+            }
+            function panel9() {
+                $("#panel9").slideToggle("slow");
+            }
+            function panel10() {
+                $("#panel10").slideToggle("slow");
+            }
+        </script>
+    </head>
+    <body class="index" id="page-top">
+        <!--Google Tag Manager (noscript)-->
+        <noscript class="gtm"><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-W59SWTR" style="display: none; visibility: hidden;" width="0"></iframe></noscript>
+        <!--End Google Tag Manager (noscript)-->
+        <div id="top">
+            <header>
+                <!-- Navigation -->
+                <nav class="navbar navbar-default" style="background-color: white !important; margin-bottom: 0px !important;">
+                    <div class="container-fluid">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header page-scroll">
+                            <button class="navbar-toggle" data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" type="button">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar" style="background-color: #77bb41;"></span>
+                                <span class="icon-bar" style="background-color: #77bb41;"></span>
+                                <span class="icon-bar" style="background-color: #77bb41;"></span>
+                            </button>
+                            <a class="navbar-brand main-logo-a" href="http://vlab.co.in/"><img class="img-responsive main-logo" src="images/logo-new.png"/></a>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse menu-div" id="bs-example-navbar-collapse-1" style="border: 0px;">
+                            <ul class="nav navbar-nav navbar-right menu-ul search-ul" style="position: relative; top: -5px;">
+                                <li>
+                                    <form action="search-result.html" method="get">
+                                        <!-- <input type="text" class="search-textbox" placeholder="SEARCH FOR A LAB" name="q" id="q"/>
 			                        	<input type="submit" value="" class="search-button" /> -->
-			                        </form>
-			                	</li>
-			                </ul>
-			                
-			                <ul class="nav navbar-nav navbar-right menu-ul">
-			                    <li class="page-scroll menu-li ">
-			                        <a class="menu-a" href="http://vlabs.ac.in/index.html">HOME</a>
-			                    </li>
-			                    
-			                    <li class="page-scroll menu-li ">
-			                        <a class="menu-a" href="http://vlabs.ac.in/index.html#partner">PARTNERS</a>
-			                    </li><li class="page-scroll menu-li ">
-			                        <a class="menu-a" href="http://vlabs.ac.in/index.html#contact">CONTACT</a>
-			                    </li>
-			                </ul>
-			                
-			               
-			                	
-			            </div>
-			            <!-- /.navbar-collapse -->  
-	        </div>
-	        <!-- /.container-fluid -->
-	    </nav>
-	</header>
+                                    </form>
+                                </li>
+                            </ul>
 
-	<div id="content">
-			<div class="container-fluid">
-				<div class="row">
-					<hr style="background:#ff6600 !important;  height: 8px; margin-top: 0px;"/>
-				</div> <!-- row end -->
-			</div> <!-- container-fluid end for slider -->
-			
-			
-			<!-- =================================================================================================================================== -->
-			<div class="container-fluid" style="margin-left: 35px; margin-right: 35px;">
-				<h2 class="text-h2-lightblue" style=" margin-bottom: 20px; margin-top: 10px; "><a class="sidebar-a" href="http://vlabs.ac.in/computer-science-and-engineering-labs.html">Computer Science &amp; Engineering</a><br/></h2>
-					
-					<div class="row">
-						<div class="col-md-2 sidebar-col-2">
-						<!--edit1-->
-<a class="sidebar-a" href="Introduction.html?domain=Computer Science"> <h3 class="text-h3-darkblue" style="margin-top: 2px;">Introduction</h3></a><a class="sidebar-a" href="List of experiments.html?domain=Computer Science"> <h3 class="text-h3-darkblue" style="margin-top: 2px;">List of experiments</h3></a><a class="sidebar-a" href="Target Audience.html?domain=Computer Science"> <h3 class="text-h3-darkblue" style="margin-top: 2px;">Target Audience</h3></a><a class="sidebar-a" href="Courses Aligned.html?domain=Computer Science"> <h3 class="text-h3-darkblue" style="margin-top: 2px;">Courses Aligned</h3></a><a class="sidebar-a" href="Prerequisites.html?domain=Computer Science"> <h3 class="text-h3-darkblue" style="margin-top: 2px;">Prerequisites</h3></a><a class="sidebar-a" href="Feedback.html?domain=Computer Science"> <h3 class="text-h3-darkblue" style="margin-top: 2px;">Feedback</h3></a>						</div>
-						
-						<div class="col-md-10 lab-list-col-10">
-							
-							<!--edit -->
-<h1 class="text-h2-lightblue">Very Large Scale Integration Lab</h1><div>
-<ul id="list-of-experiments">
-<li>
-<!--Link and name of the experiment 1 -->
-<!--	<meta http-equiv="refresh" content="0; URL=final-build/experimentHome.php">-->
-<!--	      <a target="_blank" href="final-build/Experiment.php?code=C001">Schematic Design Of Transistor Level Inverter.</a><br> -->
-<a href="final-build/EXP_1sep2010/exp1/Introduction.html?domain=Computer Science &amp; Engineering&amp;lab=Welcome to VLSI lab!">Schematic Design Of Transistor Level Inverter</a>
-</li><br/>
-<p class="desc" onclick="panel1();">Click here to see Description</p>
-<div class="panel" id="panel1">In this experiment we will learn the basic design of an inverter. Inverter is the most basic component which we can make out using one NMOS and one PMOS transistor. Here you will learn about the basics how inverter works internally, how the transistor are placed inside inverter and how we get the inverted output corresponding to the inputs we provide. We will learn the layout designing and effects of capacitance and effects of width and length of transistor on the output of an inverter.</div>
+                            <ul class="nav navbar-nav navbar-right menu-ul">
+                                <li class="page-scroll menu-li">
+                                    <a class="menu-a" href="http://vlab.co.in/">HOME</a>
+                                </li>
 
-<li>
-<a href="final-build/EXP_1sep2010/exp2/Introduction.html?domain=Computer Science &amp; Engineering&amp;lab=Welcome to VLSI lab!">Schematic Design Of Transistor Level NAND &amp; NOR Gate.</a>
-</li><br/>
-<p class="desc" onclick="panel2();">Click here to see Description</p>
-<div class="panel" id="panel2"> In this experiment, we will learn about the series and parallel combination of n-switches and p-switches. Then we will proceed to the transistor level designing of NAND and NOR gate using NMOS and PMOS and also layout designing of the same.
-</div>
+                                <li class="page-scroll menu-li">
+                                    <a class="menu-a" href="http://vlab.co.in/participating-institutes">PARTNERS</a>
+                                </li>
+                                <li class="page-scroll menu-li">
+                                    <a class="menu-a" href="http://vlab.co.in/contact-us">CONTACT</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /.navbar-collapse -->
+                    </div>
+                    <!-- /.container-fluid -->
+                </nav>
+            </header>
 
-<li>
-<a href="final-build/EXP_1sep2010/exp3/Introduction.html?domain=Computer Science &amp; Engineering&amp;lab=Welcome to VLSI lab!">Schematic Design Of Transistor Level XOR &amp; XNOR Gate.</a>
-</li><br/>
-<p class="desc" onclick="panel3();">Click here to see Description</p>
-<div class="panel" id="panel3">In this experiment, we will first learn how to deduce parallel and series combination of n and p-switches given a combinational logic and hence design them, specifically XOR and XNOR. </div>
+            <div id="content">
+                <div class="container-fluid">
+                    <div class="row" style="height: 16px !important;">
+                        <hr style="background: #ff6600 !important; height: 8px; margin-top: 0px;"/>
+                    </div>
+                    <!-- row end -->
+                </div>
+                <!-- container-fluid end for slider -->
 
-<li>
-<a href="final-build/EXP_1sep2010/exp4/Introduction.html?domain=Computer Science &amp; Engineering&amp;lab=Welcome to VLSI lab!">Schematic Design Of Pass Transistor Logic &amp; Multiplexer.</a> <br/>
-</li><br/>
-<p class="desc" onclick="panel4();">Click here to see Description</p>
-<div class="panel" id="panel4"> Transmission gates are used in digital circuits to pass or block particular signal from the components. In transmission gates, NMOS and PMOS are parallel connected to each other. Schematic representation of transmission gate and its circuit symbol are shown below. </div>
+                <!-- =================================================================================================================================== -->
+                <div class="container-fluid" style="margin-left: 35px; margin-right: 35px;">
+                    <h2 class="text-h2-lightblue"><a class="sidebar-a" href="http://vlab.co.in/broad-area-computer-science-and-engineering">Computer Science &amp; Engineering</a><br/></h2>
 
-<li>
-<a href="final-build/EXP_1sep2010/exp5/Introduction.html?domain=Computer Science &amp; Engineering&amp;lab=Welcome to VLSI lab!">Delay Estimation In Chain Of Inverters.</a>
-</li><br/>
-<p class="desc" onclick="panel5();">Click here to see Description</p>
-<div class="panel" id="panel5">The method of logical effort is one of the methods used to estimate delay in a CMOS circuit. The model describes delay caused by the capacitive load that the logic gate drives and by the topology of the logic gate. As the gate increases delay also increases, but delay depends on the logic function of the gate also. </div>
+                    <div class="row">
+                        <div class="col-md-2 sidebar-col-2">
+                            <!--edit1-->
+                            <a class="sidebar-a" href="Introduction.html?domain=Computer Science"> <h3 class="text-h3-darkblue" style="margin-top: 2px;">Introduction</h3></a>
+                            <a class="sidebar-a" href="List of experiments.html?domain=Computer Science"> <h3 class="text-h3-darkblue" style="margin-top: 2px; color: #ff6600 !important;">List of experiments</h3></a>
+                            <a class="sidebar-a" href="Target Audience.html?domain=Computer Science"> <h3 class="text-h3-darkblue" style="margin-top: 2px;">Target Audience</h3></a>
+                            <a class="sidebar-a" href="Courses Aligned.html?domain=Computer Science"> <h3 class="text-h3-darkblue" style="margin-top: 2px;">Courses Aligned</h3></a>
+                            <a class="sidebar-a" href="Prerequisites.html?domain=Computer Science"> <h3 class="text-h3-darkblue" style="margin-top: 2px;">Prerequisites</h3></a>
+                            <a class="sidebar-a" href="Feedback.html?domain=Computer Science"> <h3 class="text-h3-darkblue" style="margin-top: 2px;">Feedback</h3></a>
+                        </div>
 
-<li>
-<a href="final-build/EXP_1sep2010/exp6/Introduction.html?domain=Computer Science &amp; Engineering&amp;lab=Welcome to VLSI lab!">Schematic Design Of D-Latch and D-Flip Flop.</a>
-</li><br/>
-<p class="desc" onclick="panel6();">Click here to see Description</p>
-<div class="panel" id="panel6"> Latch is an electronic device that can be used to store one bit of information. The D latch is used to capture, or latch the logic level which is present on the Data line when the clock input is high. If the data on the D line changes state while the clock pulse is high, then the output, Q, follows the input, D. When the CLK input falls to logic 0, the last state of the D input is trapped and held in the latch. </div>
+                        <div class="col-md-10 lab-list-col-10">
+                            <!--edit -->
+                            <h1 class="text-h1-lightblue">Very Large Scale Integration Lab</h1>
+                            <div>
+                                <ul id="list-of-experiments" style="font-size: 1.2em;">
+                                    <li>
+                                        <!--Link and name of the experiment 1 -->
+                                        <!--	<meta http-equiv="refresh" content="0; URL=final-build/experimentHome.php">-->
+                                        <!--	      <a target="_blank" href="final-build/Experiment.php?code=C001">Schematic Design Of Transistor Level Inverter.</a><br> -->
+                                        <a href="final-build/EXP_1sep2010/exp1/Introduction.html?domain=Computer Science &amp; Engineering&amp;lab=Welcome to VLSI lab!">Schematic Design Of Transistor Level Inverter</a>
+                                    </li>
+                                    <br/>
+                                    <p class="desc" onclick="panel1();">Click <u>here</u> to see Description</p>
+                                    <div class="panel" id="panel1">
+                                        In this experiment we will learn the basic design of an inverter. Inverter is the most basic component which we can make out using one NMOS and one PMOS transistor. Here you will learn about the
+                                        basics how inverter works internally, how the transistor are placed inside inverter and how we get the inverted output corresponding to the inputs we provide. We will learn the layout designing and
+                                        effects of capacitance and effects of width and length of transistor on the output of an inverter.
+                                    </div>
 
-<li>
-<a href="final-build/EXP_1sep2010/exp7/Introduction.html?domain=Computer Science &amp; Engineering&amp;lab=Welcome to VLSI lab!">Spice Code Platform.</a>
-</li><br/>
-<p class="desc" onclick="panel7();">Click here to see Description</p>
-<div class="panel" id="panel7"> In the experiments we have done till now we have designed gates by arranging transistors in various fashions .The simulation of these designs gave graphs of output voltages and we analyzed how these graph changes with varying different parameters of the transistor. Now when you place a transistor on screen there is a back end code which tells a simulator what are the points to which the transistor's substrate,gate,drain,source are connected. The language in which this information is conveyed is spice. </div>
+                                    <li>
+                                        <a href="final-build/EXP_1sep2010/exp2/Introduction.html?domain=Computer Science &amp; Engineering&amp;lab=Welcome to VLSI lab!">Schematic Design Of Transistor Level NAND &amp; NOR Gate.</a>
+                                    </li>
+                                    <br/>
+                                    <p class="desc" onclick="panel2();">Click <u>here</u> to see Description</p>
+                                    <div class="panel" id="panel2">
+                                        In this experiment, we will learn about the series and parallel combination of n-switches and p-switches. Then we will proceed to the transistor level designing of NAND and NOR gate using NMOS and
+                                        PMOS and also layout designing of the same.
+                                    </div>
 
-<li>
-<a href="final-build/EXP_1sep2010/exp8/Introduction.html?domain=Computer Science &amp; Engineering&amp;lab=Welcome to VLSI lab!">Design Of D-Flip Flop Using Verilog.</a>
-</li><br/>
-<p class="desc" onclick="panel8();">Click here to see Description</p>
-<div class="panel" id="panel8"> Till now we have dealt with transistor level issues involved in designing a gate and studied the effects on the waveforms on changing various parameters of transistor(length and width) .The graphs we have seen till now will gives the corresponding analog output voltages. In the earlier experiments, when a transistor was placed and connections were made a spice code was written in the back end. We learned spice in the previous experiment . Now we proceed towards digital level designing of circuits for example lets take an or gate in the second experiment was we arranged pmos and nmos in a particular fashion and simulated to obtain a graph , changing the parameters we analyzed how the rise time ,fall time ,delay etc. changes. If you observe the graph you will find that the input changes from low value near 0 V to high value near 5V ,the rise is not steep one but gradual . In digital designing we will bother only about two levels 0 and 1(a threshold is determined i.e. voltages below threshold will be 0 and those above will be 1 )As we move towards digital designing we shift our concerns from how does the analog voltage changes to how to generate a desired output from a given sequence of inputs. For instance now we will visualize gate as an entity which will gives the desired truth table. </div>
+                                    <li>
+                                        <a href="final-build/EXP_1sep2010/exp3/Introduction.html?domain=Computer Science &amp; Engineering&amp;lab=Welcome to VLSI lab!">Schematic Design Of Transistor Level XOR &amp; XNOR Gate.</a>
+                                    </li>
+                                    <br/>
+                                    <p class="desc" onclick="panel3();">Click <u>here</u> to see Description</p>
+                                    <div class="panel" id="panel3">
+                                        In this experiment, we will first learn how to deduce parallel and series combination of n and p-switches given a combinational logic and hence design them, specifically XOR and XNOR.
+                                    </div>
 
-<li>
-<a href="final-build/EXP_1sep2010/exp9/Introduction.html?domain=Computer Science &amp; Engineering&amp;lab=Welcome to VLSI lab!">Design Of Digital Circuits Using Verilog.</a>
-</li><br/>
-<p class="desc" onclick="panel9();">Click here to see Description</p>
-<div class="panel" id="panel9"> Verilog is language commonly used in designing digital systems. It is a hardware description language, which means that it is substantially different from any other language you might have encountered so far. Even though it does have control flow statements and variables, it relies primarily on logic functions.It is a textual format for describing electronic circuits and systems. </div>
+                                    <li>
+                                        <a href="final-build/EXP_1sep2010/exp4/Introduction.html?domain=Computer Science &amp; Engineering&amp;lab=Welcome to VLSI lab!">Schematic Design Of Pass Transistor Logic &amp; Multiplexer.</a> <br/>
+                                    </li>
+                                    <br/>
+                                    <p class="desc" onclick="panel4();">Click <u>here</u> to see Description</p>
+                                    <div class="panel" id="panel4">
+                                        Transmission gates are used in digital circuits to pass or block particular signal from the components. In transmission gates, NMOS and PMOS are parallel connected to each other. Schematic
+                                        representation of transmission gate and its circuit symbol are shown below.
+                                    </div>
 
-<li>
-<a href="final-build/EXP_1sep2010/layout/Introduction.html?domain=Computer Science &amp; Engineering&amp;lab=Welcome to VLSI lab!">Layout Design.</a>
-</li><br/>
-<p class="desc" onclick="panel10();">Under Construction.</p>
-<!-- <div id="panel10" class ="panel"> Under Construction. </div>
+                                    <li>
+                                        <a href="final-build/EXP_1sep2010/exp5/Introduction.html?domain=Computer Science &amp; Engineering&amp;lab=Welcome to VLSI lab!">Delay Estimation In Chain Of Inverters.</a>
+                                    </li>
+                                    <br/>
+                                    <p class="desc" onclick="panel5();">Click <u>here</u> to see Description</p>
+                                    <div class="panel" id="panel5">
+                                        The method of logical effort is one of the methods used to estimate delay in a CMOS circuit. The model describes delay caused by the capacitive load that the logic gate drives and by the topology of
+                                        the logic gate. As the gate increases delay also increases, but delay depends on the logic function of the gate also.
+                                    </div>
+
+                                    <li>
+                                        <a href="final-build/EXP_1sep2010/exp6/Introduction.html?domain=Computer Science &amp; Engineering&amp;lab=Welcome to VLSI lab!">Schematic Design Of D-Latch and D-Flip Flop.</a>
+                                    </li>
+                                    <br/>
+                                    <p class="desc" onclick="panel6();">Click <u>here</u> to see Description</p>
+                                    <div class="panel" id="panel6">
+                                        Latch is an electronic device that can be used to store one bit of information. The D latch is used to capture, or latch the logic level which is present on the Data line when the clock input is high.
+                                        If the data on the D line changes state while the clock pulse is high, then the output, Q, follows the input, D. When the CLK input falls to logic 0, the last state of the D input is trapped and held
+                                        in the latch.
+                                    </div>
+
+                                    <li>
+                                        <a href="final-build/EXP_1sep2010/exp7/Introduction.html?domain=Computer Science &amp; Engineering&amp;lab=Welcome to VLSI lab!">Spice Code Platform.</a>
+                                    </li>
+                                    <br/>
+                                    <p class="desc" onclick="panel7();">Click <u>here</u> to see Description</p>
+                                    <div class="panel" id="panel7">
+                                        In the experiments we have done till now we have designed gates by arranging transistors in various fashions .The simulation of these designs gave graphs of output voltages and we analyzed how these
+                                        graph changes with varying different parameters of the transistor. Now when you place a transistor on screen there is a back end code which tells a simulator what are the points to which the
+                                        transistor's substrate,gate,drain,source are connected. The language in which this information is conveyed is spice.
+                                    </div>
+
+                                    <li>
+                                        <a href="final-build/EXP_1sep2010/exp8/Introduction.html?domain=Computer Science &amp; Engineering&amp;lab=Welcome to VLSI lab!">Design Of D-Flip Flop Using Verilog.</a>
+                                    </li>
+                                    <br/>
+                                    <p class="desc" onclick="panel8();">Click <u>here</u> to see Description</p>
+                                    <div class="panel" id="panel8">
+                                        Till now we have dealt with transistor level issues involved in designing a gate and studied the effects on the waveforms on changing various parameters of transistor(length and width) .The graphs we
+                                        have seen till now will gives the corresponding analog output voltages. In the earlier experiments, when a transistor was placed and connections were made a spice code was written in the back end. We
+                                        learned spice in the previous experiment . Now we proceed towards digital level designing of circuits for example lets take an or gate in the second experiment was we arranged pmos and nmos in a
+                                        particular fashion and simulated to obtain a graph , changing the parameters we analyzed how the rise time ,fall time ,delay etc. changes. If you observe the graph you will find that the input changes
+                                        from low value near 0 V to high value near 5V ,the rise is not steep one but gradual . In digital designing we will bother only about two levels 0 and 1(a threshold is determined i.e. voltages below
+                                        threshold will be 0 and those above will be 1 )As we move towards digital designing we shift our concerns from how does the analog voltage changes to how to generate a desired output from a given
+                                        sequence of inputs. For instance now we will visualize gate as an entity which will gives the desired truth table.
+                                    </div>
+
+                                    <li>
+                                        <a href="final-build/EXP_1sep2010/exp9/Introduction.html?domain=Computer Science &amp; Engineering&amp;lab=Welcome to VLSI lab!">Design Of Digital Circuits Using Verilog.</a>
+                                    </li>
+                                    <br/>
+                                    <p class="desc" onclick="panel9();">Click <u>here</u> to see Description</p>
+                                    <div class="panel" id="panel9">
+                                        Verilog is language commonly used in designing digital systems. It is a hardware description language, which means that it is substantially different from any other language you might have encountered
+                                        so far. Even though it does have control flow statements and variables, it relies primarily on logic functions.It is a textual format for describing electronic circuits and systems.
+                                    </div>
+
+                                    <li>
+                                        <a href="final-build/EXP_1sep2010/layout/Introduction.html?domain=Computer Science &amp; Engineering&amp;lab=Welcome to VLSI lab!">Layout Design.</a>
+                                    </li>
+                                    <br/>
+                                    <!--<p class="desc" onclick="panel10();">Under Construction.</p>-->
+                                    <!-- <div id="panel10" class ="panel"> Under Construction. </div>
  -->
-</ul>
-</div>						</div>
-					</div>
-			</div>
-			<!-- =================================================================================================================================== -->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- content div -->
+            <!-- =================================================================================================================================== -->
 
+            <footer id="footer">
+                <div class="footer-top" id="contact">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6">
+                                <h4>Community Links</h4>
+                                <p>
+                                    <a href="http://www.sakshat.ac.in/">Sakshat Portal</a>
+                                </p>
+                                <p>
+                                    <a href="http://outreach.vlabs.ac.in/">Outreach Portal</a>
+                                </p>
+                                <p>
+                                    <a href="http://vlab.co.in/faq">FAQ : Virtual Labs</a>
+                                </p>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <h4>Contact Us</h4>
+                                <p><strong>Phone:</strong> General Information : 011-26582050</p>
+                                <p><strong>Email:</strong> support@vlab.co.in</p>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <h4>Follow Us</h4>
+                                <div class="social-links">
+                                    <a class="twitter" href="https://twitter.com/TheVirtualLabs" style="background: #55acee;">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                                    <a class="facebook" href="https://www.facebook.com/Virtual-Labs-IIT-Delhi-301510159983871/" style="background: #3b5998;">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                    <a class="google-plus" href="https://www.youtube.com/watch?v=asxRaOgk6a0" style="background: #e52d27;">
+                                        <i class="fa fa-youtube"></i>
+                                    </a>
+                                    <a class="linkedin" href="https://in.linkedin.com/in/virtual-labs-008ba9136" style="background: #2867b2;">
+                                        <i class="fa fa-linkedin"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <!-- top div -->
 
+        <!--<script src="js/jquery.js"></script>-->
 
-			
-	</div> <!-- content div -->
-		
-	<footer id="footer"><div class="footer-top" id="contact">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-4 col-md-6">
-        <h4>Community Links</h4>
-        <p>
-	  <a href="http://www.sakshat.ac.in/">Sakshat Portal</a>
-	</p>
-        <p>
-	  <a href="http://outreach.vlabs.ac.in/">Outreach Portal</a>
-	</p>
-        <p>
-	  <a href="http://vlab.co.in/faq">FAQ : Virtual Labs</a>
-	</p>
-      </div>
-      <div class="col-lg-4 col-md-6">
-        <h4>Contact Us</h4>
-	<p> <strong>Phone:</strong> General Information : 011-26582050 </p>
-	<p> <strong>Email:</strong> support@vlab.co.in </p>
-      </div>
-      <div class="col-lg-4 col-md-6">
-	<h4>Follow Us</h4>
-	<div class="social-links">
-	  <a class="twitter" href="https://twitter.com/TheVirtualLabs" style="background: #55acee;">
-	    <i class="fa fa-twitter"></i>
-	  </a>
-	  <a class="facebook" href="https://www.facebook.com/Virtual-Labs-IIT-Delhi-301510159983871/" style="background: #3b5998;">
-	    <i class="fa fa-facebook"></i>
-	  </a>
-	  <a class="google-plus" href="https://www.youtube.com/watch?v=asxRaOgk6a0" style="background: #e52d27;">
-	    <i class="fa fa-youtube"></i>
-	  </a>
-	  <a class="linkedin" href="https://in.linkedin.com/in/virtual-labs-008ba9136" style="background: #2867B2;">
-	    <i class="fa fa-linkedin"></i>
-	  </a>
-	</div>
-      </div>
-    </div>
-  </div>
-</div>
-</footer>
+        <!-- Bootstrap Core JavaScript 
+    <script src="js/bootstrap.min.js"></script>-->
 
+        <!-- Custom Theme JavaScript 
+    <script src="js/custom.js"></script>-->
 
-</div> <!-- top div -->
-
-
-
-
-	
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
-	<!-- Custom Theme JavaScript -->
-    <script src="js/custom.js"></script>
-    
-    <!-- Include js plugin -->
+        <!-- Include js plugin 
 	<script src="vendors/owl-carousel/owl.carousel.js"></script>
 	
 	<script type="text/javascript">
@@ -375,7 +405,8 @@ function panel10()
 	  });
 	 
 	});
-	</script>
-	
+	</script>-->
+    
+    
 
 </body><!-- jQuery --></html>
