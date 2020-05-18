@@ -101,7 +101,7 @@
             <div class="col-md-10 lab-list-col-10">
               
               <!--edit -->
-<h1 class="text-h1-lightblue">Schematic Design Of Pass Transistor Logic & Multiplexer</h1><div class="content" id="lab-article-section-5-content">
+<h1 class="text-h1-lightblue">Schematic Design Of Transistor Level Inverter</h1><div class="content" id="lab-article-section-5-content">
 <form name="quiz">
 <!-- <font size="3"> -->
 <ol>

@@ -110,24 +110,24 @@
             </div>
             <div class="col-md-10 lab-list-col-10">
               <!--edit -->
-              <h1 class="text-h1-lightblue">Schematic Design Of Pass Transistor Logic & Multiplexer</h1>
+              <h1 class="text-h1-lightblue">Delay Estimation In Chain Of Inverters</h1>
               <div class="content" id="lab-article-section-5-content">
                 <form name="quiz">
                   <ol>
                     <li><b>1. What is the difference between a LATCH and a FLIP-FLOP? </b><br>
                       <span id="correct1"><input type="radio" name="q1"
-                        value="correct"> Latch is a level sensitive device while flip-flop is an edge sensitive device.</span><br>
-                      <input type="radio" name="q1" value="wrong"> Latches take more gates (also more power) to implement than flip-flops.<br>
-                      <input type="radio" name="q1" value="wrong"> Latches are slower than flip-flops.<br>
-                      <input type="radio" name="q1" value="wrong"> Flip flops are used as temporary buffer  whereas latches are used as registers.<br>
+                        value="correct"> Latch is a level sensitive device while flip-flop is an edge sensitive device</span><br>
+                      <input type="radio" name="q1" value="wrong"> Latches take more gates (also more power) to implement than flip-flops<br>
+                      <input type="radio" name="q1" value="wrong"> Latches are slower than flip-flops<br>
+                      <input type="radio" name="q1" value="wrong"> Flip flops are used as temporary buffer  whereas latches are used as registers<br>
                     </li>
                     <br />
                     <li><b>2. In a D latch __________ .</b><br>
-                      <input type="radio" name="q2" value="wrong"> A high D sets the latch and low D resets it .<br>
-                      <input type="radio" name="q2" value="wrong"> A low D sets the latch and high D resets it.<br>
+                      <input type="radio" name="q2" value="wrong"> A high D sets the latch and low D resets it <br>
+                      <input type="radio" name="q2" value="wrong"> A low D sets the latch and high D resets it<br>
                       <span id="correct2"><input type="radio" name="q2"
-                        value="correct"> Race condition can occur .</span><br>
-                      <input type="radio" name="q2" value="wrong"> None of the above .<br>
+                        value="correct"> Race condition can occur </span><br>
+                      <input type="radio" name="q2" value="wrong"> None of the above<br>
                     </li>
                     <br />
                     <li><b>3. Which device has many input and one output ?</b><br>
@@ -139,24 +139,24 @@
                     </li>
                     <br />
                     <li><b>4. A D flip-flop can be made from a _________</b><br>
-                      <input type="radio" name="q4" value="wrong"> JK flip-flop and an inverter .<br>
-                      <input type="radio" name="q4" value="wrong"> RS flip-flop .<br>
+                      <input type="radio" name="q4" value="wrong"> JK flip-flop and an inverter <br>
+                      <input type="radio" name="q4" value="wrong"> RS flip-flop <br>
                       <span id="correct4"><input type="radio" name="q4"
-                        value="correct"></span> RS flip-flop and an inverter .<br>
-                      <input type="radio" name="q4" value="wrong"> Both (a) and (b)..<br>
+                        value="correct"></span> RS flip-flop and an inverter <br>
+                      <input type="radio" name="q4" value="wrong"> Both (a) and (b)<br>
                     </li>
                     <br />
                     <li><b>5. Which of the following flip-flops does not have race around condition ?</b><br>
-                      <input type="radio" name="q5" value="wrong"> JK flip-flops .<br>
+                      <input type="radio" name="q5" value="wrong"> JK flip-flops <br>
                       <span id="correct5"><input type="radio" name="q5"
-                        value="correct"></span> D flip-flops .<br>
-                      <input type="radio" name="q5" value="wrong"> S-R flip-flop converted to J-K flip-flop .<br>
-                      <input type="radio" name="q5" value="wrong"> Master slave JK flip flop.<br>
+                        value="correct"></span> D flip-flops <br>
+                      <input type="radio" name="q5" value="wrong"> S-R flip-flop converted to J-K flip-flop <br>
+                      <input type="radio" name="q5" value="wrong"> Master slave JK flip flop<br>
                   </ol>
                   <br />
-                  <input type="button" onClick="checkQuiz()" value="Check Quiz"><br><br>
-                  <input type="button" value="Reset" onClick="document.quiz.reset()">
-                  <hr>
+                  <input onclick="checkQuiz()" type="button" value="check quiz"/>
+                  <input onclick="window.location.reload();document.quiz.reset();" type="button" value="Reset"/>
+                  <hr/>x
                   <textarea cols="80" rows="10" name="output"></textarea>
                   <br>
                 </form>

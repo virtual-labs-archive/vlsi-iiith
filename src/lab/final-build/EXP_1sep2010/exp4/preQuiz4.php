@@ -117,10 +117,11 @@
                   <ol>
                     <li><b>1. Multiplex is a ?</b><br>
                       <span id="correct1"><input type="radio" name="q1"
-                        value="correct"> Combinational Circuit .</span><br>
-                      <input type="radio" name="q1" value="wrong"> Flip Flop .<br/>
-                      <input type="radio" name="q1" value="wrong"> Sequential Circuit .<b/r>
-                      <input type="radio" name="q1" value="wrong"> None of the above .<br/>
+                        value="correct"> Combinational Circuit </span><br>
+                      <input type="radio" name="q1" value="wrong"> Flip Flop<br/>
+                      <input type="radio" name="q1" value="wrong"> Sequential Circuit<br/>
+                      <input type="radio" name="q1"
+                             value="wrong"> None of the above  <br/>
                     </li>
                     <br />
                     <li><b>2. Transmission gate is a ?</b><br>
@@ -146,16 +147,16 @@
                     </li>
                     <br />
                     <li><b>5. Multiplexer is also known as:</b><br>
-                      <input type="radio" name="q5" value="wrong"> Counter .<br>
+                      <input type="radio" name="q5" value="wrong"> Counter <br>
                       <span id="correct5"><input type="radio" name="q5"
-                        value="correct"></span> Data Select .<br>
-                      <input type="radio" name="q5" value="wrong"> Single Input Many Output .<br>
-                      <input type="radio" name="q5" value="wrong"> None .<br>
+                        value="correct"></span> Data Select <br>
+                      <input type="radio" name="q5" value="wrong"> Single Input Many Output <br>
+                      <input type="radio" name="q5" value="wrong"> None <br>
                   </ol>
                   <br />
-                  <input type="button" onClick="checkQuiz()" value="Check Quiz"><br><br>
-                  <input type="button" value="Reset" onClick="window.location.reload();document.quiz.reset();">
-                  <hr>
+                  <input onclick="checkQuiz()" type="button" value="check quiz"/>
+                  <input onclick="window.location.reload();document.quiz.reset();" type="button" value="Reset"/>
+                  <hr/>
                   <textarea cols="80" rows="10" name="output"></textarea>
                   <br>
                 </form>
