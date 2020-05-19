@@ -213,12 +213,12 @@
     <!-- top div -->
   </body>
   <!-- jQuery -->
-  <!--<script src="../../../js/jquery.js"></script>-->
-  <!-- Bootstrap Core JavaScript 
-    <script src="../../../js/bootstrap.min.js"></script>-->
-  <!-- Custom Theme JavaScript 
-    <script src="../../../js/custom.js"></script>-->
-  <!-- Include js plugin
+ -<script src="../../../js/jquery.js"></script>
+  <!-- Bootstrap Core JavaScript -->
+    <script src="../../../js/bootstrap.min.js"></script>
+  <!-- Custom Theme JavaScript -->
+    <script src="../../../js/custom.js"></script>
+  <!-- Include js plugin-->
     <script src="../../../vendors/owl-carousel/owl.carousel.js"></script>
     
     <script type="text/javascript">
@@ -258,6 +258,6 @@
       });
      
     });
-    </script>-->
+    </script>
 </html>
 
