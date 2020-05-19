@@ -1,6 +1,7 @@
+
 //highlight color of answer - can change this color to a hex code or recognized color name
 var highlightColor = "#0066cc";
-
+var radioGroup=5;
 
 //this should not be changed
 function checkQuestionRadio(radioGroup) {
@@ -29,20 +30,14 @@ function highlightCorrectButton(radioButton) {
 }
 
 function checkQuiz() {
-//The orange highlighted code may need to be changed
-   //you will need to match these question types(Radio/DropDown)
-   //and names (q1, q2, ...) to the ones in your quiz
    numCorrect = 0;
    numCorrect += checkQuestionRadio( document.quiz.q1);
    numCorrect += checkQuestionRadio( document.quiz.q2);
    numCorrect += checkQuestionRadio( document.quiz.q3);
    numCorrect += checkQuestionRadio( document.quiz.q4);
    numCorrect += checkQuestionRadio( document.quiz.q5);
-   numCorrect += checkQuestionRadio( document.quiz.q6);
-   numCorrect += checkQuestionRadio( document.quiz.q7);
-   numCorrect += checkQuestionRadio( document.quiz.q8);
-   numCorrect += checkQuestionRadio( document.quiz.q9);
-   numCorrect += checkQuestionRadio( document.quiz.q10);
+
+
 
   //highlight correct answers from radio button groups...use span id name
    highlightCorrectButton("correct1");
@@ -50,15 +45,11 @@ function checkQuiz() {
    highlightCorrectButton("correct3");
    highlightCorrectButton("correct4");
    highlightCorrectButton("correct5");
-   highlightCorrectButton("correct6");
-   highlightCorrectButton("correct7");
-   highlightCorrectButton("correct8");
-   highlightCorrectButton("correct9");
-   highlightCorrectButton("correct10");
+
 
    //produce output in textarea.
    document.quiz.output.value =
-     "You got " + numCorrect + " out of 10 questions correct.\n" +
+     "You got " + numCorrect + " out of 5 questions correct.\n" +
      "The correct answers are highlighted." 
 
-} 
+}
