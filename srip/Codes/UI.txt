@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+* {
+  box-sizing: border-box;
+}
+
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 20px;
+  height: 500px; 
+}
+
+.left, {
+  width: 25%;
+}
+.right{
+  width:25%;
+}
+.middle {
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+<style>
+body {
+  width: 1400px;
+}
+</style>
+</head>
+<body>
+<button onclick="scrollWin()">Click </button><br><br>
+
+<script>
+function scrollWin() {
+  window.scrollTo(500, 0);
+}
+</script>
+<body>
+
+<h2><center>D LATCH :positive level</center></h2>
+<style>
+.dropbtn {
+  background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+</style>
+</head>
+<body>
+<p>Click on the button to open the dropdown menu.</p>
+
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#D LATCH:positive level">D LATCH:positive level</a>
+    <a href="inside.html">D FLIP FLOP:positive edge</a>
+    
+  </div>
+</div>
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+<center>
+<button type="button" onclick="alert">simulate</button>
+</center>
+<br><br><br>
+<div class="row">
+  <div class="column left" style="background-color:grey;">
+    <h2>TOOL BAR</h2>
+    <p>Available icons</p>
+  </div>
+  <div class="column middle" style="background-color:black;">
+    <h2>Column 2</h2>
+    <p></p>
+  </div>
+  <div class="column right" style="background-color:white;">
+    <h2>SIMULATION OF CIRCUIT</h2>
+    <p></p>
+  </div>
+</div>
+
+</body>
+</html>

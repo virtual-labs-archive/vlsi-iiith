@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Quiz</title>
+<style>
+div#test{ border:#5AB029 3px solid; padding:10px 40px 40px 40px; background-color:#E5FCE3; width:50%;}
+.figure
+{
+   float:left;
+}
+.fig
+{
+   float:right;
+}
+h1
+{
+   color: red;
+   text-decoration-style: underline;
+   border: 3px solid black;
+   border-radius: 25px;
+   border-color:green;
+}
+</style>
+<script type="text/javascript">
+// pos is position of where the user in the test or which question they're up to
+var pos = 0, test, test_status, question, choice, choices, chA, chB, chC,cdD,correct = 0;
+var questions = [
+  ["What frequency clock source will produce clock waveforms having a period equal to 5 us (5 microseconds)?", "5MHz", "0.2MHz", "2MHz", "10MHz", "B"],
+  ["On what parameters do the output of D flip flop depend?", "Independent of both previous state and input", "Both on prevous state and input", "Only on previous state", "Only on input D", "D"],
+  ["The timing diagram corresponds to:?", "D latch", "Positive edge triggered D flip flop", "Negative edge triggered D flip flop", "None of them","A"],
+  ["The timing diagram corresponds to?", "D latch", "Positive edge triggered D flip flop", "Negative edge triggered D flip flop", "None of them", "B"],
+  ["Which statement is false about D latch","The output follows the input everytime","The output follows the input when clock is high","The output follows the input when clock is low","Output never follows the input","B"],
+  ["Which latch has the property of either retaining or toggling the previous value?","D latch","T latch","SR latch","none of the above","B"],
+  ["Which statement below is the apt definition of flip flop?","Latch","coupled latch","Decoupled latch","clocked latch","D"],
+  ["The above figure is the gate level implementation of?","SR latch","D latch","T latch","Non of the above","B"],
+  ["What kind of flip flop is generally preffered for constructing counters?","JK flip flop","T flip flop","D flip flop","None of the above","B"],
+  ["What is meant by the problem of metastability in flip flop?","The data and the control input changes at the instant of clock pulse","The data and the control input does not change at all","The clock input does not change at all","None of the above","A"]
+  ];
+function get(x){
+  return document.getElementById(x);
+}
+function renderQuestion(){
+  test = get("test");
+  if(pos >= questions.length){
+    test.innerHTML = "<h2>You got "+correct+" of "+questions.length+" questions correct</h2>";
+    get("test_status").innerHTML = "Test completed";
+    // resets the variable to allow users to restart the test
+    pos = 0;
+    correct = 0;
+    // stops rest of renderQuestion function running when test is completed
+    return false;
+  }
+  get("test_status").innerHTML = "Question "+(pos+1)+" of "+questions.length;
+  question = questions[pos][0];
+  chA = questions[pos][1];
+  chB = questions[pos][2];
+  chC = questions[pos][3];
+  chD = questions[pos][4];
+
+  test.innerHTML = "<h3>"+question+"</h3>";
+  // the += appends to the data we started on the line above
+  test.innerHTML += "<input type='radio' name='choices' value='A'> "+chA+"<br>";
+  test.innerHTML += "<input type='radio' name='choices' value='B'> "+chB+"<br>";
+  test.innerHTML += "<input type='radio' name='choices' value='C'> "+chC+"<br>";
+  test.innerHTML += "<input type='radio' name='choices' value='D'> "+chD+"<br><br>";
+  test.innerHTML += "<button onclick='checkAnswer()'>Submit Answer</button>";
+}
+function checkAnswer(){
+  // use getElementsByName because we have an array which it will loop through
+  choices = document.getElementsByName("choices");
+  for(var i=0; i<choices.length; i++){
+    if(choices[i].checked){
+      choice = choices[i].value;
+    }
+  }
+  // checks if answer matches the correct choice
+  if(choice == questions[pos][5]){
+    //each time there is a correct answer this value increases
+    correct++;
+  }
+  // changes position of which character user is on
+  pos++;
+  // then the renderQuestion function runs again to go to next question
+  renderQuestion();
+}
+window.addEventListener("load", renderQuestion, false);
+</script>
+</head>
+<body>
+<h1 align="center"> POST-QUIZ </h1>
+<h2 id="test_status"></h2>
+<div id="test"></div>
+<p class="figure"></p><img src="" class="figure">
+<p class="figure"></p><img src="" class="figure">
+
+</body>
+</html>
